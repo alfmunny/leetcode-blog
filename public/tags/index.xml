@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Algo In The Shell</title>
+    <link>http://alfmunny.com/tags/</link>
+    <description>Recent content in Tags on Algo In The Shell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Mar 2020 10:18:55 +0100</lastBuildDate>
+    
+	<atom:link href="http://alfmunny.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>array</title>
+      <link>http://alfmunny.com/tags/array/</link>
+      <pubDate>Sat, 14 Mar 2020 10:18:55 +0100</pubDate>
+      
+      <guid>http://alfmunny.com/tags/array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>constant-memory</title>
+      <link>http://alfmunny.com/tags/constant-memory/</link>
+      <pubDate>Sat, 14 Mar 2020 10:18:55 +0100</pubDate>
+      
+      <guid>http://alfmunny.com/tags/constant-memory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hard</title>
+      <link>http://alfmunny.com/tags/hard/</link>
+      <pubDate>Sat, 14 Mar 2020 10:18:55 +0100</pubDate>
+      
+      <guid>http://alfmunny.com/tags/hard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backtrack</title>
+      <link>http://alfmunny.com/tags/backtrack/</link>
+      <pubDate>Sat, 14 Mar 2020 03:00:00 +0100</pubDate>
+      
+      <guid>http://alfmunny.com/tags/backtrack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>medium</title>
+      <link>http://alfmunny.com/tags/medium/</link>
+      <pubDate>Sat, 14 Mar 2020 03:00:00 +0100</pubDate>
+      
+      <guid>http://alfmunny.com/tags/medium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dfs</title>
+      <link>http://alfmunny.com/tags/dfs/</link>
+      <pubDate>Sat, 07 Mar 2020 23:59:00 +0100</pubDate>
+      
+      <guid>http://alfmunny.com/tags/dfs/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

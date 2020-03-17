@@ -1,0 +1,32 @@
+baseURL = "http://alfmunny.com"
+title = "Algo In The Shell"
+languageCode = "en-us"
+googleAnalytics = ""
+disqusShortname = ""
+theme="hugo-xmin"
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+post = "/post/:year/:month/:day/:slug/"
+note = "/note/:year/:month/:day/:slug/"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 2
+[[menu.main]]
+name = "Categories"
+url = "/categories/"
+weight = 3
+[[menu.main]]
+name = "Tags"
+url = "/tags/"
+weight = 4
+
+[params]
+    description = "A website built through Hugo and blogdown."
+    footer = "&copy; [Alfmunny](http://alfmunny.com) 2017 -- 2019 | [Github](https://github.com/alfmunny) | [Twitter](https://twitter.com/alfmunny)"
