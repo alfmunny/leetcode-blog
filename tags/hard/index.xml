@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hard on Algo In The Shell</title>
-    <link>http://alfmunny.com/tags/hard/</link>
+    <link>http://alfmunny.com/leetcode-blog/tags/hard/</link>
     <description>Recent content in hard on Algo In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 14 Mar 2020 10:18:55 +0100</lastBuildDate>
     
-	<atom:link href="http://alfmunny.com/tags/hard/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://alfmunny.com/leetcode-blog/tags/hard/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>41 - First Missing Positive</title>
-      <link>http://alfmunny.com/posts/41-first-missing-positive/</link>
+      <link>http://alfmunny.com/leetcode-blog/posts/41-first-missing-positive/</link>
       <pubDate>Sat, 14 Mar 2020 10:18:55 +0100</pubDate>
       
-      <guid>http://alfmunny.com/posts/41-first-missing-positive/</guid>
+      <guid>http://alfmunny.com/leetcode-blog/posts/41-first-missing-positive/</guid>
       <description>Problem Given an unsorted integer array, find the smallest missing positive integer. Example 1: Input: [1,2,0] Output: 3 Example 2: Input: [3,4,-1,1] Output: 2 Example 3: Input: [7,8,9,11,12] Output: 1 Note: Your algorithm should run in O(n) time and uses constant extra space. Notes Run in O(n) time and uses constant extra space
   Say the length of the array is l, the number must be in 1&amp;hellip;l+1 (also l possible numbers)</description>
     </item>

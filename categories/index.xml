@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Algo In The Shell</title>
-    <link>http://alfmunny.com/categories/</link>
+    <link>http://alfmunny.com/leetcode-blog/categories/</link>
     <description>Recent content in Categories on Algo In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 16 Mar 2020 01:14:52 +0100</lastBuildDate>
     
-	<atom:link href="http://alfmunny.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://alfmunny.com/leetcode-blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>leetcode</title>
-      <link>http://alfmunny.com/categories/leetcode/</link>
+      <link>http://alfmunny.com/leetcode-blog/categories/leetcode/</link>
       <pubDate>Mon, 16 Mar 2020 01:14:52 +0100</pubDate>
       
-      <guid>http://alfmunny.com/categories/leetcode/</guid>
+      <guid>http://alfmunny.com/leetcode-blog/categories/leetcode/</guid>
       <description></description>
     </item>
     
