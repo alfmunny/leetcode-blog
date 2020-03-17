@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>constant-memory on Algo In The Shell</title>
-    <link>http://alfmunny.com/leetcode-blog/tags/constant-memory/</link>
-    <description>Recent content in constant-memory on Algo In The Shell</description>
+    <title>constant-memory on LeetCode In The Shell</title>
+    <link>/tags/constant-memory/</link>
+    <description>Recent content in constant-memory on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 14 Mar 2020 10:18:55 +0100</lastBuildDate>
     
-	<atom:link href="http://alfmunny.com/leetcode-blog/tags/constant-memory/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/constant-memory/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>41 - First Missing Positive</title>
-      <link>http://alfmunny.com/leetcode-blog/posts/41-first-missing-positive/</link>
+      <link>/posts/41-first-missing-positive/</link>
       <pubDate>Sat, 14 Mar 2020 10:18:55 +0100</pubDate>
       
-      <guid>http://alfmunny.com/leetcode-blog/posts/41-first-missing-positive/</guid>
+      <guid>/posts/41-first-missing-positive/</guid>
       <description>Problem Given an unsorted integer array, find the smallest missing positive integer. Example 1: Input: [1,2,0] Output: 3 Example 2: Input: [3,4,-1,1] Output: 2 Example 3: Input: [7,8,9,11,12] Output: 1 Note: Your algorithm should run in O(n) time and uses constant extra space. Notes Run in O(n) time and uses constant extra space
   Say the length of the array is l, the number must be in 1&amp;hellip;l+1 (also l possible numbers)</description>
     </item>

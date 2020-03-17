@@ -3,82 +3,82 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/</loc>
+    <loc>/categories/</loc>
     <lastmod>2020-03-16T01:14:52+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/categories/</loc>
+    <loc>/posts/leetcode/</loc>
     <lastmod>2020-03-16T01:14:52+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/posts/leetcode/</loc>
+    <loc>/categories/leetcode/</loc>
     <lastmod>2020-03-16T01:14:52+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/categories/leetcode/</loc>
+    <loc>/</loc>
     <lastmod>2020-03-16T01:14:52+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2020-03-16T01:14:52+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/posts/41-first-missing-positive/</loc>
+    <loc>/posts/41-first-missing-positive/</loc>
     <lastmod>2020-03-14T10:18:55+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/tags/array/</loc>
+    <loc>/tags/array/</loc>
     <lastmod>2020-03-14T10:18:55+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/tags/constant-memory/</loc>
+    <loc>/tags/constant-memory/</loc>
     <lastmod>2020-03-14T10:18:55+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/tags/hard/</loc>
+    <loc>/tags/hard/</loc>
     <lastmod>2020-03-14T10:18:55+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2020-03-14T10:18:55+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/posts/79-word-search/</loc>
+    <loc>/posts/79-word-search/</loc>
     <lastmod>2020-03-14T10:17:59+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/tags/backtrack/</loc>
+    <loc>/tags/backtrack/</loc>
     <lastmod>2020-03-14T10:17:59+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/tags/medium/</loc>
+    <loc>/tags/medium/</loc>
     <lastmod>2020-03-14T10:17:59+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/posts/78-subsets/</loc>
+    <loc>/posts/78-subsets/</loc>
     <lastmod>2020-03-14T10:16:43+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/tags/dfs/</loc>
+    <loc>/tags/dfs/</loc>
     <lastmod>2020-03-14T10:16:43+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alfmunny.com/leetcode-blog/about/</loc>
+    <loc>/about/</loc>
     <priority>0</priority>
   </url>
   
