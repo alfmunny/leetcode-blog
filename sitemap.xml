@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://alfmunny.com/</loc>
+    <lastmod>2020-03-16T01:14:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/categories/</loc>
+    <lastmod>2020-03-16T01:14:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/posts/leetcode/</loc>
+    <lastmod>2020-03-16T01:14:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/categories/leetcode/</loc>
+    <lastmod>2020-03-16T01:14:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/posts/</loc>
+    <lastmod>2020-03-16T01:14:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/posts/41-first-missing-positive/</loc>
+    <lastmod>2020-03-14T10:18:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/tags/array/</loc>
+    <lastmod>2020-03-14T10:18:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/tags/constant-memory/</loc>
+    <lastmod>2020-03-14T10:18:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/tags/hard/</loc>
+    <lastmod>2020-03-14T10:18:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/tags/</loc>
+    <lastmod>2020-03-14T10:18:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/posts/79-word-search/</loc>
+    <lastmod>2020-03-14T10:17:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/tags/backtrack/</loc>
+    <lastmod>2020-03-14T10:17:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/tags/medium/</loc>
+    <lastmod>2020-03-14T10:17:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/posts/78-subsets/</loc>
+    <lastmod>2020-03-14T10:16:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/tags/dfs/</loc>
+    <lastmod>2020-03-14T10:16:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alfmunny.com/about/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
