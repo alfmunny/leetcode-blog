@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on LeetCode In The Shell</title>
-    <link>/tags/</link>
+    <link>/leetcode-blog/tags/</link>
     <description>Recent content in Tags on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 14 Mar 2020 10:18:55 +0100</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/leetcode-blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>array</title>
-      <link>/tags/array/</link>
+      <link>/leetcode-blog/tags/array/</link>
       <pubDate>Sat, 14 Mar 2020 10:18:55 +0100</pubDate>
       
-      <guid>/tags/array/</guid>
+      <guid>/leetcode-blog/tags/array/</guid>
       <description></description>
     </item>
     
     <item>
       <title>constant-memory</title>
-      <link>/tags/constant-memory/</link>
+      <link>/leetcode-blog/tags/constant-memory/</link>
       <pubDate>Sat, 14 Mar 2020 10:18:55 +0100</pubDate>
       
-      <guid>/tags/constant-memory/</guid>
+      <guid>/leetcode-blog/tags/constant-memory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hard</title>
-      <link>/tags/hard/</link>
+      <link>/leetcode-blog/tags/hard/</link>
       <pubDate>Sat, 14 Mar 2020 10:18:55 +0100</pubDate>
       
-      <guid>/tags/hard/</guid>
+      <guid>/leetcode-blog/tags/hard/</guid>
       <description></description>
     </item>
     
     <item>
       <title>backtrack</title>
-      <link>/tags/backtrack/</link>
+      <link>/leetcode-blog/tags/backtrack/</link>
       <pubDate>Sat, 14 Mar 2020 03:00:00 +0100</pubDate>
       
-      <guid>/tags/backtrack/</guid>
+      <guid>/leetcode-blog/tags/backtrack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>medium</title>
-      <link>/tags/medium/</link>
+      <link>/leetcode-blog/tags/medium/</link>
       <pubDate>Sat, 14 Mar 2020 03:00:00 +0100</pubDate>
       
-      <guid>/tags/medium/</guid>
+      <guid>/leetcode-blog/tags/medium/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dfs</title>
-      <link>/tags/dfs/</link>
+      <link>/leetcode-blog/tags/dfs/</link>
       <pubDate>Sat, 07 Mar 2020 23:59:00 +0100</pubDate>
       
-      <guid>/tags/dfs/</guid>
+      <guid>/leetcode-blog/tags/dfs/</guid>
       <description></description>
     </item>
     

@@ -3,82 +3,82 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/leetcode-blog/categories/</loc>
     <lastmod>2020-03-16T01:14:52+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/leetcode/</loc>
+    <loc>/leetcode-blog/posts/leetcode/</loc>
     <lastmod>2020-03-16T01:14:52+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/leetcode/</loc>
+    <loc>/leetcode-blog/categories/leetcode/</loc>
     <lastmod>2020-03-16T01:14:52+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/leetcode-blog/</loc>
     <lastmod>2020-03-16T01:14:52+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/</loc>
+    <loc>/leetcode-blog/posts/</loc>
     <lastmod>2020-03-16T01:14:52+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/41-first-missing-positive/</loc>
+    <loc>/leetcode-blog/posts/41-first-missing-positive/</loc>
     <lastmod>2020-03-14T10:18:55+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/array/</loc>
+    <loc>/leetcode-blog/tags/array/</loc>
     <lastmod>2020-03-14T10:18:55+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/constant-memory/</loc>
+    <loc>/leetcode-blog/tags/constant-memory/</loc>
     <lastmod>2020-03-14T10:18:55+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/hard/</loc>
+    <loc>/leetcode-blog/tags/hard/</loc>
     <lastmod>2020-03-14T10:18:55+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/leetcode-blog/tags/</loc>
     <lastmod>2020-03-14T10:18:55+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/79-word-search/</loc>
+    <loc>/leetcode-blog/posts/79-word-search/</loc>
     <lastmod>2020-03-14T10:17:59+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/backtrack/</loc>
+    <loc>/leetcode-blog/tags/backtrack/</loc>
     <lastmod>2020-03-14T10:17:59+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/medium/</loc>
+    <loc>/leetcode-blog/tags/medium/</loc>
     <lastmod>2020-03-14T10:17:59+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/78-subsets/</loc>
+    <loc>/leetcode-blog/posts/78-subsets/</loc>
     <lastmod>2020-03-14T10:16:43+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/dfs/</loc>
+    <loc>/leetcode-blog/tags/dfs/</loc>
     <lastmod>2020-03-14T10:16:43+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>/leetcode-blog/about/</loc>
     <priority>0</priority>
   </url>
   
