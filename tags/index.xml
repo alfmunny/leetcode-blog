@@ -6,7 +6,7 @@
     <description>Recent content in Tags on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Mar 2020 22:34:22 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 00:55:00 +0100</lastBuildDate>
     
 	<atom:link href="/leetcode-blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,36 @@
     <item>
       <title>array</title>
       <link>/leetcode-blog/tags/array/</link>
-      <pubDate>Sat, 21 Mar 2020 22:34:22 +0100</pubDate>
+      <pubDate>Sun, 22 Mar 2020 00:55:00 +0100</pubDate>
       
       <guid>/leetcode-blog/tags/array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bfs</title>
+      <link>/leetcode-blog/tags/bfs/</link>
+      <pubDate>Sun, 22 Mar 2020 00:55:00 +0100</pubDate>
+      
+      <guid>/leetcode-blog/tags/bfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>easy</title>
+      <link>/leetcode-blog/tags/easy/</link>
+      <pubDate>Sun, 22 Mar 2020 00:55:00 +0100</pubDate>
+      
+      <guid>/leetcode-blog/tags/easy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>greedy</title>
+      <link>/leetcode-blog/tags/greedy/</link>
+      <pubDate>Sun, 22 Mar 2020 00:55:00 +0100</pubDate>
+      
+      <guid>/leetcode-blog/tags/greedy/</guid>
       <description></description>
     </item>
     
@@ -35,24 +62,6 @@
       <pubDate>Sat, 21 Mar 2020 22:34:22 +0100</pubDate>
       
       <guid>/leetcode-blog/tags/medium/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>easy</title>
-      <link>/leetcode-blog/tags/easy/</link>
-      <pubDate>Sat, 21 Mar 2020 22:31:20 +0100</pubDate>
-      
-      <guid>/leetcode-blog/tags/easy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>greedy</title>
-      <link>/leetcode-blog/tags/greedy/</link>
-      <pubDate>Sat, 21 Mar 2020 22:19:29 +0100</pubDate>
-      
-      <guid>/leetcode-blog/tags/greedy/</guid>
       <description></description>
     </item>
     

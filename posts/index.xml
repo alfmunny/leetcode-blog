@@ -6,10 +6,20 @@
     <description>Recent content in Posts on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Mar 2020 22:34:22 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 00:55:00 +0100</lastBuildDate>
     
 	<atom:link href="/leetcode-blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>45 - Jump Game II</title>
+      <link>/leetcode-blog/posts/45-jump-game-ii/</link>
+      <pubDate>Sun, 22 Mar 2020 00:55:00 +0100</pubDate>
+      
+      <guid>/leetcode-blog/posts/45-jump-game-ii/</guid>
+      <description>leetcode
+Problem Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Your goal is to reach the last index in the minimum number of jumps. Example: Input: [2,3,1,1,4] Output: 2 Explanation: The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.</description>
+    </item>
     
     <item>
       <title>62 - Unique Paths</title>
