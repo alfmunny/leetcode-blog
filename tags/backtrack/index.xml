@@ -17,8 +17,8 @@
       <pubDate>Sat, 14 Mar 2020 03:00:00 +0100</pubDate>
       
       <guid>/leetcode-blog/posts/79-word-search/</guid>
-      <description>Problem leetcode
-Given a 2D board and a word, find if the word exists in the grid. The word can be constructed from letters of sequentially adjacent cell, where &amp;#34;adjacent&amp;#34; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once. Example: board = [ [&amp;#39;A&amp;#39;,&amp;#39;B&amp;#39;,&amp;#39;C&amp;#39;,&amp;#39;E&amp;#39;], [&amp;#39;S&amp;#39;,&amp;#39;F&amp;#39;,&amp;#39;C&amp;#39;,&amp;#39;S&amp;#39;], [&amp;#39;A&amp;#39;,&amp;#39;D&amp;#39;,&amp;#39;E&amp;#39;,&amp;#39;E&amp;#39;] ] Given word = &amp;#34;ABCCED&amp;#34;, return true. Given word = &amp;#34;SEE&amp;#34;, return true. Given word = &amp;#34;ABCB&amp;#34;, return false.</description>
+      <description>leetcode
+Problem Given a 2D board and a word, find if the word exists in the grid. The word can be constructed from letters of sequentially adjacent cell, where &amp;#34;adjacent&amp;#34; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once. Example: board = [ [&amp;#39;A&amp;#39;,&amp;#39;B&amp;#39;,&amp;#39;C&amp;#39;,&amp;#39;E&amp;#39;], [&amp;#39;S&amp;#39;,&amp;#39;F&amp;#39;,&amp;#39;C&amp;#39;,&amp;#39;S&amp;#39;], [&amp;#39;A&amp;#39;,&amp;#39;D&amp;#39;,&amp;#39;E&amp;#39;,&amp;#39;E&amp;#39;] ] Given word = &amp;#34;ABCCED&amp;#34;, return true. Given word = &amp;#34;SEE&amp;#34;, return true. Given word = &amp;#34;ABCB&amp;#34;, return false.</description>
     </item>
     
     <item>
