@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sort on LeetCode In The Shell</title>
-    <link>/tags/sort/</link>
+    <link>/leetcode-blog/tags/sort/</link>
     <description>Recent content in sort on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 06 Mar 2020 17:26:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/sort/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/leetcode-blog/tags/sort/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>75 - Sort Colors</title>
-      <link>/posts/75-sort-colors/</link>
+      <link>/leetcode-blog/posts/75-sort-colors/</link>
       <pubDate>Fri, 06 Mar 2020 17:26:00 +0100</pubDate>
       
-      <guid>/posts/75-sort-colors/</guid>
+      <guid>/leetcode-blog/posts/75-sort-colors/</guid>
       <description>leetcode
 Problem Given an array with n objects colored red, white or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white and blue. Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively. Note: You are not suppose to use the library&amp;#39;s sort function for this problem. Example: Input: [2,0,2,1,1,0] Output: [0,0,1,1,2,2] Follow up: A rather straight forward solution is a two-pass algorithm using counting sort.</description>
     </item>
