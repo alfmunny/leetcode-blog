@@ -6,20 +6,10 @@
     <description>Recent content in bfs on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Mar 2020 20:42:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 00:55:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/bfs/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>1306 - Jump Game III</title>
-      <link>//alfmunny.com/leetcode-blog/posts/1306-jump-game-iii/</link>
-      <pubDate>Sun, 22 Mar 2020 20:42:00 +0100</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/posts/1306-jump-game-iii/</guid>
-      <description>leetcode
-Problem Given an array of non-negative integers arr, you are initially positioned at start index of the array. When you are at index i, you can jump to i + arr[i] or i - arr[i], check if you can reach to any index with value 0. Notice that you can not jump outside of the array at any time. Example 1: Input: arr = [4,2,3,0,3,1,2], start = 5 Output: true Explanation: All possible ways to reach at index 3 with value 0 are: index 5 -&amp;gt; index 4 -&amp;gt; index 1 -&amp;gt; index 3 index 5 -&amp;gt; index 6 -&amp;gt; index 4 -&amp;gt; index 1 -&amp;gt; index 3 Example 2: Input: arr = [4,2,3,0,3,1,2], start = 0 Output: true Explanation: One possible way to reach at index 3 with value 0 is: index 0 -&amp;gt; index 4 -&amp;gt; index 1 -&amp;gt; index 3 Example 3: Input: arr = [3,0,2,1,2], start = 2 Output: false Explanation: There is no way to reach at index 1 with value 0.</description>
-    </item>
     
     <item>
       <title>45 - Jump Game II</title>
