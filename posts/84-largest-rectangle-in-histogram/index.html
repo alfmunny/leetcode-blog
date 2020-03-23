@@ -36,19 +36,15 @@
 <h2 id="problem">Problem</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given n non-negative integers representing the histogram&#39;s bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.
 
-#+DOWNLOADED: https://assets.leetcode.com/uploads/2018/10/12/histogram.png @ 2020-03-23 00:34:37
-[[file:Algorithms/2020-03-23_00-34-37_histogram.png]]
-Above is a histogram where width of each bar is 1, given height = [2,1,5,6,2,3].
-
-#+DOWNLOADED: https://assets.leetcode.com/uploads/2018/10/12/histogram_area.png @ 2020-03-23 00:35:27
-[[file:Algorithms/2020-03-23_00-35-27_histogram_area.png]]
-The largest rectangle is shown in the shaded area, which has area = 10 unit.
-
 Example:
 
 Input: [2,1,5,6,2,3]
 Output: 10
-</code></pre></div><h2 id="notes">Notes</h2>
+</code></pre></div><p><img src="../../ox-hugo/2020-03-23_00-34-37_histogram.png" alt="">
+Above is a histogram where width of each bar is 1, given height = [2,1,5,6,2,3].</p>
+<p><img src="../../ox-hugo/2020-03-23_00-35-27_histogram_area.png" alt="">
+The largest rectangle is shown in the shaded area, which has area = 10 unit.</p>
+<h2 id="notes">Notes</h2>
 <p>Main idea is to caculate both left edge and right edge for every entry in the array</p>
 <p>Two ways of solution.</p>
 <h3 id="iterative">Iterative</h3>
