@@ -47,12 +47,21 @@ The largest rectangle is shown in the shaded area, which has area = 10 unit.</p>
 <h2 id="notes">Notes</h2>
 <p>Main idea is to caculate both left edge and right edge for every entry in the array</p>
 <p>Two ways of solution.</p>
-<h3 id="iterative">Iterative</h3>
+<h3 id="brute-force">Brute Force</h3>
 <p>Generate two arrays left[] and right[] to keep the two edges of every entry.</p>
 <ol>
 <li>one loop to caculate left[].</li>
 <li>one loop to caculate right[].</li>
 <li>one loop to go through all the edges to caculate the square.</li>
+</ol>
+<h3 id="improvement-of-the-brute-force">Improvement of the brute force</h3>
+<p>We can:</p>
+<p>store the number of the left bars, which are &gt;= current bar, in left[]</p>
+<p>store the number of the right bars, which are &gt;= current bar, in right[]</p>
+<p>How to avoid duplicating searching.</p>
+<ol>
+<li>left[current] = left[current - 1]</li>
+<li>jump left[current - 1] steps to check the next interval of the array</li>
 </ol>
 <h3 id="stack">Stack</h3>
 <p>Create a stack to store the index of the entry.</p>
@@ -62,7 +71,7 @@ The largest rectangle is shown in the shaded area, which has area = 10 unit.</p>
 <li>go through the left entries in the stack. The lefts ones are all have the longest bar at the top.</li>
 </ol>
 <h2 id="solution">Solution</h2>
-<h3 id="solution-1-iterative">Solution 1: iterative</h3>
+<h3 id="solution-1-brute-force">Solution 1: brute-force</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">largestRectangleArea</span>(self, heights):
 
@@ -99,7 +108,51 @@ The largest rectangle is shown in the shaded area, which has area = 10 unit.</p>
         <span style="color:#66d9ef">return</span> res
 
 <span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>largestRectangleArea([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]))
-</code></pre></div><h3 id="solution-2-stack">Solution 2: stack</h3>
+</code></pre></div><p>O(n^2)</p>
+<p>It will execeed time limit on leetcode.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">10
+</code></pre></div><h3 id="solution-2-improved-version">Solution 2: improved version</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">largestRectangleArea</span>(self, heights):
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> heights:
+            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+
+        res <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        n <span style="color:#f92672">=</span> len(heights)
+        left <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>] <span style="color:#f92672">*</span> n
+        right <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>] <span style="color:#f92672">*</span> n
+
+        <span style="color:#75715e"># caculate left[]</span>
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n):
+            p <span style="color:#f92672">=</span> i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+            <span style="color:#66d9ef">while</span> p <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>:
+                <span style="color:#66d9ef">if</span> heights[p] <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> heights[i]:
+                    left[i] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> left[p]
+                    <span style="color:#75715e"># jump backward</span>
+                    p <span style="color:#f92672">-</span><span style="color:#f92672">=</span> left[p]
+                <span style="color:#66d9ef">else</span>:
+                    <span style="color:#66d9ef">break</span>
+
+        <span style="color:#75715e"># caculate right[]</span>
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+            p <span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+            <span style="color:#66d9ef">while</span> p <span style="color:#f92672">&lt;</span> n:
+                <span style="color:#66d9ef">if</span> heights[p] <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> heights[i]:
+                    right[i] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> right[p]
+                    <span style="color:#75715e"># jump forward</span>
+                    p <span style="color:#f92672">+</span><span style="color:#f92672">=</span> right[p]
+                <span style="color:#66d9ef">else</span>:
+                    <span style="color:#66d9ef">break</span>
+
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n):
+            res <span style="color:#f92672">=</span> max(res, heights[i] <span style="color:#f92672">*</span> (left[i] <span style="color:#f92672">+</span> right[i] <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>))
+
+        <span style="color:#66d9ef">return</span> res
+
+<span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>largestRectangleArea([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]))
+</code></pre></div><p>Generale Case: O(n), because it uses the jump
+Worst Case: O(n^2)</p>
+<h3 id="solution-3-stack">Solution 3: stack</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">largestRectangleArea</span>(self, heights):
 
@@ -113,7 +166,6 @@ The largest rectangle is shown in the shaded area, which has area = 10 unit.</p>
             <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> stack <span style="color:#f92672">or</span> heights[stack[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]] <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> heights[index]:
                 stack<span style="color:#f92672">.</span>append(index)
                 index <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-
             <span style="color:#66d9ef">else</span>:
                 top <span style="color:#f92672">=</span> stack<span style="color:#f92672">.</span>pop()
                 area <span style="color:#f92672">=</span> (heights[top] <span style="color:#f92672">*</span>
