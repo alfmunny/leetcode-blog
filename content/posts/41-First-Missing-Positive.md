@@ -1,7 +1,7 @@
 +++
 title = "41 - First Missing Positive"
 author = ["alfmunny"]
-lastmod = 2020-03-14T10:18:55+01:00
+lastmod = 2020-03-21T16:29:53+01:00
 tags = ["hard", "array", "constant-memory"]
 categories = ["leetcode"]
 draft = false
@@ -89,6 +89,4 @@ class Solution(object):
                 return i + 1
 
         return l + 1
-
-print(Solution().firstMissingPositive([1, -1, 3, 4]))
 ```

@@ -1,10 +1,12 @@
-baseURL = "http://alfmunny.com"
-title = "Algo In The Shell"
+baseURL = "//alfmunny.com/leetcode-blog/"
+title = "LeetCode In The Shell"
 languageCode = "en-us"
 googleAnalytics = ""
 disqusShortname = ""
 theme="hugo-xmin"
 footnotereturnlinkcontents = "↩"
+RelativeURLs = true
+CanonifyURLs=true
 
 [permalinks]
 post = "/post/:year/:month/:day/:slug/"

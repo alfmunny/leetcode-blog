@@ -2,15 +2,16 @@
 title = "79 - Word Search"
 author = ["alfmunny"]
 date = 2020-03-14T03:00:00+01:00
-lastmod = 2020-03-14T10:17:59+01:00
-tags = ["medium", "array", "backtrack"]
+lastmod = 2020-03-21T23:09:08+01:00
+tags = ["medium", "array", "backtrack", "dfs"]
 categories = ["leetcode"]
 draft = false
 +++
 
-## Problem {#problem}
-
 [leetcode](https://leetcode.com/problems/word-search/)
+
+
+## Problem {#problem}
 
 ```text
 Given a 2D board and a word, find if the word exists in the grid.
@@ -34,11 +35,17 @@ Given word = "ABCB", return false.
 
 ## Notes {#notes}
 
+Backtrack problem.
+
+1.  when found, mark the point to one.
+2.  Use dfs to go down from this point.
+3.  Can't go down anymore, mark the point back to zero (backtrack step).
+
 
 ## Solution {#solution}
 
 
-### Solution 1: Backtrack {#solution-1-backtrack}
+### Solution 1: Backtrack, dfs {#solution-1-backtrack-dfs}
 
 ```python
 class Solution:
