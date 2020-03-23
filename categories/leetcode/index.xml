@@ -6,10 +6,20 @@
     <description>Recent content in leetcode on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Mar 2020 20:42:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2020 00:36:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>84 - Largest Rectangle in Histogram</title>
+      <link>//alfmunny.com/leetcode-blog/posts/84-largest-rectangle-in-histogram/</link>
+      <pubDate>Mon, 23 Mar 2020 00:36:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/84-largest-rectangle-in-histogram/</guid>
+      <description>leetcode
+Problem Given n non-negative integers representing the histogram&amp;#39;s bar height where the width of each bar is 1, find the area of largest rectangle in the histogram. #+DOWNLOADED: https://assets.leetcode.com/uploads/2018/10/12/histogram.png @ 2020-03-23 00:34:37 [[file:Algorithms/2020-03-23_00-34-37_histogram.png]] Above is a histogram where width of each bar is 1, given height = [2,1,5,6,2,3]. #+DOWNLOADED: https://assets.leetcode.com/uploads/2018/10/12/histogram_area.png @ 2020-03-23 00:35:27 [[file:Algorithms/2020-03-23_00-35-27_histogram_area.png]] The largest rectangle is shown in the shaded area, which has area = 10 unit. Example: Input: [2,1,5,6,2,3] Output: 10 Notes Main idea is to caculate both left edge and right edge for every entry in the array</description>
+    </item>
     
     <item>
       <title>1306 - Jump Game III</title>
