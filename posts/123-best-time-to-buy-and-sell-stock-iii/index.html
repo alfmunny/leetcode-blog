@@ -80,10 +80,21 @@ And we try to use the sub-states to apply the state transitions to simplify the 
 <ol>
 <li>state[n][k][0] = max(state[n-1][k][0], state[n-1][k][1] + prices)</li>
 </ol>
-<!-- raw HTML omitted -->
+<blockquote>
+<p>state: I have no stock in hand</p>
+<p>It can transits from two states:</p>
+<p>a. I do not have stock yesterday               =&gt; state[n-1][k][0]
+b. I do have stock yesterday, and I sell it    =&gt; state[n-1][k][1] + prices</p>
+</blockquote>
 <ol>
 <li>state[n][k][1] = max(state[n-1][k][1], state[n-1][k-1][0] - prices)</li>
 </ol>
+<blockquote>
+<p>state: I have stock in hand</p>
+<p>It can transits from two states:</p>
+<p>a. I do have stock yesterday                   =&gt; state[n-1][k][1]
+b. I don&rsquo;t have stock yesterday, and I buy it  =&gt; state[n-1][k-1][1] - prices</p>
+</blockquote>
 <h2 id="solution">Solution</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">maxProfit</span>(self, prices):
