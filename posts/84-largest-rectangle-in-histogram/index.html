@@ -177,7 +177,7 @@ Worst Case: O(n^2)</p>
             h <span style="color:#f92672">=</span> stack<span style="color:#f92672">.</span>pop()
             res <span style="color:#f92672">=</span> max(
                 res,
-                heights[h] <span style="color:#f92672">*</span> ((index <span style="color:#f92672">-</span> stack[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">if</span> stack <span style="color:#66d9ef">else</span> index))
+                heights[h] <span style="color:#f92672">*</span> ((n <span style="color:#f92672">-</span> stack[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">if</span> stack <span style="color:#66d9ef">else</span> n))
 
         <span style="color:#66d9ef">return</span> res
 
