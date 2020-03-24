@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>188 - Best Time to Buy and Sell Stock IV | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">188 - Best Time to Buy and Sell Stock IV</span></h1>
+<h2 class="author">[alfmunny]</h2>
+<h2 class="date">2020/03/24</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Say you have an array for which the i-th element is the price of a given stock on day i.
+
+Design an algorithm to find the maximum profit. You may complete at most k transactions.
+
+Note:
+You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
+
+Example 1:
+
+Input: [2,4,1], k = 2
+Output: 2
+Explanation: Buy on day 1 (price = 2) and sell on day 2 (price = 4), profit = 4-2 = 2.
+
+Example 2:
+
+Input: [3,2,6,5,0,3], k = 2
+Output: 7
+Explanation: Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-2 = 4.
+             Then buy on day 5 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
+</code></pre></div><h2 id="notes">Notes</h2>
+<p>See problem 121, 122 and 123.</p>
+<p>Note the k.
+If it is too large(&gt;= n/2), treat it as if with infinitive transactions. We don&rsquo;t want to loop through a too large k.</p>
+<h2 id="solution">Solution</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">maxProfit</span>(self, k, prices):
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> prices:
+            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+
+        n <span style="color:#f92672">=</span> len(prices)
+        <span style="color:#66d9ef">if</span> k <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> n<span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>: <span style="color:#75715e"># treat it as infinitive transactions</span>
+            res <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+            <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n):
+                <span style="color:#66d9ef">if</span> prices[i] <span style="color:#f92672">&gt;</span> prices[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
+                    res <span style="color:#f92672">+</span><span style="color:#f92672">=</span> prices[i] <span style="color:#f92672">-</span> prices[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+            <span style="color:#66d9ef">return</span> res
+
+        buy <span style="color:#f92672">=</span> [<span style="color:#f92672">-</span>sys<span style="color:#f92672">.</span>maxsize] <span style="color:#f92672">*</span> (k<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)
+        sell <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> (k<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)
+
+        <span style="color:#66d9ef">for</span> price <span style="color:#f92672">in</span> prices:
+            <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, k<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
+                buy[i] <span style="color:#f92672">=</span> max(buy[i], sell[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">-</span>price)
+                sell[i] <span style="color:#f92672">=</span> max(sell[i], buy[i]<span style="color:#f92672">+</span>price)
+
+
+        <span style="color:#66d9ef">return</span> sell[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</code></pre></div>
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alfmunnystechblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+
