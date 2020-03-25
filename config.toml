@@ -2,7 +2,7 @@ baseURL = "//alfmunny.com/leetcode-blog/"
 title = "LeetCode In The Shell"
 languageCode = "en-us"
 googleAnalytics = ""
-disqusShortname = ""
+disqusShortname = "alfmunnystechblog"
 theme="hugo-xmin"
 footnotereturnlinkcontents = "↩"
 RelativeURLs = true
@@ -30,5 +30,5 @@ url = "/tags/"
 weight = 4
 
 [params]
-    description = "A website built through Hugo and blogdown."
-    footer = "&copy; [Alfmunny](http://alfmunny.com) 2017 -- 2019 | [Github](https://github.com/alfmunny) | [Twitter](https://twitter.com/alfmunny)"
+    description = "A website built through Hugo."
+    footer = "&copy; [Alfmunny](http://alfmunny.com) 2019 -- 2020| [Github](https://github.com/alfmunny) | [Twitter](https://twitter.com/alfmunny)"

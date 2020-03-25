@@ -2,8 +2,8 @@
 title = "84 - Largest Rectangle in Histogram"
 author = ["alfmunny"]
 date = 2020-03-23T00:36:00+01:00
-lastmod = 2020-03-23T01:35:06+01:00
-tags = ["hard", "array", "stack"]
+lastmod = 2020-03-24T01:03:44+01:00
+tags = ["hard", "array", "stack", "1-fail"]
 categories = ["leetcode"]
 draft = false
 +++
@@ -36,13 +36,27 @@ Main idea is to caculate both left edge and right edge for every entry in the ar
 Two ways of solution.
 
 
-### Iterative {#iterative}
+### Brute Force {#brute-force}
 
 Generate two arrays left[] and right[] to keep the two edges of every entry.
 
 1.  one loop to caculate left[].
 2.  one loop to caculate right[].
 3.  one loop to go through all the edges to caculate the square.
+
+
+### Improvement of the brute force {#improvement-of-the-brute-force}
+
+We can:
+
+store the number of the left bars, which are >= current bar, in left[]
+
+store the number of the right bars, which are >= current bar, in right[]
+
+How to avoid duplicating searching.
+
+1.  left[current] = left[current - 1]
+2.  jump left[current - 1] steps to check the next interval of the array
 
 
 ### Stack {#stack}
@@ -57,7 +71,7 @@ Create a stack to store the index of the entry.
 ## Solution {#solution}
 
 
-### Solution 1: iterative {#solution-1-iterative}
+### Solution 1: brute-force {#solution-1-brute-force}
 
 ```python
 class Solution:
@@ -98,8 +112,63 @@ class Solution:
 print(Solution().largestRectangleArea([2, 1, 5, 6, 2, 3]))
 ```
 
+O(n^2)
 
-### Solution 2: stack {#solution-2-stack}
+It will execeed time limit on leetcode.
+
+```text
+10
+```
+
+
+### Solution 2: improved version {#solution-2-improved-version}
+
+```python
+class Solution:
+    def largestRectangleArea(self, heights):
+        if not heights:
+            return 0
+
+        res = 0
+        n = len(heights)
+        left = [1] * n
+        right = [1] * n
+
+        # caculate left[]
+        for i in range(n):
+            p = i - 1
+            while p >= 0:
+                if heights[p] >= heights[i]:
+                    left[i] += left[p]
+                    # jump backward
+                    p -= left[p]
+                else:
+                    break
+
+        # caculate right[]
+        for i in range(n - 1, -1, -1):
+            p = i + 1
+            while p < n:
+                if heights[p] >= heights[i]:
+                    right[i] += right[p]
+                    # jump forward
+                    p += right[p]
+                else:
+                    break
+
+        for i in range(n):
+            res = max(res, heights[i] * (left[i] + right[i] - 1))
+
+        return res
+
+print(Solution().largestRectangleArea([2, 1, 5, 6, 2, 3]))
+```
+
+Generale Case: O(n), because it uses the jump
+Worst Case: O(n^2)
+
+
+### Solution 3: stack {#solution-3-stack}
 
 ```python
 class Solution:
@@ -115,7 +184,6 @@ class Solution:
             if not stack or heights[stack[-1]] <= heights[index]:
                 stack.append(index)
                 index += 1
-
             else:
                 top = stack.pop()
                 area = (heights[top] *
@@ -127,7 +195,7 @@ class Solution:
             h = stack.pop()
             res = max(
                 res,
-                heights[h] * ((index - stack[-1] - 1) if stack else index))
+                heights[h] * ((n - stack[-1] - 1) if stack else n))
 
         return res
 

@@ -6,10 +6,114 @@
     <description>Recent content in leetcode on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2020 00:36:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2020 23:44:20 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>91 - Decode Ways</title>
+      <link>//alfmunny.com/leetcode-blog/posts/91-decode-ways/</link>
+      <pubDate>Wed, 25 Mar 2020 23:44:20 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/91-decode-ways/</guid>
+      <description>leetcode
+Problem A message containing letters from A-Z is being encoded to numbers using the following mapping: &amp;#39;A&amp;#39; -&amp;gt; 1 &amp;#39;B&amp;#39; -&amp;gt; 2 ... &amp;#39;Z&amp;#39; -&amp;gt; 26 Given a non-empty string containing only digits, determine the total number of ways to decode it. Example 1: Input: &amp;#34;12&amp;#34; Output: 2 Explanation: It could be decoded as &amp;#34;AB&amp;#34; (1 2) or &amp;#34;L&amp;#34; (12). Example 2: Input: &amp;#34;226&amp;#34; Output: 3 Explanation: It could be decoded as &amp;#34;BZ&amp;#34; (2 26), &amp;#34;VF&amp;#34; (22 6), or &amp;#34;BBF&amp;#34; (2 2 6).</description>
+    </item>
+    
+    <item>
+      <title>101 - Symmetric Tree</title>
+      <link>//alfmunny.com/leetcode-blog/posts/101-symmetric-tree/</link>
+      <pubDate>Wed, 25 Mar 2020 21:02:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/101-symmetric-tree/</guid>
+      <description>leetcode
+Problem Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center). For example, this binary tree [1,2,2,3,4,4,3] is symmetric: 1 / \ 2 2 / \ / \ 3 4 4 3 But the following [1,2,2,null,3,null,3] is not: 1 / \ 2 2 \ \ 3 3 Notes Recursion !
+Solution Solution 1: recursive class Solution: def isSymmetric(self, root): if not root: return True return self.</description>
+    </item>
+    
+    <item>
+      <title>21 - Merge Two Sorted Lists</title>
+      <link>//alfmunny.com/leetcode-blog/posts/21-merge-two-sorted-lists/</link>
+      <pubDate>Wed, 25 Mar 2020 19:55:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/21-merge-two-sorted-lists/</guid>
+      <description>leetcode
+Problem Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists. Example: Input: 1-&amp;gt;2-&amp;gt;4, 1-&amp;gt;3-&amp;gt;4 Output: 1-&amp;gt;1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;4 Notes Recursion is your friend!
+Solution Solution 1: Recursive class Solution: def mergeTwoLists(self, l1, l2): if not l1: return l2 if not l2: return l1 if l1.val &amp;gt; l2.val: l2.next = self.mergeTwoLists(l1, l2.next) return l2 else: l1.</description>
+    </item>
+    
+    <item>
+      <title>104 - Maximum Depth of Binary Tree</title>
+      <link>//alfmunny.com/leetcode-blog/posts/104-maximum-depth-of-binary-tree/</link>
+      <pubDate>Wed, 25 Mar 2020 17:16:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/104-maximum-depth-of-binary-tree/</guid>
+      <description>leetcode
+Problem Given a binary tree, find its maximum depth. The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node. Note: A leaf is a node with no children. Example: Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 Notes Recursion is your friend!
+Solution class Solution: def maxDepth(self, root): return 1 + max(self.maxDepth(root.right), self.</description>
+    </item>
+    
+    <item>
+      <title>309 - Best Time to Buy and Sell Stock with Cooldown</title>
+      <link>//alfmunny.com/leetcode-blog/posts/309-best-time-to-buy-and-sell-stock-with-cooldown/</link>
+      <pubDate>Tue, 24 Mar 2020 22:36:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/309-best-time-to-buy-and-sell-stock-with-cooldown/</guid>
+      <description>leetcode
+Problem Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times) with the following restrictions: You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).</description>
+    </item>
+    
+    <item>
+      <title>188 - Best Time to Buy and Sell Stock IV</title>
+      <link>//alfmunny.com/leetcode-blog/posts/188-best-time-to-buy-and-sell-stock-iv/</link>
+      <pubDate>Tue, 24 Mar 2020 21:46:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/188-best-time-to-buy-and-sell-stock-iv/</guid>
+      <description>leetcode
+Problem Say you have an array for which the i-th element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You may complete at most k transactions. Note: You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again). Example 1: Input: [2,4,1], k = 2 Output: 2 Explanation: Buy on day 1 (price = 2) and sell on day 2 (price = 4), profit = 4-2 = 2.</description>
+    </item>
+    
+    <item>
+      <title>123 - Best Time to Buy and Sell Stock III</title>
+      <link>//alfmunny.com/leetcode-blog/posts/123-best-time-to-buy-and-sell-stock-iii/</link>
+      <pubDate>Tue, 24 Mar 2020 18:25:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/123-best-time-to-buy-and-sell-stock-iii/</guid>
+      <description>leetcode
+Problem Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You may complete at most two transactions. Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again). Example 1: Input: [3,3,5,0,0,3,1,4] Output: 6 Explanation: Buy on day 4 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.</description>
+    </item>
+    
+    <item>
+      <title>122 - Best Time to Buy and Sell Stock II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/122-best-time-to-buy-and-sell-stock-ii/</link>
+      <pubDate>Tue, 24 Mar 2020 15:26:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/122-best-time-to-buy-and-sell-stock-ii/</guid>
+      <description>leetcode
+Problem Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You may complete as many transactions as you like Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again). Example 1: Input: [7,1,5,3,6,4] Output: 7 Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.</description>
+    </item>
+    
+    <item>
+      <title>121 - Best Time to Buy and Sell Stock</title>
+      <link>//alfmunny.com/leetcode-blog/posts/121-best-time-to-buy-and-sell-stock/</link>
+      <pubDate>Tue, 24 Mar 2020 12:13:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/121-best-time-to-buy-and-sell-stock/</guid>
+      <description>leetcode
+Problem Say you have an array for which the ith element is the price of a given stock on day i. If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock), design an algorithm to find the maximum profit. Note that you cannot sell a stock before you buy one. Example 1: Input: [7,1,5,3,6,4] Output: 5 Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.</description>
+    </item>
+    
+    <item>
+      <title>85 - Maximal Rectangle</title>
+      <link>//alfmunny.com/leetcode-blog/posts/85-maximal-rectangle/</link>
+      <pubDate>Tue, 24 Mar 2020 00:57:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/85-maximal-rectangle/</guid>
+      <description>Problem Notes Solution  leetcode
+Problem Given a 2D binary matrix filled with 0&amp;#39;s and 1&amp;#39;s, find the largest rectangle containing only 1&amp;#39;s and return its area. Example: Input: [ [&amp;#34;1&amp;#34;,&amp;#34;0&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;0&amp;#34;,&amp;#34;0&amp;#34;], [&amp;#34;1&amp;#34;,&amp;#34;0&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;1&amp;#34;], [&amp;#34;1&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;1&amp;#34;], [&amp;#34;1&amp;#34;,&amp;#34;0&amp;#34;,&amp;#34;0&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;0&amp;#34;] ] Output: 6 Notes Two parts:
+ generate a heights histogram for every row. apple &amp;ldquo;largest rectangle in histogram&amp;rdquo; on each row of histogram  Solution class Solution: def maximalRectangle(self, matrix): if not matrix or not matrix[0]: return 0 m = len(matrix) n = len(matrix[0]) histograms = [[0] * n for i in range(m)] res = 0 for i in range(m): for j in range(n): if matrix[i][j] == &amp;#34;1&amp;#34;: histograms[i][j] = histograms[i - 1][j] + 1 if i &amp;gt; 0 else 1 for histogram in histograms: res = max(res, self.</description>
+    </item>
     
     <item>
       <title>84 - Largest Rectangle in Histogram</title>
@@ -155,6 +259,16 @@ Start from empty array [[]]. Step 1: Take 1 into consideration, and add 1 to exi
       <guid>//alfmunny.com/leetcode-blog/posts/75-sort-colors/</guid>
       <description>leetcode
 Problem Given an array with n objects colored red, white or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white and blue. Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively. Note: You are not suppose to use the library&amp;#39;s sort function for this problem. Example: Input: [2,0,2,1,1,0] Output: [0,0,1,1,2,2] Follow up: A rather straight forward solution is a two-pass algorithm using counting sort.</description>
+    </item>
+    
+    <item>
+      <title>64 - Minimum Path Sum</title>
+      <link>//alfmunny.com/leetcode-blog/posts/64-mnimum-path-sum/</link>
+      <pubDate>Wed, 04 Mar 2020 18:47:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/64-mnimum-path-sum/</guid>
+      <description>leetcode
+Problem Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path. Note: You can only move either down or right at any point in time. Example: Input: [ [1,3,1], [1,5,1], [4,2,1] ] Output: 7 Explanation: Because the path 1→3→1→1→1 minimizes the sum. Notes Thinking: It seems to be a greedy algorithm problem.</description>
     </item>
     
     <item>
