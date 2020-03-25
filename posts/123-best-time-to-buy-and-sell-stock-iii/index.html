@@ -27,7 +27,7 @@
 
 <div class="article-meta">
 <h1><span class="title">123 - Best Time to Buy and Sell Stock III</span></h1>
-<h2 class="author">[alfmunny]</h2>
+
 <h2 class="date">2020/03/24</h2>
 </div>
 
@@ -132,6 +132,8 @@ And we try to use the sub-states to apply the state transitions to simplify the 
             buy[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> max(buy[<span style="color:#ae81ff">2</span>], sell[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">-</span>price)
             sell[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> max(sell[<span style="color:#ae81ff">1</span>], buy[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">+</span>price)
             sell[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> max(sell[<span style="color:#ae81ff">2</span>], buy[<span style="color:#ae81ff">2</span>]<span style="color:#f92672">+</span>price)
+            <span style="color:#66d9ef">print</span>(buy)
+            <span style="color:#66d9ef">print</span>(sell)
         <span style="color:#66d9ef">return</span> sell[<span style="color:#ae81ff">2</span>]
 
 <span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>maxProfit([<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">4</span>]))
