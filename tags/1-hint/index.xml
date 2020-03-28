@@ -6,20 +6,10 @@
     <description>Recent content in 1-hint on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Mar 2020 02:18:32 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 00:08:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/1-hint/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>//alfmunny.com/leetcode-blog/posts/readme/</link>
-      <pubDate>Sat, 28 Mar 2020 02:18:32 +0100</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/posts/readme/</guid>
-      <description>322 - Coin Change leetcode
-Problem You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1. Example 1: Input: coins = [1, 2, 5], amount = 11 Output: 3 Explanation: 11 = 5 + 5 + 1 Example 2: Input: coins = [2], amount = 3 Output: -1 Note: You may assume that you have an infinite number of each kind of coin.</description>
-    </item>
     
     <item>
       <title>300 - Longest Increasing Subsequence</title>
