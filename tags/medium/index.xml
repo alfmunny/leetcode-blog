@@ -6,10 +6,31 @@
     <description>Recent content in medium on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Mar 2020 00:08:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2020 17:40:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/medium/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>152 - Maximum Product Subarray</title>
+      <link>//alfmunny.com/leetcode-blog/posts/152-maximum-product-subarray/</link>
+      <pubDate>Sun, 29 Mar 2020 17:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/152-maximum-product-subarray/</guid>
+      <description>leetcode
+Problem Given an integer array nums, find the contiguous subarray within an array (containing at least one number) which has the largest product. Example 1: Input: [2,3,-2,4] Output: 6 Explanation: [2,3] has the largest product 6. Example 2: Input: [-2,0,-1] Output: 0 Explanation: The result cannot be 2, because [-2,-1] is not a subarray. Notes DP problem:
+  States: We have to know two previous states to deduct the current max product:</description>
+    </item>
+    
+    <item>
+      <title>322 - Coin Change</title>
+      <link>//alfmunny.com/leetcode-blog/posts/322-coin-change/</link>
+      <pubDate>Sat, 28 Mar 2020 02:17:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/322-coin-change/</guid>
+      <description>leetcode
+Problem You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1. Example 1: Input: coins = [1, 2, 5], amount = 11 Output: 3 Explanation: 11 = 5 + 5 + 1 Example 2: Input: coins = [2], amount = 3 Output: -1 Note: You may assume that you have an infinite number of each kind of coin.</description>
+    </item>
     
     <item>
       <title>300 - Longest Increasing Subsequence</title>

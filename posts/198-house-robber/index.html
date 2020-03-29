@@ -51,9 +51,9 @@ Output: 12
 Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).
              Total amount you can rob = 2 + 9 + 1 = 12.
 </code></pre></div><h2 id="notes">Notes</h2>
-<p>States: 1. house, 2. rob or not rob -&gt; dp[i][0 or 1]
-Transition: dp[i][0] = max(dp[i-1][0], dp[i-1][1]), dp[i][1] = dp[i-1][0] + nums[i]
-Base Case: dp[0][0] = 0, dp[0][1] = 0</p>
+<p>States: 1. house, 2. rob or not rob -&gt; dp[i][0 or 1]</p>
+<p>Transition: dp[i][0] = max(dp[i-1][0], dp[i-1][1]), dp[i][1] = dp[i-1][0] + nums[i]</p>
+<p>Base Case: dp[0][0] = 0, dp[0][1] = 0</p>
 <h2 id="solution">Solution</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rob</span>(self, nums):
