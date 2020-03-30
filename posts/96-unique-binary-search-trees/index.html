@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>96 - Unique Binary Search Trees | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">96 - Unique Binary Search Trees</span></h1>
+
+<h2 class="date">2020/03/30</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/unique-binary-search-trees/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given n, how many structurally unique BST&#39;s (binary search trees) that store values 1 ... n?
+
+Example:
+
+Input: 3
+Output: 5
+Explanation:
+Given n = 3, there are a total of 5 unique BST&#39;s:
+
+   1         3     3      2      1
+    \       /     /      / \      \
+     3     2     1      1   3      2
+    /     /       \                 \
+   2     1         2                 3
+</code></pre></div><h2 id="notes">Notes</h2>
+<h3 id="solution-1-dp">Solution 1: DP</h3>
+<p>In this dp problem, the hard part is to figure out the transition.</p>
+<ul>
+<li>
+<p>States: n</p>
+</li>
+<li>
+<p>Transition:</p>
+<p>Some intuition:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">assume dp[0] = 1
+dp[1] = dp[0]*dp[0]
+dp[2] = dp[0]*dp[1] + dp[0]*dp[1]
+dp[3] = dp[0]*dp[2] + dp[1]*dp[1] + dp[2]*dp[0]
+dp[4] = dp[0]*dp[3] + dp[1]*dp[2] + dp[2]*dp[1] + dp[3]*dp[0]
+dp[5] = dp[0]*dp[4] + dp[1]*dp[3] + dp[2]*dp[2] + dp[3]*dp[1] + dp[4]*dp[0]
+dp[6] = dp[0]*dp[5] + dp[1]*dp[4] + dp[2]*dp[3] + dp[3]*dp[2] + dp[4]*dp[1] + dp[5]*dp[0]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
+    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, i):
+        dp[i] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> dp[j]<span style="color:#f92672">*</span>dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>j]
+</code></pre></div></li>
+<li>
+<p>Base case:
+dp[0] = 1</p>
+</li>
+</ul>
+<h3 id="solution-2-catalan-number">Solution 2: Catalan Number</h3>
+<p><a href="https://en.wikipedia.org/wiki/Catalan%5Fnumber">Catalan Number</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Cn = 1/(n+1)(2n n) = (2n)!/(n+1)!n!
+
+The first Catalan numbers for n = 0, 1, 2, 3, ... are
+
+1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862, 16796, 58786, 208012,
+742900, 2674440, 9694845, 35357670, 129644790, 477638700, 1767263190,
+6564120420, 24466267020, 91482563640, 343059613650, 1289904147324, 4861946401452
+</code></pre></div><h2 id="solution">Solution</h2>
+<h3 id="solution-1-dp">Solution 1: DP</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">numTrees</span>(self, n):
+        <span style="color:#66d9ef">if</span> n <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1</span>:
+            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+
+        dp <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> (n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)
+        dp[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
+            <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, i):
+                dp[i] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> dp[j]<span style="color:#f92672">*</span>dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>j]
+
+        <span style="color:#66d9ef">return</span> dp[n]
+</code></pre></div><h3 id="solutiojn-2-catalan-number">Solutiojn 2: Catalan Number</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> math
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">numTrees</span>(self, n):
+        <span style="color:#66d9ef">return</span> math<span style="color:#f92672">.</span>factorial(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>n)<span style="color:#f92672">/</span>(math<span style="color:#f92672">.</span>factorial(n)<span style="color:#f92672">*</span>math<span style="color:#f92672">.</span>factorial(n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>))
+</code></pre></div>
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alfmunnystechblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+
