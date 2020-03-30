@@ -3,53 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
-    <lastmod>2020-03-30T20:21:56+02:00</lastmod>
+    <loc>//alfmunny.com/leetcode-blog/tags/1-fail/</loc>
+    <lastmod>2020-03-31T00:14:34+02:00</lastmod>
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/221-maximal-square/</loc>
-    <lastmod>2020-03-30T20:21:56+02:00</lastmod>
+    <loc>//alfmunny.com/leetcode-blog/posts/279-perfect-squares/</loc>
+    <lastmod>2020-03-31T00:14:34+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/array/</loc>
-    <lastmod>2020-03-30T20:21:56+02:00</lastmod>
+    <lastmod>2020-03-31T00:14:34+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/categories/</loc>
-    <lastmod>2020-03-30T20:21:56+02:00</lastmod>
+    <lastmod>2020-03-31T00:14:34+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/dp/</loc>
-    <lastmod>2020-03-30T20:21:56+02:00</lastmod>
+    <lastmod>2020-03-31T00:14:34+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
-    <lastmod>2020-03-30T20:21:56+02:00</lastmod>
+    <lastmod>2020-03-31T00:14:34+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/</loc>
-    <lastmod>2020-03-30T20:21:56+02:00</lastmod>
+    <lastmod>2020-03-31T00:14:34+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/medium/</loc>
-    <lastmod>2020-03-30T20:21:56+02:00</lastmod>
+    <lastmod>2020-03-31T00:14:34+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/</loc>
-    <lastmod>2020-03-30T20:21:56+02:00</lastmod>
+    <lastmod>2020-03-31T00:14:34+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/</loc>
-    <lastmod>2020-03-30T20:21:56+02:00</lastmod>
+    <lastmod>2020-03-31T00:14:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
+    <lastmod>2020-03-30T21:46:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/221-maximal-square/</loc>
+    <lastmod>2020-03-30T21:46:17+02:00</lastmod>
   </url>
   
   <url>
@@ -120,11 +130,6 @@
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/104-maximum-depth-of-binary-tree/</loc>
     <lastmod>2020-03-25T17:17:31+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/1-fail/</loc>
-    <lastmod>2020-03-25T17:09:01+01:00</lastmod>
   </url>
   
   <url>
