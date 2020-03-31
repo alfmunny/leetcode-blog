@@ -6,10 +6,24 @@
     <description>Recent content on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2020 23:41:02 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2020 23:56:02 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>5 - Longest Palindromic Substring</title>
+      <link>//alfmunny.com/leetcode-blog/posts/5-longest-palindromic-substring/</link>
+      <pubDate>Tue, 31 Mar 2020 23:56:02 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/5-longest-palindromic-substring/</guid>
+      <description>leetcode
+Problem Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000. Example 1: Input: &amp;#34;babad&amp;#34; Output: &amp;#34;bab&amp;#34; Note: &amp;#34;aba&amp;#34; is also a valid answer. Example 2: Input: &amp;#34;cbbd&amp;#34; Output: &amp;#34;bb&amp;#34; Notes DP problem
+  States:
+left_index, right_index, mark if s[left_index, right_index+1] is palindromic
+  Transition:
+if s[l] == s[r]: # mark it only when both ends are same values dp[l][r] = 1 if r == l # if only one element dp[l][r] = 1 if r+1 == l # if only two elements dp[l][r] = 1 if dp[l+1][r+1] = 1 # if the string in between is palindromic results = s[l:r+1] if r-l+1&amp;gt;len(results) # comparing the length, record the maximum   Base case:</description>
+    </item>
     
     <item>
       <title>647 - Palindromic Substrings</title>
