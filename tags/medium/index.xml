@@ -6,10 +6,20 @@
     <description>Recent content in medium on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2020 00:13:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2020 23:41:02 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/medium/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>647 - Palindromic Substrings</title>
+      <link>//alfmunny.com/leetcode-blog/posts/647-palindromic-substrings/</link>
+      <pubDate>Tue, 31 Mar 2020 23:41:02 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/647-palindromic-substrings/</guid>
+      <description>leetcode
+Problem Given a string, your task is to count how many palindromic substrings in this string. The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters. Example 1: Input: &amp;#34;abc&amp;#34; Output: 3 Explanation: Three palindromic strings: &amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;, &amp;#34;c&amp;#34;. Example 2: Input: &amp;#34;aaa&amp;#34; Output: 6 Explanation: Six palindromic strings: &amp;#34;a&amp;#34;, &amp;#34;a&amp;#34;, &amp;#34;a&amp;#34;, &amp;#34;aa&amp;#34;, &amp;#34;aa&amp;#34;, &amp;#34;aaa&amp;#34;. Note: The input string length won&amp;#39;t exceed 1000.</description>
+    </item>
     
     <item>
       <title>279 - Perfect Squares</title>
