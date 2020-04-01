@@ -6,7 +6,7 @@
     <description>Recent content in Categories on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2020 23:57:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 22:35:07 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>leetcode</title>
       <link>//alfmunny.com/leetcode-blog/categories/leetcode/</link>
-      <pubDate>Tue, 31 Mar 2020 23:57:00 +0200</pubDate>
+      <pubDate>Wed, 01 Apr 2020 22:35:07 +0200</pubDate>
       
       <guid>//alfmunny.com/leetcode-blog/categories/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>notes</title>
+      <link>//alfmunny.com/leetcode-blog/categories/notes/</link>
+      <pubDate>Wed, 01 Apr 2020 22:35:07 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/categories/notes/</guid>
       <description></description>
     </item>
     
