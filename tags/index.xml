@@ -6,7 +6,7 @@
     <description>Recent content in Tags on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2020 23:57:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 22:36:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>1-pass</title>
       <link>//alfmunny.com/leetcode-blog/tags/1-pass/</link>
-      <pubDate>Tue, 31 Mar 2020 23:57:00 +0200</pubDate>
+      <pubDate>Wed, 01 Apr 2020 22:36:00 +0200</pubDate>
       
       <guid>//alfmunny.com/leetcode-blog/tags/1-pass/</guid>
       <description></description>
@@ -23,9 +23,36 @@
     <item>
       <title>array</title>
       <link>//alfmunny.com/leetcode-blog/tags/array/</link>
-      <pubDate>Tue, 31 Mar 2020 23:57:00 +0200</pubDate>
+      <pubDate>Wed, 01 Apr 2020 22:36:00 +0200</pubDate>
       
       <guid>//alfmunny.com/leetcode-blog/tags/array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>easy</title>
+      <link>//alfmunny.com/leetcode-blog/tags/easy/</link>
+      <pubDate>Wed, 01 Apr 2020 22:36:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/easy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hash</title>
+      <link>//alfmunny.com/leetcode-blog/tags/hash/</link>
+      <pubDate>Wed, 01 Apr 2020 22:36:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/hash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>notes</title>
+      <link>//alfmunny.com/leetcode-blog/tags/notes/</link>
+      <pubDate>Wed, 01 Apr 2020 22:36:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/notes/</guid>
       <description></description>
     </item>
     
@@ -80,15 +107,6 @@
       <pubDate>Mon, 30 Mar 2020 15:17:00 +0200</pubDate>
       
       <guid>//alfmunny.com/leetcode-blog/tags/tree/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>easy</title>
-      <link>//alfmunny.com/leetcode-blog/tags/easy/</link>
-      <pubDate>Fri, 27 Mar 2020 23:58:00 +0100</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/easy/</guid>
       <description></description>
     </item>
     
