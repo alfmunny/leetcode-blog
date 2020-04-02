@@ -6,10 +6,20 @@
     <description>Recent content in array on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2020 22:36:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2020 16:03:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/array/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>202 - Happy Number</title>
+      <link>//alfmunny.com/leetcode-blog/posts/202-happy-number/</link>
+      <pubDate>Thu, 02 Apr 2020 16:03:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/202-happy-number/</guid>
+      <description>leetcode
+Problem Write an algorithm to determine if a number is &amp;#34;happy&amp;#34;. A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers.</description>
+    </item>
     
     <item>
       <title>136 - Single Number</title>
