@@ -74,8 +74,6 @@ A trick using bit manipulation:
 11 &amp; 10 -&gt; 1011 &amp; 1010 -&gt; 1010 dp[10] + 1 = 3
 12 &amp; 11 -&gt; 1100 &amp; 1011 -&gt; 1000 dp[8] + 1 = 2
 
-dp[i &amp; i - 1] gives you the number which represents the difference between this
-
 dp[i] = dp[i &amp; (i-1)] + 1
 </code></pre></div><h2 id="solution">Solution</h2>
 <h3 id="solution-1-dp">Solution 1: DP</h3>
