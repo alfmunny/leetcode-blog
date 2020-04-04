@@ -62,24 +62,24 @@ Your output answer is guaranteed to be fitted in a 32-bit integer.
 <p>States:</p>
 <ul>
 <li>index: how many different numbers -&gt; n</li>
-<li>sum: how many different possible sums -&gt; [-sum, +sum]</li>
+<li>sum: how many different possible sums -&gt; [-sum(nums), +sum(nums)]</li>
 </ul>
 <p>The tricky part is how you present the range of sum in an array.</p>
-<p>You have to add an offest as large as sum to shift the range into the positive side.</p>
-<p>So it becomes [0, 2sum]</p>
+<p>You have to add an offest as large as the sum(nums) to shift the range into the positive side.</p>
+<p>So it becomes [0, 2sum(nums)]</p>
 <p>For example:</p>
 <p>[1, 1, 1, 1, 1], you have a range of [-5, 5].</p>
 <p>-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5</p>
 <p>Add an offset of sum = 5</p>
 <p>0,  1,  2,  3,  4, 5, 6, 7, 8, 9, 10  -&gt; 11 numbers</p>
-<p>dp should have a length of 2sum + 1</p>
+<p>dp should have a length of 2sum(nums) + 1</p>
 </li>
 <li>
 <p>Transition:</p>
 </li>
 </ul>
 <p>We need all the sum values of the previous number to calculate the current one.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range((<span style="color:#ae81ff">2</span>sum<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)):
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>sum<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
     <span style="color:#66d9ef">if</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>: <span style="color:#75715e"># only check the ones, which have been reached</span>
       <span style="color:#66d9ef">if</span> j<span style="color:#f92672">+</span>nums[i] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>sum <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>: <span style="color:#75715e"># sign + to the current number, we transit from j to j+nums[i]</span>
         dp[i][j<span style="color:#f92672">+</span>nums[i]] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j]
