@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bit on LeetCode In The Shell</title>
+    <link>//alfmunny.com/leetcode-blog/tags/bit/</link>
+    <description>Recent content in bit on LeetCode In The Shell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Apr 2020 21:20:00 +0200</lastBuildDate>
+    
+	<atom:link href="//alfmunny.com/leetcode-blog/tags/bit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>416 - Partition Equal Subset Sum</title>
+      <link>//alfmunny.com/leetcode-blog/posts/416-partition-equal-subset-sum/</link>
+      <pubDate>Sun, 05 Apr 2020 21:20:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/416-partition-equal-subset-sum/</guid>
+      <description>leetcode
+Problem Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal. Note: Each of the array element will not exceed 100. The array size will not exceed 200. Example 1: Input: [1, 5, 11, 5] Output: true Explanation: The array can be partitioned as [1, 5, 5] and [11]. Example 2: Input: [1, 2, 3, 5] Output: false Explanation: The array cannot be partitioned into equal sum subsets.</description>
+    </item>
+    
+  </channel>
+</rss>
