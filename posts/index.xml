@@ -6,10 +6,21 @@
     <description>Recent content in Posts on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2020 01:05:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2020 00:48:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>49 - Group Anagrams</title>
+      <link>//alfmunny.com/leetcode-blog/posts/49-group-anagrams/</link>
+      <pubDate>Tue, 07 Apr 2020 00:48:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/49-group-anagrams/</guid>
+      <description>leetcode
+Problem Given an array of strings, group anagrams together. Example: Input: [&amp;#34;eat&amp;#34;, &amp;#34;tea&amp;#34;, &amp;#34;tan&amp;#34;, &amp;#34;ate&amp;#34;, &amp;#34;nat&amp;#34;, &amp;#34;bat&amp;#34;], Output: [ [&amp;#34;ate&amp;#34;,&amp;#34;eat&amp;#34;,&amp;#34;tea&amp;#34;], [&amp;#34;nat&amp;#34;,&amp;#34;tan&amp;#34;], [&amp;#34;bat&amp;#34;] ] Note: All inputs will be in lowercase. The order of your output does not matter. Solution Use the sorted string as key in hash table
+import collections class Solution: def groupAnagrams(self, strs): ans = collections.defaultdict(list) for s in strs: ans[tuple(sorted(s))].append(s) return list(ans.values()) Or use the counter</description>
+    </item>
     
     <item>
       <title>215 - Kth Largest Element in an Array</title>
