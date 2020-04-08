@@ -3,28 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/49-group-anagrams/</loc>
-    <lastmod>2020-04-07T00:49:20+02:00</lastmod>
+    <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
+    <lastmod>2020-04-08T23:29:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/876-middle-of-the-linked-list/</loc>
+    <lastmod>2020-04-08T23:29:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/array/</loc>
+    <lastmod>2020-04-08T23:29:18+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/categories/</loc>
-    <lastmod>2020-04-08T11:26:32+02:00</lastmod>
+    <lastmod>2020-04-08T23:29:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/easy/</loc>
+    <lastmod>2020-04-08T23:29:18+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
-    <lastmod>2020-04-08T11:26:32+02:00</lastmod>
+    <lastmod>2020-04-08T23:29:18+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/</loc>
-    <lastmod>2020-04-08T11:26:32+02:00</lastmod>
+    <lastmod>2020-04-08T23:29:18+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/</loc>
-    <lastmod>2020-04-08T11:26:32+02:00</lastmod>
+    <lastmod>2020-04-08T23:29:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
+    <lastmod>2020-04-08T23:29:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/two-pointer/</loc>
+    <lastmod>2020-04-08T23:29:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/49-group-anagrams/</loc>
+    <lastmod>2020-04-07T00:49:20+02:00</lastmod>
   </url>
   
   <url>
@@ -33,17 +63,7 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
-    <lastmod>2020-04-08T11:26:32+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/posts/215-kth-largest-element-in-an-array/</loc>
-    <lastmod>2020-04-08T11:26:32+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/array/</loc>
     <lastmod>2020-04-08T11:26:32+02:00</lastmod>
   </url>
   
@@ -59,11 +79,6 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/recursive/</loc>
-    <lastmod>2020-04-08T11:26:32+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
     <lastmod>2020-04-08T11:26:32+02:00</lastmod>
   </url>
   
@@ -84,16 +99,6 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/283-move-zeros/</loc>
-    <lastmod>2020-04-04T17:21:44+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/easy/</loc>
-    <lastmod>2020-04-04T17:21:44+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/two-pointer/</loc>
     <lastmod>2020-04-04T17:21:44+02:00</lastmod>
   </url>
   
