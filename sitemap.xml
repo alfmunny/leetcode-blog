@@ -4,51 +4,56 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
-    <lastmod>2020-04-08T23:29:18+02:00</lastmod>
+    <lastmod>2020-04-09T23:17:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/876-middle-of-the-linked-list/</loc>
-    <lastmod>2020-04-08T23:29:18+02:00</lastmod>
+    <loc>//alfmunny.com/leetcode-blog/posts/844-backspace-string-compare/</loc>
+    <lastmod>2020-04-09T23:17:14+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/array/</loc>
-    <lastmod>2020-04-09T23:13:45+02:00</lastmod>
+    <lastmod>2020-04-09T23:17:14+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/categories/</loc>
-    <lastmod>2020-04-09T23:13:45+02:00</lastmod>
+    <lastmod>2020-04-09T23:17:14+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/easy/</loc>
-    <lastmod>2020-04-08T23:29:18+02:00</lastmod>
+    <lastmod>2020-04-09T23:17:14+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
-    <lastmod>2020-04-09T23:13:45+02:00</lastmod>
+    <lastmod>2020-04-09T23:17:14+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/</loc>
-    <lastmod>2020-04-09T23:13:45+02:00</lastmod>
+    <lastmod>2020-04-09T23:17:14+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/</loc>
-    <lastmod>2020-04-09T23:13:45+02:00</lastmod>
+    <lastmod>2020-04-09T23:17:14+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/</loc>
-    <lastmod>2020-04-09T23:13:45+02:00</lastmod>
+    <lastmod>2020-04-09T23:17:14+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/two-pointer/</loc>
+    <lastmod>2020-04-09T23:17:14+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/876-middle-of-the-linked-list/</loc>
     <lastmod>2020-04-08T23:29:18+02:00</lastmod>
   </url>
   
@@ -365,11 +370,6 @@
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/64-mnimum-path-sum/</loc>
     <lastmod>2020-03-25T23:41:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/64-unique-path-sum/</loc>
-    <lastmod>2020-03-21T22:36:51+01:00</lastmod>
   </url>
   
   <url>
