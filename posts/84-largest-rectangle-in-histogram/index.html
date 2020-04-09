@@ -27,7 +27,7 @@
 
 <div class="article-meta">
 <h1><span class="title">84 - Largest Rectangle in Histogram</span></h1>
-<h2 class="author">[alfmunny]</h2>
+
 <h2 class="date">2020/03/23</h2>
 </div>
 
@@ -176,13 +176,7 @@ Worst Case: O(n^2)</p>
         <span style="color:#66d9ef">while</span> stack:
             h <span style="color:#f92672">=</span> stack<span style="color:#f92672">.</span>pop()
             res <span style="color:#f92672">=</span> max(
-                res,
-                heights[h] <span style="color:#f92672">*</span> ((n <span style="color:#f92672">-</span> stack[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">if</span> stack <span style="color:#66d9ef">else</span> n))
-
-        <span style="color:#66d9ef">return</span> res
-
-
-<span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>largestRectangleArea([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]))
+                r
 </code></pre></div>
 </main>
 
