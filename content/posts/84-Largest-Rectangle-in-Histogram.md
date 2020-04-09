@@ -1,8 +1,7 @@
 +++
 title = "84 - Largest Rectangle in Histogram"
-author = ["alfmunny"]
 date = 2020-03-23T00:36:00+01:00
-lastmod = 2020-03-24T01:03:44+01:00
+lastmod = 2020-04-09T23:13:45+02:00
 tags = ["hard", "array", "stack", "1-fail"]
 categories = ["leetcode"]
 draft = false
@@ -194,11 +193,5 @@ class Solution:
         while stack:
             h = stack.pop()
             res = max(
-                res,
-                heights[h] * ((n - stack[-1] - 1) if stack else n))
-
-        return res
-
-
-print(Solution().largestRectangleArea([2, 1, 5, 6, 2, 3]))
+                r
 ```

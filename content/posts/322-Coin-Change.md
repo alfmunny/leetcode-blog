@@ -1,7 +1,9 @@
 +++
 title = "322 - Coin Change"
 date = 2020-03-28T02:17:00+01:00
-lastmod = 2020-03-28T02:17:21+01:00
+lastmod = 2020-03-29T17:42:48+02:00
+tags = ["medium", "array", "dp"]
+categories = ["leetcode"]
 draft = false
 +++
 

@@ -6,10 +6,141 @@
     <description>Recent content in medium on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2020 23:44:20 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2020 01:05:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/medium/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>215 - Kth Largest Element in an Array</title>
+      <link>//alfmunny.com/leetcode-blog/posts/215-kth-largest-element-in-an-array/</link>
+      <pubDate>Mon, 06 Apr 2020 01:05:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/215-kth-largest-element-in-an-array/</guid>
+      <description>leetcode
+Problem 215. Kth Largest Element in an Array Medium 3152 222 Add to List Share Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element. Example 1: Input: [3,2,1,5,6,4] and k = 2 Output: 5 Example 2: Input: [3,2,3,1,2,4,5,5,6] and k = 4 Output: 4 Note: You may assume k is always valid, 1 ≤ k ≤ array&amp;#39;s length.</description>
+    </item>
+    
+    <item>
+      <title>416 - Partition Equal Subset Sum</title>
+      <link>//alfmunny.com/leetcode-blog/posts/416-partition-equal-subset-sum/</link>
+      <pubDate>Sun, 05 Apr 2020 21:20:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/416-partition-equal-subset-sum/</guid>
+      <description>leetcode
+Problem Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal. Note: Each of the array element will not exceed 100. The array size will not exceed 200. Example 1: Input: [1, 5, 11, 5] Output: true Explanation: The array can be partitioned as [1, 5, 5] and [11]. Example 2: Input: [1, 2, 3, 5] Output: false Explanation: The array cannot be partitioned into equal sum subsets.</description>
+    </item>
+    
+    <item>
+      <title>494 - Target Sum</title>
+      <link>//alfmunny.com/leetcode-blog/posts/494-target-sum/</link>
+      <pubDate>Sat, 04 Apr 2020 16:24:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/494-target-sum/</guid>
+      <description>leetcode
+Problem You are given a list of non-negative integers, a1, a2, ..., an, and a target, S. Now you have 2 symbols + and -. For each integer, you should choose one from + and - as its new symbol. Find out how many ways to assign symbols to make sum of integers equal to target S. Example 1: Input: nums is [1, 1, 1, 1, 1], S is 3.</description>
+    </item>
+    
+    <item>
+      <title>338 - Counting Bits</title>
+      <link>//alfmunny.com/leetcode-blog/posts/338-counting-bit/</link>
+      <pubDate>Thu, 02 Apr 2020 17:03:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/338-counting-bit/</guid>
+      <description>leetcode
+Problem Given a non negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1&amp;#39;s in their binary representation and return them as an array. Example 1: Input: 2 Output: [0,1,1] Example 2: Input: 5 Output: [0,1,1,2,1,2] Notes DP problem
+ States: index Transition:  dp[0] = 0 dp[1] = dp[1-1] + 1 = 1 dp[2] = dp[2-2] + 1 = 1 dp[3] = dp[3-2] + 1 = 2 dp[4] = dp[4-4] + 1 = 1 dp[5] = dp[5-4] + 1 = 2 dp[6] = dp[6-4] + 1 = 2 dp[7] = dp[7-4] + 1 = 3 dp[8] = dp[8-8] + 1 = 1 dp[9] = dp[9-8] + 1 = 2 dp[i] = dp[i - log_2 (i)] + 1 A trick using bit manipulation: 8 -&amp;gt; 1000 9 -&amp;gt; 1001 10 -&amp;gt; 1010 9 &amp;amp; 8 -&amp;gt; 1001 &amp;amp; 1000 -&amp;gt; 1000 dp[8] + 1 = 2 10 &amp;amp; 9 -&amp;gt; 1010 &amp;amp; 1001 -&amp;gt; 1000 dp[8] + 1 = 2 11 &amp;amp; 10 -&amp;gt; 1011 &amp;amp; 1010 -&amp;gt; 1010 dp[10] + 1 = 3 12 &amp;amp; 11 -&amp;gt; 1100 &amp;amp; 1011 -&amp;gt; 1000 dp[8] + 1 = 2 dp[i] = dp[i &amp;amp; (i-1)] + 1 Solution Solution 1: DP class Solution: def countBits(self, num): offset = 1 dp = [0] * (num + 1) for i in range(1, num + 1): if offset * 2 == i: offset *= 2 dp[i] = dp[i - offset] + 1 return dp Solution 2: Bit manipulation on couting bits class Solution: def countBits(self, num): dp = [0] * (num + 1) for i in range(1, num + 1): dp[i] = dp[i &amp;amp; (i - 1)] + 1 return dp Solution 3: class Solution(object): def countBits(self, num): res=[0] while len(res)&amp;lt;=num: res+=[i+1 for i in res] return res[:num+1] </description>
+    </item>
+    
+    <item>
+      <title>5 - Longest Palindromic Substring</title>
+      <link>//alfmunny.com/leetcode-blog/posts/5-longest-palindromic-substring/</link>
+      <pubDate>Tue, 31 Mar 2020 23:57:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/5-longest-palindromic-substring/</guid>
+      <description>leetcode
+Problem Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000. Example 1: Input: &amp;#34;babad&amp;#34; Output: &amp;#34;bab&amp;#34; Note: &amp;#34;aba&amp;#34; is also a valid answer. Example 2: Input: &amp;#34;cbbd&amp;#34; Output: &amp;#34;bb&amp;#34; Notes DP problem
+  States:
+left_index, right_index, mark if s[left_index, right_index+1] is palindromic
+  Transition:
+if s[l] == s[r]: # mark it only when both ends are same values dp[l][r] = 1 if r == l # if only one element dp[l][r] = 1 if r+1 == l # if only two elements dp[l][r] = 1 if dp[l+1][r+1] = 1 # if the string in between is palindromic results = s[l:r+1] if r-l+1&amp;gt;len(results) # comparing the length, record the maximum   Base case:</description>
+    </item>
+    
+    <item>
+      <title>647 - Palindromic Substrings</title>
+      <link>//alfmunny.com/leetcode-blog/posts/647-palindromic-substrings/</link>
+      <pubDate>Tue, 31 Mar 2020 23:41:02 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/647-palindromic-substrings/</guid>
+      <description>leetcode
+Problem Given a string, your task is to count how many palindromic substrings in this string. The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters. Example 1: Input: &amp;#34;abc&amp;#34; Output: 3 Explanation: Three palindromic strings: &amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;, &amp;#34;c&amp;#34;. Example 2: Input: &amp;#34;aaa&amp;#34; Output: 6 Explanation: Six palindromic strings: &amp;#34;a&amp;#34;, &amp;#34;a&amp;#34;, &amp;#34;a&amp;#34;, &amp;#34;aa&amp;#34;, &amp;#34;aa&amp;#34;, &amp;#34;aaa&amp;#34;. Note: The input string length won&amp;#39;t exceed 1000.</description>
+    </item>
+    
+    <item>
+      <title>279 - Perfect Squares</title>
+      <link>//alfmunny.com/leetcode-blog/posts/279-perfect-squares/</link>
+      <pubDate>Tue, 31 Mar 2020 00:13:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/279-perfect-squares/</guid>
+      <description>leetcode
+Problem Given a positive integer n, find the least number of perfect square numbers (for example, 1, 4, 9, 16, ...) which sum to n. Example 1: Input: n = 12 Output: 3 Explanation: 12 = 4 + 4 + 4. Example 2: Input: n = 13 Output: 2 Explanation: 13 = 4 + 9. Notes DP problem
+  States: n
+  Transition:
+  dp[i] = min([_dp[i-j*j]+1 if i-j*j &amp;gt;= 0 else break for j in range(1, sqrt(i)+1)])   Base case:</description>
+    </item>
+    
+    <item>
+      <title>221 - Maximal Square</title>
+      <link>//alfmunny.com/leetcode-blog/posts/221-maximal-square/</link>
+      <pubDate>Mon, 30 Mar 2020 20:21:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/221-maximal-square/</guid>
+      <description>leetcode
+Problem Given a 2D binary matrix filled with 0&amp;#39;s and 1&amp;#39;s, find the largest square containing only 1&amp;#39;s and return its area. Example: Input: 1 0 1 0 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 Output: 4 Notes DP Problem:
+  States:
+ position -&amp;gt; [i][j] how many continues 1 in vertical direction -&amp;gt; [i][j][0] how many continues 1 in horizontal direction -&amp;gt; [i][j][1] square value(or the length of the square) -&amp;gt; [i][j][2]  dp[i][j][0 or 1 or 2]</description>
+    </item>
+    
+    <item>
+      <title>96 - Unique Binary Search Trees</title>
+      <link>//alfmunny.com/leetcode-blog/posts/96-unique-binary-search-trees/</link>
+      <pubDate>Mon, 30 Mar 2020 15:17:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/96-unique-binary-search-trees/</guid>
+      <description>leetcode
+Problem Given n, how many structurally unique BST&amp;#39;s (binary search trees) that store values 1 ... n? Example: Input: 3 Output: 5 Explanation: Given n = 3, there are a total of 5 unique BST&amp;#39;s: 1 3 3 2 1 \ / / / \ \ 3 2 1 1 3 2 / / \ \ 2 1 2 3 Notes Solution 1: DP In this dp problem, the hard part is to figure out the transition.</description>
+    </item>
+    
+    <item>
+      <title>152 - Maximum Product Subarray</title>
+      <link>//alfmunny.com/leetcode-blog/posts/152-maximum-product-subarray/</link>
+      <pubDate>Sun, 29 Mar 2020 17:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/152-maximum-product-subarray/</guid>
+      <description>leetcode
+Problem Given an integer array nums, find the contiguous subarray within an array (containing at least one number) which has the largest product. Example 1: Input: [2,3,-2,4] Output: 6 Explanation: [2,3] has the largest product 6. Example 2: Input: [-2,0,-1] Output: 0 Explanation: The result cannot be 2, because [-2,-1] is not a subarray. Notes DP problem:
+  States: We have to know two previous states to deduct the current max product:</description>
+    </item>
+    
+    <item>
+      <title>322 - Coin Change</title>
+      <link>//alfmunny.com/leetcode-blog/posts/322-coin-change/</link>
+      <pubDate>Sat, 28 Mar 2020 02:17:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/322-coin-change/</guid>
+      <description>leetcode
+Problem You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1. Example 1: Input: coins = [1, 2, 5], amount = 11 Output: 3 Explanation: 11 = 5 + 5 + 1 Example 2: Input: coins = [2], amount = 3 Output: -1 Note: You may assume that you have an infinite number of each kind of coin.</description>
+    </item>
+    
+    <item>
+      <title>300 - Longest Increasing Subsequence</title>
+      <link>//alfmunny.com/leetcode-blog/posts/300-longest-increasing-subsequence/</link>
+      <pubDate>Sat, 28 Mar 2020 00:08:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/300-longest-increasing-subsequence/</guid>
+      <description>leetcode
+Problem Given an unsorted array of integers, find the length of longest increasing subsequence. Example: Input: [10,9,2,5,3,7,101,18] Output: 4 Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4. Note: There may be more than one LIS combination, it is only necessary for you to return the length. Your algorithm should run in O(n2) complexity. Follow up: Could you improve it to O(n log n) time complexity? Solution DP problem.</description>
+    </item>
     
     <item>
       <title>91 - Decode Ways</title>
@@ -110,16 +241,6 @@ Problem Given an array with n objects colored red, white or blue, sort them in-p
       <pubDate>Wed, 04 Mar 2020 18:47:00 +0100</pubDate>
       
       <guid>//alfmunny.com/leetcode-blog/posts/64-mnimum-path-sum/</guid>
-      <description>leetcode
-Problem Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path. Note: You can only move either down or right at any point in time. Example: Input: [ [1,3,1], [1,5,1], [4,2,1] ] Output: 7 Explanation: Because the path 1→3→1→1→1 minimizes the sum. Notes Thinking: It seems to be a greedy algorithm problem.</description>
-    </item>
-    
-    <item>
-      <title>64 - Minimum Path Sum</title>
-      <link>//alfmunny.com/leetcode-blog/posts/64-unique-path-sum/</link>
-      <pubDate>Wed, 04 Mar 2020 18:47:00 +0100</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/posts/64-unique-path-sum/</guid>
       <description>leetcode
 Problem Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path. Note: You can only move either down or right at any point in time. Example: Input: [ [1,3,1], [1,5,1], [4,2,1] ] Output: 7 Explanation: Because the path 1→3→1→1→1 minimizes the sum. Notes Thinking: It seems to be a greedy algorithm problem.</description>
     </item>

@@ -1,8 +1,10 @@
 +++
 title = "198 - House Robber"
-lastmod = 2020-03-27T23:43:46+01:00
+date = 2020-03-27T23:58:00+01:00
+lastmod = 2020-03-29T17:42:39+02:00
+tags = ["easy", "array", "dp", "1-pass"]
 categories = ["leetcode"]
-draft = true
+draft = false
 +++
 
 [leetcode](https://leetcode.com/problems/house-robber/)
@@ -33,7 +35,9 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
 ## Notes {#notes}
 
 States: 1. house, 2. rob or not rob -> dp[i][0 or 1]
+
 Transition: dp[i][0] = max(dp[i-1][0], dp[i-1][1]), dp[i][1] = dp[i-1][0] + nums[i]
+
 Base Case: dp[0][0] = 0, dp[0][1] = 0
 
 
