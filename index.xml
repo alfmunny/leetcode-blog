@@ -6,10 +6,20 @@
     <description>Recent content on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Apr 2020 22:52:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 20:26:55 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>155 - Min Stack</title>
+      <link>//alfmunny.com/leetcode-blog/posts/155-min-stack/</link>
+      <pubDate>Fri, 10 Apr 2020 20:26:55 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/155-min-stack/</guid>
+      <description>leetcode
+Problem Solution class MinStack: def __init__(self): &amp;#34;&amp;#34;&amp;#34;initialize your data structure here.&amp;#34;&amp;#34;&amp;#34; self.stack = [] self.min = [] def push(self, x: int) -&amp;gt; None: self.stack.append(x) if not self.getMin() or self.getMin() &amp;gt;= x: self.min.append(x) def pop(self) -&amp;gt; None: if self.stack: x = self.stack.pop() if x == self.min[-1]: self.min.pop() else: None def top(self) -&amp;gt; int: if self.stack: return self.stack[-1] else: None def getMin(self) -&amp;gt; int: if self.min: return self.min[-1] else: return None </description>
+    </item>
     
     <item>
       <title>844 - Backspace String Compare</title>
