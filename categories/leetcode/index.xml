@@ -6,7 +6,7 @@
     <description>Recent content in leetcode on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2020 20:26:55 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 20:47:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,11 +14,11 @@
     <item>
       <title>155 - Min Stack</title>
       <link>//alfmunny.com/leetcode-blog/posts/155-min-stack/</link>
-      <pubDate>Fri, 10 Apr 2020 20:26:55 +0200</pubDate>
+      <pubDate>Fri, 10 Apr 2020 20:47:00 +0200</pubDate>
       
       <guid>//alfmunny.com/leetcode-blog/posts/155-min-stack/</guid>
       <description>leetcode
-Problem Solution class MinStack: def __init__(self): &amp;#34;&amp;#34;&amp;#34;initialize your data structure here.&amp;#34;&amp;#34;&amp;#34; self.stack = [] self.min = [] def push(self, x: int) -&amp;gt; None: self.stack.append(x) if not self.getMin() or self.getMin() &amp;gt;= x: self.min.append(x) def pop(self) -&amp;gt; None: if self.stack: x = self.stack.pop() if x == self.min[-1]: self.min.pop() else: None def top(self) -&amp;gt; int: if self.stack: return self.stack[-1] else: None def getMin(self) -&amp;gt; int: if self.min: return self.min[-1] else: return None </description>
+Problem Design a stack that supports push, pop, top, and retrieving the minimum element in constant time. push(x) -- Push element x onto stack. pop() -- Removes the element on top of the stack. top() -- Get the top element. getMin() -- Retrieve the minimum element in the stack. Example: MinStack minStack = new MinStack(); minStack.push(-2); minStack.push(0); minStack.push(-3); minStack.getMin(); --&amp;gt; Returns -3. minStack.pop(); minStack.top(); --&amp;gt; Returns 0. minStack.getMin(); --&amp;gt; Returns -2.</description>
     </item>
     
     <item>

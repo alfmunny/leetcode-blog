@@ -6,10 +6,20 @@
     <description>Recent content in stack on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2020 00:57:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 20:47:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/stack/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>155 - Min Stack</title>
+      <link>//alfmunny.com/leetcode-blog/posts/155-min-stack/</link>
+      <pubDate>Fri, 10 Apr 2020 20:47:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/155-min-stack/</guid>
+      <description>leetcode
+Problem Design a stack that supports push, pop, top, and retrieving the minimum element in constant time. push(x) -- Push element x onto stack. pop() -- Removes the element on top of the stack. top() -- Get the top element. getMin() -- Retrieve the minimum element in the stack. Example: MinStack minStack = new MinStack(); minStack.push(-2); minStack.push(0); minStack.push(-3); minStack.getMin(); --&amp;gt; Returns -3. minStack.pop(); minStack.top(); --&amp;gt; Returns 0. minStack.getMin(); --&amp;gt; Returns -2.</description>
+    </item>
     
     <item>
       <title>85 - Maximal Rectangle</title>

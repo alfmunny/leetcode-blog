@@ -32,9 +32,29 @@
 </div>
 
 <main>
-<p>leetcode</p>
+<p><a href="https://leetcode.com/problemset/all/?search=Min%20Stack">leetcode</a></p>
 <h2 id="problem">Problem</h2>
-<h2 id="solution">Solution</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+
+push(x) -- Push element x onto stack.
+pop() -- Removes the element on top of the stack.
+top() -- Get the top element.
+getMin() -- Retrieve the minimum element in the stack.
+
+
+Example:
+
+MinStack minStack = new MinStack();
+minStack.push(-2);
+minStack.push(0);
+minStack.push(-3);
+minStack.getMin();   --&gt; Returns -3.
+minStack.pop();
+minStack.top();      --&gt; Returns 0.
+minStack.getMin();   --&gt; Returns -2.
+</code></pre></div><h2 id="solution">Solution</h2>
+<p>Use a second stack to keep track of the min value.
+Pay attention to the return value. Remember to return None when there is no result.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MinStack</span>:
     <span style="color:#66d9ef">def</span> __init__(self):
         <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
@@ -53,14 +73,12 @@
             x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>stack<span style="color:#f92672">.</span>pop()
             <span style="color:#66d9ef">if</span> x <span style="color:#f92672">==</span> self<span style="color:#f92672">.</span>min[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
                 self<span style="color:#f92672">.</span>min<span style="color:#f92672">.</span>pop()
-        <span style="color:#66d9ef">else</span>:
-            None
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">top</span>(self) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
         <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>stack:
             <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>stack[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
         <span style="color:#66d9ef">else</span>:
-            None
+            <span style="color:#66d9ef">return</span> None
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getMin</span>(self) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
         <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>min:
