@@ -72,6 +72,19 @@ Note: The length of path between two nodes is represented by the number of edges
             <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
 
         <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> max(self<span style="color:#f92672">.</span>height(root<span style="color:#f92672">.</span>left), self<span style="color:#f92672">.</span>height(root<span style="color:#f92672">.</span>right))
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">diameterOfBinaryTree</span>(self, root):
+        self<span style="color:#f92672">.</span>ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+
+        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">depth</span>(node):
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> node:
+                <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+            r <span style="color:#f92672">=</span> depth(node<span style="color:#f92672">.</span>right)
+            l <span style="color:#f92672">=</span> depth(node<span style="color:#f92672">.</span>left)
+            self<span style="color:#f92672">.</span>ans <span style="color:#f92672">=</span> max(self<span style="color:#f92672">.</span>ans, r<span style="color:#f92672">+</span>l)
+            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> max(r, l)
+        depth(root)
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>ans
 </code></pre></div>
 </main>
 
