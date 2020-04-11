@@ -6,10 +6,20 @@
     <description>Recent content in easy on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2020 20:47:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2020 23:58:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/easy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>543 - Diameter of Binary Tree</title>
+      <link>//alfmunny.com/leetcode-blog/posts/543-diameter-of-binary-tree/</link>
+      <pubDate>Sat, 11 Apr 2020 23:58:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/543-diameter-of-binary-tree/</guid>
+      <description>leetcode
+Problem Given a binary tree, you need to compute the length of the diameter of the tree. The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root. Example: Given a binary tree 1 / \ 2 3 / \ 4 5 Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].</description>
+    </item>
     
     <item>
       <title>155 - Min Stack</title>
