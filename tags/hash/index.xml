@@ -6,10 +6,20 @@
     <description>Recent content in hash on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Apr 2020 16:03:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2020 23:06:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/hash/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>525 - Contiguous Array</title>
+      <link>//alfmunny.com/leetcode-blog/posts/525-contiguous-array/</link>
+      <pubDate>Mon, 13 Apr 2020 23:06:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/525-contiguous-array/</guid>
+      <description>leetcode
+Problem Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1. Example 1: Input: [0,1] Output: 2 Explanation: [0, 1] is the longest contiguous subarray with equal number of 0 and 1. Example 2: Input: [0,1,0] Output: 2 Explanation: [0, 1] (or [1, 0]) is a longest contiguous subarray with equal number of 0 and 1. Note: The length of the given binary array will not exceed 50,000.</description>
+    </item>
     
     <item>
       <title>202 - Happy Number</title>
