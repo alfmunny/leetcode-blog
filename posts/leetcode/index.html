@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LeetCode [41/42] | LeetCode In The Shell</title>
+    <title>LeetCode [46/47] | LeetCode In The Shell</title>
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/fonts.css" />
     
@@ -26,9 +26,9 @@
     </nav>
 
 <div class="article-meta">
-<h1><span class="title">LeetCode [41/42]</span></h1>
+<h1><span class="title">LeetCode [46/47]</span></h1>
 
-<h2 class="date">2020/04/09</h2>
+<h2 class="date">2020/04/16</h2>
 </div>
 
 <main>
@@ -321,6 +321,36 @@
 </ul>
 </li>
 <li><a href="#844-backspace-string-compare">844 - Backspace String Compare</a>
+<ul>
+<li><a href="#problem">Problem</a></li>
+<li><a href="#solution">Solution</a></li>
+</ul>
+</li>
+<li><a href="#155-min-stack">155 - Min Stack</a>
+<ul>
+<li><a href="#problem">Problem</a></li>
+<li><a href="#solution">Solution</a></li>
+</ul>
+</li>
+<li><a href="#543-diameter-of-binary-tree">543 - Diameter of Binary Tree</a>
+<ul>
+<li><a href="#problem">Problem</a></li>
+<li><a href="#solution">Solution</a></li>
+</ul>
+</li>
+<li><a href="#1046-last-stone-weight">1046 - Last Stone Weight</a>
+<ul>
+<li><a href="#problem">Problem</a></li>
+<li><a href="#solution">Solution</a></li>
+</ul>
+</li>
+<li><a href="#525-contiguous-array">525 - Contiguous Array</a>
+<ul>
+<li><a href="#problem">Problem</a></li>
+<li><a href="#solution">Solution</a></li>
+</ul>
+</li>
+<li><a href="#perform-string-shifts">Perform String Shifts</a>
 <ul>
 <li><a href="#problem">Problem</a></li>
 <li><a href="#solution">Solution</a></li>
@@ -1320,27 +1350,31 @@ The largest rectangle is shown in the shaded area, which has area = 10 unit.</p>
 </code></pre></div><p>Generale Case: O(n), because it uses the jump
 Worst Case: O(n^2)</p>
 <h4 id="solution-3-stack">Solution 3: stack</h4>
-<p>#+begin_src python :results output
-class Solution:
-def largestRectangleArea(self, heights):</p>
-<p>stack = []
-n = len(heights)
-res = 0
-index = 0</p>
-<p>while index &lt; n:</p>
-<p>if not stack or heights[stack[-1]] &lt;= heights[index]:
-stack.append(index)
-index += 1
-else:
-top = stack.pop()
-area = (heights[top] *
-((index - stack[-1] - 1) if stack else index))</p>
-<p>res = max(res, area)</p>
-<p>while stack:
-h = stack.pop()
-res = max(
-r</p>
-<h2 id="85-maximal-rectangle">85 - Maximal Rectangle</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">largestRectangleArea</span>(self, heights):
+
+        stack <span style="color:#f92672">=</span> []
+        n <span style="color:#f92672">=</span> len(heights)
+        res <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        index <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+
+        <span style="color:#66d9ef">while</span> index <span style="color:#f92672">&lt;</span> n:
+
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> stack <span style="color:#f92672">or</span> heights[stack[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]] <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> heights[index]:
+                stack<span style="color:#f92672">.</span>append(index)
+                index <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+            <span style="color:#66d9ef">else</span>:
+                top <span style="color:#f92672">=</span> stack<span style="color:#f92672">.</span>pop()
+                area <span style="color:#f92672">=</span> (heights[top] <span style="color:#f92672">*</span>
+                        ((index <span style="color:#f92672">-</span> stack[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">if</span> stack <span style="color:#66d9ef">else</span> index))
+
+                res <span style="color:#f92672">=</span> max(res, area)
+
+        <span style="color:#66d9ef">while</span> stack:
+            h <span style="color:#f92672">=</span> stack<span style="color:#f92672">.</span>pop()
+            res <span style="color:#f92672">=</span> max(
+                r
+</code></pre></div><h2 id="85-maximal-rectangle">85 - Maximal Rectangle</h2>
 <p><a href="https://leetcode.com/problems/maximal-rectangle/">leetcode</a></p>
 <h3 id="problem">Problem</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given a 2D binary matrix filled with 0&#39;s and 1&#39;s, find the largest rectangle containing only 1&#39;s and return its area.
@@ -1741,8 +1775,7 @@ Output: 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4
         <span style="color:#66d9ef">else</span>:
             l1<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>mergeTwoLists(l1<span style="color:#f92672">.</span>next, l2)
             <span style="color:#66d9ef">return</span> l1
-</code></pre></div><h4 id=""></h4>
-<h2 id="101-symmetric-tree">101 - Symmetric Tree</h2>
+</code></pre></div><h2 id="101-symmetric-tree">101 - Symmetric Tree</h2>
 <p><a href="https://leetcode.com/problems/symmetric-tree/">leetcode</a></p>
 <h3 id="problem">Problem</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
@@ -2956,7 +2989,6 @@ Since the list has two middle nodes with values 3 and 4, we return the second on
             head <span style="color:#f92672">=</span> head<span style="color:#f92672">.</span>next
         <span style="color:#66d9ef">return</span> mid
 </code></pre></div><h2 id="844-backspace-string-compare">844 - Backspace String Compare</h2>
-<p>:EXPORT_FILE_NAME:844-Backspace-String-Compare</p>
 <p><a href="https://leetcode.com/problems/backspace-string-compare/">leetcode</a></p>
 <h3 id="problem">Problem</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.
@@ -3053,6 +3085,222 @@ S and T only contain lowercase letters and &#39;#&#39; characters.
 
         <span style="color:#66d9ef">return</span> True
 <span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>backspaceCompare(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">###ac#b</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">ab#b</span><span style="color:#e6db74">&#34;</span>))
+</code></pre></div><h2 id="155-min-stack">155 - Min Stack</h2>
+<p><a href="https://leetcode.com/problemset/all/?search=Min%20Stack">leetcode</a></p>
+<h3 id="problem">Problem</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+
+push(x) -- Push element x onto stack.
+pop() -- Removes the element on top of the stack.
+top() -- Get the top element.
+getMin() -- Retrieve the minimum element in the stack.
+
+
+Example:
+
+MinStack minStack = new MinStack();
+minStack.push(-2);
+minStack.push(0);
+minStack.push(-3);
+minStack.getMin();   --&gt; Returns -3.
+minStack.pop();
+minStack.top();      --&gt; Returns 0.
+minStack.getMin();   --&gt; Returns -2.
+</code></pre></div><h3 id="solution">Solution</h3>
+<p>Use a second stack to keep track of the min value.
+Pay attention to the return value. Remember to return None when there is no result.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MinStack</span>:
+    <span style="color:#66d9ef">def</span> __init__(self):
+        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">        initialize your data structure here.</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">        </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+        self<span style="color:#f92672">.</span>stack <span style="color:#f92672">=</span> []
+        self<span style="color:#f92672">.</span>min <span style="color:#f92672">=</span> []
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">push</span>(self, x: int) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> None:
+        self<span style="color:#f92672">.</span>stack<span style="color:#f92672">.</span>append(x)
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> self<span style="color:#f92672">.</span>getMin() <span style="color:#f92672">or</span> self<span style="color:#f92672">.</span>getMin() <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> x:
+            self<span style="color:#f92672">.</span>min<span style="color:#f92672">.</span>append(x)
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pop</span>(self) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> None:
+        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>stack:
+            x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>stack<span style="color:#f92672">.</span>pop()
+            <span style="color:#66d9ef">if</span> x <span style="color:#f92672">==</span> self<span style="color:#f92672">.</span>min[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
+                self<span style="color:#f92672">.</span>min<span style="color:#f92672">.</span>pop()
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">top</span>(self) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
+        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>stack:
+            <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>stack[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+        <span style="color:#66d9ef">else</span>:
+            <span style="color:#66d9ef">return</span> None
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getMin</span>(self) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
+        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>min:
+            <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>min[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+        <span style="color:#66d9ef">else</span>:
+            <span style="color:#66d9ef">return</span> None
+</code></pre></div><h2 id="543-diameter-of-binary-tree">543 - Diameter of Binary Tree</h2>
+<p><a href="https://leetcode.com/problems/diameter-of-binary-tree/">leetcode</a></p>
+<h3 id="problem">Problem</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given a binary tree, you need to compute the length of the diameter of the tree. The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
+
+Example:
+Given a binary tree
+          1
+         / \
+        2   3
+       / \
+      4   5
+Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].
+
+Note: The length of path between two nodes is represented by the number of edges between them.
+</code></pre></div><h3 id="solution">Solution</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">diameterOfBinaryTree</span>(self, root: TreeNode) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> root:
+            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+        <span style="color:#66d9ef">elif</span> <span style="color:#f92672">not</span> root<span style="color:#f92672">.</span>right <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> root<span style="color:#f92672">.</span>left:
+            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+        <span style="color:#66d9ef">elif</span> <span style="color:#f92672">not</span> root<span style="color:#f92672">.</span>right:
+            <span style="color:#66d9ef">return</span> max(self<span style="color:#f92672">.</span>diameterOfBinaryTree(root<span style="color:#f92672">.</span>left),
+                       <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> self<span style="color:#f92672">.</span>height(root<span style="color:#f92672">.</span>left))
+        <span style="color:#66d9ef">elif</span> <span style="color:#f92672">not</span> root<span style="color:#f92672">.</span>left:
+            <span style="color:#66d9ef">return</span> max(self<span style="color:#f92672">.</span>diameterOfBinaryTree(root<span style="color:#f92672">.</span>right),
+                       <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> self<span style="color:#f92672">.</span>height(root<span style="color:#f92672">.</span>right))
+        <span style="color:#66d9ef">else</span>:
+            <span style="color:#66d9ef">return</span> max(self<span style="color:#f92672">.</span>diameterOfBinaryTree(root<span style="color:#f92672">.</span>right),
+                       self<span style="color:#f92672">.</span>diameterOfBinaryTree(root<span style="color:#f92672">.</span>left),
+                       self<span style="color:#f92672">.</span>height(root<span style="color:#f92672">.</span>left) <span style="color:#f92672">+</span> self<span style="color:#f92672">.</span>height(root<span style="color:#f92672">.</span>right) <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>)
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">height</span>(self, root):
+
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> root:
+            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> root<span style="color:#f92672">.</span>right <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> root<span style="color:#f92672">.</span>left:
+            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+
+        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> max(self<span style="color:#f92672">.</span>height(root<span style="color:#f92672">.</span>left), self<span style="color:#f92672">.</span>height(root<span style="color:#f92672">.</span>right))
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">diameterOfBinaryTree</span>(self, root):
+        self<span style="color:#f92672">.</span>ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+
+        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">depth</span>(node):
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> node:
+                <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+            r <span style="color:#f92672">=</span> depth(node<span style="color:#f92672">.</span>right)
+            l <span style="color:#f92672">=</span> depth(node<span style="color:#f92672">.</span>left)
+            self<span style="color:#f92672">.</span>ans <span style="color:#f92672">=</span> max(self<span style="color:#f92672">.</span>ans, r<span style="color:#f92672">+</span>l)
+            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> max(r, l)
+        depth(root)
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>ans
+</code></pre></div><h2 id="1046-last-stone-weight">1046 - Last Stone Weight</h2>
+<p><a href="https://leetcode.com/problems/last-stone-weight/">leetcode</a></p>
+<h3 id="problem">Problem</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">We have a collection of stones, each stone has a positive integer weight.
+
+Each turn, we choose the two heaviest stones and smash them together.  Suppose the stones have weights x and y with x &lt;= y.  The result of this smash is:
+
+If x == y, both stones are totally destroyed;
+If x != y, the stone of weight x is totally destroyed, and the stone of weight y has new weight y-x.
+At the end, there is at most 1 stone left.  Return the weight of this stone (or 0 if there are no stones left.)
+
+
+
+Example 1:
+
+Input: [2,7,4,1,8,1]
+Output: 1
+Explanation:
+We combine 7 and 8 to get 1 so the array converts to [2,4,1,1,1] then,
+we combine 2 and 4 to get 2 so the array converts to [2,1,1,1] then,
+we combine 2 and 1 to get 1 so the array converts to [1,1,1] then,
+we combine 1 and 1 to get 0 so the array converts to [1] then that&#39;s the value of last stone.
+</code></pre></div><h3 id="solution">Solution</h3>
+<p>Priority queue, max heap can be used here.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">lastStoneWeight</span>(self, stones):
+        res <span style="color:#f92672">=</span> [ <span style="color:#f92672">-</span>s <span style="color:#66d9ef">for</span> s <span style="color:#f92672">in</span> stones ]
+
+        heapq<span style="color:#f92672">.</span>heapify(res)
+
+        <span style="color:#66d9ef">while</span> len(res) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span> :
+            y <span style="color:#f92672">=</span> heapq<span style="color:#f92672">.</span>heappop(res)
+            x <span style="color:#f92672">=</span> heapq<span style="color:#f92672">.</span>heappop(res)
+            <span style="color:#66d9ef">if</span> y <span style="color:#f92672">!=</span> x:
+                heapq<span style="color:#f92672">.</span>heappush(res, y<span style="color:#f92672">-</span>x)
+
+        <span style="color:#66d9ef">return</span> res[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">*</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> res <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span>
+</code></pre></div><h2 id="525-contiguous-array">525 - Contiguous Array</h2>
+<p><a href="https://leetcode.com/problems/contiguous-array">leetcode</a></p>
+<h3 id="problem">Problem</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1.
+
+Example 1:
+Input: [0,1]
+Output: 2
+Explanation: [0, 1] is the longest contiguous subarray with equal number of 0 and 1.
+Example 2:
+Input: [0,1,0]
+Output: 2
+Explanation: [0, 1] (or [1, 0]) is a longest contiguous subarray with equal number of 0 and 1.
+Note: The length of the given binary array will not exceed 50,000.
+</code></pre></div><h3 id="solution">Solution</h3>
+<p>We keep a count, which decrease 1 if 0, increase 1 if 1.</p>
+<p>If at x and y, they have the same value v of count, then the numbers between x+1 and y have the equal number of 1s and 0s. The max length = y - (x + 1) + 1 = y - x</p>
+<p>And after that, if we found at index w, it also has value v of count. The max length should be w - x.</p>
+<p>So we have to maintain a hashmap h using the values of count as keys, and the first index of that count as its value.</p>
+<p>The <code>maxlen = max(maxlen, h[count])</code> if current count in the map.</p>
+<p><strong>Important</strong></p>
+<p>We have an initial value of the map.</p>
+<p>h[0] = -1 (If count == 0 at index i, we have all the numbers between h[0] + 1 and i. And h[0] + 1 should at index 0, so h[0] = -1)</p>
+<p>Consider the input [0, 1]:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Index 0: h[-1] = 0, maxlen = 0
+Index 1: h[0] = -1, maxlen = 1 - (-1) = 2
+maxlen = 2
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findMaxLength</span>(self, nums):
+        h <span style="color:#f92672">=</span> {<span style="color:#ae81ff">0</span>: <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>}
+
+        count <span style="color:#f92672">=</span> ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(nums)):
+            count <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> nums[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">else</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+            ans <span style="color:#f92672">=</span> max(ans, h<span style="color:#f92672">.</span>setdefault(count, i))
+
+        <span style="color:#66d9ef">return</span> ans
+</code></pre></div><h2 id="perform-string-shifts">Perform String Shifts</h2>
+<p><a href="https://leetcode.com/explore/other/card/30-day-leetcoding-challenge/529/week-2/3299/">leetcode</a></p>
+<h3 id="problem">Problem</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">You are given a string s containing lowercase English letters, and a matrix shift, where shift[i] = [direction, amount]:
+
+direction can be 0 (for left shift) or 1 (for right shift).
+amount is the amount by which string s is to be shifted.
+A left shift by 1 means remove the first character of s and append it to the end.
+Similarly, a right shift by 1 means remove the last character of s and add it to the beginning.
+Return the final string after all operations.
+
+Example 1:
+
+Input: s = &#34;abc&#34;, shift = [[0,1],[1,2]]
+Output: &#34;cab&#34;
+Explanation:
+[0,1] means shift to left by 1. &#34;abc&#34; -&gt; &#34;bca&#34;
+[1,2] means shift to right by 2. &#34;bca&#34; -&gt; &#34;cab&#34;
+
+Example 2:
+
+Input: s = &#34;abcdefg&#34;, shift = [[1,1],[1,1],[0,2],[1,3]]
+Output: &#34;efgabcd&#34;
+Explanation:
+[1,1] means shift to right by 1. &#34;abcdefg&#34; -&gt; &#34;gabcdef&#34;
+[1,1] means shift to right by 1. &#34;gabcdef&#34; -&gt; &#34;fgabcde&#34;
+[0,2] means shift to left by 2. &#34;fgabcde&#34; -&gt; &#34;abcdefg&#34;
+[1,3] means shift to right by 3. &#34;abcdefg&#34; -&gt; &#34;efgabcd&#34;
+</code></pre></div><h3 id="solution">Solution</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">stringShift</span>(self, s: str, shift: List[List[int]]) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> str:
+        count <span style="color:#f92672">=</span> sum([ (<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">+</span><span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>x)<span style="color:#f92672">*</span>y <span style="color:#66d9ef">for</span> x, y <span style="color:#f92672">in</span> shift ]) <span style="color:#f92672">%</span> len(s)
+        ds <span style="color:#f92672">=</span> s <span style="color:#f92672">+</span> s
+        <span style="color:#66d9ef">return</span> ds[len(s)<span style="color:#f92672">-</span>count: <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>len(s) <span style="color:#f92672">-</span> count]
 </code></pre></div>
 </main>
 
