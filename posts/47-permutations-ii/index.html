@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>47 - Permutations II | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">47 - Permutations II</span></h1>
+
+<h2 class="date">2020/04/19</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/permutations-ii/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+
+Example:
+
+Input: [1,1,2]
+Output:
+[
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
+]
+</code></pre></div><h2 id="solution">Solution</h2>
+<p>Backtrack problem.</p>
+<p>Framework of backtrack problem:</p>
+<ol>
+<li>choose a path</li>
+<li>selection pool</li>
+<li>return condition</li>
+</ol>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">ans = []
+
+def backtrack(path, pool):
+
+  if meet condition:
+    ans.add(path)
+    return
+
+  for selection in pool:
+
+    path.add(selection)
+    backtrack(path, new_pool)
+    path.remove(selection)
+</code></pre></div><p><strong>Important</strong>:</p>
+<p>Pay attention, you must add a copy of the path to result, not the path it self. It may get modified afterwards.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">permuteUnique</span>(self, nums):
+        ans <span style="color:#f92672">=</span> []
+        self<span style="color:#f92672">.</span>backtrack([], nums, ans)
+        <span style="color:#66d9ef">return</span> ans
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">backtrack</span>(self, path, pool, ans):
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> pool:
+            ans<span style="color:#f92672">.</span>append(path[:])
+            <span style="color:#66d9ef">return</span>
+
+        t <span style="color:#f92672">=</span> {}
+
+        <span style="color:#66d9ef">for</span> i, v <span style="color:#f92672">in</span> enumerate(pool):
+            <span style="color:#66d9ef">if</span> v <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> t:
+                t[v] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                self<span style="color:#f92672">.</span>backtrack(path<span style="color:#f92672">+</span>[v], pool[:i]<span style="color:#f92672">+</span>pool[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>:], ans)
+
+<span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>permuteUnique([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>]))
+</code></pre></div>
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alfmunnystechblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

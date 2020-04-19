@@ -4,7 +4,67 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
-    <lastmod>2020-04-17T17:01:58+02:00</lastmod>
+    <lastmod>2020-04-19T02:11:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/46-permutations/</loc>
+    <lastmod>2020-04-19T02:11:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/array/</loc>
+    <lastmod>2020-04-19T02:13:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/backtrack/</loc>
+    <lastmod>2020-04-19T02:13:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/categories/</loc>
+    <lastmod>2020-04-19T02:13:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
+    <lastmod>2020-04-19T02:13:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/</loc>
+    <lastmod>2020-04-19T02:13:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/medium/</loc>
+    <lastmod>2020-04-19T02:13:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/permutation/</loc>
+    <lastmod>2020-04-19T02:13:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
+    <lastmod>2020-04-19T02:13:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
+    <lastmod>2020-04-19T02:13:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/1-hint/</loc>
+    <lastmod>2020-04-19T02:13:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/47-permutations-ii/</loc>
+    <lastmod>2020-04-19T02:13:17+02:00</lastmod>
   </url>
   
   <url>
@@ -13,42 +73,7 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/array/</loc>
-    <lastmod>2020-04-17T17:01:58+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/categories/</loc>
-    <lastmod>2020-04-17T17:01:58+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/dfs/</loc>
-    <lastmod>2020-04-17T17:01:58+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
-    <lastmod>2020-04-17T17:01:58+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/</loc>
-    <lastmod>2020-04-17T17:01:58+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/medium/</loc>
-    <lastmod>2020-04-17T17:01:58+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
-    <lastmod>2020-04-17T17:01:58+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
     <lastmod>2020-04-17T17:01:58+02:00</lastmod>
   </url>
   
@@ -60,11 +85,6 @@
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/678-valid-parenthesis-string/</loc>
     <lastmod>2020-04-17T02:10:13+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/leetcode/</loc>
-    <lastmod>2020-04-16T00:06:22+02:00</lastmod>
   </url>
   
   <url>
@@ -140,11 +160,6 @@
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/49-group-anagrams/</loc>
     <lastmod>2020-04-07T00:49:20+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/1-hint/</loc>
-    <lastmod>2020-04-08T11:26:32+02:00</lastmod>
   </url>
   
   <url>
@@ -389,11 +404,6 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/79-word-search/</loc>
-    <lastmod>2020-03-21T23:09:08+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/backtrack/</loc>
     <lastmod>2020-03-21T23:09:08+01:00</lastmod>
   </url>
   

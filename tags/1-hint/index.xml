@@ -6,10 +6,23 @@
     <description>Recent content in 1-hint on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2020 01:05:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 01:40:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/1-hint/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>47 - Permutations II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/47-permutations-ii/</link>
+      <pubDate>Sun, 19 Apr 2020 01:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/47-permutations-ii/</guid>
+      <description>leetcode
+Problem Given a collection of numbers that might contain duplicates, return all possible unique permutations. Example: Input: [1,1,2] Output: [ [1,1,2], [1,2,1], [2,1,1] ] Solution Backtrack problem.
+Framework of backtrack problem:
+ choose a path selection pool return condition  ans = [] def backtrack(path, pool): if meet condition: ans.add(path) return for selection in pool: path.add(selection) backtrack(path, new_pool) path.remove(selection) Important:
+Pay attention, you must add a copy of the path to result, not the path it self.</description>
+    </item>
     
     <item>
       <title>215 - Kth Largest Element in an Array</title>
