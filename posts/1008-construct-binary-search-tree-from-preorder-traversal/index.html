@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>1008 - Construct Binary Search Tree from Preorder Traversal | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">1008 - Construct Binary Search Tree from Preorder Traversal</span></h1>
+
+<h2 class="date">2020/04/21</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Return the root node of a binary search tree that matches the given preorder traversal.
+
+(Recall that a binary search tree is a binary tree where for every node, any descendant of node.left has a value &lt; node.val, and any descendant of node.right has a value &gt; node.val.  Also recall that a preorder traversal displays the value of the node first, then traverses node.left, then traverses node.right.)
+
+Example 1:
+
+Input: [8,5,1,7,10,12]
+Output: [8,5,10,1,7,null,12]
+</code></pre></div><h2 id="solution">Solution</h2>
+<p>We keep track of a low bound for the function.</p>
+<p>We always build the right child with the low bound as the current node value.</p>
+<p>If next value is smaller then current node value, we construct the left node.</p>
+<p>If next value is smaller then current low bound, we construct the right node.</p>
+<p>If next value is larger then current low bound, we jump out of the funciton.</p>
+<p>Let the recursive jump back to the last level and do repeat the same proccess</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bstFromPreorder</span>(self, preorder):
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> preorder:
+            <span style="color:#66d9ef">return</span> None
+        root <span style="color:#f92672">=</span> TreeNode(preorder[<span style="color:#ae81ff">0</span>])
+        self<span style="color:#f92672">.</span>buildTree(root, <span style="color:#ae81ff">1</span>, preorder, sys<span style="color:#f92672">.</span>maxsize)
+        <span style="color:#66d9ef">return</span> root
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">buildTree</span>(self, root, pos, preorder, rmax):
+        <span style="color:#66d9ef">if</span> pos <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> len(preorder) <span style="color:#f92672">or</span> preorder[pos] <span style="color:#f92672">&gt;</span> rmax:
+            <span style="color:#66d9ef">return</span> None
+
+        <span style="color:#66d9ef">if</span> preorder[pos] <span style="color:#f92672">&lt;</span> root<span style="color:#f92672">.</span>val:
+            root<span style="color:#f92672">.</span>left <span style="color:#f92672">=</span> TreeNode(preorder[pos])
+            pos <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>buildTree(root<span style="color:#f92672">.</span>left, pos<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, preorder, root<span style="color:#f92672">.</span>val <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+
+        <span style="color:#66d9ef">if</span> pos <span style="color:#f92672">&lt;</span> len(preorder) <span style="color:#f92672">and</span> preorder[pos] <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> rmax:
+            root<span style="color:#f92672">.</span>right <span style="color:#f92672">=</span> TreeNode(preorder[pos])
+            pos <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>buildTree(root<span style="color:#f92672">.</span>right, pos<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, preorder, rmax)
+
+        <span style="color:#66d9ef">return</span> pos
+</code></pre></div><p>Concise version:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    pos <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bstFromPreorder</span>(self, preorder, bound<span style="color:#f92672">=</span>float(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">inf</span><span style="color:#e6db74">&#39;</span>)):
+        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>pos <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> len(preorder) <span style="color:#f92672">or</span> preorder[self<span style="color:#f92672">.</span>pos] <span style="color:#f92672">&gt;</span> bound:
+            <span style="color:#66d9ef">return</span> None
+        root <span style="color:#f92672">=</span> TreeNode(preorder[self<span style="color:#f92672">.</span>pos])
+        self<span style="color:#f92672">.</span>pos <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+        root<span style="color:#f92672">.</span>left <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>bstFromPreorder(preorder, root<span style="color:#f92672">.</span>val)
+        root<span style="color:#f92672">.</span>right <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>bstFromPreorder(preorder, bound)
+        <span style="color:#66d9ef">return</span> root
+</code></pre></div>
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alfmunnystechblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+
