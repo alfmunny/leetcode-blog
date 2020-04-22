@@ -6,10 +6,20 @@
     <description>Recent content in 1-pass on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 02:11:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2020 01:20:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/1-pass/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leftmost Column with at Least a One</title>
+      <link>//alfmunny.com/leetcode-blog/posts/leftmost-column-with-at-least-a-one/</link>
+      <pubDate>Wed, 22 Apr 2020 01:20:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/leftmost-column-with-at-least-a-one/</guid>
+      <description>leetcode
+Problem A binary matrix means that all elements are 0 or 1. For each individual row of the matrix, this row is sorted in non-decreasing order. Given a row-sorted binary matrix binaryMatrix, return leftmost column index(0-indexed) with at least a 1 in it. If such index doesn&amp;#39;t exist, return -1. You can&amp;#39;t access the Binary Matrix directly. You may only access the matrix using a BinaryMatrix interface: BinaryMatrix.get(x, y) returns the element of the matrix at index (x, y) (0-indexed).</description>
+    </item>
     
     <item>
       <title>46 - Permutations</title>
