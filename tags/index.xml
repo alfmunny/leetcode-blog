@@ -6,10 +6,55 @@
     <description>Recent content in Tags on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Apr 2020 01:35:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2020 00:17:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1-pass</title>
+      <link>//alfmunny.com/leetcode-blog/tags/1-pass/</link>
+      <pubDate>Sat, 25 Apr 2020 00:17:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/1-pass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>design</title>
+      <link>//alfmunny.com/leetcode-blog/tags/design/</link>
+      <pubDate>Sat, 25 Apr 2020 00:17:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hash</title>
+      <link>//alfmunny.com/leetcode-blog/tags/hash/</link>
+      <pubDate>Sat, 25 Apr 2020 00:17:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/hash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>list</title>
+      <link>//alfmunny.com/leetcode-blog/tags/list/</link>
+      <pubDate>Sat, 25 Apr 2020 00:17:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>medium</title>
+      <link>//alfmunny.com/leetcode-blog/tags/medium/</link>
+      <pubDate>Sat, 25 Apr 2020 00:17:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/medium/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>1-fail</title>
@@ -30,15 +75,6 @@
     </item>
     
     <item>
-      <title>medium</title>
-      <link>//alfmunny.com/leetcode-blog/tags/medium/</link>
-      <pubDate>Fri, 24 Apr 2020 01:35:00 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/medium/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>1-hint</title>
       <link>//alfmunny.com/leetcode-blog/tags/1-hint/</link>
       <pubDate>Thu, 23 Apr 2020 01:38:00 +0200</pubDate>
@@ -53,24 +89,6 @@
       <pubDate>Thu, 23 Apr 2020 01:38:00 +0200</pubDate>
       
       <guid>//alfmunny.com/leetcode-blog/tags/array/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hash</title>
-      <link>//alfmunny.com/leetcode-blog/tags/hash/</link>
-      <pubDate>Thu, 23 Apr 2020 01:38:00 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/hash/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>1-pass</title>
-      <link>//alfmunny.com/leetcode-blog/tags/1-pass/</link>
-      <pubDate>Wed, 22 Apr 2020 01:20:00 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/1-pass/</guid>
       <description></description>
     </item>
     
@@ -188,15 +206,6 @@
       <pubDate>Wed, 25 Mar 2020 21:02:00 +0100</pubDate>
       
       <guid>//alfmunny.com/leetcode-blog/tags/recursion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>list</title>
-      <link>//alfmunny.com/leetcode-blog/tags/list/</link>
-      <pubDate>Wed, 25 Mar 2020 19:55:00 +0100</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/list/</guid>
       <description></description>
     </item>
     
