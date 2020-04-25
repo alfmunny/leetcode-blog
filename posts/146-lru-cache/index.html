@@ -34,7 +34,7 @@
 <main>
 <p><a href="https://leetcode.com/problems/lru-cache/">leetcode</a></p>
 <h2 id="problem">Problem</h2>
-<pre><code class="language-example" data-lang="example">Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
 
 get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
 put(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
@@ -57,7 +57,7 @@ cache.put(4, 4);    // evicts key 1
 cache.get(1);       // returns -1 (not found)
 cache.get(3);       // returns 3
 cache.get(4);       // returns 4
-</code></pre><h2 id="solution">Solution</h2>
+</code></pre></div><h2 id="solution">Solution</h2>
 <ol>
 <li>
 <p>How to manage to have a O(1) for get()?</p>
