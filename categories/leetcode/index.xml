@@ -6,10 +6,20 @@
     <description>Recent content in leetcode on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Apr 2020 00:17:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2020 00:38:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>460 - LFU Cache</title>
+      <link>//alfmunny.com/leetcode-blog/posts/460-lfu-cache/</link>
+      <pubDate>Sun, 26 Apr 2020 00:38:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/460-lfu-cache/</guid>
+      <description>leetcode
+Problem Design and implement a data structure for Least Frequently Used (LFU) cache. It should support the following operations: get and put. get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1. put(key, value) - Set or insert the value if the key is not already present. When the cache reaches its capacity, it should invalidate the least frequently used item before inserting a new item.</description>
+    </item>
     
     <item>
       <title>146 - LRU Cache</title>
