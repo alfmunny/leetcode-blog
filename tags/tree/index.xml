@@ -6,10 +6,20 @@
     <description>Recent content in tree on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2020 23:58:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2020 15:52:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/tree/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>437 - Path Sum III</title>
+      <link>//alfmunny.com/leetcode-blog/posts/437-path-sum-iii/</link>
+      <pubDate>Sun, 26 Apr 2020 15:52:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/437-path-sum-iii/</guid>
+      <description>leetcode
+Problem You are given a binary tree in which each node contains an integer value. Find the number of paths that sum to a given value. The path does not need to start or end at the root or a leaf, but it must go downwards (traveling only from parent nodes to child nodes). The tree has no more than 1,000 nodes and the values are in the range -1,000,000 to 1,000,000.</description>
+    </item>
     
     <item>
       <title>543 - Diameter of Binary Tree</title>
