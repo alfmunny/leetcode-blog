@@ -3,6 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
+    <lastmod>2020-04-28T16:23:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/169-majority-element/</loc>
+    <lastmod>2020-04-28T16:23:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/array/</loc>
+    <lastmod>2020-04-28T16:23:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/categories/</loc>
+    <lastmod>2020-04-28T16:23:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/easy/</loc>
+    <lastmod>2020-04-28T16:23:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/hash/</loc>
+    <lastmod>2020-04-28T16:23:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
+    <lastmod>2020-04-28T16:23:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/</loc>
+    <lastmod>2020-04-28T16:23:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
+    <lastmod>2020-04-28T16:23:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
+    <lastmod>2020-04-28T16:23:37+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/1-hint/</loc>
     <lastmod>2020-04-27T14:50:28+02:00</lastmod>
   </url>
@@ -13,22 +63,7 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/categories/</loc>
-    <lastmod>2020-04-27T14:50:28+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/dp/</loc>
-    <lastmod>2020-04-27T14:50:28+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
-    <lastmod>2020-04-27T14:50:28+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/</loc>
     <lastmod>2020-04-27T14:50:28+02:00</lastmod>
   </url>
   
@@ -38,17 +73,7 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
-    <lastmod>2020-04-27T14:50:28+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/string/</loc>
-    <lastmod>2020-04-27T14:50:28+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
     <lastmod>2020-04-27T14:50:28+02:00</lastmod>
   </url>
   
@@ -88,17 +113,7 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
-    <lastmod>2020-04-26T00:52:35+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/posts/146-lru-cache/</loc>
-    <lastmod>2020-04-26T00:52:35+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/hash/</loc>
     <lastmod>2020-04-26T00:52:35+02:00</lastmod>
   </url>
   
@@ -119,11 +134,6 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/560-subarray-sum-equals-k/</loc>
-    <lastmod>2020-04-23T01:39:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/array/</loc>
     <lastmod>2020-04-23T01:39:41+02:00</lastmod>
   </url>
   
@@ -175,11 +185,6 @@
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/678-valid-parenthesis-string/</loc>
     <lastmod>2020-04-17T02:10:13+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/easy/</loc>
-    <lastmod>2020-04-15T00:24:38+02:00</lastmod>
   </url>
   
   <url>
