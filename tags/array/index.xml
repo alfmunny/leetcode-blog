@@ -6,10 +6,26 @@
     <description>Recent content in array on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Apr 2020 16:22:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2020 17:10:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/array/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>448 - Find All Numbers Disappeard in an Array</title>
+      <link>//alfmunny.com/leetcode-blog/posts/448-find-all-numbers-disappeard-in-an-array/</link>
+      <pubDate>Tue, 28 Apr 2020 17:10:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/448-find-all-numbers-disappeard-in-an-array/</guid>
+      <description>leetcode
+Problem Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
+Find all the elements of [1, n] inclusive that do not appear in this array.
+Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.
+Example:
+Input: [4,3,2,7,8,2,3,1]
+Output: [5,6]
+Solution class Solution: def findDisappearedNumbers(self, nums): for i in nums: j = i while nums[j-1] !</description>
+    </item>
     
     <item>
       <title>169 - Majority Element</title>
