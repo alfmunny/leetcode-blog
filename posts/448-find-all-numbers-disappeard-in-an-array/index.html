@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>448 - Find All Numbers Disappeard in an Array | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">448 - Find All Numbers Disappeard in an Array</span></h1>
+
+<h2 class="date">2020/04/28</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<p>Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.</p>
+<p>Find all the elements of [1, n] inclusive that do not appear in this array.</p>
+<p>Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.</p>
+<p>Example:</p>
+<p>Input:
+[4,3,2,7,8,2,3,1]</p>
+<p>Output:
+[5,6]</p>
+<h2 id="solution">Solution</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findDisappearedNumbers</span>(self, nums):
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> nums:
+            j <span style="color:#f92672">=</span> i
+            <span style="color:#66d9ef">while</span> nums[j<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">!=</span> j:
+                nums[j<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], j <span style="color:#f92672">=</span> j, nums[j<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+
+        <span style="color:#66d9ef">return</span> [i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(nums)) <span style="color:#66d9ef">if</span> nums[i] <span style="color:#f92672">!=</span> i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]
+</code></pre></div>
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alfmunnystechblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+
