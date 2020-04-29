@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kmp on LeetCode In The Shell</title>
+    <link>//alfmunny.com/leetcode-blog/tags/kmp/</link>
+    <description>Recent content in kmp on LeetCode In The Shell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Apr 2020 21:42:00 +0200</lastBuildDate>
+    
+	<atom:link href="//alfmunny.com/leetcode-blog/tags/kmp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>28 - Implement strStr() (KMP Algorithm)</title>
+      <link>//alfmunny.com/leetcode-blog/posts/28-kmp/</link>
+      <pubDate>Wed, 29 Apr 2020 21:42:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/28-kmp/</guid>
+      <description>leetcode
+Problem Implement strStr(). Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack. Example 1: Input: haystack = &amp;#34;hello&amp;#34;, needle = &amp;#34;ll&amp;#34; Output: 2 Example 2: Input: haystack = &amp;#34;aaaaa&amp;#34;, needle = &amp;#34;bba&amp;#34; Output: -1 Solution KMP tutorial
+class Solution: def __init__(self, pat): self.pat = pat self.dp = [] self.KMP(self.pat) def KMP(self, pat): M = len(pat) self.dp = [[0] * 256 for _ in range(M)] self.</description>
+    </item>
+    
+  </channel>
+</rss>
