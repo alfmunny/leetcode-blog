@@ -43,6 +43,9 @@
 <p>Output:
 [5,6]</p>
 <h2 id="solution">Solution</h2>
+<p>Move all the numbers to its position. For example, 4 move to index 3, 3 move to index 2 and so on.</p>
+<p>The numbers at index i, which are not equal i + 1, are the ones disappeared.</p>
+<p>The operation is in-place.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findDisappearedNumbers</span>(self, nums):
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> nums:
@@ -51,7 +54,9 @@
                 nums[j<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], j <span style="color:#f92672">=</span> j, nums[j<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
 
         <span style="color:#66d9ef">return</span> [i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(nums)) <span style="color:#66d9ef">if</span> nums[i] <span style="color:#f92672">!=</span> i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]
-</code></pre></div>
+</code></pre></div><p>Time: O(N)</p>
+<p>Space: O(1)</p>
+
 </main>
 
   <footer>

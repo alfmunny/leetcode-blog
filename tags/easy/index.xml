@@ -24,7 +24,7 @@ Could you do it without extra space and in O(n) runtime? You may assume the retu
 Example:
 Input: [4,3,2,7,8,2,3,1]
 Output: [5,6]
-Solution class Solution: def findDisappearedNumbers(self, nums): for i in nums: j = i while nums[j-1] !</description>
+Solution Move all the numbers to its position.</description>
     </item>
     
     <item>
