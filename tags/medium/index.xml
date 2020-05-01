@@ -6,10 +6,20 @@
     <description>Recent content in medium on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Apr 2020 14:49:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2020 00:21:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/medium/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>105 - Construct Binary Tree from Preorder and Inorder Traversal</title>
+      <link>//alfmunny.com/leetcode-blog/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/</link>
+      <pubDate>Sat, 02 May 2020 00:21:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/</guid>
+      <description>leetcode
+Problem Given preorder and inorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. For example, given preorder = [3,9,20,15,7] inorder = [9,3,15,20,7] Return the following binary tree: 3 / \ 9 20 / \ 15 7 Solution  The first node of the preorder is always the root. Find the root in the inorder array, split it there.</description>
+    </item>
     
     <item>
       <title>1143 - Longest Common Subsequence</title>

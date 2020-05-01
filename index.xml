@@ -6,10 +6,30 @@
     <description>Recent content on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2020 21:42:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2020 00:21:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>105 - Construct Binary Tree from Preorder and Inorder Traversal</title>
+      <link>//alfmunny.com/leetcode-blog/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/</link>
+      <pubDate>Sat, 02 May 2020 00:21:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/</guid>
+      <description>leetcode
+Problem Given preorder and inorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. For example, given preorder = [3,9,20,15,7] inorder = [9,3,15,20,7] Return the following binary tree: 3 / \ 9 20 / \ 15 7 Solution  The first node of the preorder is always the root. Find the root in the inorder array, split it there.</description>
+    </item>
+    
+    <item>
+      <title>278 - First Bad Version</title>
+      <link>//alfmunny.com/leetcode-blog/posts/278-first-bad-version/</link>
+      <pubDate>Fri, 01 May 2020 22:00:09 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/278-first-bad-version/</guid>
+      <description>leetcode
+Problem You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad. Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one, which causes all the following ones to be bad.</description>
+    </item>
     
     <item>
       <title>28 - Implement strStr() (KMP Algorithm)</title>
