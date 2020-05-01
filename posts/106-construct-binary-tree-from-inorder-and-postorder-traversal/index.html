@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>106 - Construct Binary Tree from Inorder and Postorder Traversal | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">106 - Construct Binary Tree from Inorder and Postorder Traversal</span></h1>
+
+<h2 class="date">2020/05/02</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given inorder and postorder traversal of a tree, construct the binary tree.
+
+Note:
+You may assume that duplicates do not exist in the tree.
+
+For example, given
+
+inorder = [9,3,15,20,7]
+postorder = [9,15,7,20,3]
+Return the following binary tree:
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+</code></pre></div><h2 id="solution">Solution</h2>
+<p>The problem is almost the same as <a href="http://alfmunny.com/leetcode-blog/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/">105 Construct BT from Preorder and Inorder</a>. Notes can be found there.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">buildTree</span>(self, inorder: List[int], postorder: List[int]) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> TreeNode:
+        <span style="color:#66d9ef">if</span> inorder:
+            node <span style="color:#f92672">=</span> TreeNode(postorder<span style="color:#f92672">.</span>pop())
+            split <span style="color:#f92672">=</span> inorder<span style="color:#f92672">.</span>index(node<span style="color:#f92672">.</span>val)
+            node<span style="color:#f92672">.</span>right <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>buildTree(inorder[split <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>:], postorder)
+            node<span style="color:#f92672">.</span>left <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>buildTree(inorder[:split], postorder)
+
+            <span style="color:#66d9ef">return</span> node
+</code></pre></div>
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alfmunnystechblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+
