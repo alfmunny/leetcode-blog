@@ -6,10 +6,20 @@
     <description>Recent content in dp on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Apr 2020 14:49:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2020 01:16:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/dp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>887 - Super Egg Drop</title>
+      <link>//alfmunny.com/leetcode-blog/posts/887-super-egg-drop/</link>
+      <pubDate>Sun, 03 May 2020 01:16:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/887-super-egg-drop/</guid>
+      <description>leetcode
+Problem You are given K eggs, and you have access to a building with N floors from 1 to N. Each egg is identical in function, and if an egg breaks, you cannot drop it again. You know that there exists a floor F with 0 &amp;lt;= F &amp;lt;= N such that any egg dropped at a floor higher than F will break, and any egg dropped at or below floor F will not break.</description>
+    </item>
     
     <item>
       <title>1143 - Longest Common Subsequence</title>
