@@ -6,10 +6,20 @@
     <description>Recent content in easy on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2020 22:00:09 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2020 17:59:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/easy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1009 - Complement of Base 10 Integer</title>
+      <link>//alfmunny.com/leetcode-blog/posts/1009-complement-of-base-10-integer/</link>
+      <pubDate>Mon, 04 May 2020 17:59:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/1009-complement-of-base-10-integer/</guid>
+      <description>leetcode
+Problem Every non-negative integer N has a binary representation. For example, 5 can be represented as &amp;#34;101&amp;#34; in binary, 11 as &amp;#34;1011&amp;#34; in binary, and so on. Note that except for N = 0, there are no leading zeroes in any binary representation. The complement of a binary representation is the number in binary you get when changing every 1 to a 0 and 0 to a 1. For example, the complement of &amp;#34;101&amp;#34; in binary is &amp;#34;010&amp;#34; in binary.</description>
+    </item>
     
     <item>
       <title>278 - First Bad Version</title>
