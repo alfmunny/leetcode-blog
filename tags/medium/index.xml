@@ -6,10 +6,20 @@
     <description>Recent content in medium on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2020 17:19:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2020 17:43:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/medium/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>337 - House Robber III</title>
+      <link>//alfmunny.com/leetcode-blog/posts/337-house-robber-ii/</link>
+      <pubDate>Wed, 06 May 2020 17:43:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/337-house-robber-ii/</guid>
+      <description>leetcode
+Problem The thief has found himself a new place for his thievery again. There is only one entrance to this area, called the &amp;#34;root.&amp;#34; Besides the root, each house has one and only one parent house. After a tour, the smart thief realized that &amp;#34;all houses in this place forms a binary tree&amp;#34;. It will automatically contact the police if two directly-linked houses were broken into on the same night.</description>
+    </item>
     
     <item>
       <title>98 - Validate Binary Search Tree</title>
