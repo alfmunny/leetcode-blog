@@ -6,10 +6,20 @@
     <description>Recent content in medium on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 May 2020 17:43:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2020 21:54:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/medium/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cousins in Binary Tree</title>
+      <link>//alfmunny.com/leetcode-blog/posts/counsins-in-binary-tree/</link>
+      <pubDate>Thu, 07 May 2020 21:54:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/counsins-in-binary-tree/</guid>
+      <description>leetcode
+Problem In a binary tree, the root node is at depth 0, and children of each depth k node are at depth k+1. Two nodes of a binary tree are cousins if they have the same depth, but have different parents. We are given the root of a binary tree with unique values, and the values x and y of two different nodes in the tree. Return true if and only if the nodes corresponding to the values x and y are cousins.</description>
+    </item>
     
     <item>
       <title>337 - House Robber III</title>
