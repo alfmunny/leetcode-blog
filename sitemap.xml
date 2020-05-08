@@ -4,26 +4,51 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
-    <lastmod>2020-05-07T21:55:35+02:00</lastmod>
+    <lastmod>2020-05-09T01:23:22+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/1232-check-if-it-is-a-straight-line/</loc>
+    <lastmod>2020-05-09T01:23:22+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/categories/</loc>
-    <lastmod>2020-05-07T21:55:35+02:00</lastmod>
+    <lastmod>2020-05-09T01:23:22+02:00</lastmod>
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/counsins-in-binary-tree/</loc>
-    <lastmod>2020-05-07T21:55:35+02:00</lastmod>
+    <loc>//alfmunny.com/leetcode-blog/tags/easy/</loc>
+    <lastmod>2020-05-09T01:23:22+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/geometry/</loc>
+    <lastmod>2020-05-09T01:23:22+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
-    <lastmod>2020-05-07T21:55:35+02:00</lastmod>
+    <lastmod>2020-05-09T01:23:22+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/</loc>
+    <lastmod>2020-05-09T01:23:22+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
+    <lastmod>2020-05-09T01:23:22+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
+    <lastmod>2020-05-09T01:23:22+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/counsins-in-binary-tree/</loc>
     <lastmod>2020-05-07T21:55:35+02:00</lastmod>
   </url>
   
@@ -33,17 +58,7 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
-    <lastmod>2020-05-07T21:55:35+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/recursion/</loc>
-    <lastmod>2020-05-07T21:55:35+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
     <lastmod>2020-05-07T21:55:35+02:00</lastmod>
   </url>
   
@@ -69,11 +84,6 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/bit/</loc>
-    <lastmod>2020-05-04T18:02:50+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/easy/</loc>
     <lastmod>2020-05-04T18:02:50+02:00</lastmod>
   </url>
   

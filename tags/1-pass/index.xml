@@ -6,10 +6,22 @@
     <description>Recent content in 1-pass on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 May 2020 21:54:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2020 01:18:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/1-pass/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1232 - Check If It Is a Straight Line</title>
+      <link>//alfmunny.com/leetcode-blog/posts/1232-check-if-it-is-a-straight-line/</link>
+      <pubDate>Sat, 09 May 2020 01:18:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/1232-check-if-it-is-a-straight-line/</guid>
+      <description>leetcode
+Problem You are given an array coordinates, coordinates[i] = [x, y], where [x, y] represents the coordinate of a point. Check if these points make a straight line in the XY plane. Solution Important
+Notice the divider. It may be zero, when the lines are horizontal.
+class Solution: def checkStraightLine(self, coordinates: List[List[int]]) -&amp;gt; bool: p1 = coordinates[0] p2 = coordinates[1] slope = self.slope(p1, p2) for i in range(2, len(coordinates)): if self.</description>
+    </item>
     
     <item>
       <title>Cousins in Binary Tree</title>
