@@ -140,6 +140,8 @@ grid <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">1</span>
 <span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>minPathSum(grid))
 </code></pre></div><h3 id="solution-2-1d-dp">Solution 2: 1D DP</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> sys
+
+
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">minPathSum</span>(self, grid):
         <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
@@ -149,20 +151,20 @@ grid <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">1</span>
         m <span style="color:#f92672">=</span> len(grid)
         n <span style="color:#f92672">=</span> len(grid[<span style="color:#ae81ff">0</span>])
 
-        dp <span style="color:#f92672">=</span> [sys<span style="color:#f92672">.</span>maxsize <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)]
+        dp <span style="color:#f92672">=</span> [sys<span style="color:#f92672">.</span>maxsize <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)]
         dp[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> grid[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span>]
 
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(m):
             <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(n):
-              <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">and</span> j <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
-                  <span style="color:#66d9ef">continue</span>
-              <span style="color:#66d9ef">else</span>:
-                dp[j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> min(dp[j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>], dp[j]) <span style="color:#f92672">+</span> grid[i][j]
+                <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> j <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+                    <span style="color:#66d9ef">continue</span>
+                <span style="color:#66d9ef">else</span>:
+                    dp[j <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> min(dp[j <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>], dp[j]) <span style="color:#f92672">+</span> grid[i][j]
 
         <span style="color:#66d9ef">return</span> dp[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#66d9ef">if</span> m <span style="color:#f92672">and</span> n <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span>
 
 
-grid <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">1</span>],[<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">1</span>],[<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1</span>]]
+grid <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>], [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">1</span>], [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>]]
 
 <span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>minPathSum(grid))
 </code></pre></div>
