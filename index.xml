@@ -6,10 +6,22 @@
     <description>Recent content on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 May 2020 21:54:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2020 22:27:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>918 - Maximum Sum Circular Subarray</title>
+      <link>//alfmunny.com/leetcode-blog/posts/918-maximum-sum-circular-subarray/</link>
+      <pubDate>Fri, 15 May 2020 22:27:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/918-maximum-sum-circular-subarray/</guid>
+      <description>leetcode
+Problem  Given a circular array C of integers represented by A, find the maximum possible sum of a non-empty subarray of C.
+Here, a circular array means the end of the array connects to the beginning of the array. (Formally, C[i] = A[i] when 0 &amp;lt;= i &amp;lt; A.length, and C[i+A.length] = C[i] when i &amp;gt;= 0.)
+Also, a subarray may only include each element of the fixed buffer A at most once.</description>
+    </item>
     
     <item>
       <title>208 - Implement Trie (Prefix Tree)</title>
