@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>328 - Odd Even Linked List | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">328 - Odd Even Linked List</span></h1>
+
+<h2 class="date">2020/05/16</h2>
+<p class="terms">
+  
+  
+  Categories: <a href="../../categories/leetcode">leetcode</a> 
+  
+  
+  
+  Tags: <a href="../../tags/medium">medium</a> <a href="../../tags/list">list</a> <a href="../../tags/1-pass">1-pass</a> 
+  
+  
+</p>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/odd-even-linked-list/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given a singly linked list, group all odd nodes together followed by the even nodes.
+Please note here we are talking about the node number and not the value in the nodes.
+
+You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity.
+
+Example 1:
+
+Input: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL
+Output: 1-&gt;3-&gt;5-&gt;2-&gt;4-&gt;NULL
+
+Example 2:
+
+Input: 2-&gt;1-&gt;3-&gt;5-&gt;6-&gt;4-&gt;7-&gt;NULL
+Output: 2-&gt;3-&gt;6-&gt;7-&gt;1-&gt;5-&gt;4-&gt;NULL
+Note:
+
+The relative order inside both the even and odd groups should remain as it was in the input.
+The first node is considered odd, the second node even and so on ...
+</code></pre></div><h2 id="solution">Solution</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">oddEvenList</span>(self, head: ListNode) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> ListNode:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> head <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> head<span style="color:#f92672">.</span>next <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> head<span style="color:#f92672">.</span>next<span style="color:#f92672">.</span>next:
+            <span style="color:#66d9ef">return</span> head
+
+        p1, p2 <span style="color:#f92672">=</span> head, head<span style="color:#f92672">.</span>next
+        even <span style="color:#f92672">=</span> p2
+
+        <span style="color:#66d9ef">while</span> p2 <span style="color:#f92672">and</span> p2<span style="color:#f92672">.</span>next:
+            p1<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> p2<span style="color:#f92672">.</span>next
+            p1 <span style="color:#f92672">=</span> p1<span style="color:#f92672">.</span>next
+            p2<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> p1<span style="color:#f92672">.</span>next
+            p2 <span style="color:#f92672">=</span> p2<span style="color:#f92672">.</span>next
+
+        p1<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> even
+
+        <span style="color:#66d9ef">return</span> head
+</code></pre></div>
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alfmunnystechblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+
