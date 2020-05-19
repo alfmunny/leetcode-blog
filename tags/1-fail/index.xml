@@ -6,10 +6,20 @@
     <description>Recent content in 1-fail on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 May 2020 05:08:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2020 21:40:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/1-fail/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>901 - Onine Stock Span</title>
+      <link>//alfmunny.com/leetcode-blog/posts/901-online-stock-span/</link>
+      <pubDate>Tue, 19 May 2020 21:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/901-online-stock-span/</guid>
+      <description>leetcode
+Problem Write a class StockSpanner which collects daily price quotes for some stock, and returns the span of that stock&amp;#39;s price for the current day. The span of the stock&amp;#39;s price today is defined as the maximum number of consecutive days (starting from today and going backwards) for which the price of the stock was less than or equal to today&amp;#39;s price. For example, if the price of a stock over the next 7 days were [100, 80, 60, 70, 60, 75, 85], then the stock spans would be [1, 1, 1, 2, 1, 4, 6].</description>
+    </item>
     
     <item>
       <title>438 - Find All Anagrams in a String</title>
