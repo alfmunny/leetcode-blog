@@ -6,10 +6,20 @@
     <description>Recent content on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 May 2020 21:40:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2020 22:37:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>230 - Kth Smallest Element in a BST</title>
+      <link>//alfmunny.com/leetcode-blog/posts/230-kth-smallest-element-in-a-bst/</link>
+      <pubDate>Wed, 20 May 2020 22:37:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/230-kth-smallest-element-in-a-bst/</guid>
+      <description>leetcode
+Problem 230. Kth Smallest Element in a BST Medium 2239 57 Add to List Share Given a binary search tree, write a function kthSmallest to find the kth smallest element in it. Note: You may assume k is always valid, 1 ≤ k ≤ BST&amp;#39;s total elements. Example 1: Input: root = [3,1,4,null,2], k = 1 3 / \ 1 4 \ 2 Output: 1 Example 2: Input: root = [5,3,6,2,4,null,null,1], k = 3 5 / \ 3 6 / \ 2 4 / 1 Output: 3 Solution class Solution: def kthSmallest(self, root): self.</description>
+    </item>
     
     <item>
       <title>901 - Onine Stock Span</title>
