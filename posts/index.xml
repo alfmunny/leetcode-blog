@@ -6,10 +6,40 @@
     <description>Recent content in Posts on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 May 2020 22:37:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2020 14:19:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>451 - Sort Characters By Frequency</title>
+      <link>//alfmunny.com/leetcode-blog/posts/451-sort-characters-by-frequency/</link>
+      <pubDate>Fri, 22 May 2020 14:19:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/451-sort-characters-by-frequency/</guid>
+      <description>leetcode
+Problem Given a string, sort it in decreasing order based on the frequency of characters. Example 1: Input: &amp;#34;tree&amp;#34; Output: &amp;#34;eert&amp;#34; Explanation: &amp;#39;e&amp;#39; appears twice while &amp;#39;r&amp;#39; and &amp;#39;t&amp;#39; both appear once. So &amp;#39;e&amp;#39; must appear before both &amp;#39;r&amp;#39; and &amp;#39;t&amp;#39;. Therefore &amp;#34;eetr&amp;#34; is also a valid answer. Example 2: Input: &amp;#34;cccaaa&amp;#34; Output: &amp;#34;cccaaa&amp;#34; Explanation: Both &amp;#39;c&amp;#39; and &amp;#39;a&amp;#39; appear three times, so &amp;#34;aaaccc&amp;#34; is also a valid answer. Note that &amp;#34;cacaca&amp;#34; is incorrect, as the same characters must be together.</description>
+    </item>
+    
+    <item>
+      <title>76 - Minimum Window Substring</title>
+      <link>//alfmunny.com/leetcode-blog/posts/76-minimum-window-substring/</link>
+      <pubDate>Fri, 22 May 2020 00:41:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/76-minimum-window-substring/</guid>
+      <description>leetcode
+Problem Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n). Example: Input: S = &amp;#34;ADOBECODEBANC&amp;#34;, T = &amp;#34;ABC&amp;#34; Output: &amp;#34;BANC&amp;#34; Note: If there is no such window in S that covers all characters in T, return the empty string &amp;#34;&amp;#34;. If there is such window, you are guaranteed that there will always be only one unique minimum window in S.</description>
+    </item>
+    
+    <item>
+      <title>1277 - Count Square Submatrices with All Ones</title>
+      <link>//alfmunny.com/leetcode-blog/posts/1227-count-square-submatrices-with-all-ones/</link>
+      <pubDate>Fri, 22 May 2020 00:01:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/1227-count-square-submatrices-with-all-ones/</guid>
+      <description>leetcode
+Problem Given a m * n matrix of ones and zeros, return how many square submatrices have all ones. Example 1: Input: matrix = [ [0,1,1,1], [1,1,1,1], [0,1,1,1] ] Output: 15 Explanation: There are 10 squares of side 1. There are 4 squares of side 2. There is 1 square of side 3. Total number of squares = 10 + 4 + 1 = 15. Example 2: Input: matrix = [ [1,0,1], [1,1,0], [1,1,0] ] Output: 7 Explanation: There are 6 squares of side 1.</description>
+    </item>
     
     <item>
       <title>230 - Kth Smallest Element in a BST</title>
