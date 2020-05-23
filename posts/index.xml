@@ -6,10 +6,20 @@
     <description>Recent content in Posts on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 May 2020 14:19:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2020 01:13:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>986 - Interval List Intersections</title>
+      <link>//alfmunny.com/leetcode-blog/posts/996-interval-list-intersections/</link>
+      <pubDate>Sun, 24 May 2020 01:13:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/996-interval-list-intersections/</guid>
+      <description>leetcode
+Problem Given two lists of closed intervals, each list of intervals is pairwise disjoint and in sorted order. Return the intersection of these two interval lists. (Formally, a closed interval [a, b] (with a &amp;lt;= b) denotes the set of real numbers x with a &amp;lt;= x &amp;lt;= b. The intersection of two closed intervals is a set of real numbers that is either empty, or can be represented as a closed interval.</description>
+    </item>
     
     <item>
       <title>451 - Sort Characters By Frequency</title>
