@@ -6,10 +6,20 @@
     <description>Recent content in list on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 May 2020 17:58:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 01:16:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/list/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>237 - Delete Node in a Linked List</title>
+      <link>//alfmunny.com/leetcode-blog/posts/237-delete-node-in-a-linked-list/</link>
+      <pubDate>Wed, 03 Jun 2020 01:16:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/237-delete-node-in-a-linked-list/</guid>
+      <description>leetcode
+Problem Write a function to delete a node (except the tail) in a singly linked list, given only access to that node. Given linked list -- head = [4,5,1,9], which looks like following: Example 1: Input: head = [4,5,1,9], node = 5 Output: [4,1,9] Explanation: You are given the second node with value 5, the linked list should become 4 -&amp;gt; 1 -&amp;gt; 9 after calling your function. Example 2: Input: head = [4,5,1,9], node = 1 Output: [4,5,9] Explanation: You are given the third node with value 1, the linked list should become 4 -&amp;gt; 5 -&amp;gt; 9 after calling your function.</description>
+    </item>
     
     <item>
       <title>328 - Odd Even Linked List</title>

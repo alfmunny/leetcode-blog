@@ -6,10 +6,20 @@
     <description>Recent content in tree on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 May 2020 22:37:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2020 23:36:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/tree/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>226 - Invert Binary Tree</title>
+      <link>//alfmunny.com/leetcode-blog/posts/226-invert-binary-tree/</link>
+      <pubDate>Mon, 01 Jun 2020 23:36:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/226-invert-binary-tree/</guid>
+      <description>leetcode
+Problem Invert a binary tree. Example: Input: 4 / \ 2 7 / \ / \ 1 3 6 9 Output: 4 / \ 7 2 / \ / \ 9 6 3 1 Solution class Solution: def invertTree(self): if root: tmp = root.left root.left = self.invertTree(root.right) root.right = self.invertTree(tmp) return root </description>
+    </item>
     
     <item>
       <title>230 - Kth Smallest Element in a BST</title>

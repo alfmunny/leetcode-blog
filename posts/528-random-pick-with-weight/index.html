@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>528 - Random Pick with Weight | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">528 - Random Pick with Weight</span></h1>
+
+<h2 class="date">2020/06/05</h2>
+<p class="terms">
+  
+  
+  Categories: <a href="../../categories/leetcode">leetcode</a> 
+  
+  
+  
+  Tags: <a href="../../tags/medium">medium</a> <a href="../../tags/array">array</a> <a href="../../tags/random">random</a> <a href="../../tags/1-fail">1-fail</a> 
+  
+  
+</p>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/random-pick-with-weight/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given an array w of positive integers, where w[i] describes the weight of index i, write a function pickIndex which randomly picks an index in proportion to its weight.
+
+Note:
+
+1 &lt;= w.length &lt;= 10000
+1 &lt;= w[i] &lt;= 10^5
+pickIndex will be called at most 10000 times.
+
+Example 1:
+
+Input:
+[&#34;Solution&#34;,&#34;pickIndex&#34;]
+[[[1]],[]]
+Output: [null,0]
+
+Example 2:
+
+Input:
+[&#34;Solution&#34;,&#34;pickIndex&#34;,&#34;pickIndex&#34;,&#34;pickIndex&#34;,&#34;pickIndex&#34;,&#34;pickIndex&#34;]
+[[[1,3]],[],[],[],[],[]]
+Output: [null,0,1,1,1,0]
+Explanation of Input Syntax:
+
+The input is two lists: the subroutines called and their arguments. Solution&#39;s constructor has one argument, the array w. pickIndex has no arguments. Arguments are always wrapped with a list, even if there aren&#39;t any.
+</code></pre></div><h2 id="solution">Solution</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> __init__(self, w):
+        self<span style="color:#f92672">.</span>w <span style="color:#f92672">=</span> list(itertools<span style="color:#f92672">.</span>accumulate(w))
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pickIndex</span>(self):
+        <span style="color:#66d9ef">return</span> bisect<span style="color:#f92672">.</span>bisect_left(self<span style="color:#f92672">.</span>w, random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">1</span>, self<span style="color:#f92672">.</span>w[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]))
+</code></pre></div>
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alfmunnystechblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

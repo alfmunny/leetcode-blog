@@ -6,10 +6,80 @@
     <description>Recent content in 1-pass on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 May 2020 14:19:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 21:47:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/1-pass/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>518 - Coin Change 2</title>
+      <link>//alfmunny.com/leetcode-blog/posts/518-coin-change-2/</link>
+      <pubDate>Sun, 07 Jun 2020 21:47:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/518-coin-change-2/</guid>
+      <description>leetcode
+Problem You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin. Example 1: Input: amount = 5, coins = [1, 2, 5] Output: 4 Explanation: there are four ways to make up the amount: 5=5 5=2+2+1 5=2+1+1+1 5=1+1+1+1+1 Example 2: Input: amount = 3, coins = [2] Output: 0 Explanation: the amount of 3 cannot be made up just with coins of 2.</description>
+    </item>
+    
+    <item>
+      <title>237 - Delete Node in a Linked List</title>
+      <link>//alfmunny.com/leetcode-blog/posts/237-delete-node-in-a-linked-list/</link>
+      <pubDate>Wed, 03 Jun 2020 01:16:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/237-delete-node-in-a-linked-list/</guid>
+      <description>leetcode
+Problem Write a function to delete a node (except the tail) in a singly linked list, given only access to that node. Given linked list -- head = [4,5,1,9], which looks like following: Example 1: Input: head = [4,5,1,9], node = 5 Output: [4,1,9] Explanation: You are given the second node with value 5, the linked list should become 4 -&amp;gt; 1 -&amp;gt; 9 after calling your function. Example 2: Input: head = [4,5,1,9], node = 1 Output: [4,5,9] Explanation: You are given the third node with value 1, the linked list should become 4 -&amp;gt; 5 -&amp;gt; 9 after calling your function.</description>
+    </item>
+    
+    <item>
+      <title>746 - Min Cost Climbing Stairs</title>
+      <link>//alfmunny.com/leetcode-blog/posts/746-min-cost-climbing-stairs/</link>
+      <pubDate>Tue, 02 Jun 2020 00:16:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/746-min-cost-climbing-stairs/</guid>
+      <description>leetcode
+Problem On a staircase, the i-th step has some non-negative cost cost[i] assigned (0 indexed). Once you pay the cost, you can either climb one or two steps. You need to find minimum cost to reach the top of the floor, and you can either start from the step with index 0, or the step with index 1. Example 1: Input: cost = [10, 15, 20] Output: 15 Explanation: Cheapest is start on cost[1], pay that cost and go to the top.</description>
+    </item>
+    
+    <item>
+      <title>226 - Invert Binary Tree</title>
+      <link>//alfmunny.com/leetcode-blog/posts/226-invert-binary-tree/</link>
+      <pubDate>Mon, 01 Jun 2020 23:36:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/226-invert-binary-tree/</guid>
+      <description>leetcode
+Problem Invert a binary tree. Example: Input: 4 / \ 2 7 / \ / \ 1 3 6 9 Output: 4 / \ 7 2 / \ / \ 9 6 3 1 Solution class Solution: def invertTree(self): if root: tmp = root.left root.left = self.invertTree(root.right) root.right = self.invertTree(tmp) return root </description>
+    </item>
+    
+    <item>
+      <title>973 - K Closest Points to Origin</title>
+      <link>//alfmunny.com/leetcode-blog/posts/973-k-closest-points-to-origin/</link>
+      <pubDate>Sat, 30 May 2020 23:58:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/973-k-closest-points-to-origin/</guid>
+      <description>leetcode
+Problem We have a list of points on the plane. Find the K closest points to the origin (0, 0). (Here, the distance between two points on a plane is the Euclidean distance.) You may return the answer in any order. The answer is guaranteed to be unique (except for the order that it is in.) Example 1: Input: points = [[1,3],[-2,2]], K = 1 Output: [[-2,2]] Explanation: The distance between (1, 3) and the origin is sqrt(10).</description>
+    </item>
+    
+    <item>
+      <title>210 - Course Schedule II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/210-course-schedule-ii/</link>
+      <pubDate>Fri, 29 May 2020 20:45:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/210-course-schedule-ii/</guid>
+      <description>leetcode
+Problem There are a total of n courses you have to take, labeled from 0 to n-1. Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1] Given the total number of courses and a list of prerequisite pairs, return the ordering of courses you should take to finish all courses. There may be multiple correct orders, you just need to return one of them.</description>
+    </item>
+    
+    <item>
+      <title>1035 - Uncrossed Lines</title>
+      <link>//alfmunny.com/leetcode-blog/posts/1035-uncrossed-lines/</link>
+      <pubDate>Mon, 25 May 2020 16:38:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/1035-uncrossed-lines/</guid>
+      <description>leetcode
+Problem We write the integers of A and B (in the order they are given) on two separate horizontal lines. Now, we may draw connecting lines: a straight line connecting two numbers A[i] and B[j] such that: A[i] == B[j]; The line we draw does not intersect any other connecting (non-horizontal) line. Note that a connecting lines cannot intersect even at the endpoints: each number can only belong to one connecting line.</description>
+    </item>
     
     <item>
       <title>451 - Sort Characters By Frequency</title>

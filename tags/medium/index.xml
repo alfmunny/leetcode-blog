@@ -6,10 +6,80 @@
     <description>Recent content in medium on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2020 01:13:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 21:47:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/medium/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>518 - Coin Change 2</title>
+      <link>//alfmunny.com/leetcode-blog/posts/518-coin-change-2/</link>
+      <pubDate>Sun, 07 Jun 2020 21:47:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/518-coin-change-2/</guid>
+      <description>leetcode
+Problem You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin. Example 1: Input: amount = 5, coins = [1, 2, 5] Output: 4 Explanation: there are four ways to make up the amount: 5=5 5=2+2+1 5=2+1+1+1 5=1+1+1+1+1 Example 2: Input: amount = 3, coins = [2] Output: 0 Explanation: the amount of 3 cannot be made up just with coins of 2.</description>
+    </item>
+    
+    <item>
+      <title>528 - Random Pick with Weight</title>
+      <link>//alfmunny.com/leetcode-blog/posts/528-random-pick-with-weight/</link>
+      <pubDate>Fri, 05 Jun 2020 22:00:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/528-random-pick-with-weight/</guid>
+      <description>leetcode
+Problem Given an array w of positive integers, where w[i] describes the weight of index i, write a function pickIndex which randomly picks an index in proportion to its weight. Note: 1 &amp;lt;= w.length &amp;lt;= 10000 1 &amp;lt;= w[i] &amp;lt;= 10^5 pickIndex will be called at most 10000 times. Example 1: Input: [&amp;#34;Solution&amp;#34;,&amp;#34;pickIndex&amp;#34;] [[[1]],[]] Output: [null,0] Example 2: Input: [&amp;#34;Solution&amp;#34;,&amp;#34;pickIndex&amp;#34;,&amp;#34;pickIndex&amp;#34;,&amp;#34;pickIndex&amp;#34;,&amp;#34;pickIndex&amp;#34;,&amp;#34;pickIndex&amp;#34;] [[[1,3]],[],[],[],[],[]] Output: [null,0,1,1,1,0] Explanation of Input Syntax: The input is two lists: the subroutines called and their arguments.</description>
+    </item>
+    
+    <item>
+      <title>973 - K Closest Points to Origin</title>
+      <link>//alfmunny.com/leetcode-blog/posts/973-k-closest-points-to-origin/</link>
+      <pubDate>Sat, 30 May 2020 23:58:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/973-k-closest-points-to-origin/</guid>
+      <description>leetcode
+Problem We have a list of points on the plane. Find the K closest points to the origin (0, 0). (Here, the distance between two points on a plane is the Euclidean distance.) You may return the answer in any order. The answer is guaranteed to be unique (except for the order that it is in.) Example 1: Input: points = [[1,3],[-2,2]], K = 1 Output: [[-2,2]] Explanation: The distance between (1, 3) and the origin is sqrt(10).</description>
+    </item>
+    
+    <item>
+      <title>210 - Course Schedule II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/210-course-schedule-ii/</link>
+      <pubDate>Fri, 29 May 2020 20:45:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/210-course-schedule-ii/</guid>
+      <description>leetcode
+Problem There are a total of n courses you have to take, labeled from 0 to n-1. Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1] Given the total number of courses and a list of prerequisite pairs, return the ordering of courses you should take to finish all courses. There may be multiple correct orders, you just need to return one of them.</description>
+    </item>
+    
+    <item>
+      <title>207 - Course Schedule</title>
+      <link>//alfmunny.com/leetcode-blog/posts/207-course-schedule/</link>
+      <pubDate>Fri, 29 May 2020 19:57:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/207-course-schedule/</guid>
+      <description>leetcode
+Problem There are a total of numCourses courses you have to take, labeled from 0 to numCourses-1. Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1] Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses? Example 1: Input: numCourses = 2, prerequisites = [[1,0]] Output: true Explanation: There are a total of 2 courses to take.</description>
+    </item>
+    
+    <item>
+      <title>886 - Possible Bipartition</title>
+      <link>//alfmunny.com/leetcode-blog/posts/886-possible-bipartition/</link>
+      <pubDate>Wed, 27 May 2020 16:37:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/886-possible-bipartition/</guid>
+      <description>leetcode
+Problem Given a set of N people (numbered 1, 2, ..., N), we would like to split everyone into two groups of any size. Each person may dislike some other people, and they should not go into the same group. Formally, if dislikes[i] = [a, b], it means it is not allowed to put the people numbered a and b into the same group. Return true if and only if it is possible to split everyone into two groups in this way.</description>
+    </item>
+    
+    <item>
+      <title>1035 - Uncrossed Lines</title>
+      <link>//alfmunny.com/leetcode-blog/posts/1035-uncrossed-lines/</link>
+      <pubDate>Mon, 25 May 2020 16:38:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/1035-uncrossed-lines/</guid>
+      <description>leetcode
+Problem We write the integers of A and B (in the order they are given) on two separate horizontal lines. Now, we may draw connecting lines: a straight line connecting two numbers A[i] and B[j] such that: A[i] == B[j]; The line we draw does not intersect any other connecting (non-horizontal) line. Note that a connecting lines cannot intersect even at the endpoints: each number can only belong to one connecting line.</description>
+    </item>
     
     <item>
       <title>986 - Interval List Intersections</title>
@@ -362,7 +432,7 @@ Problem You are given a list of non-negative integers, a1, a2, ..., an, and a ta
       <guid>//alfmunny.com/leetcode-blog/posts/338-counting-bit/</guid>
       <description>leetcode
 Problem Given a non negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1&amp;#39;s in their binary representation and return them as an array. Example 1: Input: 2 Output: [0,1,1] Example 2: Input: 5 Output: [0,1,1,2,1,2] Notes DP problem
- States: index Transition:  dp[0] = 0 dp[1] = dp[1-1] + 1 = 1 dp[2] = dp[2-2] + 1 = 1 dp[3] = dp[3-2] + 1 = 2 dp[4] = dp[4-4] + 1 = 1 dp[5] = dp[5-4] + 1 = 2 dp[6] = dp[6-4] + 1 = 2 dp[7] = dp[7-4] + 1 = 3 dp[8] = dp[8-8] + 1 = 1 dp[9] = dp[9-8] + 1 = 2 dp[i] = dp[i - log_2 (i)] + 1 A trick using bit manipulation: 8 -&amp;gt; 1000 9 -&amp;gt; 1001 10 -&amp;gt; 1010 9 &amp;amp; 8 -&amp;gt; 1001 &amp;amp; 1000 -&amp;gt; 1000 dp[8] + 1 = 2 10 &amp;amp; 9 -&amp;gt; 1010 &amp;amp; 1001 -&amp;gt; 1000 dp[8] + 1 = 2 11 &amp;amp; 10 -&amp;gt; 1011 &amp;amp; 1010 -&amp;gt; 1010 dp[10] + 1 = 3 12 &amp;amp; 11 -&amp;gt; 1100 &amp;amp; 1011 -&amp;gt; 1000 dp[8] + 1 = 2 dp[i] = dp[i &amp;amp; (i-1)] + 1 Solution Solution 1: DP class Solution: def countBits(self, num): offset = 1 dp = [0] * (num + 1) for i in range(1, num + 1): if offset * 2 == i: offset *= 2 dp[i] = dp[i - offset] + 1 return dp Solution 2: Bit manipulation on couting bits class Solution: def countBits(self, num): dp = [0] * (num + 1) for i in range(1, num + 1): dp[i] = dp[i &amp;amp; (i - 1)] + 1 return dp Solution 3: class Solution(object): def countBits(self, num): res=[0] while len(res)&amp;lt;=num: res+=[i+1 for i in res] return res[:num+1] </description>
+ States: index Transition:  dp[0] = 0 dp[1] = dp[1-1] + 1 = 1 dp[2] = dp[2-2] + 1 = 1 dp[3] = dp[3-2] + 1 = 2 dp[4] = dp[4-4] + 1 = 1 dp[5] = dp[5-4] + 1 = 2 dp[6] = dp[6-4] + 1 = 2 dp[7] = dp[7-4] + 1 = 3 dp[8] = dp[8-8] + 1 = 1 dp[9] = dp[9-8] + 1 = 2 dp[i] = dp[i - log_2 (i)] + 1 A trick using bit manipulation: 8 -&amp;gt; 1000 9 -&amp;gt; 1001 10 -&amp;gt; 1010 9 &amp;amp; 8 -&amp;gt; 1001 &amp;amp; 1000 -&amp;gt; 1000 dp[8] + 1 = 2 10 &amp;amp; 9 -&amp;gt; 1010 &amp;amp; 1001 -&amp;gt; 1000 dp[8] + 1 = 2 11 &amp;amp; 10 -&amp;gt; 1011 &amp;amp; 1010 -&amp;gt; 1010 dp[10] + 1 = 3 12 &amp;amp; 11 -&amp;gt; 1100 &amp;amp; 1011 -&amp;gt; 1000 dp[8] + 1 = 2 dp[i] = dp[i &amp;amp; (i-1)] + 1 Solution Solution 1: DP class Solution: def countBits(self, num): offset = 1 dp = [0] * (num + 1) for i in range(1, num + 1): if offset * 2 == i: offset *= 2 dp[i] = dp[i - offset] + 1 return dp Solution 2: Bit manipulation on couting bits class Solution: def countBits(self, num): dp = [0] * (num + 1) for i in range(1, num + 1): dp[i] = dp[i &amp;amp; (i - 1)] + 1 return dp Solution 3: class Solution(object): def countBits(self, num): res=[0] while len(res)&amp;lt;=num: res+=[i+1 for i in res] return res[:num+1] Solution 4: class Solution: def countBits(self, num): dp = [0] * (num + 1) for i in range(1, num+1): if not i % 2: dp[i] = dp[i &amp;gt;&amp;gt; 1] else: dp[i] = dp[i &amp;gt;&amp;gt; 1] + 1 return dp[num] </description>
     </item>
     
     <item>

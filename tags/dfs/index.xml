@@ -6,10 +6,20 @@
     <description>Recent content in dfs on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2020 16:49:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2020 19:57:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/dfs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>207 - Course Schedule</title>
+      <link>//alfmunny.com/leetcode-blog/posts/207-course-schedule/</link>
+      <pubDate>Fri, 29 May 2020 19:57:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/207-course-schedule/</guid>
+      <description>leetcode
+Problem There are a total of numCourses courses you have to take, labeled from 0 to numCourses-1. Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1] Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses? Example 1: Input: numCourses = 2, prerequisites = [[1,0]] Output: true Explanation: There are a total of 2 courses to take.</description>
+    </item>
     
     <item>
       <title>124 - Binary Tree Maximum Path Sum</title>

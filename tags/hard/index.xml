@@ -6,10 +6,20 @@
     <description>Recent content in hard on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 May 2020 00:41:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2020 17:58:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/hard/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>72 - Edit Distance</title>
+      <link>//alfmunny.com/leetcode-blog/posts/72-edit-distance/</link>
+      <pubDate>Sun, 31 May 2020 17:58:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/72-edit-distance/</guid>
+      <description>leetcode
+Problem Given two words word1 and word2, find the minimum number of operations required to convert word1 to word2. You have the following 3 operations permitted on a word: Insert a character Delete a character Replace a character Example 1: Input: word1 = &amp;#34;horse&amp;#34;, word2 = &amp;#34;ros&amp;#34; Output: 3 Explanation: horse -&amp;gt; rorse (replace &amp;#39;h&amp;#39; with &amp;#39;r&amp;#39;) rorse -&amp;gt; rose (remove &amp;#39;r&amp;#39;) rose -&amp;gt; ros (remove &amp;#39;e&amp;#39;) Example 2: Input: word1 = &amp;#34;intention&amp;#34;, word2 = &amp;#34;execution&amp;#34; Output: 5 Explanation: intention -&amp;gt; inention (remove &amp;#39;t&amp;#39;) inention -&amp;gt; enention (replace &amp;#39;i&amp;#39; with &amp;#39;e&amp;#39;) enention -&amp;gt; exention (replace &amp;#39;n&amp;#39; with &amp;#39;x&amp;#39;) exention -&amp;gt; exection (replace &amp;#39;n&amp;#39; with &amp;#39;c&amp;#39;) exection -&amp;gt; execution (insert &amp;#39;u&amp;#39;) Solution class Solution: def minDistance(self, word1: str, word2: str) -&amp;gt; int: dp = [[0] * (1+len(word2)) for _ in range(1+len(word1))] for i in range(1+len(word1)): dp[i][0] = i for j in range(1+len(word2)): dp[0][j] = j for i in range(1, 1+len(word1)): for j in range(1, 1+len(word2)): if word1[i-1] == word2[j-1]: dp[i][j] = dp[i-1][j-1] else: dp[i][j] = min(dp[i-1][j], dp[i-1][j-1], dp[i][j-1]) + 1 return dp[-1][-1] </description>
+    </item>
     
     <item>
       <title>76 - Minimum Window Substring</title>
