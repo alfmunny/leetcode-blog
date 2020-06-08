@@ -6,10 +6,20 @@
     <description>Recent content in medium on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jun 2020 21:47:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2020 22:47:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/medium/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>406 - Queue Reconstruction by Height</title>
+      <link>//alfmunny.com/leetcode-blog/posts/406-queue-reconstruction-by-height/</link>
+      <pubDate>Mon, 08 Jun 2020 22:47:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/406-queue-reconstruction-by-height/</guid>
+      <description>leetcode
+Problem Suppose you have a random list of people standing in a queue. Each person is described by a pair of integers (h, k), where h is the height of the person and k is the number of people in front of this person who have a height greater than or equal to h. Write an algorithm to reconstruct the queue. Note: The number of people is less than 1,100.</description>
+    </item>
     
     <item>
       <title>518 - Coin Change 2</title>
