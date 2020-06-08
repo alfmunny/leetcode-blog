@@ -6,10 +6,30 @@
     <description>Recent content on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2020 22:47:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2020 23:28:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>38 - Count and Say</title>
+      <link>//alfmunny.com/leetcode-blog/posts/38-count-and-say/</link>
+      <pubDate>Mon, 08 Jun 2020 23:28:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/38-count-and-say/</guid>
+      <description>leetcode
+Problem The count-and-say sequence is the sequence of integers with the first five terms as following: 1. 1 2. 11 3. 21 4. 1211 5. 111221 1 is read off as &amp;#34;one 1&amp;#34; or 11. 11 is read off as &amp;#34;two 1s&amp;#34; or 21. 21 is read off as &amp;#34;one 2, then one 1&amp;#34; or 1211. Given an integer n where 1 ≤ n ≤ 30, generate the nth term of the count-and-say sequence.</description>
+    </item>
+    
+    <item>
+      <title>213 - House Robber II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/213-house-robber-ii/</link>
+      <pubDate>Mon, 08 Jun 2020 23:24:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/213-house-robber-ii/</guid>
+      <description>leetcode
+Problem You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night. Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.</description>
+    </item>
     
     <item>
       <title>406 - Queue Reconstruction by Height</title>
