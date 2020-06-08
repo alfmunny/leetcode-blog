@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>esay on LeetCode In The Shell</title>
+    <link>//alfmunny.com/leetcode-blog/tags/esay/</link>
+    <description>Recent content in esay on LeetCode In The Shell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jun 2020 23:45:00 +0200</lastBuildDate>
+    
+	<atom:link href="//alfmunny.com/leetcode-blog/tags/esay/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>66 - Plus One</title>
+      <link>//alfmunny.com/leetcode-blog/posts/66-plus-one/</link>
+      <pubDate>Mon, 08 Jun 2020 23:45:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/66-plus-one/</guid>
+      <description>leetcode
+Problem Given a non-empty array of digits representing a non-negative integer, plus one to the integer. The digits are stored such that the most significant digit is at the head of the list, and each element in the array contain a single digit. You may assume the integer does not contain any leading zero, except the number 0 itself. Example 1: Input: [1,2,3] Output: [1,2,4] Explanation: The array represents the integer 123.</description>
+    </item>
+    
+  </channel>
+</rss>

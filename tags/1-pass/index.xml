@@ -6,10 +6,20 @@
     <description>Recent content in 1-pass on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2020 23:28:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2020 23:45:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/1-pass/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>66 - Plus One</title>
+      <link>//alfmunny.com/leetcode-blog/posts/66-plus-one/</link>
+      <pubDate>Mon, 08 Jun 2020 23:45:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/66-plus-one/</guid>
+      <description>leetcode
+Problem Given a non-empty array of digits representing a non-negative integer, plus one to the integer. The digits are stored such that the most significant digit is at the head of the list, and each element in the array contain a single digit. You may assume the integer does not contain any leading zero, except the number 0 itself. Example 1: Input: [1,2,3] Output: [1,2,4] Explanation: The array represents the integer 123.</description>
+    </item>
     
     <item>
       <title>38 - Count and Say</title>
