@@ -6,10 +6,46 @@
     <description>Recent content in Tags on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Jun 2020 23:56:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2020 23:33:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>array</title>
+      <link>//alfmunny.com/leetcode-blog/tags/array/</link>
+      <pubDate>Wed, 10 Jun 2020 23:33:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backtrack</title>
+      <link>//alfmunny.com/leetcode-blog/tags/backtrack/</link>
+      <pubDate>Wed, 10 Jun 2020 23:33:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/backtrack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dfs</title>
+      <link>//alfmunny.com/leetcode-blog/tags/dfs/</link>
+      <pubDate>Wed, 10 Jun 2020 23:33:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/dfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>medium</title>
+      <link>//alfmunny.com/leetcode-blog/tags/medium/</link>
+      <pubDate>Wed, 10 Jun 2020 23:33:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/medium/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>1-pass</title>
@@ -26,24 +62,6 @@
       <pubDate>Tue, 09 Jun 2020 23:56:00 +0200</pubDate>
       
       <guid>//alfmunny.com/leetcode-blog/tags/easy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>medium</title>
-      <link>//alfmunny.com/leetcode-blog/tags/medium/</link>
-      <pubDate>Tue, 09 Jun 2020 23:56:00 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/medium/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>array</title>
-      <link>//alfmunny.com/leetcode-blog/tags/array/</link>
-      <pubDate>Mon, 08 Jun 2020 23:45:00 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/array/</guid>
       <description></description>
     </item>
     
@@ -156,15 +174,6 @@
     </item>
     
     <item>
-      <title>dfs</title>
-      <link>//alfmunny.com/leetcode-blog/tags/dfs/</link>
-      <pubDate>Fri, 29 May 2020 19:57:00 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/dfs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>sliding-window</title>
       <link>//alfmunny.com/leetcode-blog/tags/sliding-window/</link>
       <pubDate>Fri, 22 May 2020 00:41:00 +0200</pubDate>
@@ -260,15 +269,6 @@
       <pubDate>Tue, 21 Apr 2020 07:44:00 +0200</pubDate>
       
       <guid>//alfmunny.com/leetcode-blog/tags/recursive/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>backtrack</title>
-      <link>//alfmunny.com/leetcode-blog/tags/backtrack/</link>
-      <pubDate>Sun, 19 Apr 2020 02:11:00 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/backtrack/</guid>
       <description></description>
     </item>
     
