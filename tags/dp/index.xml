@@ -6,10 +6,20 @@
     <description>Recent content in dp on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jun 2020 15:12:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2020 14:25:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/dp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>63 - Unique Paths II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/63-unique-paths-ii/</link>
+      <pubDate>Thu, 18 Jun 2020 14:25:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/63-unique-paths-ii/</guid>
+      <description>leetcode
+Problem A robot is located at the top-left corner of a m x n grid (marked &amp;#39;Start&amp;#39; in the diagram below). The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked &amp;#39;Finish&amp;#39; in the diagram below). Now consider if some obstacles are added to the grids. How many unique paths would there be?</description>
+    </item>
     
     <item>
       <title>377 - Combination Sum IV</title>

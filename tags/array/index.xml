@@ -6,10 +6,100 @@
     <description>Recent content in array on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jun 2020 15:12:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2020 16:09:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/array/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>162 - Find Peak Element</title>
+      <link>//alfmunny.com/leetcode-blog/posts/162-find-peak-element/</link>
+      <pubDate>Thu, 18 Jun 2020 16:09:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/162-find-peak-element/</guid>
+      <description>leetcode
+Problem A peak element is an element that is greater than its neighbors. Given an input array nums, where nums[i] ≠ nums[i+1], find a peak element and return its index. The array may contain multiple peaks, in that case return the index to any one of the peaks is fine. You may imagine that nums[-1] = nums[n] = -∞. Example 1: Input: nums = [1,2,3,1] Output: 2 Explanation: 3 is a peak element and your function should return the index number 2.</description>
+    </item>
+    
+    <item>
+      <title>74 - Search a 2D Matrix</title>
+      <link>//alfmunny.com/leetcode-blog/posts/74-search-a-2d-matrix/</link>
+      <pubDate>Thu, 18 Jun 2020 14:46:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/74-search-a-2d-matrix/</guid>
+      <description>leetcode
+Problem Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties: Integers in each row are sorted from left to right. The first integer of each row is greater than the last integer of the previous row. Example 1: Input: matrix = [ [1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 50] ] target = 3 Output: true Example 2: Input: matrix = [ [1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 50] ] target = 13 Output: false Solution class Solution: def searchMatrix(self, matrix: List[List[int]], target: int) -&amp;gt; bool: if not matrix or not matrix[0]: return False rl, rr = 0, len(matrix) - 1 cl, cr = 0, len(matrix[0]) - 1 while rl &amp;lt;= rr: mid = (rl + rr) // 2 if target &amp;lt; matrix[mid][0]: rr = mid - 1 elif target &amp;gt; matrix[mid][-1]: rl = mid + 1 else: rl = mid break if rl &amp;gt; rr: return False while cl &amp;lt;= cr: mid = (cl + cr) // 2 if target &amp;lt; matrix[rl][mid]: cr = mid - 1 elif target &amp;gt; matrix[rl][mid]: cl = mid + 1 else: return True return False </description>
+    </item>
+    
+    <item>
+      <title>63 - Unique Paths II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/63-unique-paths-ii/</link>
+      <pubDate>Thu, 18 Jun 2020 14:25:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/63-unique-paths-ii/</guid>
+      <description>leetcode
+Problem A robot is located at the top-left corner of a m x n grid (marked &amp;#39;Start&amp;#39; in the diagram below). The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked &amp;#39;Finish&amp;#39; in the diagram below). Now consider if some obstacles are added to the grids. How many unique paths would there be?</description>
+    </item>
+    
+    <item>
+      <title>59 - Spiral Matrix II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/59-spiral-matrix-ii/</link>
+      <pubDate>Thu, 18 Jun 2020 13:59:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/59-spiral-matrix-ii/</guid>
+      <description>leetcode
+Problem Given a positive integer n, generate a square matrix filled with elements from 1 to n2 in spiral order. Example: Input: 3 Output: [ [ 1, 2, 3 ], [ 8, 9, 4 ], [ 7, 6, 5 ] ] Solution class Solution: def generateMatrix(self, n: int) -&amp;gt; List[List[int]]: matrix = [[0] * n for _ in range(n)] step = [[0,1], [1, 0], [0, -1], [-1, 0]] i = j = di = 0 for x in range(1, n * n+1): matrix[i][j] = x ni = i + step[di][0] nj = j + step[di][1] if 0 &amp;lt;= ni &amp;lt; n and 0 &amp;lt;= nj &amp;lt; n and not matrix[ni][nj]: i, j = ni, nj else: di = (di + 1) % 4 i, j = i + step[di][0], j + step[di][1] return matrix </description>
+    </item>
+    
+    <item>
+      <title>118 - Pascal&#39;s Triangle</title>
+      <link>//alfmunny.com/leetcode-blog/posts/118-pascals-triangle/</link>
+      <pubDate>Wed, 17 Jun 2020 23:54:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/118-pascals-triangle/</guid>
+      <description>leetcode
+Problem Given a non-negative integer numRows, generate the first numRows of Pascal&amp;#39;s triangle. Example: Input: 5 Output: [ [1], [1,1], [1,2,1], [1,3,3,1], [1,4,6,4,1] ] Solution class Solution: def generate(self, numRows: int) -&amp;gt; List[List[int]]: ans = [] for i in range(1, numRows+1): level = [1] * i if ans: for j in range(1, i-1): level[j] = ans[-1][j-1] + ans[-1][j] ans.append(level) return ans </description>
+    </item>
+    
+    <item>
+      <title>90 - Subsets II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/90-subsets-ii/</link>
+      <pubDate>Wed, 17 Jun 2020 23:45:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/90-subsets-ii/</guid>
+      <description>leetcode
+Problem Given a collection of integers that might contain duplicates, nums, return all possible subsets (the power set). Note: The solution set must not contain duplicate subsets. Example: Input: [1,2,2] Output: [ [2], [1], [1,2,2], [2,2], [1,2], [] ] Solution class Solution: def subsetsWithDup(self, nums: List[int]) -&amp;gt; List[List[int]]: ans = [] marked = [False] * len(nums) self.dfs(sorted(nums), 0, [], ans, marked) return ans def dfs(self, nums, index, path, ans, marked): ans.</description>
+    </item>
+    
+    <item>
+      <title>77 - Combinations</title>
+      <link>//alfmunny.com/leetcode-blog/posts/77-combinations/</link>
+      <pubDate>Fri, 12 Jun 2020 17:56:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/77-combinations/</guid>
+      <description>leetcode
+Problem Share Given two integers n and k, return all possible combinations of k numbers out of 1 ... n. Example: Input: n = 4, k = 2 Output: [ [2,4], [3,4], [2,3], [1,2], [1,3], [1,4], ] Solution class Solution: def combine(self, n: int, k: int) -&amp;gt; List[List[int]]: ans = [] self.dfs(1, n, k, [], ans) return ans def dfs(self, index, n, k, path, ans): if k == 0: ans.</description>
+    </item>
+    
+    <item>
+      <title>17 - Letter Combinations of a Phone Number</title>
+      <link>//alfmunny.com/leetcode-blog/posts/17-letter-combinations-of-a-phone-number/</link>
+      <pubDate>Thu, 11 Jun 2020 16:43:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/17-letter-combinations-of-a-phone-number/</guid>
+      <description>leetcode
+Problem Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters. Example: Input: &amp;#34;23&amp;#34; Output: [&amp;#34;ad&amp;#34;, &amp;#34;ae&amp;#34;, &amp;#34;af&amp;#34;, &amp;#34;bd&amp;#34;, &amp;#34;be&amp;#34;, &amp;#34;bf&amp;#34;, &amp;#34;cd&amp;#34;, &amp;#34;ce&amp;#34;, &amp;#34;cf&amp;#34;]. Solution Solution 1: DFS class Solution: def letterCombinations(self, digits: str) -&amp;gt; List[str]: m = { 2: &amp;#34;abc&amp;#34;, 3: &amp;#34;def&amp;#34;, 4: &amp;#34;ghi&amp;#34;, 5: &amp;#34;jkl&amp;#34;, 6: &amp;#34;mno&amp;#34;, 7: &amp;#34;pqrs&amp;#34;, 8: &amp;#34;tuv&amp;#34;, 9: &amp;#34;wxyz&amp;#34; } ans = [] self.</description>
+    </item>
+    
+    <item>
+      <title>216 - Combination Sum III</title>
+      <link>//alfmunny.com/leetcode-blog/posts/216-combination-sum-iii/</link>
+      <pubDate>Thu, 11 Jun 2020 15:38:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/216-combination-sum-iii/</guid>
+      <description>leetcode
+Problem Find all possible combinations of k numbers that add up to a number n, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers. Note: All numbers will be positive integers. The solution set must not contain duplicate combinations. Example 1: Input: k = 3, n = 7 Output: [[1,2,4]] Example 2: Input: k = 3, n = 9 Output: [[1,2,6], [1,3,5], [2,3,4]] Solution class Solution: def combinationSum3(self, k: int, n: int) -&amp;gt; List[List[int]]: ans = [] self.</description>
+    </item>
     
     <item>
       <title>377 - Combination Sum IV</title>

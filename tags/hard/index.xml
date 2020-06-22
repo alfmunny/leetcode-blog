@@ -6,10 +6,30 @@
     <description>Recent content in hard on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 May 2020 17:58:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2020 17:44:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/hard/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>52 - N-Queens II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/52-n-queens-ii/</link>
+      <pubDate>Fri, 12 Jun 2020 17:44:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/52-n-queens-ii/</guid>
+      <description>leetcode
+Problem The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other. Given an integer n, return the number of distinct solutions to the n-queens puzzle. Solution class Solution: def totalNQueens(self, n): self.ans = 0 self.dfs(0, n, []) return self.ans def dfs(self, row, n, path): if row == n and len(path) == n: self.ans += 1 for i in range(n): if self.</description>
+    </item>
+    
+    <item>
+      <title>51 - N-Queens</title>
+      <link>//alfmunny.com/leetcode-blog/posts/51-n-queens/</link>
+      <pubDate>Fri, 12 Jun 2020 17:38:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/51-n-queens/</guid>
+      <description>leetcode
+Problem The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other. Given an integer n, return all distinct solutions to the n-queens puzzle. Each solution contains a distinct board configuration of the n-queens&amp;#39; placement, where &amp;#39;Q&amp;#39; and &amp;#39;.&amp;#39; both indicate a queen and an empty space respectively. Solution class Solution: def solveNQueens(self, n): ans = [] self.dfs(0, n, [], ans) return ans def dfs(self, row, n, path, ans): if row == n and len(path) == n: ans.</description>
+    </item>
     
     <item>
       <title>72 - Edit Distance</title>

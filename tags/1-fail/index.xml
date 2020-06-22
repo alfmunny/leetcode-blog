@@ -6,10 +6,20 @@
     <description>Recent content in 1-fail on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jun 2020 15:12:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 02:56:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/1-fail/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>95 - Unique Binary Search Trees II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/95-unique-binary-search-treea-ii/</link>
+      <pubDate>Sat, 20 Jun 2020 02:56:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/95-unique-binary-search-treea-ii/</guid>
+      <description>leetcode
+Problem Given an integer n, generate all structurally unique BST&amp;#39;s (binary search trees) that store values 1 ... n. Example: Input: 3 Output: [ [1,null,3,2], [3,2,null,1], [3,1,null,null,2], [2,1,3], [1,null,2,null,3] ] Explanation: The above output corresponds to the 5 unique BST&amp;#39;s shown below: 1 3 3 2 1 \ / / / \ \ 3 2 1 1 3 2 / / \ \ 2 1 2 3 Solution class Solution: def generateTrees(self, n: int) -&amp;gt; List[TreeNode]: if n == 0: return [] return self.</description>
+    </item>
     
     <item>
       <title>377 - Combination Sum IV</title>

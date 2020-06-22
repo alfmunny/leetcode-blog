@@ -6,10 +6,80 @@
     <description>Recent content in backtrack on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jun 2020 23:55:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2020 23:51:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/backtrack/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>113 - Path Sum II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/113-path-sum-ii/</link>
+      <pubDate>Wed, 17 Jun 2020 23:51:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/113-path-sum-ii/</guid>
+      <description>leetcode
+Problem Given a binary tree and a sum, find all root-to-leaf paths where each path&amp;#39;s sum equals the given sum. Note: A leaf is a node with no children. Example: Given the below binary tree and sum = 22, 5 / \ 4 8 / / \ 11 13 4 / \ / \ 7 2 5 1 Return: [ [5,4,11,2], [5,8,4,5] ] Solution class Solution: def pathSum(self, root: TreeNode, sum: int) -&amp;gt; List[List[int]]: ans = [] self.</description>
+    </item>
+    
+    <item>
+      <title>90 - Subsets II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/90-subsets-ii/</link>
+      <pubDate>Wed, 17 Jun 2020 23:45:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/90-subsets-ii/</guid>
+      <description>leetcode
+Problem Given a collection of integers that might contain duplicates, nums, return all possible subsets (the power set). Note: The solution set must not contain duplicate subsets. Example: Input: [1,2,2] Output: [ [2], [1], [1,2,2], [2,2], [1,2], [] ] Solution class Solution: def subsetsWithDup(self, nums: List[int]) -&amp;gt; List[List[int]]: ans = [] marked = [False] * len(nums) self.dfs(sorted(nums), 0, [], ans, marked) return ans def dfs(self, nums, index, path, ans, marked): ans.</description>
+    </item>
+    
+    <item>
+      <title>77 - Combinations</title>
+      <link>//alfmunny.com/leetcode-blog/posts/77-combinations/</link>
+      <pubDate>Fri, 12 Jun 2020 17:56:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/77-combinations/</guid>
+      <description>leetcode
+Problem Share Given two integers n and k, return all possible combinations of k numbers out of 1 ... n. Example: Input: n = 4, k = 2 Output: [ [2,4], [3,4], [2,3], [1,2], [1,3], [1,4], ] Solution class Solution: def combine(self, n: int, k: int) -&amp;gt; List[List[int]]: ans = [] self.dfs(1, n, k, [], ans) return ans def dfs(self, index, n, k, path, ans): if k == 0: ans.</description>
+    </item>
+    
+    <item>
+      <title>52 - N-Queens II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/52-n-queens-ii/</link>
+      <pubDate>Fri, 12 Jun 2020 17:44:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/52-n-queens-ii/</guid>
+      <description>leetcode
+Problem The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other. Given an integer n, return the number of distinct solutions to the n-queens puzzle. Solution class Solution: def totalNQueens(self, n): self.ans = 0 self.dfs(0, n, []) return self.ans def dfs(self, row, n, path): if row == n and len(path) == n: self.ans += 1 for i in range(n): if self.</description>
+    </item>
+    
+    <item>
+      <title>51 - N-Queens</title>
+      <link>//alfmunny.com/leetcode-blog/posts/51-n-queens/</link>
+      <pubDate>Fri, 12 Jun 2020 17:38:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/51-n-queens/</guid>
+      <description>leetcode
+Problem The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other. Given an integer n, return all distinct solutions to the n-queens puzzle. Each solution contains a distinct board configuration of the n-queens&amp;#39; placement, where &amp;#39;Q&amp;#39; and &amp;#39;.&amp;#39; both indicate a queen and an empty space respectively. Solution class Solution: def solveNQueens(self, n): ans = [] self.dfs(0, n, [], ans) return ans def dfs(self, row, n, path, ans): if row == n and len(path) == n: ans.</description>
+    </item>
+    
+    <item>
+      <title>17 - Letter Combinations of a Phone Number</title>
+      <link>//alfmunny.com/leetcode-blog/posts/17-letter-combinations-of-a-phone-number/</link>
+      <pubDate>Thu, 11 Jun 2020 16:43:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/17-letter-combinations-of-a-phone-number/</guid>
+      <description>leetcode
+Problem Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters. Example: Input: &amp;#34;23&amp;#34; Output: [&amp;#34;ad&amp;#34;, &amp;#34;ae&amp;#34;, &amp;#34;af&amp;#34;, &amp;#34;bd&amp;#34;, &amp;#34;be&amp;#34;, &amp;#34;bf&amp;#34;, &amp;#34;cd&amp;#34;, &amp;#34;ce&amp;#34;, &amp;#34;cf&amp;#34;]. Solution Solution 1: DFS class Solution: def letterCombinations(self, digits: str) -&amp;gt; List[str]: m = { 2: &amp;#34;abc&amp;#34;, 3: &amp;#34;def&amp;#34;, 4: &amp;#34;ghi&amp;#34;, 5: &amp;#34;jkl&amp;#34;, 6: &amp;#34;mno&amp;#34;, 7: &amp;#34;pqrs&amp;#34;, 8: &amp;#34;tuv&amp;#34;, 9: &amp;#34;wxyz&amp;#34; } ans = [] self.</description>
+    </item>
+    
+    <item>
+      <title>216 - Combination Sum III</title>
+      <link>//alfmunny.com/leetcode-blog/posts/216-combination-sum-iii/</link>
+      <pubDate>Thu, 11 Jun 2020 15:38:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/216-combination-sum-iii/</guid>
+      <description>leetcode
+Problem Find all possible combinations of k numbers that add up to a number n, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers. Note: All numbers will be positive integers. The solution set must not contain duplicate combinations. Example 1: Input: k = 3, n = 7 Output: [[1,2,4]] Example 2: Input: k = 3, n = 9 Output: [[1,2,6], [1,3,5], [2,3,4]] Solution class Solution: def combinationSum3(self, k: int, n: int) -&amp;gt; List[List[int]]: ans = [] self.</description>
+    </item>
     
     <item>
       <title>39 Combination Sum</title>
