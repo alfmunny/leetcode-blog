@@ -6,10 +6,20 @@
     <description>Recent content in Posts on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2020 02:56:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2020 23:10:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>222 - Count Complete Tree Nodes</title>
+      <link>//alfmunny.com/leetcode-blog/posts/222-count-complete-tree-nodes/</link>
+      <pubDate>Tue, 23 Jun 2020 23:10:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/222-count-complete-tree-nodes/</guid>
+      <description>leetcode
+Problem Given a complete binary tree, count the number of nodes. Note: Definition of a complete binary tree from Wikipedia: In a complete binary tree every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h. Example: Input: 1 / \ 2 3 / \ / 4 5 6 Output: 6 Solution class Solution: def countNodes(self, root: TreeNode) -&amp;gt; int: if not root: return 0 rd = self.</description>
+    </item>
     
     <item>
       <title>95 - Unique Binary Search Trees II</title>
