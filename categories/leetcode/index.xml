@@ -6,10 +6,40 @@
     <description>Recent content in leetcode on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2020 23:10:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2020 15:52:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>303 - Range Sum Query - Immutable</title>
+      <link>//alfmunny.com/leetcode-blog/posts/303-range-sum-query-immutable/</link>
+      <pubDate>Sat, 27 Jun 2020 15:52:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/303-range-sum-query-immutable/</guid>
+      <description>leetcode
+Problem Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive. Example: Given nums = [-2, 0, 3, -5, 2, -1] sumRange(0, 2) -&amp;gt; 1 sumRange(2, 5) -&amp;gt; -1 sumRange(0, 5) -&amp;gt; -3 Note: You may assume that the array does not change. There are many calls to sumRange function. Solution class NumArray: def __init__(self, nums: List[int]): self.dp = list(nums) self.</description>
+    </item>
+    
+    <item>
+      <title>988 - Smallest String Starting From Leaf</title>
+      <link>//alfmunny.com/leetcode-blog/posts/998-smallest-string-starting-from-leaf/</link>
+      <pubDate>Sat, 27 Jun 2020 15:21:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/998-smallest-string-starting-from-leaf/</guid>
+      <description>leetcode
+Problem Given the root of a binary tree, each node has a value from 0 to 25 representing the letters &amp;#39;a&amp;#39; to &amp;#39;z&amp;#39;: a value of 0 represents &amp;#39;a&amp;#39;, a value of 1 represents &amp;#39;b&amp;#39;, and so on. Find the lexicographically smallest string that starts at a leaf of this tree and ends at the root. (As a reminder, any shorter prefix of a string is lexicographically smaller: for example, &amp;#34;ab&amp;#34; is lexicographically smaller than &amp;#34;aba&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>130 - Surrounded Regions</title>
+      <link>//alfmunny.com/leetcode-blog/posts/130-surrounded-regions/</link>
+      <pubDate>Fri, 26 Jun 2020 01:58:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/130-surrounded-regions/</guid>
+      <description>leetcode
+Problem Given a 2D board containing &amp;#39;X&amp;#39; and &amp;#39;O&amp;#39; (the letter O), capture all regions surrounded by &amp;#39;X&amp;#39;. A region is captured by flipping all &amp;#39;O&amp;#39;s into &amp;#39;X&amp;#39;s in that surrounded region. Example: X X X X X O O X X X O X X O X X After running your function, the board should be: X X X X X X X X X X X X X O X X Explanation: Surrounded regions shouldn’t be on the border, which means that any &amp;#39;O&amp;#39; on the border of the board are not flipped to &amp;#39;X&amp;#39;.</description>
+    </item>
     
     <item>
       <title>222 - Count Complete Tree Nodes</title>
