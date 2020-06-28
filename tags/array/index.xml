@@ -6,10 +6,30 @@
     <description>Recent content in array on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Jun 2020 15:52:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2020 23:54:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/array/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>263 - Ugly Number</title>
+      <link>//alfmunny.com/leetcode-blog/posts/263-ugly-number/</link>
+      <pubDate>Sat, 27 Jun 2020 23:54:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/263-ugly-number/</guid>
+      <description>leetcode
+Problem Write a program to check whether a given number is an ugly number. Ugly numbers are positive numbers whose prime factors only include 2, 3, 5. Example 1: Input: 6 Output: true Explanation: 6 = 2 × 3 Example 2: Input: 8 Output: true Explanation: 8 = 2 × 2 × 2 Example 3: Input: 14 Output: false Explanation: 14 is not ugly since it includes another prime factor 7.</description>
+    </item>
+    
+    <item>
+      <title>264 - Ugly Number II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/264-ugly-number-ii/</link>
+      <pubDate>Sat, 27 Jun 2020 23:37:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/264-ugly-number-ii/</guid>
+      <description>leetcode
+Problem Write a program to find the n-th ugly number. Ugly numbers are positive numbers whose prime factors only include 2, 3, 5. Example: Input: n = 10 Output: 12 Explanation: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 is the sequence of the first 10 ugly numbers. Note: 1 is typically treated as an ugly number. n does not exceed 1690. Solution class Solution: ugly = sorted(2**a * 3**b * 5**c for a in range(32) for b in range(32) for c in range(32)) def nthUglyNumber(self, n: int) -&amp;gt; int: return self.</description>
+    </item>
     
     <item>
       <title>303 - Range Sum Query - Immutable</title>
