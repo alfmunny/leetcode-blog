@@ -6,10 +6,30 @@
     <description>Recent content in 1-fail on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Jun 2020 23:37:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2020 23:40:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/1-fail/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>332 - Reconstruct Itinerary</title>
+      <link>//alfmunny.com/leetcode-blog/posts/332-reconstruct-itinerary/</link>
+      <pubDate>Mon, 29 Jun 2020 23:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/332-reconstruct-itinerary/</guid>
+      <description>leetcode
+Problem Given a list of airline tickets represented by pairs of departure and arrival airports [from, to], reconstruct the itinerary in order. All of the tickets belong to a man who departs from JFK. Thus, the itinerary must begin with JFK. Note: If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string. For example, the itinerary [&amp;#34;JFK&amp;#34;, &amp;#34;LGA&amp;#34;] has a smaller lexical order than [&amp;#34;JFK&amp;#34;, &amp;#34;LGB&amp;#34;].</description>
+    </item>
+    
+    <item>
+      <title>332 - Reconstruct Itinrary</title>
+      <link>//alfmunny.com/leetcode-blog/posts/332-reconstruct-itinrary/</link>
+      <pubDate>Mon, 29 Jun 2020 23:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/332-reconstruct-itinrary/</guid>
+      <description>leetcode
+Problem Given a list of airline tickets represented by pairs of departure and arrival airports [from, to], reconstruct the itinerary in order. All of the tickets belong to a man who departs from JFK. Thus, the itinerary must begin with JFK. Note: If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string. For example, the itinerary [&amp;#34;JFK&amp;#34;, &amp;#34;LGA&amp;#34;] has a smaller lexical order than [&amp;#34;JFK&amp;#34;, &amp;#34;LGB&amp;#34;].</description>
+    </item>
     
     <item>
       <title>264 - Ugly Number II</title>

@@ -6,10 +6,55 @@
     <description>Recent content in Tags on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Jun 2020 23:54:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2020 23:40:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1-fail</title>
+      <link>//alfmunny.com/leetcode-blog/tags/1-fail/</link>
+      <pubDate>Mon, 29 Jun 2020 23:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/1-fail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backtrack</title>
+      <link>//alfmunny.com/leetcode-blog/tags/backtrack/</link>
+      <pubDate>Mon, 29 Jun 2020 23:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/backtrack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dfs</title>
+      <link>//alfmunny.com/leetcode-blog/tags/dfs/</link>
+      <pubDate>Mon, 29 Jun 2020 23:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/dfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>graph</title>
+      <link>//alfmunny.com/leetcode-blog/tags/graph/</link>
+      <pubDate>Mon, 29 Jun 2020 23:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/graph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>medium</title>
+      <link>//alfmunny.com/leetcode-blog/tags/medium/</link>
+      <pubDate>Mon, 29 Jun 2020 23:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/medium/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>1-pass</title>
@@ -26,24 +71,6 @@
       <pubDate>Sat, 27 Jun 2020 23:54:00 +0200</pubDate>
       
       <guid>//alfmunny.com/leetcode-blog/tags/array/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>medium</title>
-      <link>//alfmunny.com/leetcode-blog/tags/medium/</link>
-      <pubDate>Sat, 27 Jun 2020 23:54:00 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/medium/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>1-fail</title>
-      <link>//alfmunny.com/leetcode-blog/tags/1-fail/</link>
-      <pubDate>Sat, 27 Jun 2020 23:37:00 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/1-fail/</guid>
       <description></description>
     </item>
     
@@ -71,24 +98,6 @@
       <pubDate>Sat, 27 Jun 2020 15:21:00 +0200</pubDate>
       
       <guid>//alfmunny.com/leetcode-blog/tags/1-hint/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>backtrack</title>
-      <link>//alfmunny.com/leetcode-blog/tags/backtrack/</link>
-      <pubDate>Sat, 27 Jun 2020 15:21:00 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/backtrack/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dfs</title>
-      <link>//alfmunny.com/leetcode-blog/tags/dfs/</link>
-      <pubDate>Sat, 27 Jun 2020 15:21:00 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/dfs/</guid>
       <description></description>
     </item>
     
@@ -170,15 +179,6 @@
       <pubDate>Fri, 29 May 2020 20:45:00 +0200</pubDate>
       
       <guid>//alfmunny.com/leetcode-blog/tags/bfs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>graph</title>
-      <link>//alfmunny.com/leetcode-blog/tags/graph/</link>
-      <pubDate>Fri, 29 May 2020 20:45:00 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/graph/</guid>
       <description></description>
     </item>
     
