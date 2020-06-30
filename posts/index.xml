@@ -6,10 +6,20 @@
     <description>Recent content in Posts on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jun 2020 23:40:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2020 00:49:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>212 - Word Search II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/212-word-search-ii/</link>
+      <pubDate>Wed, 01 Jul 2020 00:49:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/212-word-search-ii/</guid>
+      <description>leetcode
+Problem Given a 2D board and a list of words from the dictionary, find all words in the board. Each word must be constructed from letters of sequentially adjacent cell, where &amp;#34;adjacent&amp;#34; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once in a word. Example: Input: board = [ [&amp;#39;o&amp;#39;,&amp;#39;a&amp;#39;,&amp;#39;a&amp;#39;,&amp;#39;n&amp;#39;], [&amp;#39;e&amp;#39;,&amp;#39;t&amp;#39;,&amp;#39;a&amp;#39;,&amp;#39;e&amp;#39;], [&amp;#39;i&amp;#39;,&amp;#39;h&amp;#39;,&amp;#39;k&amp;#39;,&amp;#39;r&amp;#39;], [&amp;#39;i&amp;#39;,&amp;#39;f&amp;#39;,&amp;#39;l&amp;#39;,&amp;#39;v&amp;#39;] ] words = [&amp;#34;oath&amp;#34;,&amp;#34;pea&amp;#34;,&amp;#34;eat&amp;#34;,&amp;#34;rain&amp;#34;] Output: [&amp;#34;eat&amp;#34;,&amp;#34;oath&amp;#34;] Note: All inputs are consist of lowercase letters a-z.</description>
+    </item>
     
     <item>
       <title>332 - Reconstruct Itinerary</title>

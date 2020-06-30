@@ -4,7 +4,57 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/1-fail/</loc>
-    <lastmod>2020-06-29T23:51:30+02:00</lastmod>
+    <lastmod>2020-07-01T00:52:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/212-word-search-ii/</loc>
+    <lastmod>2020-07-01T00:52:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/backtrack/</loc>
+    <lastmod>2020-07-01T00:52:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/categories/</loc>
+    <lastmod>2020-07-01T00:52:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/dfs/</loc>
+    <lastmod>2020-07-01T00:52:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/hard/</loc>
+    <lastmod>2020-07-01T00:52:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
+    <lastmod>2020-07-01T00:52:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/</loc>
+    <lastmod>2020-07-01T00:52:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
+    <lastmod>2020-07-01T00:52:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
+    <lastmod>2020-07-01T00:52:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/trie/</loc>
+    <lastmod>2020-07-01T00:52:05+02:00</lastmod>
   </url>
   
   <url>
@@ -18,47 +68,12 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/backtrack/</loc>
-    <lastmod>2020-06-29T23:51:30+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/categories/</loc>
-    <lastmod>2020-06-29T23:51:30+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/dfs/</loc>
-    <lastmod>2020-06-29T23:51:30+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/graph/</loc>
     <lastmod>2020-06-29T23:51:30+02:00</lastmod>
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
-    <lastmod>2020-06-29T23:51:30+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/</loc>
-    <lastmod>2020-06-29T23:51:30+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/medium/</loc>
-    <lastmod>2020-06-29T23:51:30+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
-    <lastmod>2020-06-29T23:51:30+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
     <lastmod>2020-06-29T23:51:30+02:00</lastmod>
   </url>
   
@@ -214,11 +229,6 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/52-n-queens-ii/</loc>
-    <lastmod>2020-06-12T17:45:25+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/hard/</loc>
     <lastmod>2020-06-12T17:45:25+02:00</lastmod>
   </url>
   
@@ -429,11 +439,6 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/208-implement-trie/</loc>
-    <lastmod>2020-05-14T22:12:12+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/trie/</loc>
     <lastmod>2020-05-14T22:12:12+02:00</lastmod>
   </url>
   
