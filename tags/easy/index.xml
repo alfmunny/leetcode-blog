@@ -6,10 +6,20 @@
     <description>Recent content in easy on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Jun 2020 15:52:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2020 23:57:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/easy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>441 - Arranging Coins</title>
+      <link>//alfmunny.com/leetcode-blog/posts/441-arranging-coins/</link>
+      <pubDate>Wed, 01 Jul 2020 23:57:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/441-arranging-coins/</guid>
+      <description>leetcode
+Problem You have a total of n coins that you want to form in a staircase shape, where every k-th row must have exactly k coins. Given n, find the total number of full staircase rows that can be formed. n is a non-negative integer and fits within the range of a 32-bit signed integer. Example 1: n = 5 The coins can form the following rows: ¤ ¤ ¤ ¤ ¤ Because the 3rd row is incomplete, we return 2.</description>
+    </item>
     
     <item>
       <title>303 - Range Sum Query - Immutable</title>
