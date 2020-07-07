@@ -6,10 +6,30 @@
     <description>Recent content on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jul 2020 23:57:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2020 16:13:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>463 - Island Perimeter</title>
+      <link>//alfmunny.com/leetcode-blog/posts/463-island-perimeter/</link>
+      <pubDate>Tue, 07 Jul 2020 16:13:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/463-island-perimeter/</guid>
+      <description>leetcode
+Problem You are given a map in form of a two-dimensional integer grid where 1 represents land and 0 represents water. Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells). The island doesn&amp;#39;t have &amp;#34;lakes&amp;#34; (water inside that isn&amp;#39;t connected to the water around the island). One cell is a square with side length 1.</description>
+    </item>
+    
+    <item>
+      <title>107 - Binary Tree Level Order Traversal II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/107-binary-tree-level-order-traversal-ii/</link>
+      <pubDate>Fri, 03 Jul 2020 22:13:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/107-binary-tree-level-order-traversal-ii/</guid>
+      <description>leetcode
+Problem Given a binary tree, return the bottom-up level order traversal of its nodes&amp;#39; values. (ie, from left to right, level by level from leaf to root). For example: Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 return its bottom-up level order traversal as: [ [15,7], [9,20], [3] ] Solution class Solution: def levelOrderBottom(self, root: TreeNode) -&amp;gt; List[List[int]]: if not root: return [] queue = [root] stack = [] while queue: next_queue = [] tmp = [] while queue: n = queue.</description>
+    </item>
     
     <item>
       <title>441 - Arranging Coins</title>

@@ -3,42 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
+    <lastmod>2020-07-07T16:14:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/463-island-perimeter/</loc>
+    <lastmod>2020-07-07T16:14:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/array/</loc>
+    <lastmod>2020-07-07T16:14:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/categories/</loc>
+    <lastmod>2020-07-07T16:14:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/dfs/</loc>
+    <lastmod>2020-07-07T16:14:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/easy/</loc>
+    <lastmod>2020-07-07T16:14:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
+    <lastmod>2020-07-07T16:14:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/</loc>
+    <lastmod>2020-07-07T16:14:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
+    <lastmod>2020-07-07T16:14:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
+    <lastmod>2020-07-07T16:14:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/107-binary-tree-level-order-traversal-ii/</loc>
+    <lastmod>2020-07-07T16:14:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/bfs/</loc>
+    <lastmod>2020-07-07T16:14:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/tree/</loc>
+    <lastmod>2020-07-07T16:14:15+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/1-hint/</loc>
     <lastmod>2020-07-01T23:58:51+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/441-arranging-coins/</loc>
-    <lastmod>2020-07-01T23:58:51+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/categories/</loc>
-    <lastmod>2020-07-01T23:58:51+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/easy/</loc>
-    <lastmod>2020-07-01T23:58:51+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
-    <lastmod>2020-07-01T23:58:51+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/</loc>
-    <lastmod>2020-07-01T23:58:51+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
-    <lastmod>2020-07-01T23:58:51+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
     <lastmod>2020-07-01T23:58:51+02:00</lastmod>
   </url>
   
@@ -54,11 +89,6 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/backtrack/</loc>
-    <lastmod>2020-07-01T00:52:05+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/dfs/</loc>
     <lastmod>2020-07-01T00:52:05+02:00</lastmod>
   </url>
   
@@ -93,17 +123,7 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
-    <lastmod>2020-06-27T23:55:14+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/posts/263-ugly-number/</loc>
-    <lastmod>2020-06-27T23:55:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/array/</loc>
     <lastmod>2020-06-27T23:55:14+02:00</lastmod>
   </url>
   
@@ -124,11 +144,6 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/998-smallest-string-starting-from-leaf/</loc>
-    <lastmod>2020-06-27T15:22:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/tree/</loc>
     <lastmod>2020-06-27T15:22:41+02:00</lastmod>
   </url>
   
@@ -359,11 +374,6 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/210-course-schedule-ii/</loc>
-    <lastmod>2020-06-07T14:03:02+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/bfs/</loc>
     <lastmod>2020-06-07T14:03:02+02:00</lastmod>
   </url>
   
