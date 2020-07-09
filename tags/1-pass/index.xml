@@ -6,10 +6,20 @@
     <description>Recent content in 1-pass on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jul 2020 16:28:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2020 23:57:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/1-pass/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>15 - 3SUM</title>
+      <link>//alfmunny.com/leetcode-blog/posts/15-3sum/</link>
+      <pubDate>Thu, 09 Jul 2020 23:57:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/15-3sum/</guid>
+      <description>leetcode
+Problem Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero. Note: The solution set must not contain duplicate triplets. Example: Given array nums = [-1, 0, 1, 2, -1, -4], A solution set is: [ [-1, 0, 1], [-1, -1, 2] ] Solution class Solution: def threeSum(self, nums: List[int]) -&amp;gt; List[List[int]]: if len(nums) &amp;lt; 3: return [] ans = [] nums.</description>
+    </item>
     
     <item>
       <title>695 - Max Area of Island</title>

@@ -4,21 +4,56 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
-    <lastmod>2020-07-07T16:29:25+02:00</lastmod>
+    <lastmod>2020-07-09T23:57:37+02:00</lastmod>
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/695-max-area-of-island/</loc>
-    <lastmod>2020-07-07T16:29:25+02:00</lastmod>
+    <loc>//alfmunny.com/leetcode-blog/posts/15-3sum/</loc>
+    <lastmod>2020-07-09T23:57:37+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/array/</loc>
-    <lastmod>2020-07-07T16:29:25+02:00</lastmod>
+    <lastmod>2020-07-09T23:57:37+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/categories/</loc>
+    <lastmod>2020-07-09T23:57:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/hash/</loc>
+    <lastmod>2020-07-09T23:57:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
+    <lastmod>2020-07-09T23:57:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/</loc>
+    <lastmod>2020-07-09T23:57:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
+    <lastmod>2020-07-09T23:57:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
+    <lastmod>2020-07-09T23:57:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/two-pointer/</loc>
+    <lastmod>2020-07-09T23:57:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/695-max-area-of-island/</loc>
     <lastmod>2020-07-07T16:29:25+02:00</lastmod>
   </url>
   
@@ -28,27 +63,7 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
-    <lastmod>2020-07-07T16:29:25+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/</loc>
-    <lastmod>2020-07-07T16:29:25+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/medium/</loc>
-    <lastmod>2020-07-07T16:29:25+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
-    <lastmod>2020-07-07T16:29:25+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
     <lastmod>2020-07-07T16:29:25+02:00</lastmod>
   </url>
   
@@ -478,11 +493,6 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/hash/</loc>
-    <lastmod>2020-05-26T17:53:24+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/posts/733-flood-fill/</loc>
     <lastmod>2020-05-09T16:11:16+02:00</lastmod>
   </url>
@@ -674,11 +684,6 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/844-backspace-string-compare/</loc>
-    <lastmod>2020-04-09T23:17:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/two-pointer/</loc>
     <lastmod>2020-04-09T23:17:14+02:00</lastmod>
   </url>
   
