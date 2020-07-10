@@ -6,10 +6,20 @@
     <description>Recent content on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2020 02:21:54 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2020 17:10:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>37 - Sudoku Solver</title>
+      <link>//alfmunny.com/leetcode-blog/posts/37-sodoku-solver/</link>
+      <pubDate>Fri, 10 Jul 2020 17:10:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/37-sodoku-solver/</guid>
+      <description>leetcode
+Problem Write a program to solve a Sudoku puzzle by filling the empty cells. A sudoku solution must satisfy all of the following rules: Each of the digits 1-9 must occur exactly once in each row. Each of the digits 1-9 must occur exactly once in each column. Each of the the digits 1-9 must occur exactly once in each of the 9 3x3 sub-boxes of the grid. Empty cells are indicated by the character &amp;#39;.</description>
+    </item>
     
     <item>
       <title>LeetCode [145/146]</title>
