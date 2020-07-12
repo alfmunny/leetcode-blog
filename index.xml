@@ -6,10 +6,20 @@
     <description>Recent content on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2020 17:10:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 23:45:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>36 - Valid Sudoku</title>
+      <link>//alfmunny.com/leetcode-blog/posts/36-valid-sudoku/</link>
+      <pubDate>Sun, 12 Jul 2020 23:45:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/36-valid-sudoku/</guid>
+      <description>leetcode
+Problem Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules: Each row must contain the digits 1-9 without repetition. Each column must contain the digits 1-9 without repetition. Each of the 9 3x3 sub-boxes of the grid must contain the digits 1-9 without repetition. Solution class Solution: def isValidSudoku(self, board: List[List[str]]) -&amp;gt; bool: for row in board: nums = [x for x in row if x !</description>
+    </item>
     
     <item>
       <title>37 - Sudoku Solver</title>
