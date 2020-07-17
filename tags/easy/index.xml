@@ -6,10 +6,20 @@
     <description>Recent content in easy on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jul 2020 00:28:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2020 00:30:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/easy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>461 - Hamming Distance</title>
+      <link>//alfmunny.com/leetcode-blog/posts/461-hamming-distance/</link>
+      <pubDate>Sat, 18 Jul 2020 00:30:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/461-hamming-distance/</guid>
+      <description>leetcode
+Problem The Hamming distance between two integers is the number of positions at which the corresponding bits are different. Given two integers x and y, calculate the Hamming distance. Note: 0 ≤ x, y &amp;lt; 231. Example: Input: x = 1, y = 4 Output: 2 Explanation: 1 (0 0 0 1) 4 (0 1 0 0) ↑ ↑ The above arrows point to positions where the corresponding bits are different.</description>
+    </item>
     
     <item>
       <title>190 - Reverse Bits</title>
