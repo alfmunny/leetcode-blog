@@ -598,7 +598,7 @@ Problem Return the root node of a binary search tree that matches the given preo
       
       <guid>//alfmunny.com/leetcode-blog/posts/46-permutations/</guid>
       <description>leetcode
-Problem Given a collection of distinct integers, return all possible permutations. Example: Input: [1,2,3] Output: [ [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1] ] Solution class Solution: def permute(self, nums): ans = [] self.backtrack([], nums, ans) return ans def backtrack(self, path, nums, ans): if not nums: ans.append(path[:]) return for i, v in enumerate(nums): self.backtrack(path+[v], nums[:i]+nums[i+1:], ans) </description>
+Problem Given a collection of distinct integers, return all possible permutations. Example: Input: [1,2,3] Output: [ [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1] ] Solution Solution 1 class Solution: def permute(self, nums): ans = [] self.backtrack([], nums, ans) return ans def backtrack(self, path, nums, ans): if not nums: ans.append(path[:]) return for i, v in enumerate(nums): self.backtrack(path+[v], nums[:i]+nums[i+1:], ans) Solution 2 class Solution: def permute(self, nums: List[int]) -&amp;gt; List[List[int]]: ans = [] marked = [False] * len(nums) self.</description>
     </item>
     
     <item>
