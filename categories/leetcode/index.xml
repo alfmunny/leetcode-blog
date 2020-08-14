@@ -6,10 +6,70 @@
     <description>Recent content in leetcode on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jul 2020 00:30:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2020 00:01:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>191 - Number of 1 Bits</title>
+      <link>//alfmunny.com/leetcode-blog/posts/191-number-of-1-bits/</link>
+      <pubDate>Fri, 14 Aug 2020 00:01:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/191-number-of-1-bits/</guid>
+      <description>leetcode
+Problem Write a function that takes an unsigned integer and return the number of &amp;#39;1&amp;#39; bits it has (also known as the Hamming weight). Example 1: Input: 00000000000000000000000000001011 Output: 3 Explanation: The input binary string 00000000000000000000000000001011 has a total of three &amp;#39;1&amp;#39; bits. Example 2: Input: 00000000000000000000000010000000 Output: 1 Explanation: The input binary string 00000000000000000000000010000000 has a total of one &amp;#39;1&amp;#39; bit. Example 3: Input: 11111111111111111111111111111101 Output: 31 Explanation: The input binary string 11111111111111111111111111111101 has a total of thirty one &amp;#39;1&amp;#39; bits.</description>
+    </item>
+    
+    <item>
+      <title>81 - Search in Rotated Sorted Array II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/81-search-in-rotated-sorted-array-ii/</link>
+      <pubDate>Thu, 13 Aug 2020 23:48:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/81-search-in-rotated-sorted-array-ii/</guid>
+      <description>leetcode
+Problem Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand. (i.e., [0,0,1,2,2,5,6] might become [2,5,6,0,0,1,2]). You are given a target value to search. If found in the array return true, otherwise return false. Example 1: Input: nums = [2,5,6,0,0,1,2], target = 0 Output: true Example 2: Input: nums = [2,5,6,0,0,1,2], target = 3 Output: false Follow up: This is a follow up problem to Search in Rotated Sorted Array, where nums may contain duplicates.</description>
+    </item>
+    
+    <item>
+      <title>80 - Remove Duplicates from Sorted Array II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/80-remove-duplicates-from-sorted-array-ii/</link>
+      <pubDate>Thu, 13 Aug 2020 22:21:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/80-remove-duplicates-from-sorted-array-ii/</guid>
+      <description>leetcode
+Problem Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length. Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory. Example 1: Given nums = [1,1,1,2,2,3], Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3 respectively.</description>
+    </item>
+    
+    <item>
+      <title>73 - Set Matrix Zeroes</title>
+      <link>//alfmunny.com/leetcode-blog/posts/73-set-matrix-zeroes/</link>
+      <pubDate>Thu, 13 Aug 2020 21:28:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/73-set-matrix-zeroes/</guid>
+      <description>leetcode
+Problem Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in-place. Example 1: Input: [ [1,1,1], [1,0,1], [1,1,1] ] Output: [ [1,0,1], [0,0,0], [1,0,1] ] Example 2: Input: [ [0,1,2,0], [3,4,5,2], [1,3,1,5] ] Output: [ [0,0,0,0], [0,4,5,0], [0,3,1,0] ] Follow up: A straight forward solution using O(mn) space is probably a bad idea. A simple improvement uses O(m + n) space, but still not the best solution.</description>
+    </item>
+    
+    <item>
+      <title>71 - Simplify Path</title>
+      <link>//alfmunny.com/leetcode-blog/posts/71-simplify-path/</link>
+      <pubDate>Thu, 13 Aug 2020 18:18:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/71-simplify-path/</guid>
+      <description>leetcode
+Problem Given an absolute path for a file (Unix-style), simplify it. Or in other words, convert it to the canonical path. In a UNIX-style file system, a period . refers to the current directory. Furthermore, a double period .. moves the directory up a level. Note that the returned canonical path must always begin with a slash /, and there must be only a single slash / between two directory names.</description>
+    </item>
+    
+    <item>
+      <title>32 - Longest Valid Parentheses</title>
+      <link>//alfmunny.com/leetcode-blog/posts/32-longest-valid-parentheses/</link>
+      <pubDate>Thu, 13 Aug 2020 17:14:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/32-longest-valid-parentheses/</guid>
+      <description>leetcode
+Problem Given a string containing just the characters &amp;#39;(&amp;#39; and &amp;#39;)&amp;#39;, find the length of the longest valid (well-formed) parentheses substring. Example 1: Input: &amp;#34;(()&amp;#34; Output: 2 Explanation: The longest valid parentheses substring is &amp;#34;()&amp;#34; Example 2: Input: &amp;#34;)()())&amp;#34; Output: 4 Explanation: The longest valid parentheses substring is &amp;#34;()()&amp;#34; Solution class Solution: def longestValidParentheses(self, s: str) -&amp;gt; int: stack = [-1] ans = 0 for i in range(len(s)): if s[i] == &amp;#39;(&amp;#39;: stack.</description>
+    </item>
     
     <item>
       <title>461 - Hamming Distance</title>

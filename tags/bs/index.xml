@@ -6,10 +6,20 @@
     <description>Recent content in bs on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Jun 2020 16:09:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2020 23:48:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/bs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>81 - Search in Rotated Sorted Array II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/81-search-in-rotated-sorted-array-ii/</link>
+      <pubDate>Thu, 13 Aug 2020 23:48:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/81-search-in-rotated-sorted-array-ii/</guid>
+      <description>leetcode
+Problem Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand. (i.e., [0,0,1,2,2,5,6] might become [2,5,6,0,0,1,2]). You are given a target value to search. If found in the array return true, otherwise return false. Example 1: Input: nums = [2,5,6,0,0,1,2], target = 0 Output: true Example 2: Input: nums = [2,5,6,0,0,1,2], target = 3 Output: false Follow up: This is a follow up problem to Search in Rotated Sorted Array, where nums may contain duplicates.</description>
+    </item>
     
     <item>
       <title>162 - Find Peak Element</title>
