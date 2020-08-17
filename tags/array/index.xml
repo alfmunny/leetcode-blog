@@ -6,10 +6,40 @@
     <description>Recent content in array on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Aug 2020 00:01:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2020 15:28:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/array/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1103 - Distribute Candies to People</title>
+      <link>//alfmunny.com/leetcode-blog/posts/1103-distribute-candies-to-people/</link>
+      <pubDate>Mon, 17 Aug 2020 15:28:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/1103-distribute-candies-to-people/</guid>
+      <description>leetcode
+Problem We distribute some number of candies, to a row of n = num_people people in the following way: We then give 1 candy to the first person, 2 candies to the second person, and so on until we give n candies to the last person. Then, we go back to the start of the row, giving n + 1 candies to the first person, n + 2 candies to the second person, and so on until we give 2 * n candies to the last person.</description>
+    </item>
+    
+    <item>
+      <title>240 - Search a 2D Matrix II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/240-search-a-2d-matrix-ii/</link>
+      <pubDate>Mon, 17 Aug 2020 03:11:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/240-search-a-2d-matrix-ii/</guid>
+      <description>leetcode
+Problem Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties: Integers in each row are sorted in ascending from left to right. Integers in each column are sorted in ascending from top to bottom. Example: Consider the following matrix: [ [1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9, 16, 22], [10, 13, 14, 17, 24], [18, 21, 23, 26, 30] ] Given target = 5, return true.</description>
+    </item>
+    
+    <item>
+      <title>82 - Remove Duplicates from Sorted List II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/82-remove-duplicates-from-sorted-list-ii/</link>
+      <pubDate>Mon, 17 Aug 2020 03:08:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/82-remove-duplicates-from-sorted-list-ii/</guid>
+      <description>leetcode
+Problem Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list. Return the linked list sorted as well. Example 1: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;3-&amp;gt;4-&amp;gt;4-&amp;gt;5 Output: 1-&amp;gt;2-&amp;gt;5 Example 2: Input: 1-&amp;gt;1-&amp;gt;1-&amp;gt;2-&amp;gt;3 Output: 2-&amp;gt;3 Solution class Solution: def deleteDuplicates(self, head: ListNode) -&amp;gt; ListNode: if not head or not head.next: return head extra = ListNode(None) extra.next = head pre = extra while head and head.</description>
+    </item>
     
     <item>
       <title>191 - Number of 1 Bits</title>
