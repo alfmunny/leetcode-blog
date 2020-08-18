@@ -6,10 +6,42 @@
     <description>Recent content in Posts on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2020 16:41:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2020 15:15:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>97 - Interleaving String</title>
+      <link>//alfmunny.com/leetcode-blog/posts/97-interleaving-string/</link>
+      <pubDate>Tue, 18 Aug 2020 15:15:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/97-interleaving-string/</guid>
+      <description>leetcode
+Problem Given s1, s2, s3, find whether s3 is formed by the interleaving of s1 and s2. Example 1: Input: s1 = &amp;#34;aabcc&amp;#34;, s2 = &amp;#34;dbbca&amp;#34;, s3 = &amp;#34;aadbbcbcac&amp;#34; Output: true Example 2: Input: s1 = &amp;#34;aabcc&amp;#34;, s2 = &amp;#34;dbbca&amp;#34;, s3 = &amp;#34;aadbbbaccc&amp;#34; Output: false Solution DP problem.
+Imagin you have a matrix with s1 as its row and s2 as its column.
+You have to find a path from upper left corner to bottom right corner, which consisits the s3.</description>
+    </item>
+    
+    <item>
+      <title>967 - Numbers With Same Consecutive Differences</title>
+      <link>//alfmunny.com/leetcode-blog/posts/967-numbers-with-same-consecutive-differences/</link>
+      <pubDate>Tue, 18 Aug 2020 14:27:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/967-numbers-with-same-consecutive-differences/</guid>
+      <description>leetcode
+Problem Return all non-negative integers of length N such that the absolute difference between every two consecutive digits is K. Note that every number in the answer must not have leading zeros except for the number 0 itself. For example, 01 has one leading zero and is invalid, but 0 is valid. You may return the answer in any order. Example 1: Input: N = 3, K = 7 Output: [181,292,707,818,929] Explanation: Note that 070 is not a valid number, because it has leading zeroes.</description>
+    </item>
+    
+    <item>
+      <title>142 - Reorder List</title>
+      <link>//alfmunny.com/leetcode-blog/posts/142-reorder-list/</link>
+      <pubDate>Tue, 18 Aug 2020 01:13:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/142-reorder-list/</guid>
+      <description>leetcode
+Problem Given a singly linked list L: L0→L1→…→Ln-1→Ln, reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→… You may not modify the values in the list&amp;#39;s nodes, only nodes itself may be changed. Example 1: Given 1-&amp;gt;2-&amp;gt;3-&amp;gt;4, reorder it to 1-&amp;gt;4-&amp;gt;2-&amp;gt;3. Example 2: Given 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5, reorder it to 1-&amp;gt;5-&amp;gt;2-&amp;gt;4-&amp;gt;3. Solution class Solution: def reorderList(self, head: ListNode) -&amp;gt; None: if not head or not head.next: return fast = slow = head while fast.next and fast.next.next: fast = fast.</description>
+    </item>
     
     <item>
       <title>148 - Sort List</title>
