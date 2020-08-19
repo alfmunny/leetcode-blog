@@ -6,10 +6,20 @@
     <description>Recent content in 1-fail on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2020 16:24:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2020 14:55:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/1-fail/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>114 - Flatten Binary Tree to Linked List</title>
+      <link>//alfmunny.com/leetcode-blog/posts/114-flatten-binary-tree-to-linked-list/</link>
+      <pubDate>Wed, 19 Aug 2020 14:55:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/114-flatten-binary-tree-to-linked-list/</guid>
+      <description>leetcode
+Problem Given a binary tree, flatten it to a linked list in-place. For example, given the following tree: 1 / \ 2 5 / \ \ 3 4 6 The flattened tree should look like: 1 \ 2 \ 3 \ 4 \ 5 \ 6 Solution  Traverse the tree in reverse preorder, the opposite of root-left-right. Save the root, and use it in the upper level.  class Solution: def flatten(self, root: TreeNode) -&amp;gt; None: &amp;#34;&amp;#34;&amp;#34;Do not return anything, modify root in-place instead.</description>
+    </item>
     
     <item>
       <title>109 - Convert Sorted List to Binary Search Tree</title>
