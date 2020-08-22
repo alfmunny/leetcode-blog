@@ -6,10 +6,21 @@
     <description>Recent content in dp on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Aug 2020 16:05:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2020 12:25:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/dp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>516 - Longest Palindromic Subsequence</title>
+      <link>//alfmunny.com/leetcode-blog/posts/516-longest-palindromic-subsequence/</link>
+      <pubDate>Sat, 22 Aug 2020 12:25:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/516-longest-palindromic-subsequence/</guid>
+      <description>leetcode
+Problem Given a string s, find the longest palindromic subsequence&amp;#39;s length in s. You may assume that the maximum length of s is 1000. Example 1: Input: &amp;#34;bbbab&amp;#34; Output: 4 One possible longest palindromic subsequence is &amp;#34;bbbb&amp;#34;. Example 2: Input: &amp;#34;cbbd&amp;#34; Output: 2 One possible longest palindromic subsequence is &amp;#34;bb&amp;#34;. Constraints: 1 &amp;lt;= s.length &amp;lt;= 1000 s consists only of lowercase English letters. Solution DP problem.
+dp[i][j] represents the max value for substring from j to i.</description>
+    </item>
     
     <item>
       <title>368 - Largest Divisible Subset</title>

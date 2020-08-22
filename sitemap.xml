@@ -3,6 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/1-fail/</loc>
+    <lastmod>2020-08-22T12:26:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/516-longest-palindromic-subsequence/</loc>
+    <lastmod>2020-08-22T12:26:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/array/</loc>
+    <lastmod>2020-08-22T12:26:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/categories/</loc>
+    <lastmod>2020-08-22T12:26:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/dp/</loc>
+    <lastmod>2020-08-22T12:26:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
+    <lastmod>2020-08-22T12:26:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/</loc>
+    <lastmod>2020-08-22T12:26:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/medium/</loc>
+    <lastmod>2020-08-22T12:26:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
+    <lastmod>2020-08-22T12:26:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
+    <lastmod>2020-08-22T12:26:17+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
     <lastmod>2020-08-19T20:11:14+02:00</lastmod>
   </url>
@@ -13,37 +63,7 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/categories/</loc>
-    <lastmod>2020-08-19T20:11:14+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/dfs/</loc>
-    <lastmod>2020-08-19T20:11:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
-    <lastmod>2020-08-19T20:11:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/</loc>
-    <lastmod>2020-08-19T20:11:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/medium/</loc>
-    <lastmod>2020-08-19T20:11:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
-    <lastmod>2020-08-19T20:11:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/</loc>
     <lastmod>2020-08-19T20:11:14+02:00</lastmod>
   </url>
   
@@ -63,18 +83,8 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/dp/</loc>
-    <lastmod>2020-08-19T16:32:51+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/hash/</loc>
     <lastmod>2020-08-19T16:32:51+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/1-fail/</loc>
-    <lastmod>2020-08-19T15:01:48+02:00</lastmod>
   </url>
   
   <url>
@@ -134,11 +144,6 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/967-numbers-with-same-consecutive-differences/</loc>
-    <lastmod>2020-08-18T14:27:45+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/array/</loc>
     <lastmod>2020-08-18T14:27:45+02:00</lastmod>
   </url>
   
