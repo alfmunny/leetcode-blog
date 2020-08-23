@@ -6,10 +6,20 @@
     <description>Recent content in hard on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2020 15:15:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2020 16:34:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/hard/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1032 - Stream of Characters</title>
+      <link>//alfmunny.com/leetcode-blog/posts/1032-stream-of-characters/</link>
+      <pubDate>Sun, 23 Aug 2020 16:34:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/1032-stream-of-characters/</guid>
+      <description>leetcode
+Problem Implement the StreamChecker class as follows: StreamChecker(words): Constructor, init the data structure with the given words. query(letter): returns true if and only if for some k &amp;gt;= 1, the last k characters queried (in order from oldest to newest, including this letter just queried) spell one of the words in the given list. Example: StreamChecker streamChecker = new StreamChecker([&amp;#34;cd&amp;#34;,&amp;#34;f&amp;#34;,&amp;#34;kl&amp;#34;]); // init the dictionary. streamChecker.query(&amp;#39;a&amp;#39;); // return false streamChecker.query(&amp;#39;b&amp;#39;); // return false streamChecker.</description>
+    </item>
     
     <item>
       <title>97 - Interleaving String</title>
