@@ -6,10 +6,20 @@
     <description>Recent content in 1-pass on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Aug 2020 23:24:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2020 01:10:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/1-pass/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>93 - Restore IP Addresses</title>
+      <link>//alfmunny.com/leetcode-blog/posts/93-restore-ip-addresses/</link>
+      <pubDate>Thu, 27 Aug 2020 01:10:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/93-restore-ip-addresses/</guid>
+      <description>leetcode
+Problem Given a string s containing only digits. Return all possible valid IP addresses that can be obtained from s. You can return them in any order. A valid IP address consists of exactly four integers, each integer is between 0 and 255, separated by single points and cannot have leading zeros. For example, &amp;#34;0.1.2.201&amp;#34; and &amp;#34;192.168.1.1&amp;#34; are valid IP addresses and &amp;#34;0.011.255.245&amp;#34;, &amp;#34;192.168.1.312&amp;#34; and &amp;#34;192.168@1.1&amp;#34; are invalid IP addresses.</description>
+    </item>
     
     <item>
       <title>412 - Fizz Buzz</title>
