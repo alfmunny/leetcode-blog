@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>412 - Fizz Buzz | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">412 - Fizz Buzz</span></h1>
+
+<h2 class="date">2020/08/26</h2>
+<p class="terms">
+  
+  
+  Categories: <a href="../../categories/leetcode">leetcode</a> 
+  
+  
+  
+  Tags: <a href="../../tags/easy">easy</a> <a href="../../tags/1-pass">1-pass</a> 
+  
+  
+</p>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/fizz-buzz/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Write a program that outputs the string representation of numbers from 1 to n.
+
+But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
+
+Example:
+
+n = 15,
+
+Return:
+[
+    &#34;1&#34;,
+    &#34;2&#34;,
+    &#34;Fizz&#34;,
+    &#34;4&#34;,
+    &#34;Buzz&#34;,
+    &#34;Fizz&#34;,
+    &#34;7&#34;,
+    &#34;8&#34;,
+    &#34;Fizz&#34;,
+    &#34;Buzz&#34;,
+    &#34;11&#34;,
+    &#34;Fizz&#34;,
+    &#34;13&#34;,
+    &#34;14&#34;,
+    &#34;FizzBuzz&#34;
+]
+</code></pre></div><h2 id="solution">Solution</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fizzBuzz</span>(self, n: int) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> List[str]:
+        ans <span style="color:#f92672">=</span> []
+
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
+
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">5</span>:
+                ans<span style="color:#f92672">.</span>append(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">FizzBuzz</span><span style="color:#e6db74">&#34;</span>)
+            <span style="color:#66d9ef">elif</span> <span style="color:#f92672">not</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">5</span>:
+                ans<span style="color:#f92672">.</span>append(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Buzz</span><span style="color:#e6db74">&#34;</span>)
+            <span style="color:#66d9ef">elif</span> <span style="color:#f92672">not</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span>:
+                ans<span style="color:#f92672">.</span>append(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Fizz</span><span style="color:#e6db74">&#34;</span>)
+            <span style="color:#66d9ef">else</span>:
+                ans<span style="color:#f92672">.</span>append(str(i))
+
+        <span style="color:#66d9ef">return</span> ans
+</code></pre></div>
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alfmunnystechblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

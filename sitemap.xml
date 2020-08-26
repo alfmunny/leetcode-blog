@@ -19,7 +19,7 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/categories/</loc>
-    <lastmod>2020-08-27T00:35:14+02:00</lastmod>
+    <lastmod>2020-08-27T00:36:02+02:00</lastmod>
   </url>
   
   <url>
@@ -29,12 +29,12 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
-    <lastmod>2020-08-27T00:35:14+02:00</lastmod>
+    <lastmod>2020-08-27T00:36:02+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/</loc>
-    <lastmod>2020-08-27T00:35:14+02:00</lastmod>
+    <lastmod>2020-08-27T00:36:02+02:00</lastmod>
   </url>
   
   <url>
@@ -44,12 +44,27 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/</loc>
-    <lastmod>2020-08-27T00:35:14+02:00</lastmod>
+    <lastmod>2020-08-27T00:36:02+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/</loc>
-    <lastmod>2020-08-27T00:35:14+02:00</lastmod>
+    <lastmod>2020-08-27T00:36:02+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
+    <lastmod>2020-08-27T00:36:02+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/412-fizz-buzz/</loc>
+    <lastmod>2020-08-27T00:36:02+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/easy/</loc>
+    <lastmod>2020-08-27T00:36:02+02:00</lastmod>
   </url>
   
   <url>
@@ -83,11 +98,6 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
-    <lastmod>2020-08-26T00:13:21+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/posts/131-palindrome-partitioning/</loc>
     <lastmod>2020-08-26T00:13:21+02:00</lastmod>
   </url>
@@ -99,11 +109,6 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/404-sum-of-left-leaves/</loc>
-    <lastmod>2020-08-24T22:58:55+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/easy/</loc>
     <lastmod>2020-08-24T22:58:55+02:00</lastmod>
   </url>
   

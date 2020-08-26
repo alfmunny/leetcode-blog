@@ -22,6 +22,16 @@ Problem Design an Iterator class, which has: A constructor that takes a string c
     </item>
     
     <item>
+      <title>412 - Fizz Buzz</title>
+      <link>//alfmunny.com/leetcode-blog/posts/412-fizz-buzz/</link>
+      <pubDate>Wed, 26 Aug 2020 23:24:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/412-fizz-buzz/</guid>
+      <description>leetcode
+Problem Write a program that outputs the string representation of numbers from 1 to n. But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”. Example: n = 15, Return: [ &amp;#34;1&amp;#34;, &amp;#34;2&amp;#34;, &amp;#34;Fizz&amp;#34;, &amp;#34;4&amp;#34;, &amp;#34;Buzz&amp;#34;, &amp;#34;Fizz&amp;#34;, &amp;#34;7&amp;#34;, &amp;#34;8&amp;#34;, &amp;#34;Fizz&amp;#34;, &amp;#34;Buzz&amp;#34;, &amp;#34;11&amp;#34;, &amp;#34;Fizz&amp;#34;, &amp;#34;13&amp;#34;, &amp;#34;14&amp;#34;, &amp;#34;FizzBuzz&amp;#34; ] Solution class Solution: def fizzBuzz(self, n: int) -&amp;gt; List[str]: ans = [] for i in range(1, n+1): if not i % 3 and not i % 5: ans.</description>
+    </item>
+    
+    <item>
       <title>983 - Minimum Cost For Tickets</title>
       <link>//alfmunny.com/leetcode-blog/posts/983-minimum-cost-for-tickets/</link>
       <pubDate>Wed, 26 Aug 2020 22:50:00 +0200</pubDate>

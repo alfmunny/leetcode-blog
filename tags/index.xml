@@ -48,6 +48,24 @@
     </item>
     
     <item>
+      <title>1-pass</title>
+      <link>//alfmunny.com/leetcode-blog/tags/1-pass/</link>
+      <pubDate>Wed, 26 Aug 2020 23:24:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/1-pass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>easy</title>
+      <link>//alfmunny.com/leetcode-blog/tags/easy/</link>
+      <pubDate>Wed, 26 Aug 2020 23:24:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/easy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>1-fail</title>
       <link>//alfmunny.com/leetcode-blog/tags/1-fail/</link>
       <pubDate>Wed, 26 Aug 2020 22:50:00 +0200</pubDate>
@@ -84,29 +102,11 @@
     </item>
     
     <item>
-      <title>1-pass</title>
-      <link>//alfmunny.com/leetcode-blog/tags/1-pass/</link>
-      <pubDate>Wed, 26 Aug 2020 00:00:00 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/1-pass/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>backtrack</title>
       <link>//alfmunny.com/leetcode-blog/tags/backtrack/</link>
       <pubDate>Wed, 26 Aug 2020 00:00:00 +0200</pubDate>
       
       <guid>//alfmunny.com/leetcode-blog/tags/backtrack/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>easy</title>
-      <link>//alfmunny.com/leetcode-blog/tags/easy/</link>
-      <pubDate>Mon, 24 Aug 2020 22:57:00 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/tags/easy/</guid>
       <description></description>
     </item>
     
