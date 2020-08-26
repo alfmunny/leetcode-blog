@@ -6,10 +6,20 @@
     <description>Recent content in leetcode on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Aug 2020 01:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2020 22:50:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>983 - Minimum Cost For Tickets</title>
+      <link>//alfmunny.com/leetcode-blog/posts/983-minimum-cost-for-tickets/</link>
+      <pubDate>Wed, 26 Aug 2020 22:50:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/983-minimum-cost-for-tickets/</guid>
+      <description>leetcode
+Problem In a country popular for train travel, you have planned some train travelling one year in advance. The days of the year that you will travel is given as an array days. Each day is an integer from 1 to 365. Train tickets are sold in 3 different ways: a 1-day pass is sold for costs[0] dollars; a 7-day pass is sold for costs[1] dollars; a 30-day pass is sold for costs[2] dollars.</description>
+    </item>
     
     <item>
       <title>132 - Palindrome Partitioning II</title>
