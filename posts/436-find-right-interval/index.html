@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>436 - Find Right Interval | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">436 - Find Right Interval</span></h1>
+
+<h2 class="date">2020/08/27</h2>
+<p class="terms">
+  
+  
+  Categories: <a href="../../categories/leetcode">leetcode</a> 
+  
+  
+  
+  Tags: <a href="../../tags/meidum">meidum</a> <a href="../../tags/array">array</a> <a href="../../tags/bs">bs</a> <a href="../../tags/1-pass">1-pass</a> 
+  
+  
+</p>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/find-right-interval/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given a set of intervals, for each of the interval i, check if there exists an interval j whose start point is bigger than or equal to the end point of the interval i, which can be called that j is on the &#34;right&#34; of i.
+
+For any interval i, you need to store the minimum interval j&#39;s index, which means that the interval j has the minimum start point to build the &#34;right&#34; relationship for interval i. If the interval j doesn&#39;t exist, store -1 for the interval i. Finally, you need output the stored value of each interval as an array.
+
+Note:
+
+You may assume the interval&#39;s end point is always bigger than its start point.
+You may assume none of these intervals have the same start point.
+
+
+Example 1:
+
+Input: [ [1,2] ]
+
+Output: [-1]
+
+Explanation: There is only one interval in the collection, so it outputs -1.
+
+
+Example 2:
+
+Input: [ [3,4], [2,3], [1,2] ]
+
+Output: [-1, 0, 1]
+
+Explanation: There is no satisfied &#34;right&#34; interval for [3,4].
+For [2,3], the interval [3,4] has minimum-&#34;right&#34; start point;
+For [1,2], the interval [2,3] has minimum-&#34;right&#34; start point.
+
+
+Example 3:
+
+Input: [ [1,4], [2,3], [3,4] ]
+
+Output: [-1, 2, -1]
+
+Explanation: There is no satisfied &#34;right&#34; interval for [1,4] and [3,4].
+For [2,3], the interval [3,4] has minimum-&#34;right&#34; start point.
+</code></pre></div><h2 id="solution">Solution</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findRightInterval</span>(self, intervals: List[List[int]]) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> List[int]:
+        starts <span style="color:#f92672">=</span> sorted([[a[<span style="color:#ae81ff">0</span>], i] <span style="color:#66d9ef">for</span> i, a <span style="color:#f92672">in</span> enumerate(intervals)]) <span style="color:#f92672">+</span> [[float(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">inf</span><span style="color:#e6db74">&#39;</span>), <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]]
+        <span style="color:#66d9ef">return</span> [starts[bisect<span style="color:#f92672">.</span>bisect(starts, [x[<span style="color:#ae81ff">1</span>]])][<span style="color:#ae81ff">1</span>] <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> intervals]
+</code></pre></div>
+</main>
+
+  <footer>
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alfmunnystechblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

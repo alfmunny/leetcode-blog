@@ -6,19 +6,19 @@
     <description>Recent content in meidum on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jun 2020 23:55:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2020 12:31:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/meidum/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>39 Combination Sum</title>
-      <link>//alfmunny.com/leetcode-blog/posts/39-combination-sum/</link>
-      <pubDate>Wed, 10 Jun 2020 23:55:00 +0200</pubDate>
+      <title>436 - Find Right Interval</title>
+      <link>//alfmunny.com/leetcode-blog/posts/436-find-right-interval/</link>
+      <pubDate>Thu, 27 Aug 2020 12:31:00 +0200</pubDate>
       
-      <guid>//alfmunny.com/leetcode-blog/posts/39-combination-sum/</guid>
+      <guid>//alfmunny.com/leetcode-blog/posts/436-find-right-interval/</guid>
       <description>leetcode
-Problem Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target. The same repeated number may be chosen from candidates unlimited number of times. Note: All numbers (including target) will be positive integers. The solution set must not contain duplicate combinations. Example 1: Input: candidates = [2,3,6,7], target = 7, A solution set is: [ [7], [2,2,3] ] Example 2: Input: candidates = [2,3,5], target = 8, A solution set is: [ [2,2,2,2], [2,3,3], [3,5] ] Solution Backtracking problem.</description>
+Problem Given a set of intervals, for each of the interval i, check if there exists an interval j whose start point is bigger than or equal to the end point of the interval i, which can be called that j is on the &amp;#34;right&amp;#34; of i. For any interval i, you need to store the minimum interval j&amp;#39;s index, which means that the interval j has the minimum start point to build the &amp;#34;right&amp;#34; relationship for interval i.</description>
     </item>
     
   </channel>
