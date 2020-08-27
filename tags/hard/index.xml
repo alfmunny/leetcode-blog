@@ -6,10 +6,20 @@
     <description>Recent content in hard on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Aug 2020 01:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2020 13:21:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/hard/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>980 - Unique Paths III</title>
+      <link>//alfmunny.com/leetcode-blog/posts/980-unique-paths-iii/</link>
+      <pubDate>Thu, 27 Aug 2020 13:21:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/980-unique-paths-iii/</guid>
+      <description>leetcode
+Problem On a 2-dimensional grid, there are 4 types of squares: 1 represents the starting square. There is exactly one starting square. 2 represents the ending square. There is exactly one ending square. 0 represents empty squares we can walk over. -1 represents obstacles that we cannot walk over. Return the number of 4-directional walks from the starting square to the ending square, that walk over every non-obstacle square exactly once.</description>
+    </item>
     
     <item>
       <title>132 - Palindrome Partitioning II</title>
