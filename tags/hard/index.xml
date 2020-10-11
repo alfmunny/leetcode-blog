@@ -6,10 +6,20 @@
     <description>Recent content in hard on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Aug 2020 13:21:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2020 18:39:00 +0200</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/hard/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>354 - Russian Doll Envelopes</title>
+      <link>//alfmunny.com/leetcode-blog/posts/354-russian-doll-envelopes/</link>
+      <pubDate>Sun, 11 Oct 2020 18:39:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/354-russian-doll-envelopes/</guid>
+      <description>leetcode
+Problem You have a number of envelopes with widths and heights given as a pair of integers (w, h). One envelope can fit into another if and only if both the width and height of one envelope is greater than the width and height of the other envelope. What is the maximum number of envelopes can you Russian doll? (put one inside other) Note: Rotation is not allowed. Example: Input: [[5,4],[6,4],[6,7],[2,3]] Output: 3 Explanation: The maximum number of envelopes you can Russian doll is 3 ([2,3] =&amp;gt; [5,4] =&amp;gt; [6,7]).</description>
+    </item>
     
     <item>
       <title>980 - Unique Paths III</title>

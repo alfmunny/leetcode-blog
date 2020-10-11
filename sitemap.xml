@@ -14,17 +14,17 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/categories/</loc>
-    <lastmod>2020-10-11T19:23:29+02:00</lastmod>
+    <lastmod>2020-10-11T19:24:50+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
-    <lastmod>2020-10-11T19:23:29+02:00</lastmod>
+    <lastmod>2020-10-11T19:24:50+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/</loc>
-    <lastmod>2020-10-11T19:23:29+02:00</lastmod>
+    <lastmod>2020-10-11T19:24:50+02:00</lastmod>
   </url>
   
   <url>
@@ -34,7 +34,7 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/</loc>
-    <lastmod>2020-10-11T19:23:29+02:00</lastmod>
+    <lastmod>2020-10-11T19:24:50+02:00</lastmod>
   </url>
   
   <url>
@@ -44,12 +44,32 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/</loc>
-    <lastmod>2020-10-11T19:23:29+02:00</lastmod>
+    <lastmod>2020-10-11T19:24:50+02:00</lastmod>
   </url>
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/tags/tree/</loc>
     <lastmod>2020-10-11T18:56:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/1-fail/</loc>
+    <lastmod>2020-10-11T19:24:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/354-russian-doll-envelopes/</loc>
+    <lastmod>2020-10-11T19:24:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/dp/</loc>
+    <lastmod>2020-10-11T19:24:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/hard/</loc>
+    <lastmod>2020-10-11T19:24:50+02:00</lastmod>
   </url>
   
   <url>
@@ -74,11 +94,6 @@
   
   <url>
     <loc>//alfmunny.com/leetcode-blog/posts/980-unique-paths-iii/</loc>
-    <lastmod>2020-08-27T13:22:43+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/hard/</loc>
     <lastmod>2020-08-27T13:22:43+02:00</lastmod>
   </url>
   
@@ -128,17 +143,7 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/1-fail/</loc>
-    <lastmod>2020-08-26T23:25:45+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/posts/983-minimum-cost-for-tickets/</loc>
-    <lastmod>2020-08-26T23:25:45+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/dp/</loc>
     <lastmod>2020-08-26T23:25:45+02:00</lastmod>
   </url>
   
