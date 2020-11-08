@@ -53,26 +53,6 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/readme/</loc>
-    <lastmod>2020-10-11T18:56:32+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/medium/</loc>
-    <lastmod>2020-10-11T19:23:29+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/recursive/</loc>
-    <lastmod>2020-10-11T18:56:32+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/tags/tree/</loc>
-    <lastmod>2020-10-11T18:56:32+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/1-fail/</loc>
     <lastmod>2020-10-11T19:24:50+02:00</lastmod>
   </url>
@@ -93,7 +73,22 @@
   </url>
   
   <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/medium/</loc>
+    <lastmod>2020-10-11T19:23:29+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//alfmunny.com/leetcode-blog/posts/450-delete-node-in-a-bst/</loc>
+    <lastmod>2020-08-31T23:39:49+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/recursive/</loc>
+    <lastmod>2020-08-31T23:39:49+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/tags/tree/</loc>
     <lastmod>2020-08-31T23:39:49+02:00</lastmod>
   </url>
   
