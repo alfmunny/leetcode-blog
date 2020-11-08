@@ -6,10 +6,20 @@
     <description>Recent content in Posts on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Oct 2020 18:56:32 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2020 01:34:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>403 - Frog Jump</title>
+      <link>//alfmunny.com/leetcode-blog/posts/403-frog-jump/</link>
+      <pubDate>Sun, 08 Nov 2020 01:34:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/403-frog-jump/</guid>
+      <description>leetcode
+Problem A frog is crossing a river. The river is divided into x units and at each unit there may or may not exist a stone. The frog can jump on a stone, but it must not jump into the water. Given a list of stones&amp;#39; positions (in units) in sorted ascending order, determine if the frog is able to cross the river by landing on the last stone. Initially, the frog is on the first stone and assume the first jump must be 1 unit.</description>
+    </item>
     
     <item>
       <title></title>
