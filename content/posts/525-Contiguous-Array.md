@@ -1,7 +1,7 @@
 +++
 title = "525 - Contiguous Array"
 date = 2020-04-13T23:06:00+02:00
-lastmod = 2020-04-13T23:22:40+02:00
+lastmod = 2020-05-26T17:53:24+02:00
 tags = ["medium", "array", "hash", "1-fail"]
 categories = ["leetcode"]
 draft = false
@@ -52,6 +52,9 @@ Index 0: h[-1] = 0, maxlen = 0
 Index 1: h[0] = -1, maxlen = 1 - (-1) = 2
 maxlen = 2
 ```
+
+
+### Solution: counting contiguous 1s and 0s with a Hashmap {#solution-counting-contiguous-1s-and-0s-with-a-hashmap}
 
 ```python
 class Solution:

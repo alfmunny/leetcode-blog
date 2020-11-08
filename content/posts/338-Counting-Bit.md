@@ -1,7 +1,7 @@
 +++
 title = "338 - Counting Bits"
 date = 2020-04-02T17:03:00+02:00
-lastmod = 2020-04-02T17:12:15+02:00
+lastmod = 2020-05-29T19:45:09+02:00
 tags = ["medium", "array", "dp", "1-fail"]
 categories = ["leetcode"]
 draft = false
@@ -102,4 +102,20 @@ class Solution(object):
         while len(res)<=num:
             res+=[i+1 for i in res]
         return res[:num+1]
+```
+
+
+### Solution 4: {#solution-4}
+
+```python
+class Solution:
+    def countBits(self, num):
+        dp = [0] * (num + 1)
+        for i in range(1, num+1):
+            if not i % 2:
+                dp[i] = dp[i >> 1]
+            else:
+                dp[i] = dp[i >> 1] + 1
+
+        return dp[num]
 ```

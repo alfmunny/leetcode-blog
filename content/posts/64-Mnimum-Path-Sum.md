@@ -1,7 +1,7 @@
 +++
 title = "64 - Minimum Path Sum"
 date = 2020-03-04T18:47:00+01:00
-lastmod = 2020-03-25T23:41:09+01:00
+lastmod = 2020-05-14T17:04:44+02:00
 tags = ["medium", "array", "dp"]
 categories = ["leetcode"]
 draft = false
@@ -128,6 +128,8 @@ print(Solution().minPathSum(grid))
 
 ```python
 import sys
+
+
 class Solution(object):
     def minPathSum(self, grid):
         """
@@ -137,20 +139,20 @@ class Solution(object):
         m = len(grid)
         n = len(grid[0])
 
-        dp = [sys.maxsize for i in range(n+1)]
+        dp = [sys.maxsize for i in range(n + 1)]
         dp[1] = grid[0][0]
 
         for i in range(m):
             for j in range(n):
-              if i == 1 and j == 1:
-                  continue
-              else:
-                dp[j+1] = min(dp[j+1], dp[j]) + grid[i][j]
+                if i == 0 and j == 0:
+                    continue
+                else:
+                    dp[j + 1] = min(dp[j + 1], dp[j]) + grid[i][j]
 
         return dp[-1] if m and n else 0
 
 
-grid = [[1,3,1],[1,5,1],[4,2,1]]
+grid = [[1, 3, 1], [1, 5, 1], [4, 2, 1]]
 
 print(Solution().minPathSum(grid))
 ```
