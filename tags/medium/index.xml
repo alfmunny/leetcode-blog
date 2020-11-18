@@ -18,10 +18,7 @@
       
       <guid>//alfmunny.com/leetcode-blog/posts/86-partition-list/</guid>
       <description>leetcode
-Problem Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x. You should preserve the original relative order of the nodes in each of the two partitions. Example: Input: head = 1-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;5-&amp;gt;2, x = 3 Output: 1-&amp;gt;2-&amp;gt;2-&amp;gt;4-&amp;gt;3-&amp;gt;5 Notes:
-Two pointers:
-p1: mark the end of smaller part
-p2: go forward to find the smaller one and swap with p1.</description>
+Problem Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x. You should preserve the original relative order of the nodes in each of the two partitions. Example: Input: head = 1-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;5-&amp;gt;2, x = 3 Output: 1-&amp;gt;2-&amp;gt;2-&amp;gt;4-&amp;gt;3-&amp;gt;5 Solution Solution 1: Two Dummy Pointers Simple version: just create two list, and append them in the end</description>
     </item>
     
     <item>
