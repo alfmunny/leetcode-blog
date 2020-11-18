@@ -6,10 +6,33 @@
     <description>Recent content in leetcode on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2020 01:34:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2020 19:29:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>86 - Partition List</title>
+      <link>//alfmunny.com/leetcode-blog/posts/86-partition-list/</link>
+      <pubDate>Wed, 18 Nov 2020 19:29:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/86-partition-list/</guid>
+      <description>leetcode
+Problem Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x. You should preserve the original relative order of the nodes in each of the two partitions. Example: Input: head = 1-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;5-&amp;gt;2, x = 3 Output: 1-&amp;gt;2-&amp;gt;2-&amp;gt;4-&amp;gt;3-&amp;gt;5 Notes:
+Two pointers:
+p1: mark the end of smaller part
+p2: go forward to find the smaller one and swap with p1.</description>
+    </item>
+    
+    <item>
+      <title>376 - Wiggle Subsequence</title>
+      <link>//alfmunny.com/leetcode-blog/posts/376-wiggle-subsequence/</link>
+      <pubDate>Mon, 09 Nov 2020 22:12:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/376-wiggle-subsequence/</guid>
+      <description>leetcode
+Problem A sequence of numbers is called a wiggle sequence if the differences between successive numbers strictly alternate between positive and negative. The first difference (if one exists) may be either positive or negative. A sequence with fewer than two elements is trivially a wiggle sequence. For example, [1,7,4,9,2,5] is a wiggle sequence because the differences (6,-3,5,-7,3) are alternately positive and negative. In contrast, [1,4,7,2,5] and [1,7,4,5,5] are not wiggle sequences, the first because its first two differences are positive and the second because its last difference is zero.</description>
+    </item>
     
     <item>
       <title>403 - Frog Jump</title>

@@ -6,10 +6,23 @@
     <description>Recent content in two-pointer on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jul 2020 23:57:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2020 19:29:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/two-pointer/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>86 - Partition List</title>
+      <link>//alfmunny.com/leetcode-blog/posts/86-partition-list/</link>
+      <pubDate>Wed, 18 Nov 2020 19:29:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/86-partition-list/</guid>
+      <description>leetcode
+Problem Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x. You should preserve the original relative order of the nodes in each of the two partitions. Example: Input: head = 1-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;5-&amp;gt;2, x = 3 Output: 1-&amp;gt;2-&amp;gt;2-&amp;gt;4-&amp;gt;3-&amp;gt;5 Notes:
+Two pointers:
+p1: mark the end of smaller part
+p2: go forward to find the smaller one and swap with p1.</description>
+    </item>
     
     <item>
       <title>15 - 3SUM</title>
