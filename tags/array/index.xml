@@ -6,10 +6,20 @@
     <description>Recent content in array on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2020 22:12:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 15:55:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/array/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>378 - Kth Smallest Element in a Sorted Matrix</title>
+      <link>//alfmunny.com/leetcode-blog/posts/378-kth-smallest-element-in-a-sorted-matrix/</link>
+      <pubDate>Thu, 19 Nov 2020 15:55:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/378-kth-smallest-element-in-a-sorted-matrix/</guid>
+      <description>leetcode
+Problem Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix. Note that it is the kth smallest element in the sorted order, not the kth distinct element. Example: matrix = [ [ 1, 5, 9], [10, 11, 13], [12, 13, 15] ], k = 8, return 13. Solution Solution 1: Heap with marker Maintain a heap, pop the first one, and push the right one and lower one into the heap.</description>
+    </item>
     
     <item>
       <title>376 - Wiggle Subsequence</title>
