@@ -6,10 +6,30 @@
     <description>Recent content in 1-hint on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2020 19:03:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2020 00:36:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/1-hint/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>126 - Word Ladder II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/126-word-ladder-ii/</link>
+      <pubDate>Sun, 22 Nov 2020 00:36:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/126-word-ladder-ii/</guid>
+      <description>leetcode
+Problem Given two words (beginWord and endWord), and a dictionary&amp;#39;s word list, find all shortest transformation sequence(s) from beginWord to endWord, such that: Only one letter can be changed at a time Each transformed word must exist in the word list. Note that beginWord is not a transformed word. Note: Return an empty list if there is no such transformation sequence. All words have the same length. All words contain only lowercase alphabetic characters.</description>
+    </item>
+    
+    <item>
+      <title>127 - Word Ladder</title>
+      <link>//alfmunny.com/leetcode-blog/posts/127-word-ladder/</link>
+      <pubDate>Sun, 22 Nov 2020 00:33:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/127-word-ladder/</guid>
+      <description>leetcode
+Problem Given two words (beginWord and endWord), and a dictionary&amp;#39;s word list, find the length of shortest transformation sequence from beginWord to endWord, such that: Only one letter can be changed at a time. Each transformed word must exist in the word list. Note: Return 0 if there is no such transformation sequence. All words have the same length. All words contain only lowercase alphabetic characters. You may assume no duplicates in the word list.</description>
+    </item>
     
     <item>
       <title>395 - Longest Substring with At Least K Repeating Characters</title>
