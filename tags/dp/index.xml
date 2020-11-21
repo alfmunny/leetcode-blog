@@ -6,10 +6,20 @@
     <description>Recent content in dp on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2020 22:12:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2020 02:56:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/dp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>115 - Distinct Subsequences</title>
+      <link>//alfmunny.com/leetcode-blog/posts/115-distinct-subsequences/</link>
+      <pubDate>Sat, 21 Nov 2020 02:56:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/115-distinct-subsequences/</guid>
+      <description>leetcode
+Problem Given two strings s and t, return the number of distinct subsequences of s which equals t. A string&amp;#39;s subsequence is a new string formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., &amp;#34;ACE&amp;#34; is a subsequence of &amp;#34;ABCDE&amp;#34; while &amp;#34;AEC&amp;#34; is not). It&amp;#39;s guaranteed the answer fits on a 32-bit signed integer. Example 1: Input: s = &amp;#34;rabbbit&amp;#34;, t = &amp;#34;rabbit&amp;#34; Output: 3 Explanation: As shown below, there are 3 ways you can generate &amp;#34;rabbit&amp;#34; from S.</description>
+    </item>
     
     <item>
       <title>376 - Wiggle Subsequence</title>
