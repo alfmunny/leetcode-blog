@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dive on LeetCode In The Shell</title>
+    <link>//alfmunny.com/leetcode-blog/tags/dive/</link>
+    <description>Recent content in dive on LeetCode In The Shell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Nov 2020 19:03:00 +0100</lastBuildDate>
+    
+	<atom:link href="//alfmunny.com/leetcode-blog/tags/dive/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>395 - Longest Substring with At Least K Repeating Characters</title>
+      <link>//alfmunny.com/leetcode-blog/posts/395-longest-substring-with-at-least-k-repeating-characters/</link>
+      <pubDate>Sat, 21 Nov 2020 19:03:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/395-longest-substring-with-at-least-k-repeating-characters/</guid>
+      <description>leetcode
+Problem Find the length of the longest substring T of a given string (consists of lowercase letters only) such that every character in T appears no less than k times. Example 1: Input: s = &amp;#34;aaabb&amp;#34;, k = 3 Output: 3 The longest substring is &amp;#34;aaa&amp;#34;, as &amp;#39;a&amp;#39; is repeated 3 times. Example 2: Input: s = &amp;#34;ababbc&amp;#34;, k = 2 Output: 5 The longest substring is &amp;#34;ababb&amp;#34;, as &amp;#39;a&amp;#39; is repeated 2 times and &amp;#39;b&amp;#39; is repeated 3 times Solution class Solution: def longestSubstring(self, s: str, k: int) -&amp;gt; int: c = Counter(s) for i, v in c.</description>
+    </item>
+    
+  </channel>
+</rss>
