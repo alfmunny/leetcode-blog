@@ -6,10 +6,30 @@
     <description>Recent content in hard on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Nov 2020 00:36:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2020 00:40:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/hard/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>295 - Find Median from Data Stream</title>
+      <link>//alfmunny.com/leetcode-blog/posts/295-find-median-from-data-stream/</link>
+      <pubDate>Tue, 24 Nov 2020 00:40:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/295-find-median-from-data-stream/</guid>
+      <description>leetcode
+Problem Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value. For example, [2,3,4], the median is 3 [2,3], the median is (2 + 3) / 2 = 2.5 Design a data structure that supports the following two operations: void addNum(int num) - Add a integer number from the data stream to the data structure.</description>
+    </item>
+    
+    <item>
+      <title>691 - Stickers to Spell Word</title>
+      <link>//alfmunny.com/leetcode-blog/posts/691-stickers-to-spell-word/</link>
+      <pubDate>Sun, 22 Nov 2020 18:35:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/691-stickers-to-spell-word/</guid>
+      <description>leetcode
+Problem We are given N different types of stickers. Each sticker has a lowercase English word on it. You would like to spell out the given target string by cutting individual letters from your collection of stickers and rearranging them. You can use each sticker more than once if you want, and you have infinite quantities of each sticker. What is the minimum number of stickers that you need to spell out the target?</description>
+    </item>
     
     <item>
       <title>126 - Word Ladder II</title>
