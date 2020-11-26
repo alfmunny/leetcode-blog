@@ -6,10 +6,20 @@
     <description>Recent content in 1-fail on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2020 02:56:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2020 01:18:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/1-fail/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>556 - Next Greater Element III</title>
+      <link>//alfmunny.com/leetcode-blog/posts/556-next-greater-element-iii/</link>
+      <pubDate>Thu, 26 Nov 2020 01:18:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/556-next-greater-element-iii/</guid>
+      <description>leetcode
+Problem Given a positive 32-bit integer n, you need to find the smallest 32-bit integer which has exactly the same digits existing in the integer n and is greater in value than n. If no such positive 32-bit integer exists, you need to return -1. Example 1: Input: 12 Output: 21 Example 2: Input: 21 Output: -1 Solution class Solution: def nextGreaterElement(self, n: int) -&amp;gt; int: s = list(str(n)) first = len(s) - 1 for i in range(len(s)-2, -1, -1): if s[i] &amp;lt; s[i+1]: first = i break if first == len(s) - 1: return -1 second = first+1 minimum = s[second] for i in range(first+1, len(s)): if s[i] &amp;lt; minimum and s[i] &amp;gt; s[first]: minumum = s[i] second = i s[first], s[second] = s[second], s[first] ret = int(&amp;#34;&amp;#34;.</description>
+    </item>
     
     <item>
       <title>115 - Distinct Subsequences</title>
