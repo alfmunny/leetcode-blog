@@ -6,10 +6,20 @@
     <description>Recent content in array on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Nov 2020 01:09:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 22:56:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/array/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>443 - String Compression</title>
+      <link>//alfmunny.com/leetcode-blog/posts/443-string-compression/</link>
+      <pubDate>Mon, 30 Nov 2020 22:56:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/443-string-compression/</guid>
+      <description>leetcode
+Problem Given an array of characters chars, compress it using the following algorithm: Begin with an empty string s. For each group of consecutive repeating characters in chars: If the group&amp;#39;s length is 1, append the character to s. Otherwise, append the character followed by the group&amp;#39;s length. The compressed string s should not be returned separately, but instead be stored in the input character array chars. Note that group lengths that are 10 or longer will be split into multiple characters in chars.</description>
+    </item>
     
     <item>
       <title>135 - Candy</title>

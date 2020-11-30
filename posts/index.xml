@@ -6,10 +6,30 @@
     <description>Recent content in Posts on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Nov 2020 01:29:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 23:23:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>30 - Substring with Concatenation of All Words</title>
+      <link>//alfmunny.com/leetcode-blog/posts/30-substring-with-concatenation-of-all-words/</link>
+      <pubDate>Mon, 30 Nov 2020 23:23:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/30-substring-with-concatenation-of-all-words/</guid>
+      <description>leetcode
+Problem You are given a string s and an array of strings words of the same length. Return all starting indices of substring(s) in s that is a concatenation of each word in words exactly once, in any order, and without any intervening characters. You can return the answer in any order. Example 1: Input: s = &amp;#34;barfoothefoobarman&amp;#34;, words = [&amp;#34;foo&amp;#34;,&amp;#34;bar&amp;#34;] Output: [0,9] Explanation: Substrings starting at index 0 and 9 are &amp;#34;barfoo&amp;#34; and &amp;#34;foobar&amp;#34; respectively.</description>
+    </item>
+    
+    <item>
+      <title>443 - String Compression</title>
+      <link>//alfmunny.com/leetcode-blog/posts/443-string-compression/</link>
+      <pubDate>Mon, 30 Nov 2020 22:56:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/443-string-compression/</guid>
+      <description>leetcode
+Problem Given an array of characters chars, compress it using the following algorithm: Begin with an empty string s. For each group of consecutive repeating characters in chars: If the group&amp;#39;s length is 1, append the character to s. Otherwise, append the character followed by the group&amp;#39;s length. The compressed string s should not be returned separately, but instead be stored in the input character array chars. Note that group lengths that are 10 or longer will be split into multiple characters in chars.</description>
+    </item>
     
     <item>
       <title>139 - Word Break</title>

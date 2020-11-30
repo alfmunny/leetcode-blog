@@ -6,10 +6,20 @@
     <description>Recent content in dfs on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Nov 2020 01:29:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 23:23:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/dfs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>30 - Substring with Concatenation of All Words</title>
+      <link>//alfmunny.com/leetcode-blog/posts/30-substring-with-concatenation-of-all-words/</link>
+      <pubDate>Mon, 30 Nov 2020 23:23:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/30-substring-with-concatenation-of-all-words/</guid>
+      <description>leetcode
+Problem You are given a string s and an array of strings words of the same length. Return all starting indices of substring(s) in s that is a concatenation of each word in words exactly once, in any order, and without any intervening characters. You can return the answer in any order. Example 1: Input: s = &amp;#34;barfoothefoobarman&amp;#34;, words = [&amp;#34;foo&amp;#34;,&amp;#34;bar&amp;#34;] Output: [0,9] Explanation: Substrings starting at index 0 and 9 are &amp;#34;barfoo&amp;#34; and &amp;#34;foobar&amp;#34; respectively.</description>
+    </item>
     
     <item>
       <title>139 - Word Break</title>
