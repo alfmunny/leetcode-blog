@@ -6,10 +6,20 @@
     <description>Recent content in medium on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Nov 2020 01:09:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 01:29:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/medium/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>139 - Word Break</title>
+      <link>//alfmunny.com/leetcode-blog/posts/139-word-break/</link>
+      <pubDate>Mon, 30 Nov 2020 01:29:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/139-word-break/</guid>
+      <description>leetcode
+Problem Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, determine if s can be segmented into a space-separated sequence of one or more dictionary words. Note: The same word in the dictionary may be reused multiple times in the segmentation. You may assume the dictionary does not contain duplicate words. Example 1: Input: s = &amp;#34;leetcode&amp;#34;, wordDict = [&amp;#34;leet&amp;#34;, &amp;#34;code&amp;#34;] Output: true Explanation: Return true because &amp;#34;leetcode&amp;#34; can be segmented as &amp;#34;leet code&amp;#34;.</description>
+    </item>
     
     <item>
       <title>135 - Candy</title>

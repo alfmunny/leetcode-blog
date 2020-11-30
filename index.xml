@@ -6,10 +6,30 @@
     <description>Recent content on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Nov 2020 01:09:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 01:29:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>139 - Word Break</title>
+      <link>//alfmunny.com/leetcode-blog/posts/139-word-break/</link>
+      <pubDate>Mon, 30 Nov 2020 01:29:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/139-word-break/</guid>
+      <description>leetcode
+Problem Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, determine if s can be segmented into a space-separated sequence of one or more dictionary words. Note: The same word in the dictionary may be reused multiple times in the segmentation. You may assume the dictionary does not contain duplicate words. Example 1: Input: s = &amp;#34;leetcode&amp;#34;, wordDict = [&amp;#34;leet&amp;#34;, &amp;#34;code&amp;#34;] Output: true Explanation: Return true because &amp;#34;leetcode&amp;#34; can be segmented as &amp;#34;leet code&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>140 - Word Breaker II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/140-word-breaker-ii/</link>
+      <pubDate>Mon, 30 Nov 2020 01:13:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/140-word-breaker-ii/</guid>
+      <description>leetcode
+Problem Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences. Note: The same word in the dictionary may be reused multiple times in the segmentation. You may assume the dictionary does not contain duplicate words. Example 1: Input: s = &amp;#34;catsanddog&amp;#34; wordDict = [&amp;#34;cat&amp;#34;, &amp;#34;cats&amp;#34;, &amp;#34;and&amp;#34;, &amp;#34;sand&amp;#34;, &amp;#34;dog&amp;#34;] Output: [ &amp;#34;cats and dog&amp;#34;, &amp;#34;cat sand dog&amp;#34; ] Example 2: Input: s = &amp;#34;pineapplepenapple&amp;#34; wordDict = [&amp;#34;apple&amp;#34;, &amp;#34;pen&amp;#34;, &amp;#34;applepen&amp;#34;, &amp;#34;pine&amp;#34;, &amp;#34;pineapple&amp;#34;] Output: [ &amp;#34;pine apple pen apple&amp;#34;, &amp;#34;pineapple pen apple&amp;#34;, &amp;#34;pine applepen apple&amp;#34; ] Explanation: Note that you are allowed to reuse a dictionary word.</description>
+    </item>
     
     <item>
       <title>135 - Candy</title>
