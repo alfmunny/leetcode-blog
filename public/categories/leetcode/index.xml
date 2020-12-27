@@ -6,7 +6,11 @@
     <description>Recent content in leetcode on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Dec 2020 00:06:00 +0100</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 00:06:00 +0100</lastBuildDate>
+    
+	<atom:link href="//alfmunny.com/leetcode-blog/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>863 - All Nodes Distance K in Binary Tree</title>
       <link>//alfmunny.com/leetcode-blog/posts/863-all-nodes-distance-k-in-binary-tree/</link>
@@ -18,6 +22,256 @@ Problem We are given a binary tree (with root node root), a target node, and an 
     </item>
     
     <item>
+      <title>701 - Insert into a Binary Search Tree</title>
+      <link>//alfmunny.com/leetcode-blog/posts/701-insert-into-a-binary-search-tree/</link>
+      <pubDate>Mon, 14 Dec 2020 13:05:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/701-insert-into-a-binary-search-tree/</guid>
+      <description>leetcode
+Problem You are given the root node of a binary search tree (BST) and a value to insert into the tree. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST. Notice that there may exist multiple valid ways for the insertion, as long as the tree remains a BST after insertion. You can return any of them.</description>
+    </item>
+    
+    <item>
+      <title>235 - Lowest Common Ancestor of a Binary Search Tree</title>
+      <link>//alfmunny.com/leetcode-blog/posts/235-lowest-common-ancestor-of-a-binary-search-tree/</link>
+      <pubDate>Mon, 14 Dec 2020 12:50:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/235-lowest-common-ancestor-of-a-binary-search-tree/</guid>
+      <description>leetcode
+Problem Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).” Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8 Output: 6 Explanation: The LCA of nodes 2 and 8 is 6.</description>
+    </item>
+    
+    <item>
+      <title>1010 - Pairs of Songs With Total Durations Divisible by 60</title>
+      <link>//alfmunny.com/leetcode-blog/posts/1010-paris-of-songs-with-total-durations-divisible-by-60/</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/1010-paris-of-songs-with-total-durations-divisible-by-60/</guid>
+      <description>leetcode
+Problem You are given a list of songs where the ith song has a duration of time[i] seconds. Return the number of pairs of songs for which their total duration in seconds is divisible by 60. Formally, we want the number of indices i, j such that i &amp;lt; j with (time[i] + time[j]) % 60 == 0. Example 1: Input: time = [30,20,150,100,40] Output: 3 Explanation: Three pairs have a total duration divisible by 60: (time[0] = 30, time[2] = 150): total duration 180 (time[1] = 20, time[3] = 100): total duration 120 (time[1] = 20, time[4] = 40): total duration 60 Example 2: Input: time = [60,60,60] Output: 3 Explanation: All three pairs have a total duration of 120, which is divisible by 60.</description>
+    </item>
+    
+    <item>
+      <title>30 - Substring with Concatenation of All Words</title>
+      <link>//alfmunny.com/leetcode-blog/posts/30-substring-with-concatenation-of-all-words/</link>
+      <pubDate>Mon, 30 Nov 2020 23:23:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/30-substring-with-concatenation-of-all-words/</guid>
+      <description>leetcode
+Problem You are given a string s and an array of strings words of the same length. Return all starting indices of substring(s) in s that is a concatenation of each word in words exactly once, in any order, and without any intervening characters. You can return the answer in any order. Example 1: Input: s = &amp;#34;barfoothefoobarman&amp;#34;, words = [&amp;#34;foo&amp;#34;,&amp;#34;bar&amp;#34;] Output: [0,9] Explanation: Substrings starting at index 0 and 9 are &amp;#34;barfoo&amp;#34; and &amp;#34;foobar&amp;#34; respectively.</description>
+    </item>
+    
+    <item>
+      <title>443 - String Compression</title>
+      <link>//alfmunny.com/leetcode-blog/posts/443-string-compression/</link>
+      <pubDate>Mon, 30 Nov 2020 22:56:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/443-string-compression/</guid>
+      <description>leetcode
+Problem Given an array of characters chars, compress it using the following algorithm: Begin with an empty string s. For each group of consecutive repeating characters in chars: If the group&amp;#39;s length is 1, append the character to s. Otherwise, append the character followed by the group&amp;#39;s length. The compressed string s should not be returned separately, but instead be stored in the input character array chars. Note that group lengths that are 10 or longer will be split into multiple characters in chars.</description>
+    </item>
+    
+    <item>
+      <title>139 - Word Break</title>
+      <link>//alfmunny.com/leetcode-blog/posts/139-word-break/</link>
+      <pubDate>Mon, 30 Nov 2020 01:29:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/139-word-break/</guid>
+      <description>leetcode
+Problem Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, determine if s can be segmented into a space-separated sequence of one or more dictionary words. Note: The same word in the dictionary may be reused multiple times in the segmentation. You may assume the dictionary does not contain duplicate words. Example 1: Input: s = &amp;#34;leetcode&amp;#34;, wordDict = [&amp;#34;leet&amp;#34;, &amp;#34;code&amp;#34;] Output: true Explanation: Return true because &amp;#34;leetcode&amp;#34; can be segmented as &amp;#34;leet code&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>140 - Word Breaker II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/140-word-breaker-ii/</link>
+      <pubDate>Mon, 30 Nov 2020 01:13:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/140-word-breaker-ii/</guid>
+      <description>leetcode
+Problem Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences. Note: The same word in the dictionary may be reused multiple times in the segmentation. You may assume the dictionary does not contain duplicate words. Example 1: Input: s = &amp;#34;catsanddog&amp;#34; wordDict = [&amp;#34;cat&amp;#34;, &amp;#34;cats&amp;#34;, &amp;#34;and&amp;#34;, &amp;#34;sand&amp;#34;, &amp;#34;dog&amp;#34;] Output: [ &amp;#34;cats and dog&amp;#34;, &amp;#34;cat sand dog&amp;#34; ] Example 2: Input: s = &amp;#34;pineapplepenapple&amp;#34; wordDict = [&amp;#34;apple&amp;#34;, &amp;#34;pen&amp;#34;, &amp;#34;applepen&amp;#34;, &amp;#34;pine&amp;#34;, &amp;#34;pineapple&amp;#34;] Output: [ &amp;#34;pine apple pen apple&amp;#34;, &amp;#34;pineapple pen apple&amp;#34;, &amp;#34;pine applepen apple&amp;#34; ] Explanation: Note that you are allowed to reuse a dictionary word.</description>
+    </item>
+    
+    <item>
+      <title>135 - Candy</title>
+      <link>//alfmunny.com/leetcode-blog/posts/135-candy/</link>
+      <pubDate>Sat, 28 Nov 2020 01:09:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/135-candy/</guid>
+      <description>leetcode
+Problem There are N children standing in a line. Each child is assigned a rating value. You are giving candies to these children subjected to the following requirements: Each child must have at least one candy. Children with a higher rating get more candies than their neighbors. What is the minimum candies you must give? Example 1: Input: [1,0,2] Output: 5 Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.</description>
+    </item>
+    
+    <item>
+      <title>134 - Gas Station</title>
+      <link>//alfmunny.com/leetcode-blog/posts/134-gas-station/</link>
+      <pubDate>Sat, 28 Nov 2020 00:24:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/134-gas-station/</guid>
+      <description>leetcode
+Problem There are N gas stations along a circular route, where the amount of gas at station i is gas[i]. You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations. Return the starting gas station&amp;#39;s index if you can travel around the circuit once in the clockwise direction, otherwise return -1.</description>
+    </item>
+    
+    <item>
+      <title>381 - Insert Delete GetRandom O(1) - Duplicates allowed</title>
+      <link>//alfmunny.com/leetcode-blog/posts/381-insert-delete-getrandom-o1-duplicates-allowed/</link>
+      <pubDate>Fri, 27 Nov 2020 23:14:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/381-insert-delete-getrandom-o1-duplicates-allowed/</guid>
+      <description>leetcode
+Problem Design a data structure that supports all following operations in average O(1) time. Note: Duplicate elements are allowed. insert(val): Inserts an item val to the collection. remove(val): Removes an item val from the collection if present. getRandom: Returns a random element from current collection of elements. The probability of each element being returned is linearly related to the number of same value the collection contains. Example: // Init an empty collection.</description>
+    </item>
+    
+    <item>
+      <title>556 - Next Greater Element III</title>
+      <link>//alfmunny.com/leetcode-blog/posts/556-next-greater-element-iii/</link>
+      <pubDate>Thu, 26 Nov 2020 01:18:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/556-next-greater-element-iii/</guid>
+      <description>leetcode
+Problem Given a positive 32-bit integer n, you need to find the smallest 32-bit integer which has exactly the same digits existing in the integer n and is greater in value than n. If no such positive 32-bit integer exists, you need to return -1. Example 1: Input: 12 Output: 21 Example 2: Input: 21 Output: -1 Solution class Solution: def nextGreaterElement(self, n: int) -&amp;gt; int: s = list(str(n)) first = len(s) - 1 for i in range(len(s)-2, -1, -1): if s[i] &amp;lt; s[i+1]: first = i break if first == len(s) - 1: return -1 second = first+1 minimum = s[second] for i in range(first+1, len(s)): if s[i] &amp;lt; minimum and s[i] &amp;gt; s[first]: minumum = s[i] second = i s[first], s[second] = s[second], s[first] ret = int(&amp;#34;&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>486 - Predict the Winner</title>
+      <link>//alfmunny.com/leetcode-blog/posts/486-predict-the-winner/</link>
+      <pubDate>Thu, 26 Nov 2020 00:29:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/486-predict-the-winner/</guid>
+      <description>leetcode
+Problem Given an array of scores that are non-negative integers. Player 1 picks one of the numbers from either end of the array followed by the player 2 and then player 1 and so on. Each time a player picks a number, that number will not be available for the next player. This continues until all the scores have been chosen. The player with the maximum score wins. Given an array of scores, predict whether player 1 is the winner.</description>
+    </item>
+    
+    <item>
+      <title>842 - Split Array into Fibonacci Sequence</title>
+      <link>//alfmunny.com/leetcode-blog/posts/842-split-array-into-fibonacci-sequence/</link>
+      <pubDate>Wed, 25 Nov 2020 20:02:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/842-split-array-into-fibonacci-sequence/</guid>
+      <description>leetcode
+Problem Given a string S of digits, such as S = &amp;#34;123456579&amp;#34;, we can split it into a Fibonacci-like sequence [123, 456, 579]. Formally, a Fibonacci-like sequence is a list F of non-negative integers such that: 0 &amp;lt;= F[i] &amp;lt;= 2^31 - 1, (that is, each integer fits a 32-bit signed integer type); F.length &amp;gt;= 3; and F[i] + F[i+1] = F[i+2] for all 0 &amp;lt;= i &amp;lt; F.length - 2.</description>
+    </item>
+    
+    <item>
+      <title>295 - Find Median from Data Stream</title>
+      <link>//alfmunny.com/leetcode-blog/posts/295-find-median-from-data-stream/</link>
+      <pubDate>Tue, 24 Nov 2020 00:40:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/295-find-median-from-data-stream/</guid>
+      <description>leetcode
+Problem Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value. For example, [2,3,4], the median is 3 [2,3], the median is (2 + 3) / 2 = 2.5 Design a data structure that supports the following two operations: void addNum(int num) - Add a integer number from the data stream to the data structure.</description>
+    </item>
+    
+    <item>
+      <title>116 - Populating Next Right Pointers in Each Node</title>
+      <link>//alfmunny.com/leetcode-blog/posts/116-populating-next-right-pointers-in-each-node/</link>
+      <pubDate>Mon, 23 Nov 2020 22:18:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/116-populating-next-right-pointers-in-each-node/</guid>
+      <description>leetcode
+Problem You are given a perfect binary tree where all leaves are on the same level, and every parent has two children. The binary tree has the following definition: struct Node { int val; Node *left; Node *right; Node *next; } Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL. Initially, all next pointers are set to NULL.</description>
+    </item>
+    
+    <item>
+      <title>464 - Can I Win</title>
+      <link>//alfmunny.com/leetcode-blog/posts/464-can-i-win/</link>
+      <pubDate>Sun, 22 Nov 2020 22:37:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/464-can-i-win/</guid>
+      <description>leetcode
+Problem In the &amp;#34;100 game&amp;#34; two players take turns adding, to a running total, any integer from 1 to 10. The player who first causes the running total to reach or exceed 100 wins. What if we change the game so that players cannot re-use integers? For example, two players might take turns drawing from a common pool of numbers from 1 to 15 without replacement until they reach a total &amp;gt;= 100.</description>
+    </item>
+    
+    <item>
+      <title>691 - Stickers to Spell Word</title>
+      <link>//alfmunny.com/leetcode-blog/posts/691-stickers-to-spell-word/</link>
+      <pubDate>Sun, 22 Nov 2020 18:35:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/691-stickers-to-spell-word/</guid>
+      <description>leetcode
+Problem We are given N different types of stickers. Each sticker has a lowercase English word on it. You would like to spell out the given target string by cutting individual letters from your collection of stickers and rearranging them. You can use each sticker more than once if you want, and you have infinite quantities of each sticker. What is the minimum number of stickers that you need to spell out the target?</description>
+    </item>
+    
+    <item>
+      <title>257 - Binary Tree Paths</title>
+      <link>//alfmunny.com/leetcode-blog/posts/257-binary-tree-paths/</link>
+      <pubDate>Sun, 22 Nov 2020 16:42:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/257-binary-tree-paths/</guid>
+      <description>leetcode
+Problem iven a binary tree, return all root-to-leaf paths. Note: A leaf is a node with no children. Example: Input: 1 / \ 2 3 \ 5 Output: [&amp;#34;1-&amp;gt;2-&amp;gt;5&amp;#34;, &amp;#34;1-&amp;gt;3&amp;#34;] Explanation: All root-to-leaf paths are: 1-&amp;gt;2-&amp;gt;5, 1-&amp;gt;3 Solution class Solution: def binaryTreePaths(self, root: TreeNode) -&amp;gt; List[str]: if not root: return [] if not root.right and not root.left: return [str(root.val)] paths = [str(root.val) + &amp;#34;-&amp;gt;&amp;#34; + s for s in self.</description>
+    </item>
+    
+    <item>
+      <title>126 - Word Ladder II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/126-word-ladder-ii/</link>
+      <pubDate>Sun, 22 Nov 2020 00:36:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/126-word-ladder-ii/</guid>
+      <description>leetcode
+Problem Given two words (beginWord and endWord), and a dictionary&amp;#39;s word list, find all shortest transformation sequence(s) from beginWord to endWord, such that: Only one letter can be changed at a time Each transformed word must exist in the word list. Note that beginWord is not a transformed word. Note: Return an empty list if there is no such transformation sequence. All words have the same length. All words contain only lowercase alphabetic characters.</description>
+    </item>
+    
+    <item>
+      <title>127 - Word Ladder</title>
+      <link>//alfmunny.com/leetcode-blog/posts/127-word-ladder/</link>
+      <pubDate>Sun, 22 Nov 2020 00:33:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/127-word-ladder/</guid>
+      <description>leetcode
+Problem Given two words (beginWord and endWord), and a dictionary&amp;#39;s word list, find the length of shortest transformation sequence from beginWord to endWord, such that: Only one letter can be changed at a time. Each transformed word must exist in the word list. Note: Return 0 if there is no such transformation sequence. All words have the same length. All words contain only lowercase alphabetic characters. You may assume no duplicates in the word list.</description>
+    </item>
+    
+    <item>
+      <title>395 - Longest Substring with At Least K Repeating Characters</title>
+      <link>//alfmunny.com/leetcode-blog/posts/395-longest-substring-with-at-least-k-repeating-characters/</link>
+      <pubDate>Sat, 21 Nov 2020 19:03:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/395-longest-substring-with-at-least-k-repeating-characters/</guid>
+      <description>leetcode
+Problem Find the length of the longest substring T of a given string (consists of lowercase letters only) such that every character in T appears no less than k times. Example 1: Input: s = &amp;#34;aaabb&amp;#34;, k = 3 Output: 3 The longest substring is &amp;#34;aaa&amp;#34;, as &amp;#39;a&amp;#39; is repeated 3 times. Example 2: Input: s = &amp;#34;ababbc&amp;#34;, k = 2 Output: 5 The longest substring is &amp;#34;ababb&amp;#34;, as &amp;#39;a&amp;#39; is repeated 2 times and &amp;#39;b&amp;#39; is repeated 3 times Solution class Solution: def longestSubstring(self, s: str, k: int) -&amp;gt; int: c = Counter(s) for i, v in c.</description>
+    </item>
+    
+    <item>
+      <title>115 - Distinct Subsequences</title>
+      <link>//alfmunny.com/leetcode-blog/posts/115-distinct-subsequences/</link>
+      <pubDate>Sat, 21 Nov 2020 02:56:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/115-distinct-subsequences/</guid>
+      <description>leetcode
+Problem Given two strings s and t, return the number of distinct subsequences of s which equals t. A string&amp;#39;s subsequence is a new string formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., &amp;#34;ACE&amp;#34; is a subsequence of &amp;#34;ABCDE&amp;#34; while &amp;#34;AEC&amp;#34; is not). It&amp;#39;s guaranteed the answer fits on a 32-bit signed integer. Example 1: Input: s = &amp;#34;rabbbit&amp;#34;, t = &amp;#34;rabbit&amp;#34; Output: 3 Explanation: As shown below, there are 3 ways you can generate &amp;#34;rabbit&amp;#34; from S.</description>
+    </item>
+    
+    <item>
+      <title>378 - Kth Smallest Element in a Sorted Matrix</title>
+      <link>//alfmunny.com/leetcode-blog/posts/378-kth-smallest-element-in-a-sorted-matrix/</link>
+      <pubDate>Thu, 19 Nov 2020 15:55:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/378-kth-smallest-element-in-a-sorted-matrix/</guid>
+      <description>leetcode
+Problem Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix. Note that it is the kth smallest element in the sorted order, not the kth distinct element. Example: matrix = [ [ 1, 5, 9], [10, 11, 13], [12, 13, 15] ], k = 8, return 13. Solution Solution 1: Heap with marker Maintain a heap, pop the first one, and push the right one and lower one into the heap.</description>
+    </item>
+    
+    <item>
+      <title>86 - Partition List</title>
+      <link>//alfmunny.com/leetcode-blog/posts/86-partition-list/</link>
+      <pubDate>Wed, 18 Nov 2020 19:29:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/86-partition-list/</guid>
+      <description>leetcode
+Problem Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x. You should preserve the original relative order of the nodes in each of the two partitions. Example: Input: head = 1-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;5-&amp;gt;2, x = 3 Output: 1-&amp;gt;2-&amp;gt;2-&amp;gt;4-&amp;gt;3-&amp;gt;5 Solution Solution 1: Two Dummy Pointers Simple version: just create two list, and append them in the end</description>
+    </item>
+    
+    <item>
+      <title>376 - Wiggle Subsequence</title>
+      <link>//alfmunny.com/leetcode-blog/posts/376-wiggle-subsequence/</link>
+      <pubDate>Mon, 09 Nov 2020 22:12:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/376-wiggle-subsequence/</guid>
+      <description>leetcode
+Problem A sequence of numbers is called a wiggle sequence if the differences between successive numbers strictly alternate between positive and negative. The first difference (if one exists) may be either positive or negative. A sequence with fewer than two elements is trivially a wiggle sequence. For example, [1,7,4,9,2,5] is a wiggle sequence because the differences (6,-3,5,-7,3) are alternately positive and negative. In contrast, [1,4,7,2,5] and [1,7,4,5,5] are not wiggle sequences, the first because its first two differences are positive and the second because its last difference is zero.</description>
+    </item>
+    
+    <item>
       <title>403 - Frog Jump</title>
       <link>//alfmunny.com/leetcode-blog/posts/403-frog-jump/</link>
       <pubDate>Sun, 08 Nov 2020 01:34:00 +0100</pubDate>
@@ -25,6 +279,16 @@ Problem We are given a binary tree (with root node root), a target node, and an 
       <guid>//alfmunny.com/leetcode-blog/posts/403-frog-jump/</guid>
       <description>leetcode
 Problem A frog is crossing a river. The river is divided into x units and at each unit there may or may not exist a stone. The frog can jump on a stone, but it must not jump into the water. Given a list of stones&amp;#39; positions (in units) in sorted ascending order, determine if the frog is able to cross the river by landing on the last stone. Initially, the frog is on the first stone and assume the first jump must be 1 unit.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>//alfmunny.com/leetcode-blog/posts/readme/</link>
+      <pubDate>Sun, 11 Oct 2020 18:56:32 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/readme/</guid>
+      <description>Beautiful Arrangement leetcode
+Problem Suppose you have N integers from 1 to N. We define a beautiful arrangement as an array that is constructed by these N numbers successfully if one of the following is true for the ith position (1 &amp;lt;= i &amp;lt;= N) in this array: The number at the ith position is divisible by i. i is divisible by the number at the ith position. Now given N, how many beautiful arrangements can you construct?</description>
     </item>
     
     <item>
@@ -226,7 +490,7 @@ Problem Given a set of distinct positive integers, find the largest subset such 
       
       <guid>//alfmunny.com/leetcode-blog/posts/114-flatten-binary-tree-to-linked-list/</guid>
       <description>leetcode
-Problem Given a binary tree, flatten it to a linked list in-place. For example, given the following tree: 1 / \ 2 5 / \ \ 3 4 6 The flattened tree should look like: 1 \ 2 \ 3 \ 4 \ 5 \ 6 Solution  Traverse the tree in reverse preorder, the opposite of root-left-right. Save the root, and use it in the upper level.  class Solution: def flatten(self, root: TreeNode) -&amp;gt; None: &amp;#34;&amp;#34;&amp;#34; Do not return anything, modify root in-place instead.</description>
+Problem Given a binary tree, flatten it to a linked list in-place. For example, given the following tree: 1 / \ 2 5 / \ \ 3 4 6 The flattened tree should look like: 1 \ 2 \ 3 \ 4 \ 5 \ 6 Solution  Traverse the tree in reverse preorder, the opposite of root-left-right. Save the root, and use it in the upper level.  class Solution: def flatten(self, root: TreeNode) -&amp;gt; None: &amp;#34;&amp;#34;&amp;#34;Do not return anything, modify root in-place instead.</description>
     </item>
     
     <item>
@@ -1371,7 +1635,7 @@ Problem Design and implement a data structure for Least Recently Used (LRU) cach
       <description>leetcode
 Problem Given a range [m, n] where 0 &amp;lt;= m &amp;lt;= n &amp;lt;= 2147483647, return the bitwise AND of all numbers in this range, inclusive. Example 1: Input: [5,7] Output: 4 Example 2: Input: [0,1] Output: 0 Solution m = xxx1yyyy n = xxx01zzz
 xxx is the parts that two numbers are the same. We can definitly find these two numbers in the range
-m&#39; = xxx1000 n&#39; = xxx0100</description>
+m&amp;rsquo; = xxx1000 n&amp;rsquo; = xxx0100</description>
     </item>
     
     <item>

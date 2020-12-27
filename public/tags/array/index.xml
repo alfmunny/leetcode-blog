@@ -6,7 +6,91 @@
     <description>Recent content in array on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2020 01:34:00 +0100</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/array/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Dec 2020 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="//alfmunny.com/leetcode-blog/tags/array/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1010 - Pairs of Songs With Total Durations Divisible by 60</title>
+      <link>//alfmunny.com/leetcode-blog/posts/1010-paris-of-songs-with-total-durations-divisible-by-60/</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/1010-paris-of-songs-with-total-durations-divisible-by-60/</guid>
+      <description>leetcode
+Problem You are given a list of songs where the ith song has a duration of time[i] seconds. Return the number of pairs of songs for which their total duration in seconds is divisible by 60. Formally, we want the number of indices i, j such that i &amp;lt; j with (time[i] + time[j]) % 60 == 0. Example 1: Input: time = [30,20,150,100,40] Output: 3 Explanation: Three pairs have a total duration divisible by 60: (time[0] = 30, time[2] = 150): total duration 180 (time[1] = 20, time[3] = 100): total duration 120 (time[1] = 20, time[4] = 40): total duration 60 Example 2: Input: time = [60,60,60] Output: 3 Explanation: All three pairs have a total duration of 120, which is divisible by 60.</description>
+    </item>
+    
+    <item>
+      <title>443 - String Compression</title>
+      <link>//alfmunny.com/leetcode-blog/posts/443-string-compression/</link>
+      <pubDate>Mon, 30 Nov 2020 22:56:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/443-string-compression/</guid>
+      <description>leetcode
+Problem Given an array of characters chars, compress it using the following algorithm: Begin with an empty string s. For each group of consecutive repeating characters in chars: If the group&amp;#39;s length is 1, append the character to s. Otherwise, append the character followed by the group&amp;#39;s length. The compressed string s should not be returned separately, but instead be stored in the input character array chars. Note that group lengths that are 10 or longer will be split into multiple characters in chars.</description>
+    </item>
+    
+    <item>
+      <title>135 - Candy</title>
+      <link>//alfmunny.com/leetcode-blog/posts/135-candy/</link>
+      <pubDate>Sat, 28 Nov 2020 01:09:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/135-candy/</guid>
+      <description>leetcode
+Problem There are N children standing in a line. Each child is assigned a rating value. You are giving candies to these children subjected to the following requirements: Each child must have at least one candy. Children with a higher rating get more candies than their neighbors. What is the minimum candies you must give? Example 1: Input: [1,0,2] Output: 5 Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.</description>
+    </item>
+    
+    <item>
+      <title>134 - Gas Station</title>
+      <link>//alfmunny.com/leetcode-blog/posts/134-gas-station/</link>
+      <pubDate>Sat, 28 Nov 2020 00:24:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/134-gas-station/</guid>
+      <description>leetcode
+Problem There are N gas stations along a circular route, where the amount of gas at station i is gas[i]. You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations. Return the starting gas station&amp;#39;s index if you can travel around the circuit once in the clockwise direction, otherwise return -1.</description>
+    </item>
+    
+    <item>
+      <title>381 - Insert Delete GetRandom O(1) - Duplicates allowed</title>
+      <link>//alfmunny.com/leetcode-blog/posts/381-insert-delete-getrandom-o1-duplicates-allowed/</link>
+      <pubDate>Fri, 27 Nov 2020 23:14:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/381-insert-delete-getrandom-o1-duplicates-allowed/</guid>
+      <description>leetcode
+Problem Design a data structure that supports all following operations in average O(1) time. Note: Duplicate elements are allowed. insert(val): Inserts an item val to the collection. remove(val): Removes an item val from the collection if present. getRandom: Returns a random element from current collection of elements. The probability of each element being returned is linearly related to the number of same value the collection contains. Example: // Init an empty collection.</description>
+    </item>
+    
+    <item>
+      <title>556 - Next Greater Element III</title>
+      <link>//alfmunny.com/leetcode-blog/posts/556-next-greater-element-iii/</link>
+      <pubDate>Thu, 26 Nov 2020 01:18:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/556-next-greater-element-iii/</guid>
+      <description>leetcode
+Problem Given a positive 32-bit integer n, you need to find the smallest 32-bit integer which has exactly the same digits existing in the integer n and is greater in value than n. If no such positive 32-bit integer exists, you need to return -1. Example 1: Input: 12 Output: 21 Example 2: Input: 21 Output: -1 Solution class Solution: def nextGreaterElement(self, n: int) -&amp;gt; int: s = list(str(n)) first = len(s) - 1 for i in range(len(s)-2, -1, -1): if s[i] &amp;lt; s[i+1]: first = i break if first == len(s) - 1: return -1 second = first+1 minimum = s[second] for i in range(first+1, len(s)): if s[i] &amp;lt; minimum and s[i] &amp;gt; s[first]: minumum = s[i] second = i s[first], s[second] = s[second], s[first] ret = int(&amp;#34;&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>378 - Kth Smallest Element in a Sorted Matrix</title>
+      <link>//alfmunny.com/leetcode-blog/posts/378-kth-smallest-element-in-a-sorted-matrix/</link>
+      <pubDate>Thu, 19 Nov 2020 15:55:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/378-kth-smallest-element-in-a-sorted-matrix/</guid>
+      <description>leetcode
+Problem Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix. Note that it is the kth smallest element in the sorted order, not the kth distinct element. Example: matrix = [ [ 1, 5, 9], [10, 11, 13], [12, 13, 15] ], k = 8, return 13. Solution Solution 1: Heap with marker Maintain a heap, pop the first one, and push the right one and lower one into the heap.</description>
+    </item>
+    
+    <item>
+      <title>376 - Wiggle Subsequence</title>
+      <link>//alfmunny.com/leetcode-blog/posts/376-wiggle-subsequence/</link>
+      <pubDate>Mon, 09 Nov 2020 22:12:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/376-wiggle-subsequence/</guid>
+      <description>leetcode
+Problem A sequence of numbers is called a wiggle sequence if the differences between successive numbers strictly alternate between positive and negative. The first difference (if one exists) may be either positive or negative. A sequence with fewer than two elements is trivially a wiggle sequence. For example, [1,7,4,9,2,5] is a wiggle sequence because the differences (6,-3,5,-7,3) are alternately positive and negative. In contrast, [1,4,7,2,5] and [1,7,4,5,5] are not wiggle sequences, the first because its first two differences are positive and the second because its last difference is zero.</description>
+    </item>
+    
     <item>
       <title>403 - Frog Jump</title>
       <link>//alfmunny.com/leetcode-blog/posts/403-frog-jump/</link>

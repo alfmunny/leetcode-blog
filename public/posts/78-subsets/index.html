@@ -6,7 +6,9 @@
     <title>78 - Subsets | LeetCode In The Shell</title>
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/fonts.css" />
-    
+    <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
+
   </head>
 
   <body>
@@ -29,6 +31,17 @@
 <h1><span class="title">78 - Subsets</span></h1>
 <h2 class="author">[alfmunny]</h2>
 <h2 class="date">2020/03/07</h2>
+<p class="terms">
+  
+  
+  Categories: <a href="../../categories/leetcode">leetcode</a> 
+  
+  
+  
+  Tags: <a href="../../tags/medium">medium</a> <a href="../../tags/array">array</a> <a href="../../tags/backtrack">backtrack</a> <a href="../../tags/dfs">dfs</a> 
+  
+  
+</p>
 </div>
 
 <main>
@@ -116,7 +129,7 @@ and 0 means its absence.</p>
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">subsets</span>(self, nums):
         res <span style="color:#f92672">=</span> [[]]
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> sorted(nums):
-            res <span style="color:#f92672">+=</span> [item<span style="color:#f92672">+</span>[i] <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> res]
+            res <span style="color:#f92672">+</span><span style="color:#f92672">=</span> [item<span style="color:#f92672">+</span>[i] <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> res]
 
         <span style="color:#66d9ef">return</span> res
 
@@ -151,16 +164,39 @@ and 0 means its absence.</p>
   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">subsets</span>(self, nums):
     n <span style="color:#f92672">=</span> len(nums)
     output <span style="color:#f92672">=</span> []
-    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span><span style="color:#f92672">**</span>n, <span style="color:#ae81ff">2</span><span style="color:#f92672">**</span>(n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)):
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>n, <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>(n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)):
       bitmask <span style="color:#f92672">=</span> bin(i)[<span style="color:#ae81ff">3</span>:]
-      output<span style="color:#f92672">.</span>append([nums[i] <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n) <span style="color:#66d9ef">if</span> bitmask[i] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;1&#39;</span> ])
+      output<span style="color:#f92672">.</span>append([nums[i] <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n) <span style="color:#66d9ef">if</span> bitmask[i] <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">1</span><span style="color:#e6db74">&#39;</span> ])
 
     <span style="color:#66d9ef">return</span> output
 </code></pre></div>
 </main>
 
   <footer>
-  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alfmunnystechblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
   
   <hr/>
   © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
