@@ -28,16 +28,6 @@ Problem A frog is crossing a river. The river is divided into x units and at eac
     </item>
     
     <item>
-      <title></title>
-      <link>//alfmunny.com/leetcode-blog/posts/readme/</link>
-      <pubDate>Sun, 11 Oct 2020 18:56:32 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/posts/readme/</guid>
-      <description>Beautiful Arrangement leetcode
-Problem Suppose you have N integers from 1 to N. We define a beautiful arrangement as an array that is constructed by these N numbers successfully if one of the following is true for the ith position (1 &amp;lt;= i &amp;lt;= N) in this array: The number at the ith position is divisible by i. i is divisible by the number at the ith position. Now given N, how many beautiful arrangements can you construct?</description>
-    </item>
-    
-    <item>
       <title>354 - Russian Doll Envelopes</title>
       <link>//alfmunny.com/leetcode-blog/posts/354-russian-doll-envelopes/</link>
       <pubDate>Sun, 11 Oct 2020 18:39:00 +0200</pubDate>
@@ -1971,15 +1961,6 @@ Problem Given an array with n objects colored red, white or blue, sort them in-p
       <guid>//alfmunny.com/leetcode-blog/posts/64-mnimum-path-sum/</guid>
       <description>leetcode
 Problem Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path. Note: You can only move either down or right at any point in time. Example: Input: [ [1,3,1], [1,5,1], [4,2,1] ] Output: 7 Explanation: Because the path 1→3→1→1→1 minimizes the sum. Notes Thinking: It seems to be a greedy algorithm problem.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//alfmunny.com/leetcode-blog/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/about/</guid>
-      <description>Loading the data just for you.</description>
     </item>
     
   </channel>
