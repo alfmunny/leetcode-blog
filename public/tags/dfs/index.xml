@@ -6,10 +6,304 @@
     <description>Recent content in dfs on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2020 17:01:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2020 11:54:00 +0200</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/dfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Beautiful Arrangement</title>
+      <link>//alfmunny.com/leetcode-blog/posts/526-beautiful-arrangement/</link>
+      <pubDate>Sat, 10 Oct 2020 11:54:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/526-beautiful-arrangement/</guid>
+      <description>leetcode
+Problem Suppose you have N integers from 1 to N. We define a beautiful arrangement as an array that is constructed by these N numbers successfully if one of the following is true for the ith position (1 &amp;lt;= i &amp;lt;= N) in this array: The number at the ith position is divisible by i. i is divisible by the number at the ith position. Now given N, how many beautiful arrangements can you construct?</description>
+    </item>
     
-	<atom:link href="//alfmunny.com/leetcode-blog/tags/dfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>980 - Unique Paths III</title>
+      <link>//alfmunny.com/leetcode-blog/posts/980-unique-paths-iii/</link>
+      <pubDate>Thu, 27 Aug 2020 13:21:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/980-unique-paths-iii/</guid>
+      <description>leetcode
+Problem On a 2-dimensional grid, there are 4 types of squares: 1 represents the starting square. There is exactly one starting square. 2 represents the ending square. There is exactly one ending square. 0 represents empty squares we can walk over. -1 represents obstacles that we cannot walk over. Return the number of 4-directional walks from the starting square to the ending square, that walk over every non-obstacle square exactly once.</description>
+    </item>
     
+    <item>
+      <title>93 - Restore IP Addresses</title>
+      <link>//alfmunny.com/leetcode-blog/posts/93-restore-ip-addresses/</link>
+      <pubDate>Thu, 27 Aug 2020 01:10:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/93-restore-ip-addresses/</guid>
+      <description>leetcode
+Problem Given a string s containing only digits. Return all possible valid IP addresses that can be obtained from s. You can return them in any order. A valid IP address consists of exactly four integers, each integer is between 0 and 255, separated by single points and cannot have leading zeros. For example, &amp;#34;0.1.2.201&amp;#34; and &amp;#34;192.168.1.1&amp;#34; are valid IP addresses and &amp;#34;0.011.255.245&amp;#34;, &amp;#34;192.168.1.312&amp;#34; and &amp;#34;192.168@1.1&amp;#34; are invalid IP addresses.</description>
+    </item>
+    
+    <item>
+      <title>1286 - Iterator for Combination</title>
+      <link>//alfmunny.com/leetcode-blog/posts/1286-iterator-for-combination/</link>
+      <pubDate>Thu, 27 Aug 2020 00:12:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/1286-iterator-for-combination/</guid>
+      <description>leetcode
+Problem Design an Iterator class, which has: A constructor that takes a string characters of sorted distinct lowercase English letters and a number combinationLength as arguments. A function next() that returns the next combination of length combinationLength in lexicographical order. A function hasNext() that returns True if and only if there exists a next combination. Example: CombinationIterator iterator = new CombinationIterator(&amp;#34;abc&amp;#34;, 2); // creates the iterator. iterator.next(); // returns &amp;#34;ab&amp;#34; iterator.</description>
+    </item>
+    
+    <item>
+      <title>131 - Palindrome Partitioning</title>
+      <link>//alfmunny.com/leetcode-blog/posts/131-palindrome-partitioning/</link>
+      <pubDate>Wed, 26 Aug 2020 00:00:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/131-palindrome-partitioning/</guid>
+      <description>leetcode
+Problem Given a string s, partition s such that every substring of the partition is a palindrome. Return all possible palindrome partitioning of s. Example: Input: &amp;#34;aab&amp;#34; Output: [ [&amp;#34;aa&amp;#34;,&amp;#34;b&amp;#34;], [&amp;#34;a&amp;#34;,&amp;#34;a&amp;#34;,&amp;#34;b&amp;#34;] ] Solution class Solution: def partition(self, s: str) -&amp;gt; List[List[str]]: ans = [] self.dfs(s, 0, ans, []) return ans def dfs(self, s, start, ans, path): if start == len(s): ans.append(path.copy()) return for i in range(start, len(s)): w = s[start:i+1] if w == w[::-1]: path.</description>
+    </item>
+    
+    <item>
+      <title>404 - Sum of Left Leaves</title>
+      <link>//alfmunny.com/leetcode-blog/posts/404-sum-of-left-leaves/</link>
+      <pubDate>Mon, 24 Aug 2020 22:57:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/404-sum-of-left-leaves/</guid>
+      <description>leetcode
+Problem Find the sum of all left leaves in a given binary tree. Example: 3 / \ 9 20 / \ 15 7 There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24. Solution class Solution: def sumOfLeftLeaves(self, root: TreeNode) -&amp;gt; int: return self.dfs(root, 0, False) def dfs(self, root, presum, isLeft): if not root: return 0 if not root.left and not root.right and isLeft: return presum + root.</description>
+    </item>
+    
+    <item>
+      <title>1219 - Path with Maximum Gold</title>
+      <link>//alfmunny.com/leetcode-blog/posts/1219-path-with-maximum-gold/</link>
+      <pubDate>Sun, 23 Aug 2020 19:07:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/1219-path-with-maximum-gold/</guid>
+      <description>leetcode
+Problem In a gold mine grid of size m * n, each cell in this mine has an integer representing the amount of gold in that cell, 0 if it is empty. Return the maximum amount of gold you can collect under the conditions: Every time you are located in a cell you will collect all the gold in that cell. From your position you can walk one step to the left, right, up or down.</description>
+    </item>
+    
+    <item>
+      <title>199 - Binary Tree Right Side View</title>
+      <link>//alfmunny.com/leetcode-blog/posts/199-binary-tree-right-side-view/</link>
+      <pubDate>Sun, 23 Aug 2020 17:44:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/199-binary-tree-right-side-view/</guid>
+      <description>leetcode
+Problem Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom. Example: Input: [1,2,3,null,5,null,4] Output: [1, 3, 4] Explanation: 1 &amp;lt;--- / \ 2 3 &amp;lt;--- \ \ 5 4 &amp;lt;--- Solution Comprare the depth. DFS.
+Keep track of the current depth. And the length of current answer is the previous depth.</description>
+    </item>
+    
+    <item>
+      <title>1079 - Letter Tile Possibilities</title>
+      <link>//alfmunny.com/leetcode-blog/posts/1079-letter-tile-possibilities/</link>
+      <pubDate>Wed, 19 Aug 2020 20:10:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/1079-letter-tile-possibilities/</guid>
+      <description>leetcode
+Problem You have n tiles, where each tile has one letter tiles[i] printed on it. Return the number of possible non-empty sequences of letters you can make using the letters printed on those tiles. Example 1: Input: tiles = &amp;#34;AAB&amp;#34; Output: 8 Explanation: The possible sequences are &amp;#34;A&amp;#34;, &amp;#34;B&amp;#34;, &amp;#34;AA&amp;#34;, &amp;#34;AB&amp;#34;, &amp;#34;BA&amp;#34;, &amp;#34;AAB&amp;#34;, &amp;#34;ABA&amp;#34;, &amp;#34;BAA&amp;#34;. Example 2: Input: tiles = &amp;#34;AAABBC&amp;#34; Output: 188 Example 3: Input: tiles = &amp;#34;V&amp;#34; Output: 1 Constraints: 1 &amp;lt;= tiles.</description>
+    </item>
+    
+    <item>
+      <title>784 - Letter Case Permutation</title>
+      <link>//alfmunny.com/leetcode-blog/posts/784-letter-case-permutation/</link>
+      <pubDate>Wed, 19 Aug 2020 19:45:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/784-letter-case-permutation/</guid>
+      <description>leetcode
+Problem Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string. Return a list of all possible strings we could create. You can return the output in any order. Example 1: Input: S = &amp;#34;a1b2&amp;#34; Output: [&amp;#34;a1b2&amp;#34;,&amp;#34;a1B2&amp;#34;,&amp;#34;A1b2&amp;#34;,&amp;#34;A1B2&amp;#34;] Example 2: Input: S = &amp;#34;3z4&amp;#34; Output: [&amp;#34;3z4&amp;#34;,&amp;#34;3Z4&amp;#34;] Example 3: Input: S = &amp;#34;12345&amp;#34; Output: [&amp;#34;12345&amp;#34;] Example 4: Input: S = &amp;#34;0&amp;#34; Output: [&amp;#34;0&amp;#34;] Constraints: S will be a string with length between 1 and 12.</description>
+    </item>
+    
+    <item>
+      <title>114 - Flatten Binary Tree to Linked List</title>
+      <link>//alfmunny.com/leetcode-blog/posts/114-flatten-binary-tree-to-linked-list/</link>
+      <pubDate>Wed, 19 Aug 2020 14:55:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/114-flatten-binary-tree-to-linked-list/</guid>
+      <description>leetcode
+Problem Given a binary tree, flatten it to a linked list in-place. For example, given the following tree: 1 / \ 2 5 / \ \ 3 4 6 The flattened tree should look like: 1 \ 2 \ 3 \ 4 \ 5 \ 6 Solution  Traverse the tree in reverse preorder, the opposite of root-left-right. Save the root, and use it in the upper level.  class Solution: def flatten(self, root: TreeNode) -&amp;gt; None: &amp;#34;&amp;#34;&amp;#34; Do not return anything, modify root in-place instead.</description>
+    </item>
+    
+    <item>
+      <title>110 - Balanced Binary Tree</title>
+      <link>//alfmunny.com/leetcode-blog/posts/110-balanced-binary-tree/</link>
+      <pubDate>Wed, 19 Aug 2020 11:21:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/110-balanced-binary-tree/</guid>
+      <description>leetcode
+Problem Given a binary tree, determine if it is height-balanced. For this problem, a height-balanced binary tree is defined as: a binary tree in which the left and right subtrees of every node differ in height by no more than 1. Example 1: Given the following tree [3,9,20,null,null,15,7]: 3 / \ 9 20 / \ 15 7 Return true. Example 2: Given the following tree [1,2,2,3,3,null,null,4,4]: 1 / \ 2 2 / \ 3 3 / \ 4 4 Return false.</description>
+    </item>
+    
+    <item>
+      <title>109 - Convert Sorted List to Binary Search Tree</title>
+      <link>//alfmunny.com/leetcode-blog/posts/109-convert-sorted-list-to-binary-search-tree/</link>
+      <pubDate>Tue, 18 Aug 2020 16:24:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/109-convert-sorted-list-to-binary-search-tree/</guid>
+      <description>leetcode
+Problem Given the head of a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST. For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1. Solution class Solution: def sortedListToBST(self, head: ListNode) -&amp;gt; TreeNode: if not head: return None if not head.</description>
+    </item>
+    
+    <item>
+      <title>695 - Max Area of Island</title>
+      <link>//alfmunny.com/leetcode-blog/posts/695-max-area-of-island/</link>
+      <pubDate>Tue, 07 Jul 2020 16:28:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/695-max-area-of-island/</guid>
+      <description>leetcode
+Problem Given a non-empty 2D array grid of 0&amp;#39;s and 1&amp;#39;s, an island is a group of 1&amp;#39;s (representing land) connected 4-directionally (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water. Find the maximum area of an island in the given 2D array. (If there is no island, the maximum area is 0.) Example 1: [[0,0,1,0,0,0,0,1,0,0,0,0,0], [0,0,0,0,0,0,0,1,1,1,0,0,0], [0,1,1,0,1,0,0,0,0,0,0,0,0], [0,1,0,0,1,1,0,0,1,0,1,0,0], [0,1,0,0,1,1,0,0,1,1,1,0,0], [0,0,0,0,0,0,0,0,0,0,1,0,0], [0,0,0,0,0,0,0,1,1,1,0,0,0], [0,0,0,0,0,0,0,1,1,0,0,0,0]] Given the above grid, return 6.</description>
+    </item>
+    
+    <item>
+      <title>463 - Island Perimeter</title>
+      <link>//alfmunny.com/leetcode-blog/posts/463-island-perimeter/</link>
+      <pubDate>Tue, 07 Jul 2020 16:13:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/463-island-perimeter/</guid>
+      <description>leetcode
+Problem You are given a map in form of a two-dimensional integer grid where 1 represents land and 0 represents water. Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells). The island doesn&amp;#39;t have &amp;#34;lakes&amp;#34; (water inside that isn&amp;#39;t connected to the water around the island). One cell is a square with side length 1.</description>
+    </item>
+    
+    <item>
+      <title>212 - Word Search II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/212-word-search-ii/</link>
+      <pubDate>Wed, 01 Jul 2020 00:49:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/212-word-search-ii/</guid>
+      <description>leetcode
+Problem Given a 2D board and a list of words from the dictionary, find all words in the board. Each word must be constructed from letters of sequentially adjacent cell, where &amp;#34;adjacent&amp;#34; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once in a word. Example: Input: board = [ [&amp;#39;o&amp;#39;,&amp;#39;a&amp;#39;,&amp;#39;a&amp;#39;,&amp;#39;n&amp;#39;], [&amp;#39;e&amp;#39;,&amp;#39;t&amp;#39;,&amp;#39;a&amp;#39;,&amp;#39;e&amp;#39;], [&amp;#39;i&amp;#39;,&amp;#39;h&amp;#39;,&amp;#39;k&amp;#39;,&amp;#39;r&amp;#39;], [&amp;#39;i&amp;#39;,&amp;#39;f&amp;#39;,&amp;#39;l&amp;#39;,&amp;#39;v&amp;#39;] ] words = [&amp;#34;oath&amp;#34;,&amp;#34;pea&amp;#34;,&amp;#34;eat&amp;#34;,&amp;#34;rain&amp;#34;] Output: [&amp;#34;eat&amp;#34;,&amp;#34;oath&amp;#34;] Note: All inputs are consist of lowercase letters a-z.</description>
+    </item>
+    
+    <item>
+      <title>332 - Reconstruct Itinerary</title>
+      <link>//alfmunny.com/leetcode-blog/posts/332-reconstruct-itinerary/</link>
+      <pubDate>Mon, 29 Jun 2020 23:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/332-reconstruct-itinerary/</guid>
+      <description>leetcode
+Problem Given a list of airline tickets represented by pairs of departure and arrival airports [from, to], reconstruct the itinerary in order. All of the tickets belong to a man who departs from JFK. Thus, the itinerary must begin with JFK. Note: If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string. For example, the itinerary [&amp;#34;JFK&amp;#34;, &amp;#34;LGA&amp;#34;] has a smaller lexical order than [&amp;#34;JFK&amp;#34;, &amp;#34;LGB&amp;#34;].</description>
+    </item>
+    
+    <item>
+      <title>332 - Reconstruct Itinrary</title>
+      <link>//alfmunny.com/leetcode-blog/posts/332-reconstruct-itinrary/</link>
+      <pubDate>Mon, 29 Jun 2020 23:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/332-reconstruct-itinrary/</guid>
+      <description>leetcode
+Problem Given a list of airline tickets represented by pairs of departure and arrival airports [from, to], reconstruct the itinerary in order. All of the tickets belong to a man who departs from JFK. Thus, the itinerary must begin with JFK. Note: If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string. For example, the itinerary [&amp;#34;JFK&amp;#34;, &amp;#34;LGA&amp;#34;] has a smaller lexical order than [&amp;#34;JFK&amp;#34;, &amp;#34;LGB&amp;#34;].</description>
+    </item>
+    
+    <item>
+      <title>988 - Smallest String Starting From Leaf</title>
+      <link>//alfmunny.com/leetcode-blog/posts/998-smallest-string-starting-from-leaf/</link>
+      <pubDate>Sat, 27 Jun 2020 15:21:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/998-smallest-string-starting-from-leaf/</guid>
+      <description>leetcode
+Problem Given the root of a binary tree, each node has a value from 0 to 25 representing the letters &amp;#39;a&amp;#39; to &amp;#39;z&amp;#39;: a value of 0 represents &amp;#39;a&amp;#39;, a value of 1 represents &amp;#39;b&amp;#39;, and so on. Find the lexicographically smallest string that starts at a leaf of this tree and ends at the root. (As a reminder, any shorter prefix of a string is lexicographically smaller: for example, &amp;#34;ab&amp;#34; is lexicographically smaller than &amp;#34;aba&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>130 - Surrounded Regions</title>
+      <link>//alfmunny.com/leetcode-blog/posts/130-surrounded-regions/</link>
+      <pubDate>Fri, 26 Jun 2020 01:58:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/130-surrounded-regions/</guid>
+      <description>leetcode
+Problem Given a 2D board containing &amp;#39;X&amp;#39; and &amp;#39;O&amp;#39; (the letter O), capture all regions surrounded by &amp;#39;X&amp;#39;. A region is captured by flipping all &amp;#39;O&amp;#39;s into &amp;#39;X&amp;#39;s in that surrounded region. Example: X X X X X O O X X X O X X O X X After running your function, the board should be: X X X X X X X X X X X X X O X X Explanation: Surrounded regions shouldn’t be on the border, which means that any &amp;#39;O&amp;#39; on the border of the board are not flipped to &amp;#39;X&amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title>113 - Path Sum II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/113-path-sum-ii/</link>
+      <pubDate>Wed, 17 Jun 2020 23:51:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/113-path-sum-ii/</guid>
+      <description>leetcode
+Problem Given a binary tree and a sum, find all root-to-leaf paths where each path&amp;#39;s sum equals the given sum. Note: A leaf is a node with no children. Example: Given the below binary tree and sum = 22, 5 / \ 4 8 / / \ 11 13 4 / \ / \ 7 2 5 1 Return: [ [5,4,11,2], [5,8,4,5] ] Solution class Solution: def pathSum(self, root: TreeNode, sum: int) -&amp;gt; List[List[int]]: ans = [] self.</description>
+    </item>
+    
+    <item>
+      <title>90 - Subsets II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/90-subsets-ii/</link>
+      <pubDate>Wed, 17 Jun 2020 23:45:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/90-subsets-ii/</guid>
+      <description>leetcode
+Problem Given a collection of integers that might contain duplicates, nums, return all possible subsets (the power set). Note: The solution set must not contain duplicate subsets. Example: Input: [1,2,2] Output: [ [2], [1], [1,2,2], [2,2], [1,2], [] ] Solution class Solution: def subsetsWithDup(self, nums: List[int]) -&amp;gt; List[List[int]]: ans = [] marked = [False] * len(nums) self.dfs(sorted(nums), 0, [], ans, marked) return ans def dfs(self, nums, index, path, ans, marked): ans.</description>
+    </item>
+    
+    <item>
+      <title>77 - Combinations</title>
+      <link>//alfmunny.com/leetcode-blog/posts/77-combinations/</link>
+      <pubDate>Fri, 12 Jun 2020 17:56:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/77-combinations/</guid>
+      <description>leetcode
+Problem Share Given two integers n and k, return all possible combinations of k numbers out of 1 ... n. Example: Input: n = 4, k = 2 Output: [ [2,4], [3,4], [2,3], [1,2], [1,3], [1,4], ] Solution class Solution: def combine(self, n: int, k: int) -&amp;gt; List[List[int]]: ans = [] self.dfs(1, n, k, [], ans) return ans def dfs(self, index, n, k, path, ans): if k == 0: ans.</description>
+    </item>
+    
+    <item>
+      <title>52 - N-Queens II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/52-n-queens-ii/</link>
+      <pubDate>Fri, 12 Jun 2020 17:44:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/52-n-queens-ii/</guid>
+      <description>leetcode
+Problem The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other. Given an integer n, return the number of distinct solutions to the n-queens puzzle. Solution class Solution: def totalNQueens(self, n): self.ans = 0 self.dfs(0, n, []) return self.ans def dfs(self, row, n, path): if row == n and len(path) == n: self.ans += 1 for i in range(n): if self.</description>
+    </item>
+    
+    <item>
+      <title>51 - N-Queens</title>
+      <link>//alfmunny.com/leetcode-blog/posts/51-n-queens/</link>
+      <pubDate>Fri, 12 Jun 2020 17:38:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/51-n-queens/</guid>
+      <description>leetcode
+Problem The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other. Given an integer n, return all distinct solutions to the n-queens puzzle. Each solution contains a distinct board configuration of the n-queens&amp;#39; placement, where &amp;#39;Q&amp;#39; and &amp;#39;.&amp;#39; both indicate a queen and an empty space respectively. Solution class Solution: def solveNQueens(self, n): ans = [] self.dfs(0, n, [], ans) return ans def dfs(self, row, n, path, ans): if row == n and len(path) == n: ans.</description>
+    </item>
+    
+    <item>
+      <title>39 - Combination Sum</title>
+      <link>//alfmunny.com/leetcode-blog/posts/39-combination-sum/</link>
+      <pubDate>Wed, 10 Jun 2020 23:55:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/39-combination-sum/</guid>
+      <description>leetcode
+Problem Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target. The same repeated number may be chosen from candidates unlimited number of times. Note: All numbers (including target) will be positive integers. The solution set must not contain duplicate combinations. Example 1: Input: candidates = [2,3,6,7], target = 7, A solution set is: [ [7], [2,2,3] ] Example 2: Input: candidates = [2,3,5], target = 8, A solution set is: [ [2,2,2,2], [2,3,3], [3,5] ] Solution Backtracking problem.</description>
+    </item>
+    
+    <item>
+      <title>40 - Combination Sum II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/40-combination-sum-ii/</link>
+      <pubDate>Wed, 10 Jun 2020 23:33:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/40-combination-sum-ii/</guid>
+      <description>leetcode
+Problem Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target. Each number in candidates may only be used once in the combination. Note: All numbers (including target) will be positive integers. The solution set must not contain duplicate combinations. Example 1: Input: candidates = [10,1,2,7,6,1,5], target = 8, A solution set is: [ [1, 7], [1, 2, 5], [2, 6], [1, 1, 6] ] Example 2: Input: candidates = [2,5,2,1,2], target = 5, A solution set is: [ [1,2,2], [5] ] Solution Backtracking problem.</description>
+    </item>
+    
+    <item>
+      <title>207 - Course Schedule</title>
+      <link>//alfmunny.com/leetcode-blog/posts/207-course-schedule/</link>
+      <pubDate>Fri, 29 May 2020 19:57:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/207-course-schedule/</guid>
+      <description>leetcode
+Problem There are a total of numCourses courses you have to take, labeled from 0 to numCourses-1. Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1] Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses? Example 1: Input: numCourses = 2, prerequisites = [[1,0]] Output: true Explanation: There are a total of 2 courses to take.</description>
+    </item>
+    
+    <item>
+      <title>124 - Binary Tree Maximum Path Sum</title>
+      <link>//alfmunny.com/leetcode-blog/posts/124-binary-tree-maximum-path-sum/</link>
+      <pubDate>Wed, 29 Apr 2020 16:49:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/124-binary-tree-maximum-path-sum/</guid>
+      <description>leetcode
+Problem Given a non-empty binary tree, find the maximum path sum.
+For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need to go through the root.
+Example 1:
+Input: [1,2,3]
+1 / \
+2 3
+Output: 6 Example 2:
+Input: [-10,9,20,null,null,15,7]</description>
+    </item>
     
     <item>
       <title>200 - Number of Islands</title>
