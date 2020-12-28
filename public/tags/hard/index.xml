@@ -234,6 +234,16 @@ Problem You are given K eggs, and you have access to a building with N floors fr
     </item>
     
     <item>
+      <title>128 - Longest Consecutive Sequence</title>
+      <link>//alfmunny.com/leetcode-blog/posts/128-longest-consecutive-sequence/</link>
+      <pubDate>Sat, 02 May 2020 16:34:20 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/128-longest-consecutive-sequence/</guid>
+      <description>leetcode
+Problem Given an unsorted array of integers, find the length of the longest consecutive elements sequence. Your algorithm should run in O(n) complexity. Example: Input: [100, 4, 200, 1, 3, 2] Output: 4 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4. Solution Solution 1: Hash Map For each value, we maintain the left bound and right bound of range and also update the bounds for left value and right value.</description>
+    </item>
+    
+    <item>
       <title>28 - Implement strStr() (KMP Algorithm)</title>
       <link>//alfmunny.com/leetcode-blog/posts/28-kmp/</link>
       <pubDate>Wed, 29 Apr 2020 21:42:00 +0200</pubDate>
