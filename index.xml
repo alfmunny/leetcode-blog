@@ -18,6 +18,16 @@ Problem We are given a binary tree (with root node root), a target node, and an 
     </item>
     
     <item>
+      <title>323 - Number of Connected Components in an Undirected Graph</title>
+      <link>//alfmunny.com/leetcode-blog/posts/323-number-of-connected-components-in-an-undirected-graph/</link>
+      <pubDate>Wed, 23 Dec 2020 23:49:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/323-number-of-connected-components-in-an-undirected-graph/</guid>
+      <description>leetcode
+Problem Given n nodes labeled from 0 to n - 1 and a list of undirected edges (each edge is a pair of nodes), write a function to find the number of connected components in an undirected graph. Example 1: Input: n = 5 and edges = [[0, 1], [1, 2], [3, 4]] 0 3 | | 1 --- 2 4 Output: 2 Example 2: Input: n = 5 and edges = [[0, 1], [1, 2], [2, 3], [3, 4]] 0 4 | | 1 --- 2 --- 3 Output: 1 Note: You can assume that no duplicate edges will appear in edges.</description>
+    </item>
+    
+    <item>
       <title>701 - Insert into a Binary Search Tree</title>
       <link>//alfmunny.com/leetcode-blog/posts/701-insert-into-a-binary-search-tree/</link>
       <pubDate>Mon, 14 Dec 2020 13:05:00 +0100</pubDate>
