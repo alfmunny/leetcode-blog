@@ -6,10 +6,20 @@
     <description>Recent content in tree on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Dec 2020 13:05:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 28 Dec 2020 00:06:00 +0100</lastBuildDate>
     
 	<atom:link href="//alfmunny.com/leetcode-blog/tags/tree/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>863 - All Nodes Distance K in Binary Tree</title>
+      <link>//alfmunny.com/leetcode-blog/posts/863-all-nodes-distance-k-in-binary-tree/</link>
+      <pubDate>Mon, 28 Dec 2020 00:06:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/863-all-nodes-distance-k-in-binary-tree/</guid>
+      <description>leetcode
+Problem We are given a binary tree (with root node root), a target node, and an integer value K. Return a list of the values of all nodes that have a distance K from the target node. The answer can be returned in any order. Example 1: Input: root = [3,5,1,6,2,0,8,null,null,7,4], target = 5, K = 2 Output: [7,4,1] Explanation: The nodes that are a distance 2 from the target node (with value 5) have values 7, 4, and 1.</description>
+    </item>
     
     <item>
       <title>701 - Insert into a Binary Search Tree</title>
@@ -49,6 +59,16 @@ Problem You are given a perfect binary tree where all leaves are on the same lev
       <guid>//alfmunny.com/leetcode-blog/posts/257-binary-tree-paths/</guid>
       <description>leetcode
 Problem iven a binary tree, return all root-to-leaf paths. Note: A leaf is a node with no children. Example: Input: 1 / \ 2 3 \ 5 Output: [&amp;#34;1-&amp;gt;2-&amp;gt;5&amp;#34;, &amp;#34;1-&amp;gt;3&amp;#34;] Explanation: All root-to-leaf paths are: 1-&amp;gt;2-&amp;gt;5, 1-&amp;gt;3 Solution class Solution: def binaryTreePaths(self, root: TreeNode) -&amp;gt; List[str]: if not root: return [] if not root.right and not root.left: return [str(root.val)] paths = [str(root.val) + &amp;#34;-&amp;gt;&amp;#34; + s for s in self.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>//alfmunny.com/leetcode-blog/posts/readme/</link>
+      <pubDate>Sun, 11 Oct 2020 18:56:32 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/readme/</guid>
+      <description>Beautiful Arrangement leetcode
+Problem Suppose you have N integers from 1 to N. We define a beautiful arrangement as an array that is constructed by these N numbers successfully if one of the following is true for the ith position (1 &amp;lt;= i &amp;lt;= N) in this array: The number at the ith position is divisible by i. i is divisible by the number at the ith position. Now given N, how many beautiful arrangements can you construct?</description>
     </item>
     
     <item>

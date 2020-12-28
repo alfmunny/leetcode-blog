@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>863 - All Nodes Distance K in Binary Tree | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">863 - All Nodes Distance K in Binary Tree</span></h1>
+
+<h2 class="date">2020/12/28</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">We are given a binary tree (with root node root), a target node, and an integer value K.
+
+Return a list of the values of all nodes that have a distance K from the target node.  The answer can be returned in any order.
+
+
+
+Example 1:
+
+Input: root = [3,5,1,6,2,0,8,null,null,7,4], target = 5, K = 2
+
+Output: [7,4,1]
+
+Explanation:
+The nodes that are a distance 2 from the target node (with value 5)
+have values 7, 4, and 1.
+
+Note:
+
+1. The given tree is non-empty.
+2. Each node in the tree has unique values 0 &lt;= node.val &lt;= 500.
+3. The target node is a node in the tree.
+4. 0 &lt;= K &lt;= 1000.
+</code></pre></div><h2 id="solution">Solution</h2>
+<p>BFS</p>
+<ol>
+<li>Build a graph. Connet the parent and child in both directions.</li>
+<li>Start BFS search from the target value, with step of K.</li>
+</ol>
+<p>In K step, the element in the new level are the answer.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">distanceK</span>(self, root: TreeNode, target: TreeNode, K: int) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> List[int]:
+
+        graph <span style="color:#f92672">=</span> defaultdict(list)
+
+        self<span style="color:#f92672">.</span>connect(graph, root, root<span style="color:#f92672">.</span>left)
+        self<span style="color:#f92672">.</span>connect(graph, root, root<span style="color:#f92672">.</span>right)
+        level <span style="color:#f92672">=</span> [target<span style="color:#f92672">.</span>val]
+        marked <span style="color:#f92672">=</span> set(level)
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(K):
+            new_level <span style="color:#f92672">=</span> []
+            <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> level:
+                <span style="color:#66d9ef">for</span> w <span style="color:#f92672">in</span> graph[x]:
+                    <span style="color:#66d9ef">if</span> w <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> marked:
+                        new_level<span style="color:#f92672">.</span>append(w)
+            level <span style="color:#f92672">=</span> new_level
+            marked <span style="color:#f92672">|</span><span style="color:#f92672">=</span> set(new_level)
+
+        <span style="color:#66d9ef">return</span> level
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">connect</span>(self, graph, parent, child):
+        <span style="color:#66d9ef">if</span> parent <span style="color:#f92672">and</span> child:
+            graph[parent<span style="color:#f92672">.</span>val]<span style="color:#f92672">.</span>append(child<span style="color:#f92672">.</span>val)
+            graph[child<span style="color:#f92672">.</span>val]<span style="color:#f92672">.</span>append(parent<span style="color:#f92672">.</span>val)
+
+            self<span style="color:#f92672">.</span>connect(graph, child, child<span style="color:#f92672">.</span>left)
+            self<span style="color:#f92672">.</span>connect(graph, child, child<span style="color:#f92672">.</span>right)
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

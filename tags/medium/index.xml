@@ -152,6 +152,16 @@ Problem A sequence of numbers is called a wiggle sequence if the differences bet
     </item>
     
     <item>
+      <title></title>
+      <link>//alfmunny.com/leetcode-blog/posts/readme/</link>
+      <pubDate>Sun, 11 Oct 2020 18:56:32 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/readme/</guid>
+      <description>Beautiful Arrangement leetcode
+Problem Suppose you have N integers from 1 to N. We define a beautiful arrangement as an array that is constructed by these N numbers successfully if one of the following is true for the ith position (1 &amp;lt;= i &amp;lt;= N) in this array: The number at the ith position is divisible by i. i is divisible by the number at the ith position. Now given N, how many beautiful arrangements can you construct?</description>
+    </item>
+    
+    <item>
       <title>Beautiful Arrangement</title>
       <link>//alfmunny.com/leetcode-blog/posts/526-beautiful-arrangement/</link>
       <pubDate>Sat, 10 Oct 2020 11:54:00 +0200</pubDate>

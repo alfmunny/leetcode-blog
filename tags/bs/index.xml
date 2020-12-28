@@ -86,15 +86,5 @@ Input: [3,3,7,7,10,11,11] Output: 10
 Problem You are given K eggs, and you have access to a building with N floors from 1 to N. Each egg is identical in function, and if an egg breaks, you cannot drop it again. You know that there exists a floor F with 0 &amp;lt;= F &amp;lt;= N such that any egg dropped at a floor higher than F will break, and any egg dropped at or below floor F will not break.</description>
     </item>
     
-    <item>
-      <title>278 - First Bad Version</title>
-      <link>//alfmunny.com/leetcode-blog/posts/278-first-bad-version/</link>
-      <pubDate>Fri, 01 May 2020 22:00:09 +0200</pubDate>
-      
-      <guid>//alfmunny.com/leetcode-blog/posts/278-first-bad-version/</guid>
-      <description>leetcode
-Problem You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad. Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one, which causes all the following ones to be bad.</description>
-    </item>
-    
   </channel>
 </rss>
