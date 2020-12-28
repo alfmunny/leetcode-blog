@@ -55,7 +55,7 @@ Output: false
 </ol>
 <!-- raw HTML omitted -->
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isInterleave</span>(self, s1: str, s2: str, s3: str) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> bool:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isInterleave</span>(self, s1: str, s2: str, s3: str) <span style="color:#f92672">-&gt;</span> bool:
         <span style="color:#66d9ef">if</span> len(s1) <span style="color:#f92672">+</span> len(s2) <span style="color:#f92672">!=</span> len(s3):
             <span style="color:#66d9ef">return</span> False
         dp <span style="color:#f92672">=</span> [[False] <span style="color:#f92672">*</span> (len(s1)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(len(s2)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)]

@@ -87,7 +87,7 @@ Explanation: The endWord &#34;cog&#34; is not in wordList, therefore no possible
                     seen <span style="color:#f92672">=</span> True
                 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(w)):
                     <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">26</span>):
-                        to <span style="color:#f92672">=</span> w[:i] <span style="color:#f92672">+</span> chr(ord(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">a</span><span style="color:#e6db74">&#39;</span>) <span style="color:#f92672">+</span> j) <span style="color:#f92672">+</span> w[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>:]
+                        to <span style="color:#f92672">=</span> w[:i] <span style="color:#f92672">+</span> chr(ord(<span style="color:#e6db74">&#39;a&#39;</span>) <span style="color:#f92672">+</span> j) <span style="color:#f92672">+</span> w[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>:]
                         <span style="color:#66d9ef">if</span> to <span style="color:#f92672">!=</span> w <span style="color:#f92672">and</span> h[to]:
                             tmp<span style="color:#f92672">.</span>append(to)
                             paths[w]<span style="color:#f92672">.</span>add(to)

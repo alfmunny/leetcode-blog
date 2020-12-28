@@ -62,7 +62,7 @@ Would this affect the run-time complexity? How and why?
 <p>Important: How to guarentee the left part is in order when there is duplicates in the array:
 We can use a <code>while</code> to eliminate the duplicates if nums[left] == nums[mid]</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search</span>(self, nums: List[int], target: int) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> bool:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search</span>(self, nums: List[int], target: int) <span style="color:#f92672">-&gt;</span> bool:
         <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> nums:
             <span style="color:#66d9ef">return</span> False
 
@@ -70,21 +70,21 @@ We can use a <code>while</code> to eliminate the duplicates if nums[left] == num
         right <span style="color:#f92672">=</span> len(nums) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
 
         <span style="color:#66d9ef">while</span> left <span style="color:#f92672">&lt;</span> right:
-            mid <span style="color:#f92672">=</span> (left <span style="color:#f92672">+</span> right) <span style="color:#f92672">/</span><span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
+            mid <span style="color:#f92672">=</span> (left <span style="color:#f92672">+</span> right) <span style="color:#f92672">//</span> <span style="color:#ae81ff">2</span>
 
             <span style="color:#66d9ef">if</span> nums[mid] <span style="color:#f92672">==</span> target:
                 <span style="color:#66d9ef">return</span> True
 
             <span style="color:#66d9ef">while</span> left <span style="color:#f92672">&lt;</span> mid <span style="color:#f92672">and</span> nums[left] <span style="color:#f92672">==</span> nums[mid]:
-                left <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                left <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
-            <span style="color:#66d9ef">if</span> nums[mid] <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> nums[left]:
-                <span style="color:#66d9ef">if</span> nums[mid] <span style="color:#f92672">&gt;</span> target <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> nums[left]:
+            <span style="color:#66d9ef">if</span> nums[mid] <span style="color:#f92672">&gt;=</span> nums[left]:
+                <span style="color:#66d9ef">if</span> nums[mid] <span style="color:#f92672">&gt;</span> target <span style="color:#f92672">&gt;=</span> nums[left]:
                     right <span style="color:#f92672">=</span> mid <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
                 <span style="color:#66d9ef">else</span>:
                     left <span style="color:#f92672">=</span> mid <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
             <span style="color:#66d9ef">else</span>:
-                <span style="color:#66d9ef">if</span> nums[mid] <span style="color:#f92672">&lt;</span> target <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> nums[right]:
+                <span style="color:#66d9ef">if</span> nums[mid] <span style="color:#f92672">&lt;</span> target <span style="color:#f92672">&lt;=</span> nums[right]:
                     left <span style="color:#f92672">=</span> mid <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
                 <span style="color:#66d9ef">else</span>:
                     right <span style="color:#f92672">=</span> mid <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>

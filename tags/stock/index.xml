@@ -6,11 +6,7 @@
     <description>Recent content in stock on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2020 22:36:00 +0100</lastBuildDate>
-    
-	<atom:link href="//alfmunny.com/leetcode-blog/tags/stock/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 24 Mar 2020 22:36:00 +0100</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/stock/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>309 - Best Time to Buy and Sell Stock with Cooldown</title>
       <link>//alfmunny.com/leetcode-blog/posts/309-best-time-to-buy-and-sell-stock-with-cooldown/</link>

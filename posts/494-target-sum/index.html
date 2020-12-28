@@ -82,28 +82,28 @@ Your output answer is guaranteed to be fitted in a 32-bit integer.
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>sum<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
     <span style="color:#66d9ef">if</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>: <span style="color:#75715e"># only check the ones, which have been reached</span>
       <span style="color:#66d9ef">if</span> j<span style="color:#f92672">+</span>nums[i] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>sum <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>: <span style="color:#75715e"># sign + to the current number, we transit from j to j+nums[i]</span>
-        dp[i][j<span style="color:#f92672">+</span>nums[i]] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j]
-      <span style="color:#66d9ef">if</span> j<span style="color:#f92672">-</span>nums[i] <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>: <span style="color:#75715e"># sign + to the current number, we transit from j to j-nums[i]</span>
-        dp[i][j<span style="color:#f92672">-</span>nums[i]] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j]
+        dp[i][j<span style="color:#f92672">+</span>nums[i]] <span style="color:#f92672">+=</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j]
+      <span style="color:#66d9ef">if</span> j<span style="color:#f92672">-</span>nums[i] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>: <span style="color:#75715e"># sign + to the current number, we transit from j to j-nums[i]</span>
+        dp[i][j<span style="color:#f92672">-</span>nums[i]] <span style="color:#f92672">+=</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j]
 </code></pre></div><ul>
 <li>Base case:</li>
 </ul>
 <p>We start from the offset.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># the first number with symbols</span>
-dp[<span style="color:#ae81ff">0</span>][offset<span style="color:#f92672">+</span>nums[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">+</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-dp[<span style="color:#ae81ff">0</span>][offset<span style="color:#f92672">-</span>nums[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">+</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+dp[<span style="color:#ae81ff">0</span>][offset<span style="color:#f92672">+</span>nums[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
+dp[<span style="color:#ae81ff">0</span>][offset<span style="color:#f92672">-</span>nums[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
 </code></pre></div><p><strong>Important</strong>:
 You have to use += 1, not only = 1, because the number can be 0.</p>
 <p>For exmaple: we take sum = 5
 When the first number is 1 (not 0):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">d[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span><span style="color:#f92672">+</span>sum <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> dp[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">6</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-d[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span><span style="color:#f92672">+</span>sum <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> dp[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">4</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">d[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span><span style="color:#f92672">+</span>sum <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-&gt;</span> dp[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">6</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+d[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span><span style="color:#f92672">+</span>sum <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-&gt;</span> dp[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">4</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
 </code></pre></div><p>It means:</p>
 <p>there is one ways to reach 1 (6 - offset)</p>
 <p>there is one ways to reach -1 (4 - offset)</p>
 <p>When the first number is 0:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">d[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span><span style="color:#f92672">+</span>sum <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> dp[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">5</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-d[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span><span style="color:#f92672">+</span>sum <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> dp[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">5</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">d[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span><span style="color:#f92672">+</span>sum <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-&gt;</span> dp[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">5</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+d[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span><span style="color:#f92672">+</span>sum <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-&gt;</span> dp[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">5</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
 </code></pre></div><p>It means there are 2 ways to reach 0 (5 - offset)</p>
 <h3 id="solution-1-2d-dp">Solution 1: 2D - DP</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>():
@@ -118,16 +118,16 @@ d[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span><spa
             <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
 
         <span style="color:#75715e"># base case</span>
-        dp[<span style="color:#ae81ff">0</span>][offset <span style="color:#f92672">-</span> nums[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-        dp[<span style="color:#ae81ff">0</span>][offset <span style="color:#f92672">+</span> nums[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+        dp[<span style="color:#ae81ff">0</span>][offset <span style="color:#f92672">-</span> nums[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+        dp[<span style="color:#ae81ff">0</span>][offset <span style="color:#f92672">+</span> nums[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, len(nums)):
             <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(n):
                 <span style="color:#66d9ef">if</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
                     <span style="color:#66d9ef">if</span> j <span style="color:#f92672">+</span> nums[i] <span style="color:#f92672">&lt;</span> n:
-                        dp[i][j <span style="color:#f92672">+</span> nums[i]] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j]
-                    <span style="color:#66d9ef">if</span> j <span style="color:#f92672">-</span> nums[i] <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>:
-                        dp[i][j <span style="color:#f92672">-</span> nums[i]] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j]
+                        dp[i][j <span style="color:#f92672">+</span> nums[i]] <span style="color:#f92672">+=</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j]
+                    <span style="color:#66d9ef">if</span> j <span style="color:#f92672">-</span> nums[i] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>:
+                        dp[i][j <span style="color:#f92672">-</span> nums[i]] <span style="color:#f92672">+=</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j]
 
         <span style="color:#66d9ef">return</span> dp[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][offset <span style="color:#f92672">+</span> S]
 
@@ -147,16 +147,16 @@ Space: O(l*n)</p>
         offset <span style="color:#f92672">=</span> sum(nums)
         dp <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> n <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> nums]
 
-        dp[<span style="color:#ae81ff">0</span>][offset <span style="color:#f92672">+</span> nums[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-        dp[<span style="color:#ae81ff">0</span>][offset <span style="color:#f92672">-</span> nums[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+        dp[<span style="color:#ae81ff">0</span>][offset <span style="color:#f92672">+</span> nums[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+        dp[<span style="color:#ae81ff">0</span>][offset <span style="color:#f92672">-</span> nums[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, l):
             <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(n):
                 <span style="color:#66d9ef">if</span> dp[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][j] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
                     <span style="color:#66d9ef">if</span> dp[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][j] <span style="color:#f92672">&lt;</span> n:
-                        dp[i][j <span style="color:#f92672">+</span> nums[i]] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> dp[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][j]
-                    <span style="color:#66d9ef">if</span> dp[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][j] <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>:
-                        dp[i][j <span style="color:#f92672">-</span> nums[i]] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> dp[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][j]
+                        dp[i][j <span style="color:#f92672">+</span> nums[i]] <span style="color:#f92672">+=</span> dp[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][j]
+                    <span style="color:#66d9ef">if</span> dp[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][j] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>:
+                        dp[i][j <span style="color:#f92672">-</span> nums[i]] <span style="color:#f92672">+=</span> dp[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][j]
 
         <span style="color:#66d9ef">return</span> dp[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][offset <span style="color:#f92672">+</span> S]
 

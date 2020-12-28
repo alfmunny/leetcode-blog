@@ -60,34 +60,34 @@ Accepted
 
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">checkInclusion</span>(self, s1: str, s2: str) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> bool:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">checkInclusion</span>(self, s1: str, s2: str) <span style="color:#f92672">-&gt;</span> bool:
         target, window <span style="color:#f92672">=</span> defaultdict(int), defaultdict(int)
         left, right <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>
         match <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
         <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> s1:
-            target[c] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+            target[c] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
         <span style="color:#66d9ef">while</span> (right <span style="color:#f92672">&lt;</span> len(s2)):
 
             c <span style="color:#f92672">=</span> s2[right]
             <span style="color:#66d9ef">if</span> c <span style="color:#f92672">in</span> target:
-                window[c] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                window[c] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
                 <span style="color:#66d9ef">if</span> window[c] <span style="color:#f92672">==</span> target[c]:
-                    match <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                    match <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
-            right <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+            right <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
             <span style="color:#66d9ef">while</span> (right <span style="color:#f92672">-</span> left <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&gt;</span> len(s1)):
                 <span style="color:#66d9ef">if</span> match <span style="color:#f92672">==</span> len(target):
                     <span style="color:#66d9ef">return</span> True
                 c <span style="color:#f92672">=</span> s2[left]
-                left <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                left <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
                 <span style="color:#66d9ef">if</span> c <span style="color:#f92672">in</span> window:
                     <span style="color:#66d9ef">if</span> window[c] <span style="color:#f92672">==</span> target[c]:
-                        match <span style="color:#f92672">-</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                        match <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
 
-                    window[c] <span style="color:#f92672">-</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                    window[c] <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
         <span style="color:#66d9ef">return</span> False
 </code></pre></div>
 </main>

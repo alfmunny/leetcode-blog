@@ -76,14 +76,14 @@ Output:
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(self, s, wordDict, start, memo):
 
-        <span style="color:#66d9ef">if</span> start <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> len(s): <span style="color:#66d9ef">return</span> [<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>]
+        <span style="color:#66d9ef">if</span> start <span style="color:#f92672">&gt;=</span> len(s): <span style="color:#66d9ef">return</span> [<span style="color:#e6db74">&#34;&#34;</span>]
         <span style="color:#66d9ef">if</span> start <span style="color:#f92672">in</span> memo: <span style="color:#66d9ef">return</span> memo[start]
 
         ans <span style="color:#f92672">=</span> []
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(start<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, len(s)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
             w <span style="color:#f92672">=</span> s[start:i]
             <span style="color:#66d9ef">if</span> w <span style="color:#f92672">in</span> wordDict:
-                ans <span style="color:#f92672">+</span><span style="color:#f92672">=</span> [<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74"> </span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>join([w, x]) <span style="color:#66d9ef">if</span> x <span style="color:#66d9ef">else</span> w <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>dfs(s, wordDict, i, memo)]
+                ans <span style="color:#f92672">+=</span> [<span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">.</span>join([w, x]) <span style="color:#66d9ef">if</span> x <span style="color:#66d9ef">else</span> w <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>dfs(s, wordDict, i, memo)]
 
         memo[start] <span style="color:#f92672">=</span> ans
         <span style="color:#66d9ef">return</span> ans

@@ -6,11 +6,7 @@
     <description>Recent content in Posts on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Dec 2020 00:06:00 +0100</lastBuildDate>
-    
-	<atom:link href="//alfmunny.com/leetcode-blog/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 28 Dec 2020 00:06:00 +0100</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>863 - All Nodes Distance K in Binary Tree</title>
       <link>//alfmunny.com/leetcode-blog/posts/863-all-nodes-distance-k-in-binary-tree/</link>
@@ -490,7 +486,7 @@ Problem Given a set of distinct positive integers, find the largest subset such 
       
       <guid>//alfmunny.com/leetcode-blog/posts/114-flatten-binary-tree-to-linked-list/</guid>
       <description>leetcode
-Problem Given a binary tree, flatten it to a linked list in-place. For example, given the following tree: 1 / \ 2 5 / \ \ 3 4 6 The flattened tree should look like: 1 \ 2 \ 3 \ 4 \ 5 \ 6 Solution  Traverse the tree in reverse preorder, the opposite of root-left-right. Save the root, and use it in the upper level.  class Solution: def flatten(self, root: TreeNode) -&amp;gt; None: &amp;#34;&amp;#34;&amp;#34;Do not return anything, modify root in-place instead.</description>
+Problem Given a binary tree, flatten it to a linked list in-place. For example, given the following tree: 1 / \ 2 5 / \ \ 3 4 6 The flattened tree should look like: 1 \ 2 \ 3 \ 4 \ 5 \ 6 Solution  Traverse the tree in reverse preorder, the opposite of root-left-right. Save the root, and use it in the upper level.  class Solution: def flatten(self, root: TreeNode) -&amp;gt; None: &amp;#34;&amp;#34;&amp;#34; Do not return anything, modify root in-place instead.</description>
     </item>
     
     <item>
@@ -1605,7 +1601,7 @@ Problem Design and implement a data structure for Least Recently Used (LRU) cach
       <description>leetcode
 Problem Given a range [m, n] where 0 &amp;lt;= m &amp;lt;= n &amp;lt;= 2147483647, return the bitwise AND of all numbers in this range, inclusive. Example 1: Input: [5,7] Output: 4 Example 2: Input: [0,1] Output: 0 Solution m = xxx1yyyy n = xxx01zzz
 xxx is the parts that two numbers are the same. We can definitly find these two numbers in the range
-m&amp;rsquo; = xxx1000 n&amp;rsquo; = xxx0100</description>
+m&#39; = xxx1000 n&#39; = xxx0100</description>
     </item>
     
     <item>

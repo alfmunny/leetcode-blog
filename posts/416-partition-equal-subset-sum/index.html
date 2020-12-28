@@ -72,7 +72,7 @@ dp[i][j+nums[i]] += dp[i-1][j]</p>
         <span style="color:#66d9ef">if</span> nums_sum <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
             <span style="color:#66d9ef">return</span> False
 
-        target <span style="color:#f92672">=</span> nums_sum<span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>
+        target <span style="color:#f92672">=</span> nums_sum<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span>
         n <span style="color:#f92672">=</span> target <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
 
         dp <span style="color:#f92672">=</span> [False] <span style="color:#f92672">*</span> n
@@ -94,9 +94,9 @@ dp[i][j+nums[i]] += dp[i-1][j]</p>
 
         bits <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> nums:
-            bits <span style="color:#f92672">|</span><span style="color:#f92672">=</span> bits <span style="color:#f92672">&lt;&lt;</span> i
+            bits <span style="color:#f92672">|=</span> bits <span style="color:#f92672">&lt;&lt;</span> i
 
-        <span style="color:#66d9ef">return</span> (bits <span style="color:#f92672">&gt;&gt;</span> (s<span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>)) <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">return</span> (bits <span style="color:#f92672">&gt;&gt;</span> (s<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span>)) <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>
 </code></pre></div><p>Time: O(n)</p>
 <p>Space: O(1) maybe, depends on the sum of the array, the bits can be longer</p>
 

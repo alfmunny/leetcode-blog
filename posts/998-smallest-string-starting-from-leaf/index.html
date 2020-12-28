@@ -51,8 +51,8 @@ Input: [25,1,3,1,3,0,2]
 Output: &#34;adz&#34;
 </code></pre></div><h2 id="solution">Solution</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">smallestFromLeaf</span>(self, root: TreeNode) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> str:
-        self<span style="color:#f92672">.</span>ans <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">~</span><span style="color:#e6db74">&#34;</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">smallestFromLeaf</span>(self, root: TreeNode) <span style="color:#f92672">-&gt;</span> str:
+        self<span style="color:#f92672">.</span>ans <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;~&#34;</span>
         self<span style="color:#f92672">.</span>dfs(root, [])
         <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>ans
 
@@ -64,7 +64,7 @@ Output: &#34;adz&#34;
         path<span style="color:#f92672">.</span>append(chr(root<span style="color:#f92672">.</span>val<span style="color:#f92672">+</span><span style="color:#ae81ff">97</span>))
 
         <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> root<span style="color:#f92672">.</span>left <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> root<span style="color:#f92672">.</span>right:
-            self<span style="color:#f92672">.</span>ans <span style="color:#f92672">=</span> min(self<span style="color:#f92672">.</span>ans, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>join(reversed(path)))
+            self<span style="color:#f92672">.</span>ans <span style="color:#f92672">=</span> min(self<span style="color:#f92672">.</span>ans, <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">.</span>join(reversed(path)))
 
         self<span style="color:#f92672">.</span>dfs(root<span style="color:#f92672">.</span>left, path)
         self<span style="color:#f92672">.</span>dfs(root<span style="color:#f92672">.</span>right, path)

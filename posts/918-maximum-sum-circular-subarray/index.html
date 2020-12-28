@@ -94,7 +94,7 @@ Explanation: Subarray [-1] has maximum sum -1</p>
         maxSum <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>sys<span style="color:#f92672">.</span>maxsize
         s <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
         <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> A:
-            s <span style="color:#f92672">+</span><span style="color:#f92672">=</span> c
+            s <span style="color:#f92672">+=</span> c
             curMax <span style="color:#f92672">=</span> max(c, curMax <span style="color:#f92672">+</span> c)
             maxSum <span style="color:#f92672">=</span> max(maxSum, curMax)
             curMin <span style="color:#f92672">=</span> min(c, curMin <span style="color:#f92672">+</span> c)

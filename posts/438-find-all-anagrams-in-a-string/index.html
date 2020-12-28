@@ -74,32 +74,32 @@ The substring with start index = 2 is &#34;ab&#34;, which is an anagram of &#34;
         ans <span style="color:#f92672">=</span> []
 
         <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> p:
-            target[c] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+            target[c] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
         <span style="color:#66d9ef">while</span> right <span style="color:#f92672">&lt;</span> len(s):
             c <span style="color:#f92672">=</span> s[right]
             <span style="color:#66d9ef">if</span> c <span style="color:#f92672">in</span> target:
-                window[c] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                window[c] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
                 <span style="color:#66d9ef">if</span> window[c] <span style="color:#f92672">==</span> target[c]:
-                    match <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                    match <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
-            right <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+            right <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
             <span style="color:#66d9ef">while</span> right <span style="color:#f92672">-</span> left <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&gt;</span> len(p):
                 <span style="color:#66d9ef">if</span> match <span style="color:#f92672">==</span> len(target):
                     ans<span style="color:#f92672">.</span>append(left)
                 c <span style="color:#f92672">=</span> s[left]
-                left <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                left <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
                 <span style="color:#66d9ef">if</span> c <span style="color:#f92672">in</span> window:
                     <span style="color:#66d9ef">if</span> window[c] <span style="color:#f92672">==</span> target[c]:
-                        match <span style="color:#f92672">-</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-                    window[c] <span style="color:#f92672">-</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                        match <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+                    window[c] <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
 
 
         <span style="color:#66d9ef">return</span> ans
 
-<span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>findAllAnagrams(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">cbaeabac</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">abc</span><span style="color:#e6db74">&#34;</span>))
+<span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>findAllAnagrams(<span style="color:#e6db74">&#34;cbaeabac&#34;</span>, <span style="color:#e6db74">&#34;abc&#34;</span>))
 </code></pre></div>
 </main>
 

@@ -6,11 +6,7 @@
     <description>Recent content in tree on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Dec 2020 00:06:00 +0100</lastBuildDate>
-    
-	<atom:link href="//alfmunny.com/leetcode-blog/tags/tree/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 28 Dec 2020 00:06:00 +0100</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/tree/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>863 - All Nodes Distance K in Binary Tree</title>
       <link>//alfmunny.com/leetcode-blog/posts/863-all-nodes-distance-k-in-binary-tree/</link>
@@ -109,7 +105,7 @@ Keep track of the current depth. And the length of current answer is the previou
       
       <guid>//alfmunny.com/leetcode-blog/posts/114-flatten-binary-tree-to-linked-list/</guid>
       <description>leetcode
-Problem Given a binary tree, flatten it to a linked list in-place. For example, given the following tree: 1 / \ 2 5 / \ \ 3 4 6 The flattened tree should look like: 1 \ 2 \ 3 \ 4 \ 5 \ 6 Solution  Traverse the tree in reverse preorder, the opposite of root-left-right. Save the root, and use it in the upper level.  class Solution: def flatten(self, root: TreeNode) -&amp;gt; None: &amp;#34;&amp;#34;&amp;#34;Do not return anything, modify root in-place instead.</description>
+Problem Given a binary tree, flatten it to a linked list in-place. For example, given the following tree: 1 / \ 2 5 / \ \ 3 4 6 The flattened tree should look like: 1 \ 2 \ 3 \ 4 \ 5 \ 6 Solution  Traverse the tree in reverse preorder, the opposite of root-left-right. Save the root, and use it in the upper level.  class Solution: def flatten(self, root: TreeNode) -&amp;gt; None: &amp;#34;&amp;#34;&amp;#34; Do not return anything, modify root in-place instead.</description>
     </item>
     
     <item>

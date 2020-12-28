@@ -66,10 +66,10 @@ Explanation: Remove all the digits from the number and it is left with nothing w
         <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> num:
             <span style="color:#66d9ef">while</span> k <span style="color:#f92672">and</span> stack <span style="color:#f92672">and</span> stack[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">&gt;</span> c:
                 stack<span style="color:#f92672">.</span>pop()
-                k <span style="color:#f92672">-</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                k <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
             stack<span style="color:#f92672">.</span>append(c)
 
-        <span style="color:#66d9ef">return</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>join(stack[:<span style="color:#f92672">-</span>k <span style="color:#f92672">or</span> None])<span style="color:#f92672">.</span>lstrip(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">0</span><span style="color:#e6db74">&#39;</span>) <span style="color:#f92672">or</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">0</span><span style="color:#e6db74">&#39;</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join(stack[:<span style="color:#f92672">-</span>k <span style="color:#f92672">or</span> None])<span style="color:#f92672">.</span>lstrip(<span style="color:#e6db74">&#39;0&#39;</span>) <span style="color:#f92672">or</span> <span style="color:#e6db74">&#39;0&#39;</span>
 </code></pre></div>
 </main>
 

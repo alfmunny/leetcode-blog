@@ -66,7 +66,7 @@ Return false.
 </code></pre></div><h2 id="solution">Solution</h2>
 <h3 id="solution-1-multiple-pass">Solution 1: multiple pass</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isBalanced</span>(self, root: TreeNode) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> bool:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isBalanced</span>(self, root: TreeNode) <span style="color:#f92672">-&gt;</span> bool:
         <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> root:
             <span style="color:#66d9ef">return</span> True
 
@@ -74,7 +74,7 @@ Return false.
         hl <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>height(root<span style="color:#f92672">.</span>left)
 
         <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>isBalanced(root<span style="color:#f92672">.</span>right) <span style="color:#f92672">and</span> self<span style="color:#f92672">.</span>isBalanced(
-            root<span style="color:#f92672">.</span>left) <span style="color:#f92672">and</span> abs(hr <span style="color:#f92672">-</span> hl) <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+            root<span style="color:#f92672">.</span>left) <span style="color:#f92672">and</span> abs(hr <span style="color:#f92672">-</span> hl) <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span>
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">height</span>(self, root):
         <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> root:
@@ -84,7 +84,7 @@ Return false.
 <h3 id="solution-2-one-pass">Solution 2: one pass</h3>
 <p>It is a dfs method, which only go over all nodes one time.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isBalanced</span>(self, root: TreeNode) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> bool:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isBalanced</span>(self, root: TreeNode) <span style="color:#f92672">-&gt;</span> bool:
         <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>height(root) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">height</span>(self, root):

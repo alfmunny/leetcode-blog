@@ -87,9 +87,9 @@ results = results + 1
                 <span style="color:#66d9ef">if</span> s[r] <span style="color:#f92672">==</span> s[l]:
                     <span style="color:#66d9ef">if</span> r <span style="color:#f92672">==</span> l <span style="color:#f92672">or</span> r<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> l <span style="color:#f92672">or</span> dp[l<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>][r<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
                         dp[l][r] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-                        res <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                        res <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
         <span style="color:#66d9ef">return</span> res
-<span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>countSubstrings(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">aba</span><span style="color:#e6db74">&#34;</span>))
+<span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>countSubstrings(<span style="color:#e6db74">&#34;aba&#34;</span>))
 </code></pre></div>
 </main>
 

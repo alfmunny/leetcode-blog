@@ -48,7 +48,7 @@ Input: 21
 Output: -1
 </code></pre></div><h2 id="solution">Solution</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">nextGreaterElement</span>(self, n: int) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">nextGreaterElement</span>(self, n: int) <span style="color:#f92672">-&gt;</span> int:
         s <span style="color:#f92672">=</span> list(str(n))
 
         first <span style="color:#f92672">=</span> len(s) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
@@ -70,8 +70,8 @@ Output: -1
 
         s[first], s[second] <span style="color:#f92672">=</span> s[second], s[first]
 
-        ret <span style="color:#f92672">=</span> int(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>join(s[:first<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> sorted(s[first<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>:])))
-        <span style="color:#66d9ef">return</span> ret <span style="color:#66d9ef">if</span> ret <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> (<span style="color:#ae81ff">1</span><span style="color:#f92672">&lt;&lt;</span><span style="color:#ae81ff">31</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">else</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+        ret <span style="color:#f92672">=</span> int(<span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">.</span>join(s[:first<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> sorted(s[first<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>:])))
+        <span style="color:#66d9ef">return</span> ret <span style="color:#66d9ef">if</span> ret <span style="color:#f92672">&lt;=</span> (<span style="color:#ae81ff">1</span><span style="color:#f92672">&lt;&lt;</span><span style="color:#ae81ff">31</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">else</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
 </code></pre></div>
 </main>
 

@@ -75,8 +75,8 @@ The total time limit for this problem has been reduced by 75% for C++, and 50% f
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">next</span>(self, price):
         res<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-        <span style="color:#66d9ef">while</span> self<span style="color:#f92672">.</span>stack <span style="color:#f92672">and</span> self<span style="color:#f92672">.</span>stack[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">0</span>]<span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span>price:
-            res<span style="color:#f92672">+</span><span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>stack<span style="color:#f92672">.</span>pop()[<span style="color:#ae81ff">1</span>]
+        <span style="color:#66d9ef">while</span> self<span style="color:#f92672">.</span>stack <span style="color:#f92672">and</span> self<span style="color:#f92672">.</span>stack[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">0</span>]<span style="color:#f92672">&lt;=</span>price:
+            res<span style="color:#f92672">+=</span>self<span style="color:#f92672">.</span>stack<span style="color:#f92672">.</span>pop()[<span style="color:#ae81ff">1</span>]
 
         self<span style="color:#f92672">.</span>stack<span style="color:#f92672">.</span>append([price,res])
 

@@ -56,7 +56,7 @@ trie.search(&ldquo;app&rdquo;);     // returns true</p>
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search</span>(self, s):
         node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>root
         <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> s:
-            node <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next[ord(c) <span style="color:#f92672">-</span> ord(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">a</span><span style="color:#e6db74">&#39;</span>)]
+            node <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next[ord(c) <span style="color:#f92672">-</span> ord(<span style="color:#e6db74">&#39;a&#39;</span>)]
             <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> node:
                 <span style="color:#66d9ef">return</span> False
         <span style="color:#66d9ef">return</span> node<span style="color:#f92672">.</span>next[<span style="color:#ae81ff">26</span>] <span style="color:#f92672">!=</span> None
@@ -64,7 +64,7 @@ trie.search(&ldquo;app&rdquo;);     // returns true</p>
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">insert</span>(self, s):
         node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>root
         <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> s:
-            i <span style="color:#f92672">=</span> ord(c) <span style="color:#f92672">-</span> ord(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">a</span><span style="color:#e6db74">&#39;</span>)
+            i <span style="color:#f92672">=</span> ord(c) <span style="color:#f92672">-</span> ord(<span style="color:#e6db74">&#39;a&#39;</span>)
             <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> node<span style="color:#f92672">.</span>next[i]:
                 node<span style="color:#f92672">.</span>next[i] <span style="color:#f92672">=</span> Node()
             node <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next[i]
@@ -73,7 +73,7 @@ trie.search(&ldquo;app&rdquo;);     // returns true</p>
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">startsWith</span>(self, s):
         node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>root
         <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> s:
-            node <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next[ord(c) <span style="color:#f92672">-</span> ord(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">a</span><span style="color:#e6db74">&#39;</span>)]
+            node <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next[ord(c) <span style="color:#f92672">-</span> ord(<span style="color:#e6db74">&#39;a&#39;</span>)]
             <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> node:
                 <span style="color:#66d9ef">return</span> False
         <span style="color:#66d9ef">return</span> True
@@ -84,12 +84,12 @@ trie.search(&ldquo;app&rdquo;);     // returns true</p>
 
 s <span style="color:#f92672">=</span> Trie()
 
-s<span style="color:#f92672">.</span>insert(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">apple</span><span style="color:#e6db74">&#34;</span>)
-s<span style="color:#f92672">.</span>insert(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">banana</span><span style="color:#e6db74">&#34;</span>)
-<span style="color:#66d9ef">print</span>(s<span style="color:#f92672">.</span>search(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">app</span><span style="color:#e6db74">&#34;</span>))
-<span style="color:#66d9ef">print</span>(s<span style="color:#f92672">.</span>search(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">bananananana</span><span style="color:#e6db74">&#34;</span>))
-<span style="color:#66d9ef">print</span>(s<span style="color:#f92672">.</span>search(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">banana</span><span style="color:#e6db74">&#34;</span>))
-<span style="color:#66d9ef">print</span>(s<span style="color:#f92672">.</span>startsWith(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">ban</span><span style="color:#e6db74">&#34;</span>))
+s<span style="color:#f92672">.</span>insert(<span style="color:#e6db74">&#34;apple&#34;</span>)
+s<span style="color:#f92672">.</span>insert(<span style="color:#e6db74">&#34;banana&#34;</span>)
+<span style="color:#66d9ef">print</span>(s<span style="color:#f92672">.</span>search(<span style="color:#e6db74">&#34;app&#34;</span>))
+<span style="color:#66d9ef">print</span>(s<span style="color:#f92672">.</span>search(<span style="color:#e6db74">&#34;bananananana&#34;</span>))
+<span style="color:#66d9ef">print</span>(s<span style="color:#f92672">.</span>search(<span style="color:#e6db74">&#34;banana&#34;</span>))
+<span style="color:#66d9ef">print</span>(s<span style="color:#f92672">.</span>startsWith(<span style="color:#e6db74">&#34;ban&#34;</span>))
 </code></pre></div>
 </main>
 

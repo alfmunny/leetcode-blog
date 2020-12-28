@@ -72,10 +72,10 @@ A simple improvement uses O(m + n) space, but still not the best solution.
 Could you devise a constant space solution?
 </code></pre></div><h2 id="solution">Solution</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setZeroes</span>(self, matrix: List[List[int]]) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> None:
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        Do not return anything, modify matrix in-place instead.</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setZeroes</span>(self, matrix: List[List[int]]) <span style="color:#f92672">-&gt;</span> None:
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        Do not return anything, modify matrix in-place instead.
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
         col_zero <span style="color:#f92672">=</span> False
 
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(matrix)):

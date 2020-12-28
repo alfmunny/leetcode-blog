@@ -83,11 +83,11 @@ Explanation: It could be decoded as &#34;BZ&#34; (2 26), &#34;VF&#34; (22 6), or
 
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
 
-            <span style="color:#66d9ef">if</span> s[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>: i] <span style="color:#f92672">!=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">0</span><span style="color:#e6db74">&#39;</span>:
+            <span style="color:#66d9ef">if</span> s[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>: i] <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;0&#39;</span>:
                 dp[i] <span style="color:#f92672">=</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
 
-            <span style="color:#66d9ef">if</span> i <span style="color:#f92672">!=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">and</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">10</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> s[i<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>:i] <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">26</span><span style="color:#e6db74">&#39;</span>:
-                dp[i] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>]
+            <span style="color:#66d9ef">if</span> i <span style="color:#f92672">!=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">and</span> <span style="color:#e6db74">&#39;10&#39;</span> <span style="color:#f92672">&lt;=</span> s[i<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>:i] <span style="color:#f92672">&lt;=</span> <span style="color:#e6db74">&#39;26&#39;</span>:
+                dp[i] <span style="color:#f92672">+=</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>]
 
         <span style="color:#66d9ef">return</span> dp[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
 </code></pre></div>

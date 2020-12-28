@@ -57,12 +57,12 @@ Input: s = &#34;catsandog&#34;, wordDict = [&#34;cats&#34;, &#34;dog&#34;, &#34;
 Output: false
 </code></pre></div><h2 id="solution">Solution</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wordBreak</span>(self, s: str, wordDict: List[str]) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> bool:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wordBreak</span>(self, s: str, wordDict: List[str]) <span style="color:#f92672">-&gt;</span> bool:
         memo <span style="color:#f92672">=</span> {}
 
         <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(index):
             <span style="color:#66d9ef">if</span> index <span style="color:#f92672">in</span> memo: <span style="color:#66d9ef">return</span> memo[index]
-            <span style="color:#66d9ef">if</span> index <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> len(s): <span style="color:#66d9ef">return</span> True
+            <span style="color:#66d9ef">if</span> index <span style="color:#f92672">&gt;=</span> len(s): <span style="color:#66d9ef">return</span> True
 
             ret <span style="color:#f92672">=</span> False
             <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(index<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, len(s)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):

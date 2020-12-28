@@ -83,7 +83,7 @@ and also be able to delete the last one. We would like to know the previous one 
         self<span style="color:#f92672">.</span>head<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>tail
         self<span style="color:#f92672">.</span>tail<span style="color:#f92672">.</span>prev <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>head
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get</span>(self, key: int) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get</span>(self, key: int) <span style="color:#f92672">-&gt;</span> int:
         <span style="color:#66d9ef">if</span> key <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>hash:
             node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>hash[key]
             self<span style="color:#f92672">.</span>_remove(node)
@@ -92,11 +92,11 @@ and also be able to delete the last one. We would like to know the previous one 
         <span style="color:#66d9ef">else</span>:
             <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">put</span>(self, key: int, value: int) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> None:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">put</span>(self, key: int, value: int) <span style="color:#f92672">-&gt;</span> None:
         <span style="color:#66d9ef">if</span> key <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>hash:
             node <span style="color:#f92672">=</span> Node(key, value)
             self<span style="color:#f92672">.</span>hash[key] <span style="color:#f92672">=</span> node
-            self<span style="color:#f92672">.</span>count <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+            self<span style="color:#f92672">.</span>count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
             self<span style="color:#f92672">.</span>_add(node)
         <span style="color:#66d9ef">else</span>:
             node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>hash[key]
@@ -107,7 +107,7 @@ and also be able to delete the last one. We would like to know the previous one 
             n <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>tail<span style="color:#f92672">.</span>prev
             self<span style="color:#f92672">.</span>hash<span style="color:#f92672">.</span>pop(n<span style="color:#f92672">.</span>key)
             self<span style="color:#f92672">.</span>_remove(n)
-            self<span style="color:#f92672">.</span>count <span style="color:#f92672">-</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+            self<span style="color:#f92672">.</span>count <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_connect</span>(self, p, n):
         p<span style="color:#f92672">.</span>next, n<span style="color:#f92672">.</span>prev <span style="color:#f92672">=</span> n, p

@@ -86,7 +86,7 @@ c. buy 30-days ticket which can cover ith day: dp[i] = min(dp[i-1], dp[i-2], &he
 <p>dp[i] = min(dp[i-1] + costs[0], dp[i-7] + costs[0], dp[i-30] + costs[0])</p>
 <p>Note that, i-7 and i-30 might smaller than 0 in the loop. Use max(0, i-7) to avoid that.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mincostTickets</span>(self, days: List[int], costs: List[int]) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mincostTickets</span>(self, days: List[int], costs: List[int]) <span style="color:#f92672">-&gt;</span> int:
         dp <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> (max(days)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)
 
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, len(dp)):

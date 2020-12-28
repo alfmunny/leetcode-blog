@@ -6,11 +6,7 @@
     <description>Recent content in bit on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Aug 2020 00:12:00 +0200</lastBuildDate>
-    
-	<atom:link href="//alfmunny.com/leetcode-blog/tags/bit/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 27 Aug 2020 00:12:00 +0200</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/bit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1286 - Iterator for Combination</title>
       <link>//alfmunny.com/leetcode-blog/posts/1286-iterator-for-combination/</link>
@@ -60,7 +56,7 @@ Problem Every non-negative integer N has a binary representation. For example, 5
       <description>leetcode
 Problem Given a range [m, n] where 0 &amp;lt;= m &amp;lt;= n &amp;lt;= 2147483647, return the bitwise AND of all numbers in this range, inclusive. Example 1: Input: [5,7] Output: 4 Example 2: Input: [0,1] Output: 0 Solution m = xxx1yyyy n = xxx01zzz
 xxx is the parts that two numbers are the same. We can definitly find these two numbers in the range
-m&amp;rsquo; = xxx1000 n&amp;rsquo; = xxx0100</description>
+m&#39; = xxx1000 n&#39; = xxx0100</description>
     </item>
     
     <item>

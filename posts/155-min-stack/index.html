@@ -57,30 +57,30 @@ minStack.getMin();   --&gt; Returns -2.
 Pay attention to the return value. Remember to return None when there is no result.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MinStack</span>:
     <span style="color:#66d9ef">def</span> __init__(self):
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        initialize your data structure here.</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        initialize your data structure here.
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
         self<span style="color:#f92672">.</span>stack <span style="color:#f92672">=</span> []
         self<span style="color:#f92672">.</span>min <span style="color:#f92672">=</span> []
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">push</span>(self, x: int) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> None:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">push</span>(self, x: int) <span style="color:#f92672">-&gt;</span> None:
         self<span style="color:#f92672">.</span>stack<span style="color:#f92672">.</span>append(x)
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> self<span style="color:#f92672">.</span>getMin() <span style="color:#f92672">or</span> self<span style="color:#f92672">.</span>getMin() <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> x:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> self<span style="color:#f92672">.</span>getMin() <span style="color:#f92672">or</span> self<span style="color:#f92672">.</span>getMin() <span style="color:#f92672">&gt;=</span> x:
             self<span style="color:#f92672">.</span>min<span style="color:#f92672">.</span>append(x)
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pop</span>(self) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> None:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pop</span>(self) <span style="color:#f92672">-&gt;</span> None:
         <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>stack:
             x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>stack<span style="color:#f92672">.</span>pop()
             <span style="color:#66d9ef">if</span> x <span style="color:#f92672">==</span> self<span style="color:#f92672">.</span>min[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
                 self<span style="color:#f92672">.</span>min<span style="color:#f92672">.</span>pop()
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">top</span>(self) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">top</span>(self) <span style="color:#f92672">-&gt;</span> int:
         <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>stack:
             <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>stack[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
         <span style="color:#66d9ef">else</span>:
             <span style="color:#66d9ef">return</span> None
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getMin</span>(self) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getMin</span>(self) <span style="color:#f92672">-&gt;</span> int:
         <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>min:
             <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>min[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
         <span style="color:#66d9ef">else</span>:

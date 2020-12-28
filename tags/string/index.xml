@@ -6,11 +6,7 @@
     <description>Recent content in string on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2020 21:42:00 +0200</lastBuildDate>
-    
-	<atom:link href="//alfmunny.com/leetcode-blog/tags/string/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 29 Apr 2020 21:42:00 +0200</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/string/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>28 - Implement strStr() (KMP Algorithm)</title>
       <link>//alfmunny.com/leetcode-blog/posts/28-kmp/</link>

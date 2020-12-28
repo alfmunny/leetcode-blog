@@ -6,11 +6,7 @@
     <description>Recent content in dp on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2020 00:29:00 +0100</lastBuildDate>
-    
-	<atom:link href="//alfmunny.com/leetcode-blog/tags/dp/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 26 Nov 2020 00:29:00 +0100</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/dp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>486 - Predict the Winner</title>
       <link>//alfmunny.com/leetcode-blog/posts/486-predict-the-winner/</link>

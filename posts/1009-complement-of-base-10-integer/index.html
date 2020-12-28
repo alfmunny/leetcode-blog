@@ -61,15 +61,15 @@ Explanation: 10 is &#34;1010&#34; in binary, with complement &#34;0101&#34; in b
 <h3 id="solution-1-xor">Solution 1: XOR</h3>
 <p>Watch out the corner case when num is 0.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bitwiseComplement</span>(self, num: int) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bitwiseComplement</span>(self, num: int) <span style="color:#f92672">-&gt;</span> int:
         <span style="color:#66d9ef">if</span> num <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
             <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
 
         c <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
         n <span style="color:#f92672">=</span> num
         <span style="color:#66d9ef">while</span> n:
-            c <span style="color:#f92672">*</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
-            n <span style="color:#f92672">&gt;&gt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+            c <span style="color:#f92672">*=</span> <span style="color:#ae81ff">2</span>
+            n <span style="color:#f92672">&gt;&gt;=</span> <span style="color:#ae81ff">1</span>
 
         <span style="color:#66d9ef">return</span> num <span style="color:#f92672">^</span> (c <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
 </code></pre></div><h3 id="solution-2">Solution 2:</h3>

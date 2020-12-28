@@ -72,10 +72,10 @@ Constraints:
 <p>DFS</p>
 <p>Maintain a hashmap, use unchosen numbers as key,</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">canIWin</span>(self, maxChoosableInteger: int, desiredTotal: int) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> bool:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">canIWin</span>(self, maxChoosableInteger: int, desiredTotal: int) <span style="color:#f92672">-&gt;</span> bool:
         h <span style="color:#f92672">=</span> {}
         <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">canIWinRec</span>(numbers, desiredTotal):
-            <span style="color:#66d9ef">if</span> numbers[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> desiredTotal:
+            <span style="color:#66d9ef">if</span> numbers[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">&gt;=</span> desiredTotal:
                 <span style="color:#66d9ef">return</span> True
 
             k <span style="color:#f92672">=</span> tuple(numbers)

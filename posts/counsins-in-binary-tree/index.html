@@ -89,10 +89,10 @@ Each node has a unique integer value from 1 to 100.
             left <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>depth(root<span style="color:#f92672">.</span>left, val)
             right <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>depth(root<span style="color:#f92672">.</span>right, val)
 
-            <span style="color:#66d9ef">if</span> left <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>:
+            <span style="color:#66d9ef">if</span> left <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>:
                 self<span style="color:#f92672">.</span>m[root<span style="color:#f92672">.</span>left<span style="color:#f92672">.</span>val] <span style="color:#f92672">=</span> root<span style="color:#f92672">.</span>val
                 <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> left
-            <span style="color:#66d9ef">elif</span> right <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>:
+            <span style="color:#66d9ef">elif</span> right <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>:
                 self<span style="color:#f92672">.</span>m[root<span style="color:#f92672">.</span>right<span style="color:#f92672">.</span>val] <span style="color:#f92672">=</span> root<span style="color:#f92672">.</span>val
                 <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> right
 

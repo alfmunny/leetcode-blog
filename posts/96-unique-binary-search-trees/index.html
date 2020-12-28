@@ -67,7 +67,7 @@ dp[5] = dp[0]*dp[4] + dp[1]*dp[3] + dp[2]*dp[2] + dp[3]*dp[1] + dp[4]*dp[0]
 dp[6] = dp[0]*dp[5] + dp[1]*dp[4] + dp[2]*dp[3] + dp[3]*dp[2] + dp[4]*dp[1] + dp[5]*dp[0]
 </code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
     <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, i):
-        dp[i] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> dp[j]<span style="color:#f92672">*</span>dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>j]
+        dp[i] <span style="color:#f92672">+=</span> dp[j]<span style="color:#f92672">*</span>dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>j]
 </code></pre></div></li>
 <li>
 <p>Base case:
@@ -95,7 +95,7 @@ The first Catalan numbers for n = 0, 1, 2, 3, ... are
 
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
             <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, i):
-                dp[i] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> dp[j]<span style="color:#f92672">*</span>dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>j]
+                dp[i] <span style="color:#f92672">+=</span> dp[j]<span style="color:#f92672">*</span>dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>j]
 
         <span style="color:#66d9ef">return</span> dp[n]
 </code></pre></div><h3 id="solutiojn-2-catalan-number">Solutiojn 2: Catalan Number</h3>

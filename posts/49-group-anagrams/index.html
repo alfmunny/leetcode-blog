@@ -66,7 +66,7 @@ The order of your output does not matter.
         <span style="color:#66d9ef">for</span> s <span style="color:#f92672">in</span> strs:
             a <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> <span style="color:#ae81ff">26</span>
             <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> s:
-                a[ord(c) <span style="color:#f92672">-</span> ord(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">a</span><span style="color:#e6db74">&#39;</span>)] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                a[ord(c) <span style="color:#f92672">-</span> ord(<span style="color:#e6db74">&#39;a&#39;</span>)] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
             ans[tuple(a)]<span style="color:#f92672">.</span>append(s)
         <span style="color:#66d9ef">return</span> list(ans<span style="color:#f92672">.</span>values())
 </code></pre></div>

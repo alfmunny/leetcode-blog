@@ -47,7 +47,7 @@ Example 2:
 Given 1-&gt;2-&gt;3-&gt;4-&gt;5, reorder it to 1-&gt;5-&gt;2-&gt;4-&gt;3.
 </code></pre></div><h2 id="solution">Solution</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">reorderList</span>(self, head: ListNode) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> None:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">reorderList</span>(self, head: ListNode) <span style="color:#f92672">-&gt;</span> None:
         <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> head <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> head<span style="color:#f92672">.</span>next:
             <span style="color:#66d9ef">return</span>
         fast <span style="color:#f92672">=</span> slow <span style="color:#f92672">=</span> head

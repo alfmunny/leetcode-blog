@@ -68,19 +68,19 @@ these two pointers. See Soution 1</p>
 <h3 id="solution-1">Solution 1</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sortColors</span>(self, nums):
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :type nums: List[int]</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :rtype: None Do not return anything, modify nums in-place instead.</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        :type nums: List[int]
+</span><span style="color:#e6db74">        :rtype: None Do not return anything, modify nums in-place instead.
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
 
         lo <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
         hi <span style="color:#f92672">=</span> len(nums) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
 
         <span style="color:#66d9ef">while</span> (lo <span style="color:#f92672">&lt;</span> hi):
             <span style="color:#66d9ef">if</span> nums[lo] <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
-                lo <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                lo <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
             <span style="color:#66d9ef">elif</span> nums[hi] <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
-                hi <span style="color:#f92672">-</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                hi <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
             <span style="color:#66d9ef">elif</span> nums[lo] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">and</span> nums[hi] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
                 mi <span style="color:#f92672">=</span> lo <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
                 <span style="color:#66d9ef">while</span> (mi <span style="color:#f92672">&lt;</span> hi):
@@ -88,7 +88,7 @@ these two pointers. See Soution 1</p>
                         nums[mi], nums[hi] <span style="color:#f92672">=</span> nums[hi], nums[mi]
                         <span style="color:#66d9ef">break</span>
                     <span style="color:#66d9ef">else</span>:
-                        mi <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                        mi <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
                 <span style="color:#66d9ef">if</span> mi <span style="color:#f92672">==</span> hi:
                     <span style="color:#66d9ef">return</span>
             <span style="color:#66d9ef">else</span>:
@@ -103,16 +103,16 @@ But not the element at hi. You have to check it at last.</p>
 
         lo, mi, hi <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, len(nums) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
 
-        <span style="color:#66d9ef">while</span> mi <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> hi: <span style="color:#75715e"># Nottice!: here has to be &lt;=</span>
+        <span style="color:#66d9ef">while</span> mi <span style="color:#f92672">&lt;=</span> hi: <span style="color:#75715e"># Nottice!: here has to be &lt;=</span>
             <span style="color:#66d9ef">if</span> nums[mi] <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
                 nums[mi], nums[lo] <span style="color:#f92672">=</span> nums[lo], nums[mi]
-                lo <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-                mi <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                lo <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+                mi <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
             <span style="color:#66d9ef">elif</span> nums[mi] <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
                 nums[mi], nums[hi] <span style="color:#f92672">=</span> nums[hi], nums[mi]
-                hi <span style="color:#f92672">-</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                hi <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
             <span style="color:#66d9ef">else</span>:
-                mi <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                mi <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 </code></pre></div>
 </main>
 

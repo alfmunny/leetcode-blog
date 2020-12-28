@@ -89,13 +89,13 @@ cache.get(4);       // returns 4
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">append</span>(self, node):
         self<span style="color:#f92672">.</span>_connect(node, self<span style="color:#f92672">.</span>_head<span style="color:#f92672">.</span>next)
         self<span style="color:#f92672">.</span>_connect(self<span style="color:#f92672">.</span>_head, node)
-        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pop</span>(self, node):
         self<span style="color:#f92672">.</span>_connect(node<span style="color:#f92672">.</span>prev, node<span style="color:#f92672">.</span>next)
         node<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> None
         node<span style="color:#f92672">.</span>prev <span style="color:#f92672">=</span> None
-        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">-</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
         <span style="color:#66d9ef">return</span> node
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pop_last</span>(self):
@@ -121,9 +121,9 @@ cache.get(4);       // returns 4
             l <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>freq[node<span style="color:#f92672">.</span>freq]
             l<span style="color:#f92672">.</span>pop(node)
             <span style="color:#66d9ef">if</span> l<span style="color:#f92672">.</span>get_size() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> self<span style="color:#f92672">.</span>min_freq <span style="color:#f92672">==</span> node<span style="color:#f92672">.</span>freq:
-                self<span style="color:#f92672">.</span>min_freq <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                self<span style="color:#f92672">.</span>min_freq <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
-            node<span style="color:#f92672">.</span>freq <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+            node<span style="color:#f92672">.</span>freq <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
             <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>freq<span style="color:#f92672">.</span>get(node<span style="color:#f92672">.</span>freq):
                 self<span style="color:#f92672">.</span>freq[node<span style="color:#f92672">.</span>freq]<span style="color:#f92672">.</span>append(node)
             <span style="color:#66d9ef">else</span>:

@@ -69,7 +69,7 @@ You can assume that you can always reach the last index.
             curFurthest <span style="color:#f92672">=</span> max(curFurthest, i <span style="color:#f92672">+</span> nums[i])
 
             <span style="color:#66d9ef">if</span> (i <span style="color:#f92672">==</span> curEnd):
-                jumps <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                jumps <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
                 curEnd <span style="color:#f92672">=</span> curFurthest
 
         <span style="color:#66d9ef">return</span> jumps

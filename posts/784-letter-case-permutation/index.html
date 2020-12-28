@@ -64,14 +64,14 @@ S will be a string with length between 1 and 12.
 S will consist only of letters or digits.
 </code></pre></div><h2 id="solution">Solution</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">letterCasePermutation</span>(self, S: str) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> List[str]:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">letterCasePermutation</span>(self, S: str) <span style="color:#f92672">-&gt;</span> List[str]:
         ans <span style="color:#f92672">=</span> []
         self<span style="color:#f92672">.</span>dfs(S, <span style="color:#ae81ff">0</span>, ans, [])
         <span style="color:#66d9ef">return</span> ans
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(self, S, i, ans, path):
         <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> len(S):
-            ans<span style="color:#f92672">.</span>append(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>join(path))
+            ans<span style="color:#f92672">.</span>append(<span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join(path))
             <span style="color:#66d9ef">return</span>
 
         self<span style="color:#f92672">.</span>dfs(S, i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, ans, path <span style="color:#f92672">+</span> [S[i]])

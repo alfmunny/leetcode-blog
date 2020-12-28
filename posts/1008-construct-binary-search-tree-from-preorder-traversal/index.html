@@ -58,14 +58,14 @@ Output: [8,5,10,1,7,null,12]
         <span style="color:#66d9ef">return</span> root
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">buildTree</span>(self, root, pos, preorder, rmax):
-        <span style="color:#66d9ef">if</span> pos <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> len(preorder) <span style="color:#f92672">or</span> preorder[pos] <span style="color:#f92672">&gt;</span> rmax:
+        <span style="color:#66d9ef">if</span> pos <span style="color:#f92672">&gt;=</span> len(preorder) <span style="color:#f92672">or</span> preorder[pos] <span style="color:#f92672">&gt;</span> rmax:
             <span style="color:#66d9ef">return</span> None
 
         <span style="color:#66d9ef">if</span> preorder[pos] <span style="color:#f92672">&lt;</span> root<span style="color:#f92672">.</span>val:
             root<span style="color:#f92672">.</span>left <span style="color:#f92672">=</span> TreeNode(preorder[pos])
             pos <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>buildTree(root<span style="color:#f92672">.</span>left, pos<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, preorder, root<span style="color:#f92672">.</span>val <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
 
-        <span style="color:#66d9ef">if</span> pos <span style="color:#f92672">&lt;</span> len(preorder) <span style="color:#f92672">and</span> preorder[pos] <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> rmax:
+        <span style="color:#66d9ef">if</span> pos <span style="color:#f92672">&lt;</span> len(preorder) <span style="color:#f92672">and</span> preorder[pos] <span style="color:#f92672">&lt;=</span> rmax:
             root<span style="color:#f92672">.</span>right <span style="color:#f92672">=</span> TreeNode(preorder[pos])
             pos <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>buildTree(root<span style="color:#f92672">.</span>right, pos<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, preorder, rmax)
 
@@ -73,11 +73,11 @@ Output: [8,5,10,1,7,null,12]
 </code></pre></div><p>Concise version:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
     pos <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bstFromPreorder</span>(self, preorder, bound<span style="color:#f92672">=</span>float(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">inf</span><span style="color:#e6db74">&#39;</span>)):
-        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>pos <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> len(preorder) <span style="color:#f92672">or</span> preorder[self<span style="color:#f92672">.</span>pos] <span style="color:#f92672">&gt;</span> bound:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bstFromPreorder</span>(self, preorder, bound<span style="color:#f92672">=</span>float(<span style="color:#e6db74">&#39;inf&#39;</span>)):
+        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>pos <span style="color:#f92672">&gt;=</span> len(preorder) <span style="color:#f92672">or</span> preorder[self<span style="color:#f92672">.</span>pos] <span style="color:#f92672">&gt;</span> bound:
             <span style="color:#66d9ef">return</span> None
         root <span style="color:#f92672">=</span> TreeNode(preorder[self<span style="color:#f92672">.</span>pos])
-        self<span style="color:#f92672">.</span>pos <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+        self<span style="color:#f92672">.</span>pos <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
         root<span style="color:#f92672">.</span>left <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>bstFromPreorder(preorder, root<span style="color:#f92672">.</span>val)
         root<span style="color:#f92672">.</span>right <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>bstFromPreorder(preorder, bound)
         <span style="color:#66d9ef">return</span> root

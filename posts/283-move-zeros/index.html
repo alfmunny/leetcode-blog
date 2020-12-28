@@ -55,11 +55,11 @@ Minimize the total number of operations.
 
         <span style="color:#66d9ef">for</span> p2 <span style="color:#f92672">&lt;</span> len(nums):
             <span style="color:#66d9ef">if</span> nums[p1] <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
-                p1 <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                p1 <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
             <span style="color:#66d9ef">elif</span> nums[p2] <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
                 nums[p1], nums[p2] <span style="color:#f92672">=</span> nums[p2], nums[p1]
-                p1 <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-            p2 <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+                p1 <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+            p2 <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 
         <span style="color:#66d9ef">return</span> nums
 </code></pre></div>

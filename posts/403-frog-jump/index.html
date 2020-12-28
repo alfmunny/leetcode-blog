@@ -75,7 +75,7 @@ dp[i][2]: k+1 steps
   dp[i+step][k+1] = max(dp[i+step][k+1], dp[i][j]+k)
 </code></pre></div><p>Note: It has to use max function in the  transition, because the later stones may update the jumps with lower distance.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">canCross</span>(self, stones: List[int]) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> bool:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">canCross</span>(self, stones: List[int]) <span style="color:#f92672">-&gt;</span> bool:
         <span style="color:#66d9ef">if</span> len(stones) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>:
             <span style="color:#66d9ef">return</span> True
 

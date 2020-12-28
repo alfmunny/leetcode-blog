@@ -53,7 +53,7 @@ Return the following binary tree:
 </code></pre></div><h2 id="solution">Solution</h2>
 <p>The problem is almost the same as <a href="http://alfmunny.com/leetcode-blog/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/">105 Construct BT from Preorder and Inorder</a>. Notes can be found there.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">buildTree</span>(self, inorder: List[int], postorder: List[int]) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> TreeNode:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">buildTree</span>(self, inorder: List[int], postorder: List[int]) <span style="color:#f92672">-&gt;</span> TreeNode:
         <span style="color:#66d9ef">if</span> inorder:
             node <span style="color:#f92672">=</span> TreeNode(postorder<span style="color:#f92672">.</span>pop())
             split <span style="color:#f92672">=</span> inorder<span style="color:#f92672">.</span>index(node<span style="color:#f92672">.</span>val)

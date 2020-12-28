@@ -68,7 +68,7 @@ Constraints:
 s consists of digits only.
 </code></pre></div><h2 id="solution">Solution</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">restoreIpAddresses</span>(self, s: str) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> List[str]:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">restoreIpAddresses</span>(self, s: str) <span style="color:#f92672">-&gt;</span> List[str]:
         <span style="color:#66d9ef">if</span> len(s) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">12</span>:
             <span style="color:#66d9ef">return</span> []
 
@@ -77,17 +77,17 @@ s consists of digits only.
         <span style="color:#66d9ef">return</span> ans
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(self, s, start, ans, path):
-        <span style="color:#66d9ef">if</span> start <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> len(s):
+        <span style="color:#66d9ef">if</span> start <span style="color:#f92672">&gt;=</span> len(s):
             <span style="color:#66d9ef">if</span> len(path) <span style="color:#f92672">==</span> <span style="color:#ae81ff">4</span>:
-                ans<span style="color:#f92672">.</span>append(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">.</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>join(path))
+                ans<span style="color:#f92672">.</span>append(<span style="color:#e6db74">&#34;.&#34;</span><span style="color:#f92672">.</span>join(path))
             <span style="color:#66d9ef">return</span>
 
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(start, min(len(s), start<span style="color:#f92672">+</span><span style="color:#ae81ff">3</span>)):
             number <span style="color:#f92672">=</span> s[start:i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]
-            <span style="color:#66d9ef">if</span> len(number) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">and</span> number[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">0</span><span style="color:#e6db74">&#34;</span>:
+            <span style="color:#66d9ef">if</span> len(number) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">and</span> number[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;0&#34;</span>:
                 <span style="color:#66d9ef">continue</span>
 
-            <span style="color:#66d9ef">if</span> int(number) <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">255</span>:
+            <span style="color:#66d9ef">if</span> int(number) <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">255</span>:
                 path<span style="color:#f92672">.</span>append(number)
                 self<span style="color:#f92672">.</span>dfs(s, i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, ans, path)
                 path<span style="color:#f92672">.</span>pop()

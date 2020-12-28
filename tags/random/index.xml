@@ -6,11 +6,7 @@
     <description>Recent content in random on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jun 2020 22:00:00 +0200</lastBuildDate>
-    
-	<atom:link href="//alfmunny.com/leetcode-blog/tags/random/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 05 Jun 2020 22:00:00 +0200</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/random/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>528 - Random Pick with Weight</title>
       <link>//alfmunny.com/leetcode-blog/posts/528-random-pick-with-weight/</link>

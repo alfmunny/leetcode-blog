@@ -6,11 +6,7 @@
     <description>Recent content in design on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Apr 2020 00:38:00 +0200</lastBuildDate>
-    
-	<atom:link href="//alfmunny.com/leetcode-blog/tags/design/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 26 Apr 2020 00:38:00 +0200</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>460 - LFU Cache</title>
       <link>//alfmunny.com/leetcode-blog/posts/460-lfu-cache/</link>

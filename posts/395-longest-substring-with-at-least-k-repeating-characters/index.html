@@ -56,7 +56,7 @@ Output:
 The longest substring is &#34;ababb&#34;, as &#39;a&#39; is repeated 2 times and &#39;b&#39; is repeated 3 times
 </code></pre></div><h2 id="solution">Solution</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">longestSubstring</span>(self, s: str, k: int) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">longestSubstring</span>(self, s: str, k: int) <span style="color:#f92672">-&gt;</span> int:
         c <span style="color:#f92672">=</span> Counter(s)
         <span style="color:#66d9ef">for</span> i, v <span style="color:#f92672">in</span> c<span style="color:#f92672">.</span>items():
             <span style="color:#66d9ef">if</span> v <span style="color:#f92672">&lt;</span> k:

@@ -60,7 +60,7 @@ s consists of lower-case English letters only.
 </code></pre></div><h2 id="solution">Solution</h2>
 <p>If s[i:j+1] is a palindrome, and if we know s[0:i] has a minCut of X, then we know minCut to for s[0:j+1] is not greater than X+1.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">minCut</span>(self, s: str) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">minCut</span>(self, s: str) <span style="color:#f92672">-&gt;</span> int:
         cut <span style="color:#f92672">=</span> [x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, len(s))]
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(s)):
             <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(i, len(s)):

@@ -64,7 +64,7 @@ Any scores in the given array are non-negative integers and will not exceed 10,0
 If the scores of both players are equal, then player 1 is still the winner.
 </code></pre></div><h2 id="solution">Solution</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">PredictTheWinner</span>(self, nums: List[int]) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> bool:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">PredictTheWinner</span>(self, nums: List[int]) <span style="color:#f92672">-&gt;</span> bool:
         dp <span style="color:#f92672">=</span> {}
         <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getMaxDiff</span>(left, right):
             <span style="color:#66d9ef">if</span> (left, right) <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> dp:
@@ -74,7 +74,7 @@ If the scores of both players are equal, then player 1 is still the winner.
                 dp[left, right] <span style="color:#f92672">=</span> max(nums[left] <span style="color:#f92672">-</span> getMaxDiff(left<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, right), nums[right] <span style="color:#f92672">-</span> getMaxDiff(left, right<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>))
             <span style="color:#66d9ef">return</span> dp[left, right]
 
-        <span style="color:#66d9ef">return</span> getMaxDiff(<span style="color:#ae81ff">0</span>, len(nums)<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        <span style="color:#66d9ef">return</span> getMaxDiff(<span style="color:#ae81ff">0</span>, len(nums)<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>
 </code></pre></div>
 </main>
 

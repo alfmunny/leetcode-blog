@@ -64,13 +64,13 @@ Explanation: Another possible reconstruction is [&#34;JFK&#34;,&#34;SFO&#34;,&#3
 path<span style="color:#f92672">.</span>append(vertice)
 </code></pre></div><p>For this problem, we have to notice the lexical order for choices during dfs.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findItinerary</span>(self, tickets: List[List[str]]) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> List[str]:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findItinerary</span>(self, tickets: List[List[str]]) <span style="color:#f92672">-&gt;</span> List[str]:
         edges <span style="color:#f92672">=</span> defaultdict(list)
 
         <span style="color:#66d9ef">for</span> v, w <span style="color:#f92672">in</span> sorted(tickets)[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
-            edges[v] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> [w]
+            edges[v] <span style="color:#f92672">+=</span> [w]
         path <span style="color:#f92672">=</span> []
-        self<span style="color:#f92672">.</span>dfs(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">JFK</span><span style="color:#e6db74">&#34;</span>, edges, path)
+        self<span style="color:#f92672">.</span>dfs(<span style="color:#e6db74">&#34;JFK&#34;</span>, edges, path)
         <span style="color:#66d9ef">return</span> path[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(self, vertice, edges, path):

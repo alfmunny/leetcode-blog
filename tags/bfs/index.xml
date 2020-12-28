@@ -6,11 +6,7 @@
     <description>Recent content in bfs on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Dec 2020 00:06:00 +0100</lastBuildDate>
-    
-	<atom:link href="//alfmunny.com/leetcode-blog/tags/bfs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 28 Dec 2020 00:06:00 +0100</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/bfs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>863 - All Nodes Distance K in Binary Tree</title>
       <link>//alfmunny.com/leetcode-blog/posts/863-all-nodes-distance-k-in-binary-tree/</link>

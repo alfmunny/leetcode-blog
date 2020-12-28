@@ -65,7 +65,7 @@ maxlen = 2
 
         count <span style="color:#f92672">=</span> ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(nums)):
-            count <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> nums[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">else</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+            count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> nums[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">else</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
             ans <span style="color:#f92672">=</span> max(ans, h<span style="color:#f92672">.</span>setdefault(count, i))
 
         <span style="color:#66d9ef">return</span> ans

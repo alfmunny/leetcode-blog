@@ -72,7 +72,7 @@ But that would be LTE.</p>
 <p>For example:</p>
 <p>[&ldquo;dlab&rdquo;, &ldquo;xlab&rdquo;]</p>
 <p>Create a reversed trie [&ldquo;bald&rdquo;, &ldquo;balx&rdquo;]</p>
-<p>trace = &ldquo;&quot;, max length of trace = 4, because, all words in the trie are not longer than 4.</p>
+<p>trace = &ldquo;&rdquo;, max length of trace = 4, because, all words in the trie are not longer than 4.</p>
 <p>&ldquo;b&rdquo;: trace = &ldquo;b&rdquo;, search for &ldquo;b&rdquo; in the trie, False
 &ldquo;a&rdquo;: trace = &ldquo;ba&rdquo;, search for &ldquo;ba&rdquo; in the trie, False
 &ldquo;l&rdquo;: trace = &ldquo;bal&rdquo;, search for &ldquo;bal&rdquo; in the trie, False
@@ -100,10 +100,10 @@ But that would be LTE.</p>
                     x <span style="color:#f92672">=</span> x<span style="color:#f92672">.</span>children[c]
             x<span style="color:#f92672">.</span>is_word <span style="color:#f92672">=</span> True
 
-        self<span style="color:#f92672">.</span>s <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>
+        self<span style="color:#f92672">.</span>s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
         self<span style="color:#f92672">.</span>w <span style="color:#f92672">=</span> max(map(len, words))
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">query</span>(self, letter: str) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> bool:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">query</span>(self, letter: str) <span style="color:#f92672">-&gt;</span> bool:
 
         self<span style="color:#f92672">.</span>s <span style="color:#f92672">=</span> (letter<span style="color:#f92672">+</span>self<span style="color:#f92672">.</span>s)[:self<span style="color:#f92672">.</span>w]
         x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>root
@@ -132,8 +132,8 @@ But that would be LTE.</p>
     <span style="color:#66d9ef">def</span> __init__(self, words):
         T <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span>: collections<span style="color:#f92672">.</span>defaultdict(T)
         self<span style="color:#f92672">.</span>trie <span style="color:#f92672">=</span> T()
-        <span style="color:#66d9ef">for</span> w <span style="color:#f92672">in</span> words: reduce(dict<span style="color:#f92672">.</span>__getitem__, w[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], self<span style="color:#f92672">.</span>trie)[<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#</span><span style="color:#e6db74">&#34;</span>] <span style="color:#f92672">=</span> True
-        self<span style="color:#f92672">.</span>s <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>
+        <span style="color:#66d9ef">for</span> w <span style="color:#f92672">in</span> words: reduce(dict<span style="color:#f92672">.</span>__getitem__, w[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], self<span style="color:#f92672">.</span>trie)[<span style="color:#e6db74">&#34;#&#34;</span>] <span style="color:#f92672">=</span> True
+        self<span style="color:#f92672">.</span>s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
         self<span style="color:#f92672">.</span>w <span style="color:#f92672">=</span> max(map(len, words))
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">query</span>(self, letter):
@@ -142,7 +142,7 @@ But that would be LTE.</p>
         <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>s:
             <span style="color:#66d9ef">if</span> c <span style="color:#f92672">in</span> cur:
                 cur <span style="color:#f92672">=</span> cur[c]
-                <span style="color:#66d9ef">if</span> c[<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#</span><span style="color:#e6db74">&#34;</span>] <span style="color:#f92672">==</span> True:
+                <span style="color:#66d9ef">if</span> c[<span style="color:#e6db74">&#34;#&#34;</span>] <span style="color:#f92672">==</span> True:
                     <span style="color:#66d9ef">return</span> True
             <span style="color:#66d9ef">else</span>:
                 <span style="color:#66d9ef">break</span>

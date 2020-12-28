@@ -56,7 +56,7 @@ Explanation: The array represents the integer 4321.
         add <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
 
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(digits) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
-            digits[i], add <span style="color:#f92672">=</span> (digits[i] <span style="color:#f92672">+</span> add) <span style="color:#f92672">%</span> <span style="color:#ae81ff">10</span>, (digits[i] <span style="color:#f92672">+</span> add)<span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>
+            digits[i], add <span style="color:#f92672">=</span> (digits[i] <span style="color:#f92672">+</span> add) <span style="color:#f92672">%</span> <span style="color:#ae81ff">10</span>, (digits[i] <span style="color:#f92672">+</span> add)<span style="color:#f92672">//</span><span style="color:#ae81ff">10</span>
 
         <span style="color:#66d9ef">if</span> add:
             digits<span style="color:#f92672">.</span>insert(<span style="color:#ae81ff">0</span>, add)

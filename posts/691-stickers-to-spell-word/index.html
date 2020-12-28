@@ -75,16 +75,16 @@ In all test cases, all words were chosen randomly from the 1000 most common US E
 The time limit may be more challenging than usual. It is expected that a 50 sticker test case can be solved within 35ms on average.
 </code></pre></div><h2 id="solution">Solution</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">minStickers</span>(self, stickers: List[str], target: str) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
-        self<span style="color:#f92672">.</span>ret <span style="color:#f92672">=</span> float(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">inf</span><span style="color:#e6db74">&#34;</span>)
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">minStickers</span>(self, stickers: List[str], target: str) <span style="color:#f92672">-&gt;</span> int:
+        self<span style="color:#f92672">.</span>ret <span style="color:#f92672">=</span> float(<span style="color:#e6db74">&#34;inf&#34;</span>)
         self<span style="color:#f92672">.</span>stickers <span style="color:#f92672">=</span> stickers
         self<span style="color:#f92672">.</span>dfs([], target, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)
-        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>ret <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>ret <span style="color:#f92672">&lt;</span> float(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">inf</span><span style="color:#e6db74">&#34;</span>) <span style="color:#66d9ef">else</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>ret <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>ret <span style="color:#f92672">&lt;</span> float(<span style="color:#e6db74">&#34;inf&#34;</span>) <span style="color:#66d9ef">else</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(self, pool, target, index, num_s):
-        <span style="color:#66d9ef">if</span> num_s <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>ret:
+        <span style="color:#66d9ef">if</span> num_s <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>ret:
             <span style="color:#66d9ef">return</span>
-        <span style="color:#66d9ef">if</span> index <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> len(target):
+        <span style="color:#66d9ef">if</span> index <span style="color:#f92672">&gt;=</span> len(target):
             self<span style="color:#f92672">.</span>ret <span style="color:#f92672">=</span> num_s
             <span style="color:#66d9ef">return</span>
         <span style="color:#66d9ef">if</span> target[index] <span style="color:#f92672">in</span> pool:

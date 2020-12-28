@@ -64,7 +64,7 @@ Output:
             self<span style="color:#f92672">.</span>backtrack(path<span style="color:#f92672">+</span>[v], nums[:i]<span style="color:#f92672">+</span>nums[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>:], ans)
 </code></pre></div><h3 id="solution-2">Solution 2</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">permute</span>(self, nums: List[int]) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> List[List[int]]:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">permute</span>(self, nums: List[int]) <span style="color:#f92672">-&gt;</span> List[List[int]]:
         ans <span style="color:#f92672">=</span> []
         marked <span style="color:#f92672">=</span> [False] <span style="color:#f92672">*</span> len(nums)
         self<span style="color:#f92672">.</span>dfs(nums, [], marked, ans)

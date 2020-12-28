@@ -52,10 +52,10 @@ If you have figured out the O(n) solution, try coding another solution using the
 <h3 id="solution-1-use-a-extra-dp-array">Solution 1: use a extra dp array</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">maxSubArray</span>(self, nums):
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :type nums: List[int]</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :rtype: int</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        :type nums: List[int]
+</span><span style="color:#e6db74">        :rtype: int
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
         curSum <span style="color:#f92672">=</span> maxSum <span style="color:#f92672">=</span> nums[<span style="color:#ae81ff">0</span>]
 
         <span style="color:#66d9ef">for</span> num <span style="color:#f92672">in</span> nums[<span style="color:#ae81ff">1</span>:]:
@@ -68,10 +68,10 @@ If you have figured out the O(n) solution, try coding another solution using the
 </code></pre></div><h3 id="solution-2-no-extra-space-in-place-modify">Solution 2: no extra space, in place modify</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">maxSubArray</span>(self, nums):
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :type nums: List[int]</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :rtype: int</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        :type nums: List[int]
+</span><span style="color:#e6db74">        :rtype: int
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
 
         <span style="color:#66d9ef">if</span> len(nums) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
             <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
@@ -80,7 +80,7 @@ If you have figured out the O(n) solution, try coding another solution using the
 
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, len(nums)):
             <span style="color:#66d9ef">if</span> nums[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
-                nums[i] <span style="color:#f92672">+</span><span style="color:#f92672">=</span> nums[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
+                nums[i] <span style="color:#f92672">+=</span> nums[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
 
             ret <span style="color:#f92672">=</span> max(ret, nums[i])
 

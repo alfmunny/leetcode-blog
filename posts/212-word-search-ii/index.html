@@ -75,7 +75,7 @@ The values of words are distinct.
         node<span style="color:#f92672">.</span>isWord <span style="color:#f92672">=</span> True
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findWords</span>(self, board: List[List[str]], words: List[str]) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> List[str]:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findWords</span>(self, board: List[List[str]], words: List[str]) <span style="color:#f92672">-&gt;</span> List[str]:
         trie <span style="color:#f92672">=</span> Trie()
         node <span style="color:#f92672">=</span> trie<span style="color:#f92672">.</span>root
         <span style="color:#66d9ef">for</span> w <span style="color:#f92672">in</span> words:
@@ -83,7 +83,7 @@ The values of words are distinct.
         ans <span style="color:#f92672">=</span> []
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(board)):
             <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(len(board[<span style="color:#ae81ff">0</span>])):
-                self<span style="color:#f92672">.</span>dfs(board, i, j, node, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>, ans)
+                self<span style="color:#f92672">.</span>dfs(board, i, j, node, <span style="color:#e6db74">&#34;&#34;</span>, ans)
         <span style="color:#66d9ef">return</span> ans
 
 
@@ -92,11 +92,11 @@ The values of words are distinct.
             ans<span style="color:#f92672">.</span>append(path)
             node<span style="color:#f92672">.</span>isWord <span style="color:#f92672">=</span> False
 
-        <span style="color:#66d9ef">if</span> i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> i <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> len(board) <span style="color:#f92672">or</span> j <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> j <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> len(board[<span style="color:#ae81ff">0</span>]) <span style="color:#f92672">or</span> board[i][j] <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> node<span style="color:#f92672">.</span>children:
+        <span style="color:#66d9ef">if</span> i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> i <span style="color:#f92672">&gt;=</span> len(board) <span style="color:#f92672">or</span> j <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> j <span style="color:#f92672">&gt;=</span> len(board[<span style="color:#ae81ff">0</span>]) <span style="color:#f92672">or</span> board[i][j] <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> node<span style="color:#f92672">.</span>children:
             <span style="color:#66d9ef">return</span>
 
         val <span style="color:#f92672">=</span> board[i][j]
-        board[i][j] <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#</span><span style="color:#e6db74">&#34;</span>
+        board[i][j] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#&#34;</span>
         <span style="color:#66d9ef">for</span> pair <span style="color:#f92672">in</span> [[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>], [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>], [<span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], [<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>]]:
             self<span style="color:#f92672">.</span>dfs(board, i<span style="color:#f92672">+</span>pair[<span style="color:#ae81ff">0</span>], j<span style="color:#f92672">+</span>pair[<span style="color:#ae81ff">1</span>], node<span style="color:#f92672">.</span>children[val], path<span style="color:#f92672">+</span>val, ans)
         board[i][j] <span style="color:#f92672">=</span> val

@@ -64,11 +64,11 @@ If it is too large(&gt;= n/2), treat it as if with infinitive transactions. We d
             <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
 
         n <span style="color:#f92672">=</span> len(prices)
-        <span style="color:#66d9ef">if</span> k <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> n<span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>: <span style="color:#75715e"># treat it as infinitive transactions</span>
+        <span style="color:#66d9ef">if</span> k <span style="color:#f92672">&gt;=</span> n<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span>: <span style="color:#75715e"># treat it as infinitive transactions</span>
             res <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
             <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n):
                 <span style="color:#66d9ef">if</span> prices[i] <span style="color:#f92672">&gt;</span> prices[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
-                    res <span style="color:#f92672">+</span><span style="color:#f92672">=</span> prices[i] <span style="color:#f92672">-</span> prices[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+                    res <span style="color:#f92672">+=</span> prices[i] <span style="color:#f92672">-</span> prices[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
             <span style="color:#66d9ef">return</span> res
 
         buy <span style="color:#f92672">=</span> [<span style="color:#f92672">-</span>sys<span style="color:#f92672">.</span>maxsize] <span style="color:#f92672">*</span> (k<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)

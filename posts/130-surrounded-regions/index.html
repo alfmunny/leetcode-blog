@@ -55,10 +55,10 @@ Explanation:
 Surrounded regions shouldn’t be on the border, which means that any &#39;O&#39; on the border of the board are not flipped to &#39;X&#39;. Any &#39;O&#39; that is not on the border and it is not connected to an &#39;O&#39; on the border will be flipped to &#39;X&#39;. Two cells are connected if they are adjacent cells connected horizontally or vertically.
 </code></pre></div><h2 id="solution">Solution</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solve</span>(self, board: List[List[str]]) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> None:
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        Do not return anything, modify board in-place instead.</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solve</span>(self, board: List[List[str]]) <span style="color:#f92672">-&gt;</span> None:
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        Do not return anything, modify board in-place instead.
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
         <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> board <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> board[<span style="color:#ae81ff">0</span>]:
             <span style="color:#66d9ef">return</span>
 
@@ -67,7 +67,7 @@ Surrounded regions shouldn’t be on the border, which means that any &#39;O&#39
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(board)):
             <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(len(board[<span style="color:#ae81ff">0</span>])):
                 self<span style="color:#f92672">.</span>flag <span style="color:#f92672">=</span> False
-                <span style="color:#66d9ef">if</span> board[i][j] <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">O</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> marked[i][j]:
+                <span style="color:#66d9ef">if</span> board[i][j] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;O&#39;</span> <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> marked[i][j]:
                     self<span style="color:#f92672">.</span>dfs(i, j, board, marked)
 
                     <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> self<span style="color:#f92672">.</span>flag:
@@ -77,20 +77,20 @@ Surrounded regions shouldn’t be on the border, which means that any &#39;O&#39
         marked[i][j] <span style="color:#f92672">=</span> True
 
         <span style="color:#66d9ef">for</span> x, y <span style="color:#f92672">in</span> [(i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, j), (i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, j), (i, j <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>), (i, j <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)]:
-            <span style="color:#66d9ef">if</span> x <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> x <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> len(board) <span style="color:#f92672">or</span> y <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> y <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> len(board[<span style="color:#ae81ff">0</span>]):
+            <span style="color:#66d9ef">if</span> x <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> x <span style="color:#f92672">&gt;=</span> len(board) <span style="color:#f92672">or</span> y <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> y <span style="color:#f92672">&gt;=</span> len(board[<span style="color:#ae81ff">0</span>]):
                 self<span style="color:#f92672">.</span>flag <span style="color:#f92672">=</span> True
                 <span style="color:#66d9ef">continue</span>
 
             <span style="color:#66d9ef">if</span> marked[x][y]:
                 <span style="color:#66d9ef">continue</span>
 
-            <span style="color:#66d9ef">if</span> board[x][y] <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">O</span><span style="color:#e6db74">&#39;</span>:
+            <span style="color:#66d9ef">if</span> board[x][y] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;O&#39;</span>:
                 self<span style="color:#f92672">.</span>dfs(x, y, board, marked)
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">color</span>(self, i, j, board):
-        board[i][j] <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">X</span><span style="color:#e6db74">&#39;</span>
+        board[i][j] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;X&#39;</span>
         <span style="color:#66d9ef">for</span> x, y <span style="color:#f92672">in</span> [(i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, j), (i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, j), (i, j <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>), (i, j <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)]:
-            <span style="color:#66d9ef">if</span> board[x][y] <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">O</span><span style="color:#e6db74">&#39;</span>:
+            <span style="color:#66d9ef">if</span> board[x][y] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;O&#39;</span>:
                 self<span style="color:#f92672">.</span>color(x, y, board)
 </code></pre></div>
 </main>
