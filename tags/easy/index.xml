@@ -320,6 +320,16 @@ Problem Every non-negative integer N has a binary representation. For example, 5
     </item>
     
     <item>
+      <title>278 - First Bad Version</title>
+      <link>//alfmunny.com/leetcode-blog/posts/278-first-bad-version/</link>
+      <pubDate>Fri, 01 May 2020 22:00:09 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/278-first-bad-version/</guid>
+      <description>leetcode
+Problem You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad. Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one, which causes all the following ones to be bad.</description>
+    </item>
+    
+    <item>
       <title>448 - Find All Numbers Disappeard in an Array</title>
       <link>//alfmunny.com/leetcode-blog/posts/448-find-all-numbers-disappeard-in-an-array/</link>
       <pubDate>Tue, 28 Apr 2020 17:10:00 +0200</pubDate>
