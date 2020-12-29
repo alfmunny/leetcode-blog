@@ -6,7 +6,17 @@
     <description>Recent content in medium on LeetCode In The Shell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Dec 2020 23:49:00 +0100</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Dec 2020 21:51:00 +0100</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>515 - Find Largest Value in Each Tree Row</title>
+      <link>//alfmunny.com/leetcode-blog/posts/515-find-largest-value-in-each-tree-row/</link>
+      <pubDate>Tue, 29 Dec 2020 21:51:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/515-find-largest-value-in-each-tree-row/</guid>
+      <description>leetcode
+Problem Given the root of a binary tree, return an array of the largest value in each row of the tree (0-indexed). Solution class Solution: def largestValues(self, root: TreeNode) -&amp;gt; List[int]: if not root: return [] ans = [] level = [root] seen = set(level) while level: new_level = [] max_val = -float(&amp;#39;inf&amp;#39;) for node in level: if node: if node.left: new_level.append(node.left) if node.right: new_level.append(node.right) max_val = max(max_val, node.val) ans.</description>
+    </item>
+    
     <item>
       <title>323 - Number of Connected Components in an Undirected Graph</title>
       <link>//alfmunny.com/leetcode-blog/posts/323-number-of-connected-components-in-an-undirected-graph/</link>
