@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//alfmunny.com/leetcode-blog/categories/</loc>
+    <lastmod>2020-12-29T23:18:06+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
+    <lastmod>2020-12-29T23:18:06+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/leetcode/</loc>
+    <lastmod>2020-12-29T23:18:06+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/</loc>
+    <lastmod>2020-12-29T23:18:06+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
+    <lastmod>2020-12-29T23:18:06+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/1-pass/</loc>
     <lastmod>2020-12-29T22:29:38+01:00</lastmod>
   </url>
@@ -18,28 +43,8 @@
   </url>
   
   <url>
-    <loc>//alfmunny.com/leetcode-blog/categories/</loc>
-    <lastmod>2020-12-29T22:29:38+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//alfmunny.com/leetcode-blog/tags/hard/</loc>
     <lastmod>2020-12-29T22:29:31+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/categories/leetcode/</loc>
-    <lastmod>2020-12-29T22:29:38+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/</loc>
-    <lastmod>2020-12-29T22:29:38+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//alfmunny.com/leetcode-blog/posts/</loc>
-    <lastmod>2020-12-29T22:29:38+01:00</lastmod>
   </url>
   
   <url>
