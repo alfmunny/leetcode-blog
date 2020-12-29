@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>215 - Kth Largest Element in an Array | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">215 - Kth Largest Element in an Array</span></h1>
+
+<h2 class="date">2020/04/06</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/kth-largest-element-in-an-array/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">215. Kth Largest Element in an Array
+Medium
+
+3152
+
+222
+
+Add to List
+
+Share
+Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+
+Example 1:
+
+Input: [3,2,1,5,6,4] and k = 2
+Output: 5
+Example 2:
+
+Input: [3,2,3,1,2,4,5,5,6] and k = 4
+Output: 4
+Note:
+You may assume k is always valid, 1 ≤ k ≤ array&#39;s length.
+</code></pre></div><h2 id="solution">Solution</h2>
+<p>The naive solution would be to maintain an array of length k and update the array
+in each iteration to keep the first kth largest element in the array</p>
+<h3 id="solution-1-array-of-k">Solution 1: Array of k</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findKthLargest</span>(self, nums, k):
+        l <span style="color:#f92672">=</span> []
+
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> nums:
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> l:
+                l<span style="color:#f92672">.</span>append(i)
+            <span style="color:#66d9ef">else</span>:
+                len0 <span style="color:#f92672">=</span> len(l)
+                <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(len(l)):
+                    <span style="color:#66d9ef">if</span> i <span style="color:#f92672">&gt;=</span> l[j]:
+                        l <span style="color:#f92672">=</span> l[<span style="color:#ae81ff">0</span>:j] <span style="color:#f92672">+</span> [i] <span style="color:#f92672">+</span> l[j:]
+                        <span style="color:#66d9ef">break</span>
+                <span style="color:#66d9ef">if</span> len0 <span style="color:#f92672">==</span> len(l) <span style="color:#f92672">and</span> len0 <span style="color:#f92672">!=</span> k:
+                    l<span style="color:#f92672">.</span>append(i)
+                l <span style="color:#f92672">=</span> l[<span style="color:#ae81ff">0</span>:k]
+        <span style="color:#66d9ef">return</span> l[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</code></pre></div><p>Time: O(nk)</p>
+<p>Space: O(k)</p>
+<h3 id="solution-2-partition-to-find-the-kth-largest">Solution 2: Partition to find the kth largest</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findKthLargest</span>(self, nums, k):
+        pos <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>partition(nums, <span style="color:#ae81ff">0</span>, len(nums) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+        <span style="color:#66d9ef">if</span> pos <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;</span> k:
+            <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>findKthLargest(nums[pos <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>:], k <span style="color:#f92672">-</span> pos <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+        <span style="color:#66d9ef">elif</span> pos <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&gt;</span> k:
+            <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>findKthLargest(nums[<span style="color:#ae81ff">0</span>:pos], k)
+        <span style="color:#66d9ef">else</span>:
+            <span style="color:#66d9ef">return</span> nums[pos]
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">partition</span>(self, nums, l, r):
+        p <span style="color:#f92672">=</span> r
+
+        <span style="color:#66d9ef">while</span>(l <span style="color:#f92672">&lt;</span> r):
+            <span style="color:#66d9ef">while</span> l <span style="color:#f92672">&lt;</span> r <span style="color:#f92672">and</span> nums[l] <span style="color:#f92672">&gt;</span> nums[p]:
+                l <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+            <span style="color:#66d9ef">while</span> l <span style="color:#f92672">&lt;</span> r <span style="color:#f92672">and</span> nums[r] <span style="color:#f92672">&lt;=</span> nums[p]:
+                r <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+            nums[l], nums[r] <span style="color:#f92672">=</span> nums[r], nums[l]
+        nums[l], nums[p] <span style="color:#f92672">=</span> nums[p], nums[l]
+        <span style="color:#66d9ef">return</span> l
+</code></pre></div><p>Time: O(klogn)</p>
+<p>Space: O(1)</p>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

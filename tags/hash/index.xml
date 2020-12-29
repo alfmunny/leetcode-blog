@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hash on LeetCode In The Shell</title>
+    <link>//alfmunny.com/leetcode-blog/tags/hash/</link>
+    <description>Recent content in hash on LeetCode In The Shell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Nov 2020 23:14:00 +0100</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/hash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>381 - Insert Delete GetRandom O(1) - Duplicates allowed</title>
+      <link>//alfmunny.com/leetcode-blog/posts/381-insert-delete-getrandom-o1-duplicates-allowed/</link>
+      <pubDate>Fri, 27 Nov 2020 23:14:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/381-insert-delete-getrandom-o1-duplicates-allowed/</guid>
+      <description>leetcode
+Problem Design a data structure that supports all following operations in average O(1) time. Note: Duplicate elements are allowed. insert(val): Inserts an item val to the collection. remove(val): Removes an item val from the collection if present. getRandom: Returns a random element from current collection of elements. The probability of each element being returned is linearly related to the number of same value the collection contains. Example: // Init an empty collection.</description>
+    </item>
+    
+    <item>
+      <title>368 - Largest Divisible Subset</title>
+      <link>//alfmunny.com/leetcode-blog/posts/368-largest-divisible-subset/</link>
+      <pubDate>Wed, 19 Aug 2020 16:05:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/368-largest-divisible-subset/</guid>
+      <description>leetcode
+Problem Given a set of distinct positive integers, find the largest subset such that every pair (Si, Sj) of elements in this subset satisfies: Si % Sj = 0 or Sj % Si = 0. If there are multiple solutions, return any subset is fine. Example 1: Input: [1,2,3] Output: [1,2] (of course, [1,3] will also be ok) Example 2: Input: [1,2,4,8] Output: [1,2,4,8] Solution Solution 1: DP class Solution: def largestDivisibleSubset(self, nums: List[int]) -&amp;gt; List[int]: if not nums: return nums dp = [1] * len(nums) pre = [i for i in range(len(nums))] nums.</description>
+    </item>
+    
+    <item>
+      <title>15 - 3SUM</title>
+      <link>//alfmunny.com/leetcode-blog/posts/15-3sum/</link>
+      <pubDate>Thu, 09 Jul 2020 23:57:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/15-3sum/</guid>
+      <description>leetcode
+Problem Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero. Note: The solution set must not contain duplicate triplets. Example: Given array nums = [-1, 0, 1, 2, -1, -4], A solution set is: [ [-1, 0, 1], [-1, -1, 2] ] Solution class Solution: def threeSum(self, nums: List[int]) -&amp;gt; List[List[int]]: if len(nums) &amp;lt; 3: return [] ans = [] nums.</description>
+    </item>
+    
+    <item>
+      <title>997 - Find the Town Judge</title>
+      <link>//alfmunny.com/leetcode-blog/posts/997-find-the-town-judge/</link>
+      <pubDate>Sun, 10 May 2020 21:10:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/997-find-the-town-judge/</guid>
+      <description>leetcode
+Problem In a town, there are N people labelled from 1 to N. There is a rumor that one of these people is secretly the town judge. If the town judge exists, then: 1. The town judge trusts nobody. 2. Everybody (except for the town judge) trusts the town judge. 3. There is exactly one person that satisfies properties 1 and 2. You are given trust, an array of pairs trust[i] = [a, b] representing that the person labelled a trusts the person labelled b.</description>
+    </item>
+    
+    <item>
+      <title>169 - Majority Element</title>
+      <link>//alfmunny.com/leetcode-blog/posts/169-majority-element/</link>
+      <pubDate>Tue, 28 Apr 2020 16:22:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/169-majority-element/</guid>
+      <description>leetcode
+Problem Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
+You may assume that the array is non-empty and the majority element always exist in the array.
+Example 1:
+Input: [3,2,3] Output: 3
+Example 2:
+Input: [2,2,1,1,1,2,2] Output: 2
+Solution Solution 1: Hash Table from collections import Counter class Solution: def majorityElement(self, nums): c = Counter() l = len(nums) for n in nums: c[n] += 1 if c[n] &amp;gt; l/2: return n print(Solution().</description>
+    </item>
+    
+    <item>
+      <title>146 - LRU Cache</title>
+      <link>//alfmunny.com/leetcode-blog/posts/146-lru-cache/</link>
+      <pubDate>Sat, 25 Apr 2020 00:17:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/146-lru-cache/</guid>
+      <description>leetcode
+Problem Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put. get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1. put(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.</description>
+    </item>
+    
+    <item>
+      <title>560 Subarray Sum Equals K</title>
+      <link>//alfmunny.com/leetcode-blog/posts/560-subarray-sum-equals-k/</link>
+      <pubDate>Thu, 23 Apr 2020 01:38:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/560-subarray-sum-equals-k/</guid>
+      <description>leetcode
+Problem Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k. Example 1: Input:nums = [1,1,1], k = 2 Output: 2 Note: The length of the array is in range [1, 20,000]. The range of numbers in the array is [-1000, 1000] and the range of the integer k is [-1e7, 1e7]. Solution class Solution: def subArraySum(self, nums, k): h = {0: 1} s = 0 ans = 0 for i in nums: s += i ans += h.</description>
+    </item>
+    
+    <item>
+      <title>525 - Contiguous Array</title>
+      <link>//alfmunny.com/leetcode-blog/posts/525-contiguous-array/</link>
+      <pubDate>Mon, 13 Apr 2020 23:06:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/525-contiguous-array/</guid>
+      <description>leetcode
+Problem Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1. Example 1: Input: [0,1] Output: 2 Explanation: [0, 1] is the longest contiguous subarray with equal number of 0 and 1. Example 2: Input: [0,1,0] Output: 2 Explanation: [0, 1] (or [1, 0]) is a longest contiguous subarray with equal number of 0 and 1. Note: The length of the given binary array will not exceed 50,000.</description>
+    </item>
+    
+    <item>
+      <title>202 - Happy Number</title>
+      <link>//alfmunny.com/leetcode-blog/posts/202-happy-number/</link>
+      <pubDate>Thu, 02 Apr 2020 16:03:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/202-happy-number/</guid>
+      <description>leetcode
+Problem Write an algorithm to determine if a number is &amp;#34;happy&amp;#34;. A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers.</description>
+    </item>
+    
+    <item>
+      <title>136 - Single Number</title>
+      <link>//alfmunny.com/leetcode-blog/posts/136-single-number/</link>
+      <pubDate>Wed, 01 Apr 2020 22:36:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/136-single-number/</guid>
+      <description>leetcode
+Problem Given a non-empty array of integers, every element appears twice except for one. Find that single one. Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory? Example 1: Input: [2,2,1] Output: 1 Example 2: Input: [4,1,2,1,2] Output: 4 Notes Solution 1: Hash Table Solution 2: Bit manipulation Consider XOR all element together. The left number is the single number.
+Solution Solution 1: Hash Table class Solution: def singleNumber(self, nums): table = {} for i in nums: table[i] = table.</description>
+    </item>
+    
+  </channel>
+</rss>

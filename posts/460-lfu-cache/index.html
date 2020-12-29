@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>460 - LFU Cache | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">460 - LFU Cache</span></h1>
+
+<h2 class="date">2020/04/26</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/lfu-cache/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Design and implement a data structure for Least Frequently Used (LFU) cache. It should support the following operations: get and put.
+
+get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
+put(key, value) - Set or insert the value if the key is not already present. When the cache reaches its capacity, it should invalidate the least frequently used item before inserting a new item. For the purpose of this problem, when there is a tie (i.e., two or more keys that have the same frequency), the least recently used key would be evicted.
+
+Note that the number of times an item is used is the number of calls to the get and put functions for that item since it was inserted. This number is set to zero when the item is removed.
+
+
+
+Follow up:
+Could you do both operations in O(1) time complexity?
+
+
+
+Example:
+
+LFUCache cache = new LFUCache( 2 /* capacity */ );
+
+cache.put(1, 1);
+cache.put(2, 2);
+cache.get(1);       // returns 1
+cache.put(3, 3);    // evicts key 2
+cache.get(2);       // returns -1 (not found)
+cache.get(3);       // returns 3.
+cache.put(4, 4);    // evicts key 1.
+cache.get(1);       // returns -1 (not found)
+cache.get(3);       // returns 3
+cache.get(4);       // returns 4
+</code></pre></div><h2 id="solution">Solution</h2>
+<ol>
+<li>O(1) get =&gt; Hash table for all nodes</li>
+<li>for keeping the oder by frequency, we can have another hash table. the key is the frequency. the value is a double linked list</li>
+<li>We need a min_freqeuncy to find the list of min frequency in O(1), and delete the last element of the list</li>
+</ol>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Node</span>:
+    <span style="color:#66d9ef">def</span> __init__(self, key, value):
+        self<span style="color:#f92672">.</span>freq <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+        self<span style="color:#f92672">.</span>key <span style="color:#f92672">=</span> key
+        self<span style="color:#f92672">.</span>value <span style="color:#f92672">=</span> value
+        self<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> None
+        self<span style="color:#f92672">.</span>prev <span style="color:#f92672">=</span> None
+
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DoubleLinkedList</span>:
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>_head <span style="color:#f92672">=</span> Node(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)
+        self<span style="color:#f92672">.</span>_tail <span style="color:#f92672">=</span> Node(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)
+        self<span style="color:#f92672">.</span>_head<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_tail
+        self<span style="color:#f92672">.</span>_tail<span style="color:#f92672">.</span>prev <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_head
+        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">append</span>(self, node):
+        self<span style="color:#f92672">.</span>_connect(node, self<span style="color:#f92672">.</span>_head<span style="color:#f92672">.</span>next)
+        self<span style="color:#f92672">.</span>_connect(self<span style="color:#f92672">.</span>_head, node)
+        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pop</span>(self, node):
+        self<span style="color:#f92672">.</span>_connect(node<span style="color:#f92672">.</span>prev, node<span style="color:#f92672">.</span>next)
+        node<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> None
+        node<span style="color:#f92672">.</span>prev <span style="color:#f92672">=</span> None
+        self<span style="color:#f92672">.</span>_size <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">return</span> node
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pop_last</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>pop(self<span style="color:#f92672">.</span>_tail<span style="color:#f92672">.</span>prev)
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_size</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_size
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_connect</span>(self, p, n):
+        p<span style="color:#f92672">.</span>next, n<span style="color:#f92672">.</span>prev <span style="color:#f92672">=</span> n, p
+
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LFUCache</span>:
+    <span style="color:#66d9ef">def</span> __init__(self, capacity):
+        self<span style="color:#f92672">.</span>nodes <span style="color:#f92672">=</span> {}
+        self<span style="color:#f92672">.</span>freq <span style="color:#f92672">=</span> {}
+        self<span style="color:#f92672">.</span>min_freq <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+        self<span style="color:#f92672">.</span>capacity <span style="color:#f92672">=</span> capacity
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get</span>(self, key):
+        <span style="color:#66d9ef">if</span> key <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>nodes:
+            node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>nodes[key]
+            l <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>freq[node<span style="color:#f92672">.</span>freq]
+            l<span style="color:#f92672">.</span>pop(node)
+            <span style="color:#66d9ef">if</span> l<span style="color:#f92672">.</span>get_size() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> self<span style="color:#f92672">.</span>min_freq <span style="color:#f92672">==</span> node<span style="color:#f92672">.</span>freq:
+                self<span style="color:#f92672">.</span>min_freq <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+
+            node<span style="color:#f92672">.</span>freq <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+            <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>freq<span style="color:#f92672">.</span>get(node<span style="color:#f92672">.</span>freq):
+                self<span style="color:#f92672">.</span>freq[node<span style="color:#f92672">.</span>freq]<span style="color:#f92672">.</span>append(node)
+            <span style="color:#66d9ef">else</span>:
+                l <span style="color:#f92672">=</span> DoubleLinkedList()
+                l<span style="color:#f92672">.</span>append(node)
+                self<span style="color:#f92672">.</span>freq[node<span style="color:#f92672">.</span>freq] <span style="color:#f92672">=</span> l
+            <span style="color:#66d9ef">return</span> node<span style="color:#f92672">.</span>value
+        <span style="color:#66d9ef">else</span>:
+            <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">put</span>(self, key, value):
+
+        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>capacity <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+            <span style="color:#66d9ef">return</span>
+
+        <span style="color:#66d9ef">if</span> key <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>nodes:
+            self<span style="color:#f92672">.</span>nodes[key]<span style="color:#f92672">.</span>value <span style="color:#f92672">=</span> value
+            self<span style="color:#f92672">.</span>get(key)
+        <span style="color:#66d9ef">else</span>:
+            node <span style="color:#f92672">=</span> Node(key, value)
+            <span style="color:#66d9ef">if</span> len(self<span style="color:#f92672">.</span>nodes) <span style="color:#f92672">==</span> self<span style="color:#f92672">.</span>capacity:
+                l <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>freq[self<span style="color:#f92672">.</span>min_freq]
+                n <span style="color:#f92672">=</span> l<span style="color:#f92672">.</span>pop_last()
+                self<span style="color:#f92672">.</span>nodes<span style="color:#f92672">.</span>pop(n<span style="color:#f92672">.</span>key)
+
+            self<span style="color:#f92672">.</span>nodes[key] <span style="color:#f92672">=</span> node
+
+            <span style="color:#66d9ef">if</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>freq:
+                self<span style="color:#f92672">.</span>freq[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>append(node)
+            <span style="color:#66d9ef">else</span>:
+                l <span style="color:#f92672">=</span> DoubleLinkedList()
+                l<span style="color:#f92672">.</span>append(node)
+                self<span style="color:#f92672">.</span>freq[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> l
+            self<span style="color:#f92672">.</span>min_freq <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+
+
+c <span style="color:#f92672">=</span> LFUCache(<span style="color:#ae81ff">3</span>)
+c<span style="color:#f92672">.</span>put(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>)
+c<span style="color:#f92672">.</span>put(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>)
+<span style="color:#66d9ef">print</span>(c<span style="color:#f92672">.</span>get(<span style="color:#ae81ff">1</span>))
+<span style="color:#66d9ef">print</span>(c<span style="color:#f92672">.</span>get(<span style="color:#ae81ff">2</span>))
+<span style="color:#66d9ef">print</span>(c<span style="color:#f92672">.</span>get(<span style="color:#ae81ff">1</span>))
+c<span style="color:#f92672">.</span>put(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>)
+<span style="color:#66d9ef">print</span>(c<span style="color:#f92672">.</span>get(<span style="color:#ae81ff">2</span>))
+<span style="color:#66d9ef">print</span>(c<span style="color:#f92672">.</span>get(<span style="color:#ae81ff">3</span>))
+c<span style="color:#f92672">.</span>put(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>)
+
+<span style="color:#66d9ef">print</span>(c<span style="color:#f92672">.</span>get(<span style="color:#ae81ff">4</span>))
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

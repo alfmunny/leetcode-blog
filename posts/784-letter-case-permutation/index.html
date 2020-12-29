@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>784 - Letter Case Permutation | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">784 - Letter Case Permutation</span></h1>
+
+<h2 class="date">2020/08/19</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/letter-case-permutation/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string.
+
+Return a list of all possible strings we could create. You can return the output  in any order.
+
+
+
+Example 1:
+
+Input: S = &#34;a1b2&#34;
+Output: [&#34;a1b2&#34;,&#34;a1B2&#34;,&#34;A1b2&#34;,&#34;A1B2&#34;]
+Example 2:
+
+Input: S = &#34;3z4&#34;
+Output: [&#34;3z4&#34;,&#34;3Z4&#34;]
+Example 3:
+
+Input: S = &#34;12345&#34;
+Output: [&#34;12345&#34;]
+Example 4:
+
+Input: S = &#34;0&#34;
+Output: [&#34;0&#34;]
+
+
+Constraints:
+
+S will be a string with length between 1 and 12.
+S will consist only of letters or digits.
+</code></pre></div><h2 id="solution">Solution</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">letterCasePermutation</span>(self, S: str) <span style="color:#f92672">-&gt;</span> List[str]:
+        ans <span style="color:#f92672">=</span> []
+        self<span style="color:#f92672">.</span>dfs(S, <span style="color:#ae81ff">0</span>, ans, [])
+        <span style="color:#66d9ef">return</span> ans
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(self, S, i, ans, path):
+        <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> len(S):
+            ans<span style="color:#f92672">.</span>append(<span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join(path))
+            <span style="color:#66d9ef">return</span>
+
+        self<span style="color:#f92672">.</span>dfs(S, i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, ans, path <span style="color:#f92672">+</span> [S[i]])
+
+        <span style="color:#66d9ef">if</span> S[i]<span style="color:#f92672">.</span>isalpha():
+            self<span style="color:#f92672">.</span>dfs(S, i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, ans, path <span style="color:#f92672">+</span> [S[i]<span style="color:#f92672">.</span>swapcase()])
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

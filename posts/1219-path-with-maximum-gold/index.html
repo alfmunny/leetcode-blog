@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>1219 - Path with Maximum Gold | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">1219 - Path with Maximum Gold</span></h1>
+
+<h2 class="date">2020/08/23</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/path-with-maximum-gold/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">In a gold mine grid of size m * n, each cell in this mine has an integer representing the amount of gold in that cell, 0 if it is empty.
+
+Return the maximum amount of gold you can collect under the conditions:
+
+Every time you are located in a cell you will collect all the gold in that cell.
+From your position you can walk one step to the left, right, up or down.
+You can&#39;t visit the same cell more than once.
+Never visit a cell with 0 gold.
+You can start and stop collecting gold from any position in the grid that has some gold.
+
+
+Example 1:
+
+Input: grid = [[0,6,0],[5,8,7],[0,9,0]]
+Output: 24
+Explanation:
+[[0,6,0],
+ [5,8,7],
+ [0,9,0]]
+Path to get the maximum gold, 9 -&gt; 8 -&gt; 7.
+Example 2:
+
+Input: grid = [[1,0,7],[2,0,6],[3,4,5],[0,3,0],[9,0,20]]
+Output: 28
+Explanation:
+[[1,0,7],
+ [2,0,6],
+ [3,4,5],
+ [0,3,0],
+ [9,0,20]]
+Path to get the maximum gold, 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 5 -&gt; 6 -&gt; 7.
+</code></pre></div><h2 id="solution">Solution</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getMaximumGold</span>(self, grid: List[List[int]]) <span style="color:#f92672">-&gt;</span> int:
+        self<span style="color:#f92672">.</span>ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        mark <span style="color:#f92672">=</span> [[False] <span style="color:#f92672">*</span> len(grid[<span style="color:#ae81ff">0</span>]) <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> grid]
+
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(grid)):
+            <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(len(grid[<span style="color:#ae81ff">0</span>])):
+                self<span style="color:#f92672">.</span>dfs(grid, i, j, mark, <span style="color:#ae81ff">0</span>)
+
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>ans
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(self, grid, i, j, mark, gold):
+
+        <span style="color:#66d9ef">if</span> i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> i <span style="color:#f92672">==</span> len(grid) <span style="color:#f92672">or</span> j <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> j <span style="color:#f92672">==</span> len(grid[<span style="color:#ae81ff">0</span>]) <span style="color:#f92672">or</span> mark[i][j] <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> grid[i][j]:
+            self<span style="color:#f92672">.</span>ans <span style="color:#f92672">=</span> max(self<span style="color:#f92672">.</span>ans, gold)
+            <span style="color:#66d9ef">return</span>
+
+        mark[i][j] <span style="color:#f92672">=</span> True
+
+        <span style="color:#66d9ef">for</span> di, dj <span style="color:#f92672">in</span> [[<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>], [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>], [<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>], [<span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]]:
+            self<span style="color:#f92672">.</span>dfs(grid, i<span style="color:#f92672">+</span>di, j<span style="color:#f92672">+</span>dj, mark, gold<span style="color:#f92672">+</span>grid[i][j])
+
+        mark[i][j] <span style="color:#f92672">=</span> False
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

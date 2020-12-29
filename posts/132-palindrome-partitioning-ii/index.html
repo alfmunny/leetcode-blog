@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>132 - Palindrome Partitioning II | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">132 - Palindrome Partitioning II</span></h1>
+
+<h2 class="date">2020/08/26</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/palindrome-partitioning-ii/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given a string s, partition s such that every substring of the partition is a palindrome
+
+Return the minimum cuts needed for a palindrome partitioning of s.
+
+Example 1:
+
+Input: s = &#34;aab&#34;
+Output: 1
+Explanation: The palindrome partitioning [&#34;aa&#34;,&#34;b&#34;] could be produced using 1 cut.
+Example 2:
+
+Input: s = &#34;a&#34;
+Output: 0
+Example 3:
+
+Input: s = &#34;ab&#34;
+Output: 1
+
+
+Constraints:
+
+1 &lt;= s.length &lt;= 2000
+s consists of lower-case English letters only.
+</code></pre></div><h2 id="solution">Solution</h2>
+<p>If s[i:j+1] is a palindrome, and if we know s[0:i] has a minCut of X, then we know minCut to for s[0:j+1] is not greater than X+1.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">minCut</span>(self, s: str) <span style="color:#f92672">-&gt;</span> int:
+        cut <span style="color:#f92672">=</span> [x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, len(s))]
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(s)):
+            <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(i, len(s)):
+                <span style="color:#66d9ef">if</span> s[i:j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> s[i:j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>][::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
+                    cut[j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> min(cut[j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>], cut[i]<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)
+
+        <span style="color:#66d9ef">return</span> cut[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

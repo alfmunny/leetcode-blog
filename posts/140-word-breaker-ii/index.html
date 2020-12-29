@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>140 - Word Breaker II | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">140 - Word Breaker II</span></h1>
+
+<h2 class="date">2020/11/30</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/word-break-ii/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences.
+
+Note:
+
+The same word in the dictionary may be reused multiple times in the segmentation.
+You may assume the dictionary does not contain duplicate words.
+Example 1:
+
+Input:
+s = &#34;catsanddog&#34;
+wordDict = [&#34;cat&#34;, &#34;cats&#34;, &#34;and&#34;, &#34;sand&#34;, &#34;dog&#34;]
+Output:
+[
+  &#34;cats and dog&#34;,
+  &#34;cat sand dog&#34;
+]
+Example 2:
+
+Input:
+s = &#34;pineapplepenapple&#34;
+wordDict = [&#34;apple&#34;, &#34;pen&#34;, &#34;applepen&#34;, &#34;pine&#34;, &#34;pineapple&#34;]
+Output:
+[
+  &#34;pine apple pen apple&#34;,
+  &#34;pineapple pen apple&#34;,
+  &#34;pine applepen apple&#34;
+]
+Explanation: Note that you are allowed to reuse a dictionary word.
+Example 3:
+
+Input:
+s = &#34;catsandog&#34;
+wordDict = [&#34;cats&#34;, &#34;dog&#34;, &#34;sand&#34;, &#34;and&#34;, &#34;cat&#34;]
+Output:
+[]
+</code></pre></div><h2 id="solution">Solution</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wordBreak</span>(self, s, wordDict):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>dfs(s, set(wordDict), <span style="color:#ae81ff">0</span>, {})
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(self, s, wordDict, start, memo):
+
+        <span style="color:#66d9ef">if</span> start <span style="color:#f92672">&gt;=</span> len(s): <span style="color:#66d9ef">return</span> [<span style="color:#e6db74">&#34;&#34;</span>]
+        <span style="color:#66d9ef">if</span> start <span style="color:#f92672">in</span> memo: <span style="color:#66d9ef">return</span> memo[start]
+
+        ans <span style="color:#f92672">=</span> []
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(start<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, len(s)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
+            w <span style="color:#f92672">=</span> s[start:i]
+            <span style="color:#66d9ef">if</span> w <span style="color:#f92672">in</span> wordDict:
+                ans <span style="color:#f92672">+=</span> [<span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">.</span>join([w, x]) <span style="color:#66d9ef">if</span> x <span style="color:#66d9ef">else</span> w <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>dfs(s, wordDict, i, memo)]
+
+        memo[start] <span style="color:#f92672">=</span> ans
+        <span style="color:#66d9ef">return</span> ans
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

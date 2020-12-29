@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>113 - Path Sum II | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">113 - Path Sum II</span></h1>
+
+<h2 class="date">2020/06/17</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/path-sum-ii/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given a binary tree and a sum, find all root-to-leaf paths where each path&#39;s sum equals the given sum.
+
+Note: A leaf is a node with no children.
+
+Example:
+
+Given the below binary tree and sum = 22,
+
+      5
+     / \
+    4   8
+   /   / \
+  11  13  4
+ /  \    / \
+7    2  5   1
+Return:
+
+[
+   [5,4,11,2],
+   [5,8,4,5]
+]
+</code></pre></div><h2 id="solution">Solution</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pathSum</span>(self, root: TreeNode, sum: int) <span style="color:#f92672">-&gt;</span> List[List[int]]:
+
+        ans <span style="color:#f92672">=</span> []
+        self<span style="color:#f92672">.</span>dfs(root, sum, [], ans)
+        <span style="color:#66d9ef">return</span> ans
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(self, root, sum, path, ans):
+
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> root:
+            <span style="color:#66d9ef">return</span>
+
+        path<span style="color:#f92672">.</span>append(root<span style="color:#f92672">.</span>val)
+        <span style="color:#66d9ef">if</span> root<span style="color:#f92672">.</span>val <span style="color:#f92672">==</span> sum <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> root<span style="color:#f92672">.</span>right <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> root<span style="color:#f92672">.</span>left:
+            ans<span style="color:#f92672">.</span>append(list(path))
+        self<span style="color:#f92672">.</span>dfs(root<span style="color:#f92672">.</span>left, sum <span style="color:#f92672">-</span> root<span style="color:#f92672">.</span>val, path, ans)
+        self<span style="color:#f92672">.</span>dfs(root<span style="color:#f92672">.</span>right, sum <span style="color:#f92672">-</span> root<span style="color:#f92672">.</span>val, path, ans)
+        path<span style="color:#f92672">.</span>pop()
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

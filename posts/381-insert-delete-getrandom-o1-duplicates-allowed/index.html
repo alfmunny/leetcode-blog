@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>381 - Insert Delete GetRandom O(1) - Duplicates allowed | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">381 - Insert Delete GetRandom O(1) - Duplicates allowed</span></h1>
+
+<h2 class="date">2020/11/27</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Design a data structure that supports all following operations in average O(1) time.
+
+Note: Duplicate elements are allowed.
+insert(val): Inserts an item val to the collection.
+remove(val): Removes an item val from the collection if present.
+getRandom: Returns a random element from current collection of elements. The probability of each element being returned is linearly related to the number of same value the collection contains.
+Example:
+
+// Init an empty collection.
+RandomizedCollection collection = new RandomizedCollection();
+
+// Inserts 1 to the collection. Returns true as the collection did not contain 1.
+collection.insert(1);
+
+// Inserts another 1 to the collection. Returns false as the collection contained 1. Collection now contains [1,1].
+collection.insert(1);
+
+// Inserts 2 to the collection, returns true. Collection now contains [1,1,2].
+collection.insert(2);
+
+// getRandom should return 1 with the probability 2/3, and returns 2 with the probability 1/3.
+collection.getRandom();
+
+// Removes 1 from the collection, returns true. Collection now contains [1,2].
+collection.remove(1);
+
+// getRandom should return 1 and 2 both equally likely.
+collection.getRandom();
+</code></pre></div><h2 id="solution">Solution</h2>
+<p>Notes:</p>
+<p>Remove is tricky.</p>
+<ol>
+<li>Find the index of the element to remove in Hash.</li>
+<li>Replace the element with the last element in array, and pop the last one.</li>
+<li>Don&rsquo;t forget to update the index of copied element in Hash.</li>
+<li>You have to firstly add the new index and then delete. There is a corner case when there is only one element. If you delete it first and then add, the same index is added back to hash.</li>
+</ol>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RandomizedCollection</span>:
+
+    <span style="color:#66d9ef">def</span> __init__(self):
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        Initialize your data structure here.
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+        self<span style="color:#f92672">.</span>list <span style="color:#f92672">=</span> []
+        self<span style="color:#f92672">.</span>dict <span style="color:#f92672">=</span> defaultdict(set)
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">insert</span>(self, val: int) <span style="color:#f92672">-&gt;</span> bool:
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        Inserts a value to the collection. Returns true if the collection did not already contain the specified element.
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+        self<span style="color:#f92672">.</span>list<span style="color:#f92672">.</span>append(val)
+        <span style="color:#66d9ef">if</span> val <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>dict:
+            ret <span style="color:#f92672">=</span> True
+        <span style="color:#66d9ef">else</span>:
+            ret <span style="color:#f92672">=</span> False
+        self<span style="color:#f92672">.</span>dict[val]<span style="color:#f92672">.</span>add(len(self<span style="color:#f92672">.</span>list) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+        <span style="color:#66d9ef">return</span> ret
+
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">remove</span>(self, val: int) <span style="color:#f92672">-&gt;</span> bool:
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        Removes a value from the collection. Returns true if the collection contained the specified element.
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>dict[val]:
+            rm_index <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>dict[val]<span style="color:#f92672">.</span>pop()
+            last <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>list[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+            self<span style="color:#f92672">.</span>list[rm_index] <span style="color:#f92672">=</span> last
+            self<span style="color:#f92672">.</span>dict[last]<span style="color:#f92672">.</span>add(rm_index)
+            self<span style="color:#f92672">.</span>dict[last]<span style="color:#f92672">.</span>discard(len(self<span style="color:#f92672">.</span>list) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+            self<span style="color:#f92672">.</span>list<span style="color:#f92672">.</span>pop()
+            <span style="color:#66d9ef">return</span> True
+        <span style="color:#66d9ef">else</span>:
+            <span style="color:#66d9ef">return</span> False
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getRandom</span>(self) <span style="color:#f92672">-&gt;</span> int:
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        Get a random element from the collection.
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+        <span style="color:#66d9ef">return</span> random<span style="color:#f92672">.</span>choice(self<span style="color:#f92672">.</span>list)
+
+
+<span style="color:#75715e"># Your RandomizedCollection object will be instantiated and called as such:</span>
+<span style="color:#75715e"># obj = RandomizedCollection()</span>
+<span style="color:#75715e"># param_1 = obj.insert(val)</span>
+<span style="color:#75715e"># param_2 = obj.remove(val)</span>
+<span style="color:#75715e"># param_3 = obj.getRandom()</span>
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

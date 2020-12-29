@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>21 - Merge Two Sorted Lists | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">21 - Merge Two Sorted Lists</span></h1>
+
+<h2 class="date">2020/03/25</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/merge-two-sorted-lists/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
+
+Example:
+
+Input: 1-&gt;2-&gt;4, 1-&gt;3-&gt;4
+Output: 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4
+</code></pre></div><h2 id="notes">Notes</h2>
+<p>Recursion is your friend!</p>
+<h2 id="solution">Solution</h2>
+<h3 id="solution-1-recursive">Solution 1: Recursive</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mergeTwoLists</span>(self, l1, l2):
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> l1:
+            <span style="color:#66d9ef">return</span> l2
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> l2:
+            <span style="color:#66d9ef">return</span> l1
+
+        <span style="color:#66d9ef">if</span> l1<span style="color:#f92672">.</span>val <span style="color:#f92672">&gt;</span> l2<span style="color:#f92672">.</span>val:
+            l2<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>mergeTwoLists(l1, l2<span style="color:#f92672">.</span>next)
+            <span style="color:#66d9ef">return</span> l2
+        <span style="color:#66d9ef">else</span>:
+            l1<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>mergeTwoLists(l1<span style="color:#f92672">.</span>next, l2)
+            <span style="color:#66d9ef">return</span> l1
+</code></pre></div><h3 id="solution-2-how-to-do-it-none-recursively"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Solution 2: How to do it none recursively</h3>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

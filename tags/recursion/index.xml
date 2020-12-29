@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>recursion on LeetCode In The Shell</title>
+    <link>//alfmunny.com/leetcode-blog/tags/recursion/</link>
+    <description>Recent content in recursion on LeetCode In The Shell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 May 2020 21:54:00 +0200</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/recursion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cousins in Binary Tree</title>
+      <link>//alfmunny.com/leetcode-blog/posts/counsins-in-binary-tree/</link>
+      <pubDate>Thu, 07 May 2020 21:54:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/counsins-in-binary-tree/</guid>
+      <description>leetcode
+Problem In a binary tree, the root node is at depth 0, and children of each depth k node are at depth k+1. Two nodes of a binary tree are cousins if they have the same depth, but have different parents. We are given the root of a binary tree with unique values, and the values x and y of two different nodes in the tree. Return true if and only if the nodes corresponding to the values x and y are cousins.</description>
+    </item>
+    
+    <item>
+      <title>337 - House Robber III</title>
+      <link>//alfmunny.com/leetcode-blog/posts/337-house-robber-ii/</link>
+      <pubDate>Wed, 06 May 2020 17:43:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/337-house-robber-ii/</guid>
+      <description>leetcode
+Problem The thief has found himself a new place for his thievery again. There is only one entrance to this area, called the &amp;#34;root.&amp;#34; Besides the root, each house has one and only one parent house. After a tour, the smart thief realized that &amp;#34;all houses in this place forms a binary tree&amp;#34;. It will automatically contact the police if two directly-linked houses were broken into on the same night.</description>
+    </item>
+    
+    <item>
+      <title>106 - Construct Binary Tree from Inorder and Postorder Traversal</title>
+      <link>//alfmunny.com/leetcode-blog/posts/106-construct-binary-tree-from-inorder-and-postorder-traversal/</link>
+      <pubDate>Sat, 02 May 2020 00:44:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/106-construct-binary-tree-from-inorder-and-postorder-traversal/</guid>
+      <description>leetcode
+Problem Given inorder and postorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. For example, given inorder = [9,3,15,20,7] postorder = [9,15,7,20,3] Return the following binary tree: 3 / \ 9 20 / \ 15 7 Solution The problem is almost the same as 105 Construct BT from Preorder and Inorder. Notes can be found there.
+class Solution: def buildTree(self, inorder: List[int], postorder: List[int]) -&amp;gt; TreeNode: if inorder: node = TreeNode(postorder.</description>
+    </item>
+    
+    <item>
+      <title>105 - Construct Binary Tree from Preorder and Inorder Traversal</title>
+      <link>//alfmunny.com/leetcode-blog/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/</link>
+      <pubDate>Sat, 02 May 2020 00:21:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/</guid>
+      <description>leetcode
+Problem Given preorder and inorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. For example, given preorder = [3,9,20,15,7] inorder = [9,3,15,20,7] Return the following binary tree: 3 / \ 9 20 / \ 15 7 Solution  The first node of the preorder is always the root. Find the root in the inorder array, split it there.</description>
+    </item>
+    
+    <item>
+      <title>124 - Binary Tree Maximum Path Sum</title>
+      <link>//alfmunny.com/leetcode-blog/posts/124-binary-tree-maximum-path-sum/</link>
+      <pubDate>Wed, 29 Apr 2020 16:49:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/124-binary-tree-maximum-path-sum/</guid>
+      <description>leetcode
+Problem Given a non-empty binary tree, find the maximum path sum.
+For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need to go through the root.
+Example 1:
+Input: [1,2,3]
+1 / \
+2 3
+Output: 6 Example 2:
+Input: [-10,9,20,null,null,15,7]</description>
+    </item>
+    
+    <item>
+      <title>437 - Path Sum III</title>
+      <link>//alfmunny.com/leetcode-blog/posts/437-path-sum-iii/</link>
+      <pubDate>Sun, 26 Apr 2020 15:52:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/437-path-sum-iii/</guid>
+      <description>leetcode
+Problem You are given a binary tree in which each node contains an integer value. Find the number of paths that sum to a given value. The path does not need to start or end at the root or a leaf, but it must go downwards (traveling only from parent nodes to child nodes). The tree has no more than 1,000 nodes and the values are in the range -1,000,000 to 1,000,000.</description>
+    </item>
+    
+    <item>
+      <title>101 - Symmetric Tree</title>
+      <link>//alfmunny.com/leetcode-blog/posts/101-symmetric-tree/</link>
+      <pubDate>Wed, 25 Mar 2020 21:02:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/101-symmetric-tree/</guid>
+      <description>leetcode
+Problem Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center). For example, this binary tree [1,2,2,3,4,4,3] is symmetric: 1 / \ 2 2 / \ / \ 3 4 4 3 But the following [1,2,2,null,3,null,3] is not: 1 / \ 2 2 \ \ 3 3 Notes Recursion !
+Solution Solution 1: recursive class Solution: def isSymmetric(self, root): if not root: return True return self.</description>
+    </item>
+    
+    <item>
+      <title>21 - Merge Two Sorted Lists</title>
+      <link>//alfmunny.com/leetcode-blog/posts/21-merge-two-sorted-lists/</link>
+      <pubDate>Wed, 25 Mar 2020 19:55:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/21-merge-two-sorted-lists/</guid>
+      <description>leetcode
+Problem Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists. Example: Input: 1-&amp;gt;2-&amp;gt;4, 1-&amp;gt;3-&amp;gt;4 Output: 1-&amp;gt;1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;4 Notes Recursion is your friend!
+Solution Solution 1: Recursive class Solution: def mergeTwoLists(self, l1, l2): if not l1: return l2 if not l2: return l1 if l1.val &amp;gt; l2.val: l2.next = self.mergeTwoLists(l1, l2.next) return l2 else: l1.</description>
+    </item>
+    
+  </channel>
+</rss>

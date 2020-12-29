@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>887 - Super Egg Drop | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">887 - Super Egg Drop</span></h1>
+
+<h2 class="date">2020/05/03</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/super-egg-drop/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">You are given K eggs, and you have access to a building with N floors from 1 to N.
+
+Each egg is identical in function, and if an egg breaks, you cannot drop it again.
+
+You know that there exists a floor F with 0 &lt;= F &lt;= N such that any egg dropped at a floor higher than F will break, and any egg dropped at or below floor F will not break.
+
+Each move, you may take an egg (if you have an unbroken one) and drop it from any floor X (with 1 &lt;= X &lt;= N).
+
+Your goal is to know with certainty what the value of F is.
+
+What is the minimum number of moves that you need to know with certainty what F is, regardless of the initial value of F?
+
+Example 1:
+
+Input: K = 1, N = 2
+
+Output: 2
+
+Explanation:
+Drop the egg from floor 1.  If it breaks, we know with certainty that F = 0.
+Otherwise, drop the egg from floor 2.  If it breaks, we know with certainty that F = 1.
+If it didn&#39;t break, then we know with certainty F = 2.
+Hence, we needed 2 moves in the worst case to know what F is with certainty.
+
+Example 2:
+
+Input: K = 2, N = 6
+
+Output: 3
+
+Example 3:
+
+Input: K = 3, N = 14
+
+Output: 4
+</code></pre></div><h2 id="solution">Solution</h2>
+<h3 id="solution-1-dp">Solution 1: dp</h3>
+<p>A naive approach with dp. Time consuming.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">superEggDrop</span>(self, K: int, N: int) <span style="color:#f92672">-&gt;</span> int:
+        memo <span style="color:#f92672">=</span> dict()
+
+        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dp</span>(K, N):
+            <span style="color:#66d9ef">if</span> K <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+                <span style="color:#66d9ef">return</span> N
+            <span style="color:#66d9ef">if</span> N <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+                <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+            <span style="color:#66d9ef">if</span> (K, N) <span style="color:#f92672">in</span> memo:
+                <span style="color:#66d9ef">return</span> memo[(K, N)]
+
+            res <span style="color:#f92672">=</span> float(<span style="color:#e6db74">&#39;INF&#39;</span>)
+
+            <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, N<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
+                res <span style="color:#f92672">=</span> min(res, max(dp(K<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>), dp(K, N <span style="color:#f92672">-</span> i)) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)
+
+            memo[(K, N)] <span style="color:#f92672">=</span> res
+            <span style="color:#66d9ef">return</span> res
+
+        <span style="color:#66d9ef">return</span> dp(K, N)
+</code></pre></div><p>Time: O(K*N*N)</p>
+<p>Space: O(K*N)</p>
+<h3 id="solution-2-dp-with-binary-search">Solution 2: dp with binary search</h3>
+<p>Improve the previous one with a binary search</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">superEggDrop</span>(self, K: int, N: int) <span style="color:#f92672">-&gt;</span> int:
+        memo <span style="color:#f92672">=</span> dict()
+
+        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dp</span>(K, N):
+            <span style="color:#66d9ef">if</span> K <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+                <span style="color:#66d9ef">return</span> N
+            <span style="color:#66d9ef">if</span> N <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+                <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+            <span style="color:#66d9ef">if</span> (K, N) <span style="color:#f92672">in</span> memo:
+                <span style="color:#66d9ef">return</span> memo[(K, N)]
+
+            res <span style="color:#f92672">=</span> float(<span style="color:#e6db74">&#39;INF&#39;</span>)
+            lo <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+            hi <span style="color:#f92672">=</span> N
+            <span style="color:#66d9ef">while</span> lo <span style="color:#f92672">&lt;=</span> hi:
+                mid <span style="color:#f92672">=</span> (lo <span style="color:#f92672">+</span> hi) <span style="color:#f92672">//</span> <span style="color:#ae81ff">2</span>
+                broken <span style="color:#f92672">=</span> dp(K <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, mid <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+                not_broken <span style="color:#f92672">=</span> dp(K, N <span style="color:#f92672">-</span> mid)
+                <span style="color:#66d9ef">if</span> broken <span style="color:#f92672">&gt;</span> not_broken:
+                    hi <span style="color:#f92672">=</span> mid <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+                    res <span style="color:#f92672">=</span> min(res, broken <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)
+                <span style="color:#66d9ef">else</span>:
+                    lo <span style="color:#f92672">=</span> mid <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+                    res <span style="color:#f92672">=</span> min(res, not_broken <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)
+
+            memo[(K, N)] <span style="color:#f92672">=</span> res
+            <span style="color:#66d9ef">return</span> res
+
+        <span style="color:#66d9ef">return</span> dp(K, N)
+<span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>superEggDrop(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">14</span>))
+</code></pre></div><p>Time: O(K*N*logN)</p>
+<p>Space: O(K*N)</p>
+<h3 id="solution-3-dp-with-moves-eggs">Solution 3: dp with moves*eggs</h3>
+<p>Use a different transition.</p>
+<p>Think about the problem as, given K eggs and M moves, what N can you at least reach.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">superEggDrop</span>(self, K, N):
+      dp <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">*</span>(K<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(N<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)]
+      m <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+      <span style="color:#66d9ef">while</span> dp[m][K] <span style="color:#f92672">&lt;</span> N:
+          m <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+          <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, K<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
+              dp[m][i] <span style="color:#f92672">=</span> dp[m<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][i] <span style="color:#f92672">+</span> dp[m<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+      <span style="color:#66d9ef">return</span> m
+
+<span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>superEggDrop(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">6</span>))
+<span style="color:#66d9ef">print</span>(Solution()<span style="color:#f92672">.</span>superEggDrop(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">14</span>))
+</code></pre></div><p>Time: O(K*N)</p>
+<p>Space: O(K*N)</p>
+<p>The transition is only related two previous value, we can reduce the dp matrix two O(1).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">superEggDrop</span>(self, K, N):
+      m <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+      dp <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> (K<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)
+      <span style="color:#66d9ef">while</span> dp[K] <span style="color:#f92672">&lt;</span> N:
+          m <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+          prev <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+          <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, K<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
+              tmp <span style="color:#f92672">=</span> dp[i]
+              dp[i] <span style="color:#f92672">=</span> dp[i] <span style="color:#f92672">+</span> prev <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+              prev <span style="color:#f92672">=</span> tmp
+      <span style="color:#66d9ef">return</span> m
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

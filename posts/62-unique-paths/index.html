@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>62 - Unique Paths | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">62 - Unique Paths</span></h1>
+<h2 class="author">[alfmunny]</h2>
+<h2 class="date">2020/03/21</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/unique-paths/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">A robot is located at the top-left corner of a m x n grid (marked &#39;Start&#39; in the diagram below).
+
+The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked &#39;Finish&#39; in the diagram below).
+
+How many possible unique paths are there?
+
+Note: m and n will be at most 100.
+
+Example 1:
+
+Input: m = 3, n = 2
+Output: 3
+Explanation:
+From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:
+1. Right -&gt; Right -&gt; Down
+2. Right -&gt; Down -&gt; Right
+3. Down -&gt; Right -&gt; Right
+Example 2:
+
+Input: m = 7, n = 3
+Output: 28
+</code></pre></div><h2 id="notes">Notes</h2>
+<p>It is a DP problem.</p>
+<ol>
+<li>
+<p>There are only two possibilities to arrive at the finish point</p>
+<ol>
+<li>arrive at that point from above</li>
+<li>arrive at that point from left</li>
+</ol>
+</li>
+<li>
+<p>So the ways to arrive at current point is equal to the ways from above plus the ways from left. dp[i][j] = dp[i][j-1] + dp[i - 1][j]</p>
+</li>
+<li>
+<p>Dynamic programming. Maintain a two dimensional matrix.</p>
+</li>
+<li>
+<p>Optimize it to one dimension.</p>
+</li>
+<li>
+<p>Complexity O(m * n)</p>
+</li>
+</ol>
+<h3 id="uniquepath-with-2-d-dp">UniquePath with 2-D DP</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">dp[i][j] <span style="color:#f92672">=</span> dp[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][j] <span style="color:#f92672">+</span> dp[i][j<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</code></pre></div><p>After you have the edge, you go levelly to the bottom.</p>
+<h3 id="uniquepath-with-1-d-dp">UniquePath with 1-D DP</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">dp[j] <span style="color:#f92672">=</span> dp[j <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> dp[j]
+</code></pre></div><h2 id="solution">Solution</h2>
+<h3 id="solution-1-2-d-dp">Solution 1: 2-D DP</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>():
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">uniquePath</span>(self, m, n):
+        dp <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">1</span> <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(n)] <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(m)]
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, m):
+            <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n):
+                dp[i][j] <span style="color:#f92672">=</span> dp[i][j <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> dp[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>][j]
+
+        <span style="color:#66d9ef">return</span> dp[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#66d9ef">if</span> m <span style="color:#f92672">and</span> n <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span>
+</code></pre></div><h3 id="solution-2-1-d-dp">Solution 2: 1-D DP</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>():
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">uniquePath</span>(self, m, n):
+        dp <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>] <span style="color:#f92672">*</span> n
+
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, m):
+            <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n):
+                dp[j] <span style="color:#f92672">=</span> dp[j <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> dp[j]
+
+        <span style="color:#66d9ef">return</span> dp[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#66d9ef">if</span> m <span style="color:#f92672">and</span> n <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span>
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

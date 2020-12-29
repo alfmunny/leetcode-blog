@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>79 - Word Search | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">79 - Word Search</span></h1>
+
+<h2 class="date">2020/03/14</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/word-search/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given a 2D board and a word, find if the word exists in the grid.
+
+The word can be constructed from letters of sequentially adjacent cell, where &#34;adjacent&#34; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
+
+Example:
+
+board =
+[
+  [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;E&#39;],
+  [&#39;S&#39;,&#39;F&#39;,&#39;C&#39;,&#39;S&#39;],
+  [&#39;A&#39;,&#39;D&#39;,&#39;E&#39;,&#39;E&#39;]
+]
+
+Given word = &#34;ABCCED&#34;, return true.
+Given word = &#34;SEE&#34;, return true.
+Given word = &#34;ABCB&#34;, return false.
+</code></pre></div><h2 id="notes">Notes</h2>
+<p>Backtrack problem.</p>
+<ol>
+<li>when found, mark the point to one.</li>
+<li>Use dfs to go down from this point.</li>
+<li>Can&rsquo;t go down anymore, mark the point back to zero (backtrack step).</li>
+</ol>
+<h2 id="solution">Solution</h2>
+<h3 id="solution-1-backtrack-dfs">Solution 1: Backtrack, dfs</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">exist</span>(self, board: List[List[str]], word: str) <span style="color:#f92672">-&gt;</span> bool:
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(board)):
+            <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(len(board[<span style="color:#ae81ff">0</span>])):
+                <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>dfs(board, word, <span style="color:#ae81ff">0</span>, i, j):
+                    <span style="color:#66d9ef">return</span> True
+        <span style="color:#66d9ef">return</span> False
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(self, board, word, w, i, j):
+        <span style="color:#66d9ef">if</span> w <span style="color:#f92672">==</span> len(word):
+            <span style="color:#66d9ef">return</span> True
+
+        <span style="color:#66d9ef">if</span> i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> j <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> i <span style="color:#f92672">&gt;=</span> len(board) <span style="color:#f92672">or</span> j <span style="color:#f92672">&gt;=</span> len(board[<span style="color:#ae81ff">0</span>]):
+            <span style="color:#66d9ef">return</span> False
+
+        <span style="color:#66d9ef">if</span> board[i][j] <span style="color:#f92672">==</span> word[w]:
+            board[i][j] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;-&#39;</span>
+
+            <span style="color:#66d9ef">for</span> next_i, next_j <span style="color:#f92672">in</span> [[i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, j], [i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, j], [i, j <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>],
+                                   [i, j <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>]]:
+                <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>dfs(board, word, w <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, next_i, next_j):
+                    <span style="color:#66d9ef">return</span> True
+
+            board[i][j] <span style="color:#f92672">=</span> word[w]
+
+        <span style="color:#66d9ef">return</span> False
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

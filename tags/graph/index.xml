@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>graph on LeetCode In The Shell</title>
+    <link>//alfmunny.com/leetcode-blog/tags/graph/</link>
+    <description>Recent content in graph on LeetCode In The Shell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Dec 2020 00:06:00 +0100</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/graph/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>863 - All Nodes Distance K in Binary Tree</title>
+      <link>//alfmunny.com/leetcode-blog/posts/863-all-nodes-distance-k-in-binary-tree/</link>
+      <pubDate>Mon, 28 Dec 2020 00:06:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/863-all-nodes-distance-k-in-binary-tree/</guid>
+      <description>leetcode
+Problem We are given a binary tree (with root node root), a target node, and an integer value K. Return a list of the values of all nodes that have a distance K from the target node. The answer can be returned in any order. Example 1: Input: root = [3,5,1,6,2,0,8,null,null,7,4], target = 5, K = 2 Output: [7,4,1] Explanation: The nodes that are a distance 2 from the target node (with value 5) have values 7, 4, and 1.</description>
+    </item>
+    
+    <item>
+      <title>126 - Word Ladder II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/126-word-ladder-ii/</link>
+      <pubDate>Sun, 22 Nov 2020 00:36:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/126-word-ladder-ii/</guid>
+      <description>leetcode
+Problem Given two words (beginWord and endWord), and a dictionary&amp;#39;s word list, find all shortest transformation sequence(s) from beginWord to endWord, such that: Only one letter can be changed at a time Each transformed word must exist in the word list. Note that beginWord is not a transformed word. Note: Return an empty list if there is no such transformation sequence. All words have the same length. All words contain only lowercase alphabetic characters.</description>
+    </item>
+    
+    <item>
+      <title>127 - Word Ladder</title>
+      <link>//alfmunny.com/leetcode-blog/posts/127-word-ladder/</link>
+      <pubDate>Sun, 22 Nov 2020 00:33:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/127-word-ladder/</guid>
+      <description>leetcode
+Problem Given two words (beginWord and endWord), and a dictionary&amp;#39;s word list, find the length of shortest transformation sequence from beginWord to endWord, such that: Only one letter can be changed at a time. Each transformed word must exist in the word list. Note: Return 0 if there is no such transformation sequence. All words have the same length. All words contain only lowercase alphabetic characters. You may assume no duplicates in the word list.</description>
+    </item>
+    
+    <item>
+      <title>332 - Reconstruct Itinerary</title>
+      <link>//alfmunny.com/leetcode-blog/posts/332-reconstruct-itinerary/</link>
+      <pubDate>Mon, 29 Jun 2020 23:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/332-reconstruct-itinerary/</guid>
+      <description>leetcode
+Problem Given a list of airline tickets represented by pairs of departure and arrival airports [from, to], reconstruct the itinerary in order. All of the tickets belong to a man who departs from JFK. Thus, the itinerary must begin with JFK. Note: If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string. For example, the itinerary [&amp;#34;JFK&amp;#34;, &amp;#34;LGA&amp;#34;] has a smaller lexical order than [&amp;#34;JFK&amp;#34;, &amp;#34;LGB&amp;#34;].</description>
+    </item>
+    
+    <item>
+      <title>332 - Reconstruct Itinrary</title>
+      <link>//alfmunny.com/leetcode-blog/posts/332-reconstruct-itinrary/</link>
+      <pubDate>Mon, 29 Jun 2020 23:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/332-reconstruct-itinrary/</guid>
+      <description>leetcode
+Problem Given a list of airline tickets represented by pairs of departure and arrival airports [from, to], reconstruct the itinerary in order. All of the tickets belong to a man who departs from JFK. Thus, the itinerary must begin with JFK. Note: If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string. For example, the itinerary [&amp;#34;JFK&amp;#34;, &amp;#34;LGA&amp;#34;] has a smaller lexical order than [&amp;#34;JFK&amp;#34;, &amp;#34;LGB&amp;#34;].</description>
+    </item>
+    
+    <item>
+      <title>210 - Course Schedule II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/210-course-schedule-ii/</link>
+      <pubDate>Fri, 29 May 2020 20:45:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/210-course-schedule-ii/</guid>
+      <description>leetcode
+Problem There are a total of n courses you have to take, labeled from 0 to n-1. Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1] Given the total number of courses and a list of prerequisite pairs, return the ordering of courses you should take to finish all courses. There may be multiple correct orders, you just need to return one of them.</description>
+    </item>
+    
+    <item>
+      <title>207 - Course Schedule</title>
+      <link>//alfmunny.com/leetcode-blog/posts/207-course-schedule/</link>
+      <pubDate>Fri, 29 May 2020 19:57:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/207-course-schedule/</guid>
+      <description>leetcode
+Problem There are a total of numCourses courses you have to take, labeled from 0 to numCourses-1. Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1] Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses? Example 1: Input: numCourses = 2, prerequisites = [[1,0]] Output: true Explanation: There are a total of 2 courses to take.</description>
+    </item>
+    
+    <item>
+      <title>886 - Possible Bipartition</title>
+      <link>//alfmunny.com/leetcode-blog/posts/886-possible-bipartition/</link>
+      <pubDate>Wed, 27 May 2020 16:37:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/886-possible-bipartition/</guid>
+      <description>leetcode
+Problem Given a set of N people (numbered 1, 2, ..., N), we would like to split everyone into two groups of any size. Each person may dislike some other people, and they should not go into the same group. Formally, if dislikes[i] = [a, b], it means it is not allowed to put the people numbered a and b into the same group. Return true if and only if it is possible to split everyone into two groups in this way.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>148 - Sort List | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">148 - Sort List</span></h1>
+
+<h2 class="date">2020/08/17</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/sort-list/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Sort a linked list in O(n log n) time using constant space complexity.
+
+Example 1:
+
+Input: 4-&gt;2-&gt;1-&gt;3
+Output: 1-&gt;2-&gt;3-&gt;4
+Example 2:
+
+Input: -1-&gt;5-&gt;3-&gt;4-&gt;0
+Output: -1-&gt;0-&gt;3-&gt;4-&gt;5
+</code></pre></div><h2 id="solution">Solution</h2>
+<p>Merge Sort</p>
+<ol>
+<li>Slow-Fast-Pointer to split the list into half. Do not forget slow.next = None</li>
+<li>Sort two part recursively and merge together</li>
+</ol>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sortList</span>(self, head: ListNode) <span style="color:#f92672">-&gt;</span> ListNode:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> head <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> head<span style="color:#f92672">.</span>next:
+            <span style="color:#66d9ef">return</span> head
+
+        <span style="color:#75715e"># split in half</span>
+        fast <span style="color:#f92672">=</span> slow <span style="color:#f92672">=</span> head
+        <span style="color:#66d9ef">while</span> fast<span style="color:#f92672">.</span>next <span style="color:#f92672">and</span> fast<span style="color:#f92672">.</span>next<span style="color:#f92672">.</span>next:
+            fast <span style="color:#f92672">=</span> fast<span style="color:#f92672">.</span>next<span style="color:#f92672">.</span>next
+            slow <span style="color:#f92672">=</span> slow<span style="color:#f92672">.</span>next
+
+        second <span style="color:#f92672">=</span> slow<span style="color:#f92672">.</span>next
+        slow<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> None
+
+        first <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>sortList(head)
+        second <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>sortList(second)
+
+        <span style="color:#75715e"># merge</span>
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>merge(first, second)
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">merge</span>(self, p1, p2):
+        p <span style="color:#f92672">=</span> dummy <span style="color:#f92672">=</span> ListNode(<span style="color:#ae81ff">0</span>)
+
+        <span style="color:#66d9ef">while</span> p1 <span style="color:#f92672">and</span> p2:
+            <span style="color:#66d9ef">if</span> p1<span style="color:#f92672">.</span>val <span style="color:#f92672">&lt;</span> p2<span style="color:#f92672">.</span>val:
+                p<span style="color:#f92672">.</span>next, p1 <span style="color:#f92672">=</span> p1, p1<span style="color:#f92672">.</span>next
+            <span style="color:#66d9ef">else</span>:
+                p<span style="color:#f92672">.</span>next, p2 <span style="color:#f92672">=</span> p2, p2<span style="color:#f92672">.</span>next
+            p <span style="color:#f92672">=</span> p<span style="color:#f92672">.</span>next
+
+        p<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> p1 <span style="color:#f92672">or</span> p2
+
+        <span style="color:#66d9ef">return</span> dummy<span style="color:#f92672">.</span>next
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>208 - Implement Trie (Prefix Tree) | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">208 - Implement Trie (Prefix Tree)</span></h1>
+
+<h2 class="date">2020/05/14</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/implement-trie-prefix-tree/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<blockquote>
+<p>Implement a trie with insert, search, and startsWith methods.</p>
+<p>Example:</p>
+<p>Trie trie = new Trie();</p>
+<p>trie.insert(&ldquo;apple&rdquo;);
+trie.search(&ldquo;apple&rdquo;);   <em>/ returns true
+trie.search(&ldquo;app&rdquo;);     /</em> returns false
+trie.startsWith(&ldquo;app&rdquo;); // returns true
+trie.insert(&ldquo;app&rdquo;);
+trie.search(&ldquo;app&rdquo;);     // returns true</p>
+</blockquote>
+<h2 id="solution">Solution</h2>
+<p>Trie.</p>
+<p>Use a &ldquo;END&rdquo; Symbol for word ending.</p>
+<p><code>search</code> method checks for &ldquo;END&rdquo;, <code>startsWith</code> not.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Trie</span>:
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>root <span style="color:#f92672">=</span> Node()
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search</span>(self, s):
+        node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>root
+        <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> s:
+            node <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next[ord(c) <span style="color:#f92672">-</span> ord(<span style="color:#e6db74">&#39;a&#39;</span>)]
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> node:
+                <span style="color:#66d9ef">return</span> False
+        <span style="color:#66d9ef">return</span> node<span style="color:#f92672">.</span>next[<span style="color:#ae81ff">26</span>] <span style="color:#f92672">!=</span> None
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">insert</span>(self, s):
+        node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>root
+        <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> s:
+            i <span style="color:#f92672">=</span> ord(c) <span style="color:#f92672">-</span> ord(<span style="color:#e6db74">&#39;a&#39;</span>)
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> node<span style="color:#f92672">.</span>next[i]:
+                node<span style="color:#f92672">.</span>next[i] <span style="color:#f92672">=</span> Node()
+            node <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next[i]
+        node<span style="color:#f92672">.</span>next[<span style="color:#ae81ff">26</span>] <span style="color:#f92672">=</span> Node()
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">startsWith</span>(self, s):
+        node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>root
+        <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> s:
+            node <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next[ord(c) <span style="color:#f92672">-</span> ord(<span style="color:#e6db74">&#39;a&#39;</span>)]
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> node:
+                <span style="color:#66d9ef">return</span> False
+        <span style="color:#66d9ef">return</span> True
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Node</span>:
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> [ None <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">27</span>) ]
+
+s <span style="color:#f92672">=</span> Trie()
+
+s<span style="color:#f92672">.</span>insert(<span style="color:#e6db74">&#34;apple&#34;</span>)
+s<span style="color:#f92672">.</span>insert(<span style="color:#e6db74">&#34;banana&#34;</span>)
+<span style="color:#66d9ef">print</span>(s<span style="color:#f92672">.</span>search(<span style="color:#e6db74">&#34;app&#34;</span>))
+<span style="color:#66d9ef">print</span>(s<span style="color:#f92672">.</span>search(<span style="color:#e6db74">&#34;bananananana&#34;</span>))
+<span style="color:#66d9ef">print</span>(s<span style="color:#f92672">.</span>search(<span style="color:#e6db74">&#34;banana&#34;</span>))
+<span style="color:#66d9ef">print</span>(s<span style="color:#f92672">.</span>startsWith(<span style="color:#e6db74">&#34;ban&#34;</span>))
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

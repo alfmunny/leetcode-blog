@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on LeetCode In The Shell</title>
+    <link>//alfmunny.com/leetcode-blog/tags/</link>
+    <description>Recent content in Tags on LeetCode In The Shell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Dec 2020 22:25:00 +0100</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1-pass</title>
+      <link>//alfmunny.com/leetcode-blog/tags/1-pass/</link>
+      <pubDate>Tue, 29 Dec 2020 22:25:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/1-pass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>array</title>
+      <link>//alfmunny.com/leetcode-blog/tags/array/</link>
+      <pubDate>Tue, 29 Dec 2020 22:25:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hard</title>
+      <link>//alfmunny.com/leetcode-blog/tags/hard/</link>
+      <pubDate>Tue, 29 Dec 2020 22:25:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/hard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>presum</title>
+      <link>//alfmunny.com/leetcode-blog/tags/presum/</link>
+      <pubDate>Tue, 29 Dec 2020 22:25:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/presum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bfs</title>
+      <link>//alfmunny.com/leetcode-blog/tags/bfs/</link>
+      <pubDate>Tue, 29 Dec 2020 21:51:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/bfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>medium</title>
+      <link>//alfmunny.com/leetcode-blog/tags/medium/</link>
+      <pubDate>Tue, 29 Dec 2020 21:51:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/medium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tree</title>
+      <link>//alfmunny.com/leetcode-blog/tags/tree/</link>
+      <pubDate>Tue, 29 Dec 2020 21:51:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/tree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>1-fail</title>
+      <link>//alfmunny.com/leetcode-blog/tags/1-fail/</link>
+      <pubDate>Mon, 28 Dec 2020 00:06:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/1-fail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>graph</title>
+      <link>//alfmunny.com/leetcode-blog/tags/graph/</link>
+      <pubDate>Mon, 28 Dec 2020 00:06:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/graph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dfs</title>
+      <link>//alfmunny.com/leetcode-blog/tags/dfs/</link>
+      <pubDate>Wed, 23 Dec 2020 23:49:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/dfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>union-find</title>
+      <link>//alfmunny.com/leetcode-blog/tags/union-find/</link>
+      <pubDate>Wed, 23 Dec 2020 23:49:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/union-find/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>easy</title>
+      <link>//alfmunny.com/leetcode-blog/tags/easy/</link>
+      <pubDate>Mon, 14 Dec 2020 13:05:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/easy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>1-hint</title>
+      <link>//alfmunny.com/leetcode-blog/tags/1-hint/</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/1-hint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>//alfmunny.com/leetcode-blog/tags/math/</link>
+      <pubDate>Sat, 28 Nov 2020 01:09:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>trick</title>
+      <link>//alfmunny.com/leetcode-blog/tags/trick/</link>
+      <pubDate>Sat, 28 Nov 2020 01:09:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/trick/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hash</title>
+      <link>//alfmunny.com/leetcode-blog/tags/hash/</link>
+      <pubDate>Fri, 27 Nov 2020 23:14:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/hash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dp</title>
+      <link>//alfmunny.com/leetcode-blog/tags/dp/</link>
+      <pubDate>Thu, 26 Nov 2020 00:29:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/dp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>heap</title>
+      <link>//alfmunny.com/leetcode-blog/tags/heap/</link>
+      <pubDate>Tue, 24 Nov 2020 00:40:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/heap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>constant-memory</title>
+      <link>//alfmunny.com/leetcode-blog/tags/constant-memory/</link>
+      <pubDate>Mon, 23 Nov 2020 22:18:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/constant-memory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dive</title>
+      <link>//alfmunny.com/leetcode-blog/tags/dive/</link>
+      <pubDate>Sat, 21 Nov 2020 19:03:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/dive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bs</title>
+      <link>//alfmunny.com/leetcode-blog/tags/bs/</link>
+      <pubDate>Thu, 19 Nov 2020 15:55:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/bs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>two-pointer</title>
+      <link>//alfmunny.com/leetcode-blog/tags/two-pointer/</link>
+      <pubDate>Wed, 18 Nov 2020 19:29:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/two-pointer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recursive</title>
+      <link>//alfmunny.com/leetcode-blog/tags/recursive/</link>
+      <pubDate>Sun, 11 Oct 2020 18:56:32 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/recursive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>meidum</title>
+      <link>//alfmunny.com/leetcode-blog/tags/meidum/</link>
+      <pubDate>Thu, 27 Aug 2020 12:31:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/meidum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bit</title>
+      <link>//alfmunny.com/leetcode-blog/tags/bit/</link>
+      <pubDate>Thu, 27 Aug 2020 00:12:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/bit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backtrack</title>
+      <link>//alfmunny.com/leetcode-blog/tags/backtrack/</link>
+      <pubDate>Wed, 26 Aug 2020 00:00:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/backtrack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>trie</title>
+      <link>//alfmunny.com/leetcode-blog/tags/trie/</link>
+      <pubDate>Sun, 23 Aug 2020 16:34:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/trie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>1-liner</title>
+      <link>//alfmunny.com/leetcode-blog/tags/1-liner/</link>
+      <pubDate>Wed, 19 Aug 2020 12:31:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/1-liner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>list</title>
+      <link>//alfmunny.com/leetcode-blog/tags/list/</link>
+      <pubDate>Tue, 18 Aug 2020 16:24:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>queue</title>
+      <link>//alfmunny.com/leetcode-blog/tags/queue/</link>
+      <pubDate>Tue, 18 Aug 2020 14:27:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/queue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sort</title>
+      <link>//alfmunny.com/leetcode-blog/tags/sort/</link>
+      <pubDate>Tue, 18 Aug 2020 01:13:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/sort/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stack</title>
+      <link>//alfmunny.com/leetcode-blog/tags/stack/</link>
+      <pubDate>Thu, 13 Aug 2020 18:18:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/stack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>random</title>
+      <link>//alfmunny.com/leetcode-blog/tags/random/</link>
+      <pubDate>Fri, 05 Jun 2020 22:00:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/random/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sliding-window</title>
+      <link>//alfmunny.com/leetcode-blog/tags/sliding-window/</link>
+      <pubDate>Fri, 22 May 2020 00:41:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/sliding-window/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>geometry</title>
+      <link>//alfmunny.com/leetcode-blog/tags/geometry/</link>
+      <pubDate>Sat, 09 May 2020 01:18:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/geometry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recursion</title>
+      <link>//alfmunny.com/leetcode-blog/tags/recursion/</link>
+      <pubDate>Thu, 07 May 2020 21:54:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/recursion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kmp</title>
+      <link>//alfmunny.com/leetcode-blog/tags/kmp/</link>
+      <pubDate>Wed, 29 Apr 2020 21:42:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/kmp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>string</title>
+      <link>//alfmunny.com/leetcode-blog/tags/string/</link>
+      <pubDate>Wed, 29 Apr 2020 21:42:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/string/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>design</title>
+      <link>//alfmunny.com/leetcode-blog/tags/design/</link>
+      <pubDate>Sun, 26 Apr 2020 00:38:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>permutation</title>
+      <link>//alfmunny.com/leetcode-blog/tags/permutation/</link>
+      <pubDate>Sun, 19 Apr 2020 02:11:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/permutation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>divide</title>
+      <link>//alfmunny.com/leetcode-blog/tags/divide/</link>
+      <pubDate>Mon, 06 Apr 2020 01:05:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/divide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stock</title>
+      <link>//alfmunny.com/leetcode-blog/tags/stock/</link>
+      <pubDate>Tue, 24 Mar 2020 22:36:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/stock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>greedy</title>
+      <link>//alfmunny.com/leetcode-blog/tags/greedy/</link>
+      <pubDate>Sun, 22 Mar 2020 00:55:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/tags/greedy/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>75 - Sort Colors | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">75 - Sort Colors</span></h1>
+<h2 class="author">[alfmunny]</h2>
+<h2 class="date">2020/03/06</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/sort-colors/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Given an array with n objects colored red, white or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white and blue.
+
+Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.
+
+Note: You are not suppose to use the library&#39;s sort function for this problem.
+
+Example:
+
+Input: [2,0,2,1,1,0]
+Output: [0,0,1,1,2,2]
+Follow up:
+
+A rather straight forward solution is a two-pass algorithm using counting sort.
+First, iterate the array counting number of 0&#39;s, 1&#39;s, and 2&#39;s, then overwrite array with total number of 0&#39;s, then 1&#39;s and followed by 2&#39;s.
+Could you come up with a one-pass algorithm using only constant space?
+</code></pre></div><h2 id="notes">Notes</h2>
+<h3 id="first-attempt-is-to-use-two-pointer-dot">First attempt is to use two pointer.</h3>
+<p>There is a but a corner case: when two pointer are both at 1. How should we move the pointer.</p>
+<p>We can use a another <code>while</code> unter this situation, initialize another pointer and search for 0 or 2 between
+these two pointers. See Soution 1</p>
+<h3 id="three-way-partition">Three Way Partition</h3>
+<p>three pointer, one for each.</p>
+<p><strong>Important</strong>:</p>
+<p>Notice the condition for <code>while</code>: while mi &lt;= hi</p>
+<p>the middle move forward:</p>
+<ol>
+<li>middle == 0, switch with left one, left + 1, middle + 1</li>
+<li>middle == 1, continue</li>
+<li>middle == 2, swtich with right one, right - 1</li>
+</ol>
+<h2 id="solution">Solution</h2>
+<h3 id="solution-1">Solution 1</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sortColors</span>(self, nums):
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        :type nums: List[int]
+</span><span style="color:#e6db74">        :rtype: None Do not return anything, modify nums in-place instead.
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+
+        lo <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        hi <span style="color:#f92672">=</span> len(nums) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+
+        <span style="color:#66d9ef">while</span> (lo <span style="color:#f92672">&lt;</span> hi):
+            <span style="color:#66d9ef">if</span> nums[lo] <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+                lo <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+            <span style="color:#66d9ef">elif</span> nums[hi] <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
+                hi <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+            <span style="color:#66d9ef">elif</span> nums[lo] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">and</span> nums[hi] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+                mi <span style="color:#f92672">=</span> lo <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+                <span style="color:#66d9ef">while</span> (mi <span style="color:#f92672">&lt;</span> hi):
+                    <span style="color:#66d9ef">if</span> nums[mi] <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">or</span> nums[mi] <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+                        nums[mi], nums[hi] <span style="color:#f92672">=</span> nums[hi], nums[mi]
+                        <span style="color:#66d9ef">break</span>
+                    <span style="color:#66d9ef">else</span>:
+                        mi <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+                <span style="color:#66d9ef">if</span> mi <span style="color:#f92672">==</span> hi:
+                    <span style="color:#66d9ef">return</span>
+            <span style="color:#66d9ef">else</span>:
+                nums[lo], nums[hi] <span style="color:#f92672">=</span> nums[hi], nums[lo]
+</code></pre></div><h3 id="solution-2-three-way-partition">Solution 2: Three way partition</h3>
+<p>Notice the condition for <code>while</code>:</p>
+<p>It has to be &lt;=.
+Because you every element behind hi, you have seen it.
+But not the element at hi. You have to check it at last.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sortColors</span>(self, nums):
+
+        lo, mi, hi <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, len(nums) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+
+        <span style="color:#66d9ef">while</span> mi <span style="color:#f92672">&lt;=</span> hi: <span style="color:#75715e"># Nottice!: here has to be &lt;=</span>
+            <span style="color:#66d9ef">if</span> nums[mi] <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+                nums[mi], nums[lo] <span style="color:#f92672">=</span> nums[lo], nums[mi]
+                lo <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+                mi <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+            <span style="color:#66d9ef">elif</span> nums[mi] <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
+                nums[mi], nums[hi] <span style="color:#f92672">=</span> nums[hi], nums[mi]
+                hi <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+            <span style="color:#66d9ef">else</span>:
+                mi <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

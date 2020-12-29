@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>30 - Substring with Concatenation of All Words | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">30 - Substring with Concatenation of All Words</span></h1>
+
+<h2 class="date">2020/11/30</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/substring-with-concatenation-of-all-words/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">You are given a string s and an array of strings words of the same length. Return all starting indices of substring(s) in s that is a concatenation of each word in words exactly once, in any order, and without any intervening characters.
+
+You can return the answer in any order.
+
+
+
+Example 1:
+
+Input: s = &#34;barfoothefoobarman&#34;, words = [&#34;foo&#34;,&#34;bar&#34;]
+Output: [0,9]
+Explanation: Substrings starting at index 0 and 9 are &#34;barfoo&#34; and &#34;foobar&#34; respectively.
+The output order does not matter, returning [9,0] is fine too.
+Example 2:
+
+Input: s = &#34;wordgoodgoodgoodbestword&#34;, words = [&#34;word&#34;,&#34;good&#34;,&#34;best&#34;,&#34;word&#34;]
+Output: []
+Example 3:
+
+Input: s = &#34;barfoofoobarthefoobarman&#34;, words = [&#34;bar&#34;,&#34;foo&#34;,&#34;the&#34;]
+Output: [6,9,12]
+</code></pre></div><h2 id="solution">Solution</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findSubstring</span>(self, s: str, words: List[str]) <span style="color:#f92672">-&gt;</span> List[int]:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> s <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> words:
+            <span style="color:#66d9ef">return</span> []
+        length <span style="color:#f92672">=</span> len(words[<span style="color:#ae81ff">0</span>])
+        total_words <span style="color:#f92672">=</span> len(words)
+        words <span style="color:#f92672">=</span> Counter(words)
+        ans <span style="color:#f92672">=</span> []
+        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(start, i, path):
+            <span style="color:#66d9ef">if</span> len(path) <span style="color:#f92672">==</span> total_words:
+                ans<span style="color:#f92672">.</span>append(start)
+                <span style="color:#66d9ef">return</span>
+            <span style="color:#66d9ef">if</span> i <span style="color:#f92672">&gt;=</span> len(s):
+                <span style="color:#66d9ef">return</span>
+            w <span style="color:#f92672">=</span> s[i:i<span style="color:#f92672">+</span>length]
+            <span style="color:#66d9ef">if</span> words[w]:
+                words[w] <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+                dfs(start, i<span style="color:#f92672">+</span>length, path<span style="color:#f92672">+</span>[w])
+                words[w] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(s)<span style="color:#f92672">-</span>length<span style="color:#f92672">*</span>total_words<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
+            dfs(i, i, [])
+
+        <span style="color:#66d9ef">return</span> ans
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>trie on LeetCode In The Shell</title>
+    <link>//alfmunny.com/leetcode-blog/tags/trie/</link>
+    <description>Recent content in trie on LeetCode In The Shell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Aug 2020 16:34:00 +0200</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/trie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1032 - Stream of Characters</title>
+      <link>//alfmunny.com/leetcode-blog/posts/1032-stream-of-characters/</link>
+      <pubDate>Sun, 23 Aug 2020 16:34:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/1032-stream-of-characters/</guid>
+      <description>leetcode
+Problem Implement the StreamChecker class as follows: StreamChecker(words): Constructor, init the data structure with the given words. query(letter): returns true if and only if for some k &amp;gt;= 1, the last k characters queried (in order from oldest to newest, including this letter just queried) spell one of the words in the given list. Example: StreamChecker streamChecker = new StreamChecker([&amp;#34;cd&amp;#34;,&amp;#34;f&amp;#34;,&amp;#34;kl&amp;#34;]); // init the dictionary. streamChecker.query(&amp;#39;a&amp;#39;); // return false streamChecker.query(&amp;#39;b&amp;#39;); // return false streamChecker.</description>
+    </item>
+    
+    <item>
+      <title>212 - Word Search II</title>
+      <link>//alfmunny.com/leetcode-blog/posts/212-word-search-ii/</link>
+      <pubDate>Wed, 01 Jul 2020 00:49:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/212-word-search-ii/</guid>
+      <description>leetcode
+Problem Given a 2D board and a list of words from the dictionary, find all words in the board. Each word must be constructed from letters of sequentially adjacent cell, where &amp;#34;adjacent&amp;#34; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once in a word. Example: Input: board = [ [&amp;#39;o&amp;#39;,&amp;#39;a&amp;#39;,&amp;#39;a&amp;#39;,&amp;#39;n&amp;#39;], [&amp;#39;e&amp;#39;,&amp;#39;t&amp;#39;,&amp;#39;a&amp;#39;,&amp;#39;e&amp;#39;], [&amp;#39;i&amp;#39;,&amp;#39;h&amp;#39;,&amp;#39;k&amp;#39;,&amp;#39;r&amp;#39;], [&amp;#39;i&amp;#39;,&amp;#39;f&amp;#39;,&amp;#39;l&amp;#39;,&amp;#39;v&amp;#39;] ] words = [&amp;#34;oath&amp;#34;,&amp;#34;pea&amp;#34;,&amp;#34;eat&amp;#34;,&amp;#34;rain&amp;#34;] Output: [&amp;#34;eat&amp;#34;,&amp;#34;oath&amp;#34;] Note: All inputs are consist of lowercase letters a-z.</description>
+    </item>
+    
+    <item>
+      <title>208 - Implement Trie (Prefix Tree)</title>
+      <link>//alfmunny.com/leetcode-blog/posts/208-implement-trie/</link>
+      <pubDate>Thu, 14 May 2020 21:54:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/208-implement-trie/</guid>
+      <description>leetcode
+Problem  Implement a trie with insert, search, and startsWith methods.
+Example:
+Trie trie = new Trie();
+trie.insert(&amp;ldquo;apple&amp;rdquo;); trie.search(&amp;ldquo;apple&amp;rdquo;); / returns true trie.search(&amp;ldquo;app&amp;rdquo;); / returns false trie.startsWith(&amp;ldquo;app&amp;rdquo;); // returns true trie.insert(&amp;ldquo;app&amp;rdquo;); trie.search(&amp;ldquo;app&amp;rdquo;); // returns true
+ Solution Trie.
+Use a &amp;ldquo;END&amp;rdquo; Symbol for word ending.
+search method checks for &amp;ldquo;END&amp;rdquo;, startsWith not.
+class Trie: def __init__(self): self.root = Node() def search(self, s): node = self.root for c in s: node = node.</description>
+    </item>
+    
+  </channel>
+</rss>

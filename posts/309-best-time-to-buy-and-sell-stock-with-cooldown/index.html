@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>309 - Best Time to Buy and Sell Stock with Cooldown | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">309 - Best Time to Buy and Sell Stock with Cooldown</span></h1>
+
+<h2 class="date">2020/03/24</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Say you have an array for which the ith element is the price of a given stock on day i.
+
+Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times) with the following restrictions:
+
+You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
+After you sell your stock, you cannot buy stock on next day. (ie, cooldown 1 day)
+Example:
+
+Input: [1,2,3,0,2]
+Output: 3
+Explanation: transactions = [buy, sell, cooldown, buy, sell]
+</code></pre></div><h2 id="notes">Notes</h2>
+<h2 id="solution">Solution</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> sys
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">maxProfit</span>(self, prices):
+        dp_buy <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>sys<span style="color:#f92672">.</span>maxsize
+        dp_sell <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        dp_pre_0 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+
+        <span style="color:#66d9ef">for</span> price <span style="color:#f92672">in</span> prices:
+            tmp <span style="color:#f92672">=</span> dp_sell
+            dp_sell <span style="color:#f92672">=</span> max(dp_sell, dp_buy <span style="color:#f92672">+</span> price)
+            dp_buy <span style="color:#f92672">=</span> max(dp_buy, dp_pre_0 <span style="color:#f92672">-</span> price)
+            dp_pre_0 <span style="color:#f92672">=</span> tmp
+
+        <span style="color:#66d9ef">return</span> dp_sell
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

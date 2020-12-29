@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>824 - Goat Latin | LeetCode In The Shell</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="../../">Home</a></li>
+      
+      <li><a href="../../about/">About</a></li>
+      
+      <li><a href="../../categories/">Categories</a></li>
+      
+      <li><a href="../../tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">824 - Goat Latin</span></h1>
+
+<h2 class="date">2020/08/19</h2>
+</div>
+
+<main>
+<p><a href="https://leetcode.com/problems/goat-latin/">leetcode</a></p>
+<h2 id="problem">Problem</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">A sentence S is given, composed of words separated by spaces. Each word consists of lowercase and uppercase letters only.
+
+We would like to convert the sentence to &#34;Goat Latin&#34; (a made-up language similar to Pig Latin.)
+
+The rules of Goat Latin are as follows:
+
+If a word begins with a vowel (a, e, i, o, or u), append &#34;ma&#34; to the end of the word.
+For example, the word &#39;apple&#39; becomes &#39;applema&#39;.
+
+If a word begins with a consonant (i.e. not a vowel), remove the first letter and append it to the end, then add &#34;ma&#34;.
+For example, the word &#34;goat&#34; becomes &#34;oatgma&#34;.
+
+Add one letter &#39;a&#39; to the end of each word per its word index in the sentence, starting with 1.
+For example, the first word gets &#34;a&#34; added to the end, the second word gets &#34;aa&#34; added to the end and so on.
+Return the final sentence representing the conversion from S to Goat Latin.
+
+
+
+Example 1:
+
+Input: &#34;I speak Goat Latin&#34;
+Output: &#34;Imaa peaksmaaa oatGmaaaa atinLmaaaaa&#34;
+Example 2:
+
+Input: &#34;The quick brown fox jumped over the lazy dog&#34;
+Output: &#34;heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa&#34;
+
+
+Notes:
+
+S contains only uppercase, lowercase and spaces. Exactly one space between each word.
+1 &lt;= S.length &lt;= 150.
+</code></pre></div><h2 id="solution">Solution</h2>
+<p>Interesting one-liner</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">toGoatLatin</span>(self, S: str) <span style="color:#f92672">-&gt;</span> str:
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39; &#39;</span><span style="color:#f92672">.</span>join([(<span style="color:#66d9ef">lambda</span> w: w[<span style="color:#ae81ff">1</span>:]<span style="color:#f92672">+</span>w[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">if</span> w[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> <span style="color:#e6db74">&#39;aeiouAEIOU&#39;</span> <span style="color:#66d9ef">else</span> w)(w) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;ma&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;a&#39;</span> <span style="color:#f92672">*</span> i <span style="color:#66d9ef">for</span> i, w <span style="color:#f92672">in</span> enumerate(S<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39; &#39;</span>), <span style="color:#ae81ff">1</span>)])
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © <a href="http://alfmunny.com">Alfmunny</a> 2019 &ndash; 2020| <a href="https://github.com/alfmunny">Github</a> | <a href="https://twitter.com/alfmunny">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

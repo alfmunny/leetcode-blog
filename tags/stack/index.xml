@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stack on LeetCode In The Shell</title>
+    <link>//alfmunny.com/leetcode-blog/tags/stack/</link>
+    <description>Recent content in stack on LeetCode In The Shell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Aug 2020 18:18:00 +0200</lastBuildDate><atom:link href="//alfmunny.com/leetcode-blog/tags/stack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>71 - Simplify Path</title>
+      <link>//alfmunny.com/leetcode-blog/posts/71-simplify-path/</link>
+      <pubDate>Thu, 13 Aug 2020 18:18:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/71-simplify-path/</guid>
+      <description>leetcode
+Problem Given an absolute path for a file (Unix-style), simplify it. Or in other words, convert it to the canonical path. In a UNIX-style file system, a period . refers to the current directory. Furthermore, a double period .. moves the directory up a level. Note that the returned canonical path must always begin with a slash /, and there must be only a single slash / between two directory names.</description>
+    </item>
+    
+    <item>
+      <title>32 - Longest Valid Parentheses</title>
+      <link>//alfmunny.com/leetcode-blog/posts/32-longest-valid-parentheses/</link>
+      <pubDate>Thu, 13 Aug 2020 17:14:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/32-longest-valid-parentheses/</guid>
+      <description>leetcode
+Problem Given a string containing just the characters &amp;#39;(&amp;#39; and &amp;#39;)&amp;#39;, find the length of the longest valid (well-formed) parentheses substring. Example 1: Input: &amp;#34;(()&amp;#34; Output: 2 Explanation: The longest valid parentheses substring is &amp;#34;()&amp;#34; Example 2: Input: &amp;#34;)()())&amp;#34; Output: 4 Explanation: The longest valid parentheses substring is &amp;#34;()()&amp;#34; Solution class Solution: def longestValidParentheses(self, s: str) -&amp;gt; int: stack = [-1] ans = 0 for i in range(len(s)): if s[i] == &amp;#39;(&amp;#39;: stack.</description>
+    </item>
+    
+    <item>
+      <title>901 - Onine Stock Span</title>
+      <link>//alfmunny.com/leetcode-blog/posts/901-online-stock-span/</link>
+      <pubDate>Tue, 19 May 2020 21:40:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/901-online-stock-span/</guid>
+      <description>leetcode
+Problem Write a class StockSpanner which collects daily price quotes for some stock, and returns the span of that stock&amp;#39;s price for the current day. The span of the stock&amp;#39;s price today is defined as the maximum number of consecutive days (starting from today and going backwards) for which the price of the stock was less than or equal to today&amp;#39;s price. For example, if the price of a stock over the next 7 days were [100, 80, 60, 70, 60, 75, 85], then the stock spans would be [1, 1, 1, 2, 1, 4, 6].</description>
+    </item>
+    
+    <item>
+      <title>402 - Remove K Digits</title>
+      <link>//alfmunny.com/leetcode-blog/posts/402-remove-k-digits/</link>
+      <pubDate>Wed, 13 May 2020 22:26:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/402-remove-k-digits/</guid>
+      <description>leetcode
+Problem  Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.
+Note: The length of num is less than 10002 and will be ≥ k. The given num does not contain any leading zero.
+Example 1:
+Input: num = &amp;ldquo;1432219&amp;rdquo;, k = 3 Output: &amp;ldquo;1219&amp;rdquo; Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest.</description>
+    </item>
+    
+    <item>
+      <title>733 - Flood Fill</title>
+      <link>//alfmunny.com/leetcode-blog/posts/733-flood-fill/</link>
+      <pubDate>Sat, 09 May 2020 15:50:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/733-flood-fill/</guid>
+      <description>leetcode
+Problem An image is represented by a 2-D array of integers, each integer representing the pixel value of the image (from 0 to 65535). Given a coordinate (sr, sc) representing the starting pixel (row and column) of the flood fill, and a pixel value newColor, &amp;#34;flood fill&amp;#34; the image. To perform a &amp;#34;flood fill&amp;#34;, consider the starting pixel, plus any pixels connected 4-directionally to the starting pixel of the same color as the starting pixel, plus any pixels connected 4-directionally to those pixels (also with the same color as the starting pixel), and so on.</description>
+    </item>
+    
+    <item>
+      <title>155 - Min Stack</title>
+      <link>//alfmunny.com/leetcode-blog/posts/155-min-stack/</link>
+      <pubDate>Fri, 10 Apr 2020 20:47:00 +0200</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/155-min-stack/</guid>
+      <description>leetcode
+Problem Design a stack that supports push, pop, top, and retrieving the minimum element in constant time. push(x) -- Push element x onto stack. pop() -- Removes the element on top of the stack. top() -- Get the top element. getMin() -- Retrieve the minimum element in the stack. Example: MinStack minStack = new MinStack(); minStack.push(-2); minStack.push(0); minStack.push(-3); minStack.getMin(); --&amp;gt; Returns -3. minStack.pop(); minStack.top(); --&amp;gt; Returns 0. minStack.getMin(); --&amp;gt; Returns -2.</description>
+    </item>
+    
+    <item>
+      <title>85 - Maximal Rectangle</title>
+      <link>//alfmunny.com/leetcode-blog/posts/85-maximal-rectangle/</link>
+      <pubDate>Tue, 24 Mar 2020 00:57:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/85-maximal-rectangle/</guid>
+      <description>Problem Notes Solution  leetcode
+Problem Given a 2D binary matrix filled with 0&amp;#39;s and 1&amp;#39;s, find the largest rectangle containing only 1&amp;#39;s and return its area. Example: Input: [ [&amp;#34;1&amp;#34;,&amp;#34;0&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;0&amp;#34;,&amp;#34;0&amp;#34;], [&amp;#34;1&amp;#34;,&amp;#34;0&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;1&amp;#34;], [&amp;#34;1&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;1&amp;#34;], [&amp;#34;1&amp;#34;,&amp;#34;0&amp;#34;,&amp;#34;0&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;0&amp;#34;] ] Output: 6 Notes Two parts:
+ generate a heights histogram for every row. apple &amp;ldquo;largest rectangle in histogram&amp;rdquo; on each row of histogram  Solution class Solution: def maximalRectangle(self, matrix): if not matrix or not matrix[0]: return 0 m = len(matrix) n = len(matrix[0]) histograms = [[0] * n for i in range(m)] res = 0 for i in range(m): for j in range(n): if matrix[i][j] == &amp;#34;1&amp;#34;: histograms[i][j] = histograms[i - 1][j] + 1 if i &amp;gt; 0 else 1 for histogram in histograms: res = max(res, self.</description>
+    </item>
+    
+    <item>
+      <title>84 - Largest Rectangle in Histogram</title>
+      <link>//alfmunny.com/leetcode-blog/posts/84-largest-rectangle-in-histogram/</link>
+      <pubDate>Mon, 23 Mar 2020 00:36:00 +0100</pubDate>
+      
+      <guid>//alfmunny.com/leetcode-blog/posts/84-largest-rectangle-in-histogram/</guid>
+      <description>leetcode
+Problem Given n non-negative integers representing the histogram&amp;#39;s bar height where the width of each bar is 1, find the area of largest rectangle in the histogram. Example: Input: [2,1,5,6,2,3] Output: 10 Above is a histogram where width of each bar is 1, given height = [2,1,5,6,2,3].
+The largest rectangle is shown in the shaded area, which has area = 10 unit.
+Notes Main idea is to caculate both left edge and right edge for every entry in the array</description>
+    </item>
+    
+  </channel>
+</rss>
