@@ -116,7 +116,7 @@ and 0 means its absence.</p>
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">subsets</span>(self, nums):
         res <span style="color:#f92672">=</span> [[]]
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> sorted(nums):
-            res <span style="color:#f92672">+</span><span style="color:#f92672">=</span> [item<span style="color:#f92672">+</span>[i] <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> res]
+            res <span style="color:#f92672">+=</span> [item<span style="color:#f92672">+</span>[i] <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> res]
 
         <span style="color:#66d9ef">return</span> res
 
@@ -151,9 +151,9 @@ and 0 means its absence.</p>
   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">subsets</span>(self, nums):
     n <span style="color:#f92672">=</span> len(nums)
     output <span style="color:#f92672">=</span> []
-    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>n, <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>(n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)):
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span><span style="color:#f92672">**</span>n, <span style="color:#ae81ff">2</span><span style="color:#f92672">**</span>(n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)):
       bitmask <span style="color:#f92672">=</span> bin(i)[<span style="color:#ae81ff">3</span>:]
-      output<span style="color:#f92672">.</span>append([nums[i] <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n) <span style="color:#66d9ef">if</span> bitmask[i] <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">1</span><span style="color:#e6db74">&#39;</span> ])
+      output<span style="color:#f92672">.</span>append([nums[i] <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n) <span style="color:#66d9ef">if</span> bitmask[i] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;1&#39;</span> ])
 
     <span style="color:#66d9ef">return</span> output
 </code></pre></div>
